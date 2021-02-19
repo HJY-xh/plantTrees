@@ -1,4 +1,8 @@
-# plantTrees
+<h1 align="center">plantTrees</h1>
+
+<p align="center">
+
+</p>
 
 虽一入前端深似海，但日拱一卒无有尽,功不唐捐终入海
 
@@ -6,7 +10,9 @@
 
 我相信自己，也相信你们 💪💪
 
-## 注意事项
+## Attention
+
+- 所有知识点均在`questions`文件夹中以问答形式展示
 
 - 所有的题目和答案都会在 issues 中显示（欢迎补充）
 
