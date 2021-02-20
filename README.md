@@ -1,7 +1,8 @@
 <h1 align="center">plantTrees</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/license-MIT-blue.svg"> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg"> 
+  <a href="https://github.com/HJY-xh/plantTrees/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
 </p>
 
 虽一入前端深似海，但日拱一卒无有尽,功不唐捐终入海
