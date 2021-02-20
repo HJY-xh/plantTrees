@@ -1,7 +1,7 @@
 <h1 align="center">plantTrees</h1>
 
 <p align="center">
-  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg"> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg">
 </p>
 
 虽一入前端深似海，但日拱一卒无有尽,功不唐捐终入海
