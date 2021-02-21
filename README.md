@@ -11,9 +11,9 @@
 
 我相信自己，也相信你们 💪💪
 
-## Day 2:
+## Day 3:
 
-[[2021-2-20] encodeURI()和 decodeURI()的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/2)
+[[2021-2-21] 为什么不建议在 JavaSript 中使用 innerHTML？](https://github.com/HJY-xh/plantTrees/issues/3)
 
 ## Attention
 
