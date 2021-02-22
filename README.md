@@ -16,13 +16,13 @@
 ## Day 4:
 
 ✅ [[2021-2-22] CSS 中的 calc()有什么作用？](https://github.com/HJY-xh/plantTrees/issues/6)
-✅ [[2021-2-22] CSS 中的 width 属性包含 padding 吗？](https://github.com/HJY-xh/plantTrees/issues/7)
+✅ [[2021-2-22] 如何取消冒泡？](https://github.com/HJY-xh/plantTrees/issues/8)
 
 ## 知识分类
 
 [**HTML**](https://github.com/HJY-xh/plantTrees/blob/main/questions/HTML.md)
 
-[**CSS**](https://github.com/HJY-xh/plantTrees/blob/main/questions/CSS.md)0
+[**CSS**](https://github.com/HJY-xh/plantTrees/blob/main/questions/CSS.md)
 
 [**JavaScript**](https://github.com/HJY-xh/plantTrees/blob/main/questions/JavaScript.md)
 

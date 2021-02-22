@@ -11,11 +11,12 @@ px、%、em等不同单位的数值均可参与计算，浏览器会进行自动
 </pre>
 </details>
 
-[2.[2021-2-22] CSS 中的 width 属性包含 padding 吗？](https://github.com/HJY-xh/plantTrees/issues/7)
+[2.[2021-2-22] 如何取消冒泡？](https://github.com/HJY-xh/plantTrees/issues/8)
 
 <details>
 <summary>展开查看</summary>
 <pre>
-在标准盒模型中width属性不包含padding，在IE盒模型中包含padding。
+在IE的事件模型中，必须设置事件对象的cancelBubble属性为true。例如：window.event.cancalBubble = true；
+在W3C的事件模型中必须调用事件的stopPropagation()方法。例如：e.stopPropagation()。
 </pre>
 </details>
