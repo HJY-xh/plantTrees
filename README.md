@@ -6,6 +6,7 @@
 </p>
 
 ## 前言
+
 虽一入前端深似海，但日拱一卒无有尽,功不唐捐终入海
 
 希望能用这每天几个小小的知识点浇灌自己，生根发芽以后，收获美好未来 😉
@@ -14,19 +15,20 @@
 
 ## Day 4:
 
-✅ [[2021-2-22] CSS中的calc()有什么作用？](https://github.com/HJY-xh/plantTrees/issues/6)
+✅ [[2021-2-22] CSS 中的 calc()有什么作用？](https://github.com/HJY-xh/plantTrees/issues/6)
+✅ [[2021-2-22] CSS 中的 width 属性包含 padding 吗？](https://github.com/HJY-xh/plantTrees/issues/7)
 
 ## 知识分类
+
 [**HTML**](https://github.com/HJY-xh/plantTrees/blob/main/questions/HTML.md)
 
-[**CSS**](https://github.com/HJY-xh/plantTrees/blob/main/questions/CSS.md)
+[**CSS**](https://github.com/HJY-xh/plantTrees/blob/main/questions/CSS.md)0
 
 [**JavaScript**](https://github.com/HJY-xh/plantTrees/blob/main/questions/JavaScript.md)
 
-
 ## 参与贡献
-[点我✍️](https://github.com/HJY-xh/plantTrees/wiki/%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE%EF%BC%9F)
 
+[点我 ✍️](https://github.com/HJY-xh/plantTrees/wiki/%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE%EF%BC%9F)
 
 ## 其他 📢
 
