@@ -8,20 +8,3 @@
 标签要闭合，英文小写，且不要嵌套混乱，用标签语义化来提高搜索的概率。使用外链式的CSS和JS脚本，使结构、样式、行为分离，内容能被更广泛的设备所访问，代码精简，开发组件化，代码易维护、可复用，改版、升级方便。
 </pre>
 </details>
-
-[2.[2021-2-23] 浏览器内多个标签页之间的通信方式有哪些？](https://github.com/HJY-xh/plantTrees/issues/9)
-
-<details>
-<summary>展开查看</summary>
-<pre>
-方式一：postMessage（可跨域）
-方式二：localStorage
-方式三：WebSocket （可跨域）
-方式四：BroadcastChannel （IE不支持）
-方式五：Cookies
-方式六：Server-Sent Events
-.
-.
-.
-</pre>
-</details>
