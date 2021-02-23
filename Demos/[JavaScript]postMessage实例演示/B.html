@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>B</title>
+    <script>
+        window.onload = function () { 
+            window.addEventListener("message", function(event) {
+                console.log('message received:  ' + event.data,event);
+                event.source.postMessage('B received!',event.origin);
+            }, false);
+         }
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A</title>
+    <script>
+        window.onload = function() {
+            var popup = window.open("http://localhost:4000/");
+            
+            window.addEventListener("message", function (event) {
+                console.log(event)
+            }, false);
+            
+            setInterval(function(){
+                popup.postMessage("hello B!", "http://localhost:4000/");
+            },3000);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
