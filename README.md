@@ -22,7 +22,8 @@
 ## 目录结构 📁
 ```
 ├── Demos // questions中的例子
-├── questions // 具体内容
+├── Image // 引用的相关图片
+├── Questions // 具体内容
 ├── LICENSE
 └── README.md
 ```
