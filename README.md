@@ -13,14 +13,14 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 5:
+## Day 6:
 
-✅ [2021-2-24] EventEmitter 是什么？](https://github.com/HJY-xh/plantTrees/issues/11)
+✅ [[2021-2-24] EventEmitter 是什么？](https://github.com/HJY-xh/plantTrees/issues/11)
 
 ## 目录结构 📁
 
 ```
-├── Demos // questions中的例子
+├── Demos // Questions中的例子
 ├── Image // 引用的相关图片
 ├── Questions // 具体内容
 ├── LICENSE
