@@ -1,4 +1,4 @@
-## HTML 相关
+## JavaScrit 相关
 
 [1.[2021-2-20] encodeURI()和 decodeURI()的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/2)
 
