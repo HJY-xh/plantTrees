@@ -19,7 +19,15 @@
 
 ✅ [[2021-2-23] npm 是什么？](https://github.com/HJY-xh/plantTrees/issues/10)
 
-## 知识分类
+## 目录结构 📁
+```
+├── Demos // questions中的例子
+├── questions // 具体内容
+├── LICENSE
+└── README.md
+```
+
+## 知识分类 📄
 
 [**HTML**](https://github.com/HJY-xh/plantTrees/blob/main/questions/HTML.md)
 
@@ -31,9 +39,9 @@
 
 [**Browser**](https://github.com/HJY-xh/plantTrees/blob/main/questions/Browser.md)
 
-## 参与贡献
+## 参与贡献 ✍️
 
-[点我 ✍️](https://github.com/HJY-xh/plantTrees/wiki/%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE%EF%BC%9F)
+[点我](https://github.com/HJY-xh/plantTrees/wiki/%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE%EF%BC%9F)
 
 ## 其他 📢
 
