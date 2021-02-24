@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 5:
+## Day 6:
 
-✅ [2021-2-24] EventEmitter 是什么？](https://github.com/HJY-xh/plantTrees/issues/11)
+✅ [[2021-2-24] EventEmitter 是什么？](https://github.com/HJY-xh/plantTrees/issues/11)
 
 ## 目录结构 📁
 
