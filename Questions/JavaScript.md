@@ -33,3 +33,27 @@ encodeURI()用于将URL转换为十六进制编码。而decodeURI()用于将编�
 在W3C的事件模型中必须调用事件的stopPropagation()方法。例如：e.stopPropagation()。
 </pre>
 </details>
+
+[4.[2021-2-25] 严格模式有哪些限制？](https://github.com/HJY-xh/plantTrees/issues/12)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+主要有如下限制：
+
+- 变量必须声明后再使用
+- 函数的参数不能有同名参数，否则报错
+- 不能使用 with 关键词
+- 不能对只读属性赋值，否则报错
+- 不能使用八进制数，否则报错
+- 不能使用 delete 删除变量、方法等，只能用来删除对象的属性
+- eval 不会在它的外层作用域引入变量
+- eval 和 arguments 不能被重新赋值
+- arguments 不会自动反映函数参数的变化
+- 不能使用 arguments.callee
+- 不能使用 arguments.caller
+- 禁止 this 指向全局对象
+- 不能使用 fn.caller 和 fn.arguments 获取函数调用的栈
+- 增加了保留字（如 protected、static 和 interface)
+</pre>
+</details>
