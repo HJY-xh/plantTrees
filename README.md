@@ -17,6 +17,8 @@
 
 ✅ [[2021-2-26] 在 div 出现之前用什么做网站布局？](https://github.com/HJY-xh/plantTrees/issues/13)
 
+✅ [[2021-2-26] 新的 HTML5 文档类型和字符集是什么？](https://github.com/HJY-xh/plantTrees/issues/14)
+
 ## 目录结构 📁
 
 ```

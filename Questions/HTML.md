@@ -9,11 +9,21 @@
 </pre>
 </details>
 
-[2.[2021-2-26]在 div 出现之前用什么做网站布局？](https://github.com/HJY-xh/plantTrees/issues/13)
+[2.[2021-2-26] 在 div 出现之前用什么做网站布局？](https://github.com/HJY-xh/plantTrees/issues/13)
 
 <details>
 <summary>展开查看</summary>
 <pre>
 div出现之前使用table布局。因为table布局嵌套很多，网站加载慢，布局层级不清晰。
+</pre>
+</details>
+
+[2.[2021-2-26] 新的 HTML5 文档类型和字符集是什么？](https://github.com/HJY-xh/plantTrees/issues/14)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+文档类型是`<!doctype html>`
+字符集是`<meta charset="utf-8">`
 </pre>
 </details>
