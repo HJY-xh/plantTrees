@@ -57,3 +57,17 @@ encodeURI()用于将URL转换为十六进制编码。而decodeURI()用于将编�
 - 增加了保留字（如 protected、static 和 interface)
 </pre>
 </details>
+
+[5.[2021-2-27] Iterator 的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/15)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+作用如下：
+
+为各种数据结构提供一个统一的、简便的访问接口
+使得数据结构的成员能够按某种次序排列
+ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供 for...of 使用
+
+</pre>
+</details>
