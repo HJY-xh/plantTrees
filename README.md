@@ -31,15 +31,15 @@
 
 ## 知识分类 📄
 
-[**HTML**](https://github.com/HJY-xh/plantTrees/blob/master/questions/HTML.md)
+[**HTML**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/HTML.md)
 
-[**CSS**](https://github.com/HJY-xh/plantTrees/blob/master/questions/CSS.md)
+[**CSS**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/CSS.md)
 
-[**JavaScript**](https://github.com/HJY-xh/plantTrees/blob/master/questions/JavaScript.md)
+[**JavaScript**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/JavaScript.md)
 
-[**Node**](https://github.com/HJY-xh/plantTrees/blob/master/questions/Node.md)
+[**Node**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/Node.md)
 
-[**HTTP(S)**](<https://github.com/HJY-xh/plantTrees/blob/master/questions/HTTP(S).md>)
+[**HTTP(S)**](<https://github.com/HJY-xh/plantTrees/blob/master/Questions/HTTP(S).md>)
 
 [**Browser**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/Browser.md)
 
