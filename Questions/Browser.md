@@ -4,16 +4,14 @@
 
 <details>
 <summary>展开查看</summary>
-<pre><code>
-<a href="https://github.com/HJY-xh/plantTrees/tree/main/Demos/%5BJavaScript%5DpostMessage%E5%AE%9E%E4%BE%8B%E6%BC%94%E7%A4%BA">方式一：postMessage（可跨域）</a>
-方式二：localStorage
-方式三：WebSocket （可跨域）
-方式四：BroadcastChannel （IE不支持）
-方式五：Cookies
-方式六：Server-Sent Events
-.
-.
-.
-</code>
+<pre>
+
+<a href="https://github.com/HJY-xh/plantTrees/tree/main/Demos/%5BJavaScript%5DpostMessage%E5%AE%9E%E4%BE%8B%E6%BC%94%E7%A4%BA">1.postMessage（可跨域）</a>
+2.localStorage
+3.WebSocket （可跨域）
+4.BroadcastChannel （IE不支持）
+5.Cookies
+6.Server-Sent Events
 </pre>
 </details>
+

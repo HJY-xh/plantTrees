@@ -18,7 +18,7 @@ div出现之前使用table布局。因为table布局嵌套很多，网站加载�
 </pre>
 </details>
 
-[2.[2021-2-26] 新的 HTML5 文档类型和字符集是什么？](https://github.com/HJY-xh/plantTrees/issues/14)
+[3.[2021-2-26] 新的 HTML5 文档类型和字符集是什么？](https://github.com/HJY-xh/plantTrees/issues/14)
 
 <details>
 <summary>展开查看</summary>
