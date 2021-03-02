@@ -19,6 +19,8 @@
 
 ✅ [[2021-3-2] 盒模型是什么？](https://github.com/HJY-xh/plantTrees/issues/23)
 
+✅ [[2021-3-2] <img>的 title 和 alt 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/24)
+
 ## 目录结构 📁
 
 ```
