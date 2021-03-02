@@ -22,11 +22,16 @@
 ## 目录结构 📁
 
 ```
+plantTrees
 ├── Demos // Questions中的例子
 ├── Image // 引用的相关图片
 ├── Questions // 具体内容
+├── .commitlintrc.js
+├── .prettierrc.json
 ├── LICENSE
-└── README.md
+├── README.md
+├── package-lock.json
+└── package.json
 ```
 
 ## 知识分类 📄
