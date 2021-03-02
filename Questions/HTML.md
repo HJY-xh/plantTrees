@@ -27,3 +27,23 @@ div出现之前使用table布局。因为table布局嵌套很多，网站加载�
 字符集是`<meta charset="utf-8">`
 </pre>
 </details>
+
+[4.[2021-3-2] iframe框架都有哪些优缺点？](https://github.com/HJY-xh/plantTrees/issues/21)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+**优点**
+  - 重载页面时不需要重载整个页面，只需要重载页面中的一个框架页
+  - 技术易于掌握，使用方便，可主要应用于不需搜索引擎来搜索的页面
+  - 方便制作导航栏
+
+**缺点**
+  - 会产生很多页面，不容易管理
+  - 不容易打印
+  - 对浏览器搜索引擎不友好
+  - 多框架的页面会增加服务器的http请求
+</pre>
+</details>
+
