@@ -15,7 +15,9 @@
 
 ## Day 11:
 
-✅ [[2021-3-2] iframe框架都有哪些优缺点？](https://github.com/HJY-xh/plantTrees/issues/21)
+✅ [[2021-3-2] iframe 框架都有哪些优缺点？](https://github.com/HJY-xh/plantTrees/issues/21)
+
+✅ [[2021-3-2] 盒模型是什么？](https://github.com/HJY-xh/plantTrees/issues/23)
 
 ## 目录结构 📁
 
@@ -47,10 +49,10 @@
 
 ## 其他 📢
 
-- 所有知识点均在`questions`文件夹中以问答形式展示
+-   所有知识点均在`questions`文件夹中以问答形式展示
 
-- 所有的题目和答案都会在 `issues` 中显示（欢迎补充）
+-   所有的题目和答案都会在 `issues` 中显示（欢迎补充）
 
-- 同时大家可以在 `issues` 题目下方回复，提交自己的解决方案
+-   同时大家可以在 `issues` 题目下方回复，提交自己的解决方案
 
-- 欢迎大家发起 `PRs`
+-   欢迎大家发起 `PRs`

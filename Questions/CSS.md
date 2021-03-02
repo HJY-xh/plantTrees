@@ -30,18 +30,36 @@ px、%、em等不同单位的数值均可参与计算，浏览器会进行自动
 </pre>
 </details>
 
-[4.[2021-3-1] 页面导入样式时，使用link和@import有什么区别？](https://github.com/HJY-xh/plantTrees/issues/19)
+[4.[2021-3-1] 页面导入样式时，使用 link 和@import 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/19)
 
 <details>
 <summary>展开查看</summary>
 <pre>
 
-- link是XHTML标签，除了加载CSS外，还可以定义RSS等其他事务；@import属于CSS范畴，只能加载CSS。
-- link引用CSS时，在页面载入时同时加载；@import需要页面网页完全载入以后加载。因此会出现一开始没有css样式，闪烁一下出现样式后的页面(网速慢的情况下)。
-- link是XHTML标签，无兼容问题；@import是在CSS2.1提出的，低版本的浏览器不支持。
-- link支持使用Javascript控制DOM去改变样式；而@import不支持。
+-   link 是 XHTML 标签，除了加载 CSS 外，还可以定义 RSS 等其他事务；@import 属于 CSS 范畴，只能加载 CSS。
+-   link 引用 CSS 时，在页面载入时同时加载；@import 需要页面网页完全载入以后加载。因此会出现一开始没有 css 样式，闪烁一下出现样式后的页面(网速慢的情况下)。
+-   link 是 XHTML 标签，无兼容问题；@import 是在 CSS2.1 提出的，低版本的浏览器不支持。
+-   link 支持使用 Javascript 控制 DOM 去改变样式；而@import 不支持。
 </pre>
 </details>
 
+[5.[2021-3-2] 盒模型是什么？](https://github.com/HJY-xh/plantTrees/issues/23)
 
+<details>
+<summary>展开查看</summary>
+<pre>
+盒模型的组成，由里向外content,padding,border,margin.
 
+在 IE 盒子模型中，width 表示 content+padding+border 这三个部分的宽度
+
+在标准的盒子模型中，width 指 content 部分的宽度
+
+box-sizing 的使用
+
+-   box-sizing: content-box 是 W3C 盒子模型
+-   box-sizing: border-box 是 IE 盒子模型
+
+box-sizing 的默认属性是 content-box
+
+</pre>
+</details>
