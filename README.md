@@ -17,6 +17,8 @@
 
 ✅ [[2021-3-3] viewport 常见设置都有哪些？](https://github.com/HJY-xh/plantTrees/issues/25)
 
+✅ [[2021-3-3] 如何添加、移除、移动、复制、创建和查找节点？](https://github.com/HJY-xh/plantTrees/issues/26)
+
 ## 目录结构 📁
 
 ```

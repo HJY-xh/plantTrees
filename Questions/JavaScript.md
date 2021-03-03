@@ -41,20 +41,20 @@ encodeURI()用于将URL转换为十六进制编码。而decodeURI()用于将编�
 <pre>
 主要有如下限制：
 
-- 变量必须声明后再使用
-- 函数的参数不能有同名参数，否则报错
-- 不能使用 with 关键词
-- 不能对只读属性赋值，否则报错
-- 不能使用八进制数，否则报错
-- 不能使用 delete 删除变量、方法等，只能用来删除对象的属性
-- eval 不会在它的外层作用域引入变量
-- eval 和 arguments 不能被重新赋值
-- arguments 不会自动反映函数参数的变化
-- 不能使用 arguments.callee
-- 不能使用 arguments.caller
-- 禁止 this 指向全局对象
-- 不能使用 fn.caller 和 fn.arguments 获取函数调用的栈
-- 增加了保留字（如 protected、static 和 interface)
+-   变量必须声明后再使用
+-   函数的参数不能有同名参数，否则报错
+-   不能使用 with 关键词
+-   不能对只读属性赋值，否则报错
+-   不能使用八进制数，否则报错
+-   不能使用 delete 删除变量、方法等，只能用来删除对象的属性
+-   eval 不会在它的外层作用域引入变量
+-   eval 和 arguments 不能被重新赋值
+-   arguments 不会自动反映函数参数的变化
+-   不能使用 arguments.callee
+-   不能使用 arguments.caller
+-   禁止 this 指向全局对象
+-   不能使用 fn.caller 和 fn.arguments 获取函数调用的栈
+-   增加了保留字（如 protected、static 和 interface)
 </pre>
 </details>
 
@@ -68,6 +68,34 @@ encodeURI()用于将URL转换为十六进制编码。而decodeURI()用于将编�
 为各种数据结构提供一个统一的、简便的访问接口
 使得数据结构的成员能够按某种次序排列
 ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供 for...of 使用
+
+</pre>
+</details>
+
+[6.[2021-3-3] 如何添加、移除、移动、复制、创建和查找节点？](https://github.com/HJY-xh/plantTrees/issues/26)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   创建新节点
+
+    -   createDocumentFragment //创建新 DOM 片段
+    -   createElement //创建一个元素
+    -   createTextNode //创建一个文本节点
+
+-   添加 移除 替换 插入
+
+    -   appendChild() //添加
+    -   removeChild //移除
+    -   replaceChild //替换
+    -   insertBofore //插入
+
+-   查找
+
+    -   getElementsByTagName() //通过标签名查找
+    -   getElementsByName() //通过元素的 name 属性查找
+    -   getElementById() //通过元素的 id 查找
 
 </pre>
 </details>
