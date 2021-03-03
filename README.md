@@ -15,11 +15,7 @@
 
 ## Day 11:
 
-✅ [[2021-3-2] iframe 框架都有哪些优缺点？](https://github.com/HJY-xh/plantTrees/issues/21)
-
-✅ [[2021-3-2] 盒模型是什么？](https://github.com/HJY-xh/plantTrees/issues/23)
-
-✅ [[2021-3-2] <img>的 title 和 alt 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/24)
+✅ [[2021-3-3] viewport 常见设置都有哪些？](https://github.com/HJY-xh/plantTrees/issues/25)
 
 ## 目录结构 📁
 
