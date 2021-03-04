@@ -59,7 +59,7 @@ div出现之前使用table布局。因为table布局嵌套很多，网站加载�
 
 | 设置          | 解释                                                               |
 | ------------- | ------------------------------------------------------------------ |
-| width         | 设置 layout viewport 的宽度，为一个正整数，或字符串"width-device"  |
+| width         | 设置 layout viewport 的宽度，为一个正整数                          |
 | initial-scale | 设置页面的初始缩放值，为一个数字，可以带小数                       |
 | minimum-scale | 允许用户的最小缩放值，为一个数字，可以带小数                       |
 | maximum-scale | 允许用户的最大缩放值，为一个数字，可以带小数                       |
@@ -72,7 +72,7 @@ div出现之前使用table布局。因为table布局嵌套很多，网站加载�
 // width=device-width, initial-scale=1.0 是为了兼容不同浏览器
 <meta
   name="viewport"
-  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable="no"
 />
 ```
 
