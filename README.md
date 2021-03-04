@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 12:
+## Day 13:
 
-✅ [[2021-3-3] viewport 常见设置都有哪些？](https://github.com/HJY-xh/plantTrees/issues/25)
-
-✅ [[2021-3-3] 如何添加、移除、移动、复制、创建和查找节点？](https://github.com/HJY-xh/plantTrees/issues/26)
-
-✅ [[2021-3-3] 浏览器内核是什么？](https://github.com/HJY-xh/plantTrees/issues/27)
+✅ [[2021-3-4] 什么是重绘和回流？](https://github.com/HJY-xh/plantTrees/issues/28)
 
 ## 目录结构 📁
 
