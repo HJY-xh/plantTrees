@@ -15,7 +15,7 @@
 
 ## Day 13:
 
-✅ [[2021-3-5] 为什么 HTML5 只需要写“<!DOCTYPE HTML>”就可以被解析？](https://github.com/HJY-xh/plantTrees/issues/29)
+✅ [[2021-3-5] 为什么 HTML5 只需要写`<!DOCTYPE HTML>`就可以被解析？](https://github.com/HJY-xh/plantTrees/issues/29)
 
 ## 目录结构 📁
 
