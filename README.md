@@ -19,6 +19,8 @@
 
 ✅ [[2021-3-5] 为什么要初始化 css 样式？](https://github.com/HJY-xh/plantTrees/issues/30)
 
+✅ [[2021-3-5] 什么是事件委托？](https://github.com/HJY-xh/plantTrees/issues/31)
+
 ## 目录结构 📁
 
 ```
