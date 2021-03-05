@@ -81,7 +81,7 @@ div出现之前使用table布局。因为table布局嵌套很多，网站加载�
 </pre>
 </details>
 
-[6.[2021-3-5] 为什么 HTML5 只需要写“<!DOCTYPE HTML>”就可以被解析？](https://github.com/HJY-xh/plantTrees/issues/29)
+[6.[2021-3-5] 为什么 HTML5 只需要写`<!DOCTYPE HTML>`就可以被解析？](https://github.com/HJY-xh/plantTrees/issues/29)
 
 <details>
 <summary>展开查看</summary>
