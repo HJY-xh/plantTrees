@@ -73,3 +73,12 @@ box-sizing 的默认属性是 content-box
 - title属性，是鼠标覆盖时显示的文字，其他一些标签也可以使用。例如：base，basefont，head，html，meta，param，script
 </pre>
 </details>
+
+[7.[2021-3-5] 为什么要初始化 css 样式？](https://github.com/HJY-xh/plantTrees/issues/30)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。 当然，初始化样式会对SEO有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。
+</pre>
+</details>
