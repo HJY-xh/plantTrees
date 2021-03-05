@@ -60,7 +60,7 @@ div出现之前使用table布局。因为table布局嵌套很多，网站加载�
 为了让移动端可以很好地显示页面，因此需要对`viewport`进行设置。相关的设置值如下：
 
 | 设置          | 解释                                                               |
-| :------------ | :----------------------------------------------------------------- |
+| ------------- | ------------------------------------------------------------------ |
 | width         | 设置 layout viewport 的宽度，为一个正整数                          |
 | initial-scale | 设置页面的初始缩放值，为一个数字，可以带小数                       |
 | minimum-scale | 允许用户的最小缩放值，为一个数字，可以带小数                       |
@@ -70,12 +70,9 @@ div出现之前使用table布局。因为table布局嵌套很多，网站加载�
 
 `viewport` 是在 `meta` 标签内进行控制。
 
-```
-// width=device-width, initial-scale=1.0 是为了兼容不同浏览器
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable="no"
-/>
+```html
+// width=device-width, initial-scale=1.0 是为了兼容不同浏览器 <meta name="viewport"
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable="no" />
 ```
 
 </pre>
