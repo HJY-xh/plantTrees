@@ -33,6 +33,7 @@ div出现之前使用table布局。因为table布局嵌套很多，网站加载�
 <details>
 <summary>展开查看</summary>
 <pre>
+
 **优点**
 
 -   重载页面时不需要重载整个页面，只需要重载页面中的一个框架页
@@ -53,12 +54,13 @@ div出现之前使用table布局。因为table布局嵌套很多，网站加载�
 <details>
 <summary>展开查看</summary>
 <pre>
- `viewport` 就是视区窗口，也就是浏览器中显示网页的部分。PC端上基本等于设备显示区域，但在移动端上 `viewport` 会超出设备的显示区域（即会有横向滚动条出现）。设备默认的 `viewport` 在 980 - 1024 之间。
+
+`viewport` 就是视区窗口，也就是浏览器中显示网页的部分。PC 端上基本等于设备显示区域，但在移动端上 `viewport` 会超出设备的显示区域（即会有横向滚动条出现）。设备默认的 `viewport` 在 980 - 1024 之间。
 
 为了让移动端可以很好地显示页面，因此需要对`viewport`进行设置。相关的设置值如下：
 
 | 设置          | 解释                                                               |
-| ------------- | ------------------------------------------------------------------ |
+| :------------ | :----------------------------------------------------------------- |
 | width         | 设置 layout viewport 的宽度，为一个正整数                          |
 | initial-scale | 设置页面的初始缩放值，为一个数字，可以带小数                       |
 | minimum-scale | 允许用户的最小缩放值，为一个数字，可以带小数                       |
@@ -75,6 +77,21 @@ div出现之前使用table布局。因为table布局嵌套很多，网站加载�
   content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable="no"
 />
 ```
+
+</pre>
+</details>
+
+[6.[2021-3-5] 为什么 HTML5 只需要写“<!DOCTYPE HTML>”就可以被解析？](https://github.com/HJY-xh/plantTrees/issues/29)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+因为 HTML5 与 HTML4 基于的基准不同。HTML4 基于**SGML**，除了`DOCTYPE`外还需要引入`DTD`来告诉浏览器用什么标准进行渲染。`DTD`还分为标准模式、严格模式。如果什么都不写，完全让浏览器自我发挥，会变成怪异模式。
+
+HTML5 不基于**SGML**，因此后面就不用跟`DTD`，但是需要`DOCTYPE`来规范浏览器的渲染行为。
+
+注：**SGML**是通用标记语言的集合。其中有 HTML、XML，因此需要用`DTD`来指定使用哪种规范。
 
 </pre>
 </details>
