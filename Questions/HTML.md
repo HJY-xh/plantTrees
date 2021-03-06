@@ -110,3 +110,16 @@ HTML5 不基于**SGML**，因此后面就不用跟`DTD`，但是需要`DOCTYPE`�
 
 </pre>
 </details>
+
+[6.[2021-3-6] src 和 href 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/33)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   href 是超文本引用，它是指向资源的位置，建立与目标文件的联系
+-   src 目的是把资源下载到页面中
+-   浏览器解析 href 不会阻塞对文档的处理（这就是官方建议使用 link 引入而不是 @ import 的原因），src 会阻塞对文档的处理。
+
+</pre>
+</details>
