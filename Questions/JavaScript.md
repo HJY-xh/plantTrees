@@ -99,3 +99,15 @@ ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供
 
 </pre>
 </details>
+
+[7.[2021-3-3] Javascript 中 callee 和 caller 是什么？](https://github.com/HJY-xh/plantTrees/issues/35)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   caller 是返回一个对函数的引用，该函数调用了当前函数
+-   callee 是返回正在被执行的 function 函数，也就是所指定的 function 对象的正文
+
+</pre>
+</details>
