@@ -17,6 +17,8 @@
 
 ✅ [[2021-3-8] 如何简单理解闭包？](https://github.com/HJY-xh/plantTrees/issues/36)
 
+✅ [[2021-3-8] 有哪些常见的 http 状态码？](https://github.com/HJY-xh/plantTrees/issues/37)
+
 ## 目录结构 📁
 
 ```
