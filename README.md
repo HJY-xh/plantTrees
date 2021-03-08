@@ -19,6 +19,8 @@
 
 ✅ [[2021-3-8] 有哪些常见的 http 状态码？](https://github.com/HJY-xh/plantTrees/issues/37)
 
+✅ [[2021-3-8] webpack 提供哪些打包模式？](https://github.com/HJY-xh/plantTrees/issues/38)
+
 ## 目录结构 📁
 
 ```

@@ -15,3 +15,19 @@
 
 </pre>
 </details>
+
+[2.[2021-3-8] webpack 提供哪些打包模式？](https://github.com/HJY-xh/plantTrees/issues/38)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+打包模式相关参数为：mode，在打包时配置它是为了告诉 webpack 使用相应模式的内置优化。
+mode 有三种模式：
+
+-   development（开发环境打包）
+-   production（生产环境打包，亦为默认值）
+-   none（不适用任何默认优化选项）
+
+</pre>
+</details>
