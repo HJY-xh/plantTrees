@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 16:
+## Day 17:
 
-✅ [[2021-3-7] MongoDB 适用于哪些场景？](https://github.com/HJY-xh/plantTrees/issues/34)
-
-✅ [[2021-3-3] Javascript 中 callee 和 caller 是什么？](https://github.com/HJY-xh/plantTrees/issues/35)
+✅ [[2021-3-8] 如何简单理解闭包？](https://github.com/HJY-xh/plantTrees/issues/36)
 
 ## 目录结构 📁
 
