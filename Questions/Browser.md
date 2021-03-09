@@ -36,7 +36,7 @@
 </pre>
 </details>
 
-[2.[2021-3-4] 什么是重绘和回流？](https://github.com/HJY-xh/plantTrees/issues/28)
+[3.[2021-3-4] 什么是重绘和回流？](https://github.com/HJY-xh/plantTrees/issues/28)
 
 <details>
 <summary>展开查看</summary>
