@@ -59,7 +59,7 @@ box-sizing 的使用
 -   box-sizing: content-box 是 W3C 盒子模型
 -   box-sizing: border-box 是 IE 盒子模型
 
-box-sizing 的默认属性是 content-box
+box-sizing 的默认属性是 **content-box**
 
 </pre>
 </details>
