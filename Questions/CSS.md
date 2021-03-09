@@ -116,7 +116,7 @@ background: white;
 
 很可惜，出来的效果是这样的：
 
-![](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/Transparent_border_before.PNG)
+![](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_42/Transparent_border_before.PNG)
 
 **_为什么呢？_**
 因为默认情况下，背景会延伸到边框所在的区域下层。我们所做的事情并没有让 body 的背景从半透明白色边框处透上来，而是在半透明白色边框处透出了这个容器自己的纯白实色背景，这实际上得到的效果跟纯白实色的边框看起来完全一样。
@@ -131,7 +131,7 @@ background-clip: padding-box;
 
 效果如下：
 
-![](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/Transparent_border_after.PNG)
+![](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_42/Transparent_border_after.PNG)
 
 </pre>
 </details>
