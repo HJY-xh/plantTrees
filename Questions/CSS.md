@@ -93,3 +93,37 @@ box-sizing 的默认属性是 content-box
 
 </pre>
 </details>
+
+[9.[2021-3-9] 如何完成一个半透明边框效果？](https://github.com/HJY-xh/plantTrees/issues/42)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+很多人会想到：
+
+```
+border: 10px solid hsla(0,0%,100%,.5);
+background: white;
+```
+
+很可惜，出来的效果是这样的：
+
+![](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/Transparent_border_before.PNG)
+
+**_为什么呢？_**
+因为默认情况下，背景会延伸到边框所在的区域下层。我们所做的事情并没有让 body 的背景从半透明白色边框处透上来，而是在半透明白色边框处透出了这个容器自己的纯白实色背景，这实际上得到的效果跟纯白实色的边框看起来完全一样。
+
+在 CSS 2.1 中，这就是背景的工作原理。我们只能接受它并且向前看。谢天谢地，从背景与边框（第三版）http://w3.org/TR/css3-background开始，我们可以通过 `background-clip` 属性来调整上述默认行为所带来的不便。这个属性的初始值是 `border-box`，意味着背景会被元素的 `border box`（边框的外沿框）裁切掉。如果不希望背景侵入边框所在的范围，我们要做的就是把它的值设为 `padding-box`，这样浏览器就会用内边距的外沿来把背景裁切掉。即：
+
+```
+border: 10px solid hsla(0,0%,100%,.5);
+background: white;
+background-clip: padding-box;
+```
+
+效果如下：
+
+![](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/Transparent_border_after.PNG)
+
+</pre>
+</details>
