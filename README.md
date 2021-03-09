@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 17:
+## Day 18:
 
-✅ [[2021-3-8] 如何简单理解闭包？](https://github.com/HJY-xh/plantTrees/issues/36)
-
-✅ [[2021-3-8] 有哪些常见的 http 状态码？](https://github.com/HJY-xh/plantTrees/issues/37)
-
-✅ [[2021-3-8] webpack 提供哪些打包模式？](https://github.com/HJY-xh/plantTrees/issues/38)
+✅ [[2021-3-9] 构建做了哪些事？](https://github.com/HJY-xh/plantTrees/issues/39)
 
 ## 目录结构 📁
 
@@ -53,6 +49,8 @@ plantTrees
 [**webpack**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/webpack.md)
 
 [**MongoDB**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/MongoDB.md)
+
+[**前端工程化**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96.md)
 
 ## 参与贡献 ✍️
 
