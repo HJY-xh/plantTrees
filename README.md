@@ -23,6 +23,8 @@
 
 ✅ [[2021-3-9] 如何完成一个半透明边框效果？](https://github.com/HJY-xh/plantTrees/issues/42)
 
+✅ [[2021-3-9] box-sizing 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/43)
+
 ## 目录结构 📁
 
 ```

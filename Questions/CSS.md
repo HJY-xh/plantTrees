@@ -127,3 +127,17 @@ background-clip: padding-box;
 
 </pre>
 </details>
+
+[10.[2021-3-9] box-sizing 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/43)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+box-sizing 属性可以用来调整如下表现：
+
+-   `content-box` 它是默认值。如果设置一个元素的宽为 100px，那么这个元素的内容区就是 100px，此时任何边框、内边距的宽度都会增加到最后绘制出来的元素宽度中
+-   `border-box`该属性将元素的边框和内边距的值包含进 width。即如果设置一个元素的宽为 100px，那么这 100px 包含该元素的 border 和 padding，内容区的实际宽度为 width 减去 border 和 padding 值。大多数情况下，这使得更容易设定一个元素的宽高。
+
+</pre>
+</details>
