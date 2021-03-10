@@ -163,3 +163,12 @@ textarea {
 ```
 </pre>
 </details>
+
+[12.[2021-3-10] html 标签的默认 display 属性值是什么？](https://github.com/HJY-xh/plantTrees/issues/46)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+block
+</pre>
+</details>

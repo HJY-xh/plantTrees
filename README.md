@@ -19,6 +19,8 @@
 
 ✅ [[2021-3-10] textarea 如何禁止拉伸？](https://github.com/HJY-xh/plantTrees/issues/45)
 
+✅ [[2021-3-10] html 标签的默认 display 属性值是什么？](https://github.com/HJY-xh/plantTrees/issues/46)
+
 ## 目录结构 📁
 
 ```
