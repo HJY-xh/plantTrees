@@ -13,17 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 18:
+## Day 19:
 
-✅ [[2021-3-9] 构建做了哪些事？](https://github.com/HJY-xh/plantTrees/issues/39)
-
-✅ [[2021-3-9] style 标签写在 body 前和 body 后的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/40)
-
-✅ [[2021-3-9] 受控组件与非受控组件有什么区别？](https://github.com/HJY-xh/plantTrees/issues/41)
-
-✅ [[2021-3-9] 如何完成一个半透明边框效果？](https://github.com/HJY-xh/plantTrees/issues/42)
-
-✅ [[2021-3-9] box-sizing 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/43)
+✅ [[2021-3-9] React 中的双缓存是什么？](https://github.com/HJY-xh/plantTrees/issues/44)
 
 ## 目录结构 📁
 
