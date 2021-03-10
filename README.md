@@ -17,6 +17,8 @@
 
 ✅ [[2021-3-10] React 中的双缓存是什么？](https://github.com/HJY-xh/plantTrees/issues/44)
 
+✅ [[2021-3-10] textarea 如何禁止拉伸？](https://github.com/HJY-xh/plantTrees/issues/45)
+
 ## 目录结构 📁
 
 ```

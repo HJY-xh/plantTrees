@@ -149,3 +149,17 @@ box-sizing 属性可以用来调整如下表现：
 
 </pre>
 </details>
+
+[11.[2021-3-10] textarea 如何禁止拉伸？](https://github.com/HJY-xh/plantTrees/issues/45)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+使用 CSS 样式可以避免拉伸:
+```css
+textarea {
+  resize: none;
+}
+```
+</pre>
+</details>
