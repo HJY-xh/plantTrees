@@ -35,11 +35,20 @@ px、%、em等不同单位的数值均可参与计算，浏览器会进行自动
 <details>
 <summary>展开查看</summary>
 <pre>
-
+答案一：
 -   link 是 XHTML 标签，除了加载 CSS 外，还可以定义 RSS 等其他事务；@import 属于 CSS 范畴，只能加载 CSS。
 -   link 引用 CSS 时，在页面载入时同时加载；@import 需要页面网页完全载入以后加载。因此会出现一开始没有 css 样式，闪烁一下出现样式后的页面(网速慢的情况下)。
 -   link 是 XHTML 标签，无兼容问题；@import 是在 CSS2.1 提出的，低版本的浏览器不支持。
 -   link 支持使用 Javascript 控制 DOM 去改变样式；而@import 不支持。
+
+答案二：
+
+-   link 是 HTML 方式， @import 是 CSS 方式
+-   link 最大限度支持并行下载，@import 过多嵌套导致串行下载，出现 FOUC
+-   link 可以通过 rel="alternate stylesheet"指定候选样式
+-   浏览器对 link 支持早于@import，可以使用@import 对老浏览器隐藏样式
+-   @import 必须在样式规则之前，可以在 css 文件中引用其他文件
+总体来说：link 优于@import
 </pre>
 </details>
 
