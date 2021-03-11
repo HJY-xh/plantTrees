@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 19:
+## Day 20:
 
-✅ [[2021-3-10] React 中的双缓存是什么？](https://github.com/HJY-xh/plantTrees/issues/44)
-
-✅ [[2021-3-10] textarea 如何禁止拉伸？](https://github.com/HJY-xh/plantTrees/issues/45)
-
-✅ [[2021-3-10] html 标签的默认 display 属性值是什么？](https://github.com/HJY-xh/plantTrees/issues/46)
+✅ [[2021-3-11] HTML 中 b 与 strong 的区别、i 与 em 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/47)
 
 ## 目录结构 📁
 
