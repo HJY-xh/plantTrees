@@ -19,6 +19,8 @@
 
 ✅ [[2021-3-11] display: none;与 visibility: hidden;有什么区别？](https://github.com/HJY-xh/plantTrees/issues/48)
 
+✅ [[2021-3-11] 什么是 FOUC?如何避免？](https://github.com/HJY-xh/plantTrees/issues/49)
+
 ## 目录结构 📁
 
 ```

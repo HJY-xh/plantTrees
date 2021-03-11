@@ -160,3 +160,13 @@ _为了符合 CSS3 的规范，i 应尽量少用而改用 em_
 
 </pre>
 </details>
+
+[9.[2021-3-11] 什么是 FOUC?如何避免?](https://github.com/HJY-xh/plantTrees/issues/49)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+Flash Of Unstyled Content：用户定义样式表加载之前浏览器使用默认样式渲染文档，用户样式加载渲染之后再重新渲染文档，造成页面闪烁。
+解决方法：把样式表放到文档的head。
+</pre>
+</details>
