@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 21:
+## Day 22:
 
-✅ [[2021-3-12] 说一下 CSS sprites 的原理和优缺点？](https://github.com/HJY-xh/plantTrees/issues/51)
+✅ [[2021-3-13] 什么是渐进增强？](https://github.com/HJY-xh/plantTrees/issues/53)
 
 ✅ [[2021-3-12] UTF-8 和 Unicode 有什么联系？](https://github.com/HJY-xh/plantTrees/issues/52)
 
