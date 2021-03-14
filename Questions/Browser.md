@@ -76,7 +76,7 @@ CSP 指的是内容安全策略，它的本质是建立一个白名单，告诉�
 </pre>
 </details>
 
-[6.[2021-3-13] 什么是 DOM 和 BOM？](https://github.com/HJY-xh/plantTrees/issues/56)
+[6.[2021-3-14] 什么是 DOM 和 BOM？](https://github.com/HJY-xh/plantTrees/issues/56)
 
 <details>
 <summary>展开查看</summary>
