@@ -61,3 +61,14 @@ UDP(User Data Protocol，用户数据报协议)是面向非连接的协议，它
 -   505 (HTTP 版本不受支持) 服务器不支持请求中所用的 HTTP 协议版本。
 </pre>
 </details>
+
+[4.[2021-3-14] HTTP/2 中二进制协议的概念是什么？](https://github.com/HJY-xh/plantTrees/issues/57)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+HTTP/2 是一个二进制协议。
+在 HTTP/1.1 版中，报文的头信息必须是文本（ASCII 编码），数据体可以是文本，也可以是 二进制。
+HTTP/2 则是一个彻底的二进制协议，头信息和数据体都是二进制，并且统称为"帧"，可以分为头信息帧和数据帧。 帧的概念是它实现多路复用的基础。
+</pre>
+</details>
