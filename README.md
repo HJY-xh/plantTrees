@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 23:
+## Day 24:
 
-✅ [[2021-3-14] 什么是 DOM 和 BOM？](https://github.com/HJY-xh/plantTrees/issues/56)
-
-✅ [[2021-3-14] HTTP/2 中二进制协议的概念是什么？](https://github.com/HJY-xh/plantTrees/issues/57)
+✅ [[2021-3-15] 你理解的"use strict"是什么?使用它有什么优缺点？ ](https://github.com/HJY-xh/plantTrees/issues/58)
 
 ## 目录结构 📁
 
