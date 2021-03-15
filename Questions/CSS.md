@@ -232,3 +232,19 @@ CSS Sprites 在国内很多人叫 css 精灵，是一种网页图片应用处理
 
 </pre>
 </details>
+
+[14.[2021-3-15] position 的 absolute 与 fixed 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/59)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+共同点：
+- 改变行内元素的呈现方式，display被置为block
+- 让元素脱离普通流，不占据空间
+- 默认会覆盖到非定位元素上
+
+不同点：
+absolute 的”根元素“是可以设置的，而 fixed 的”根元素“固定为浏览器窗口。当你滚动网页，fixed 元素与浏览器窗口之间的距离是不变的。
+
+</pre>
+</details>
