@@ -112,7 +112,7 @@ ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供
 </pre>
 </details>
 
-[7.[2021-3-8] 如何简单理解闭包？](https://github.com/HJY-xh/plantTrees/issues/36)
+[8.[2021-3-8] 如何简单理解闭包？](https://github.com/HJY-xh/plantTrees/issues/36)
 
 <details>
 <summary>展开查看</summary>
@@ -126,7 +126,7 @@ ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供
 </pre>
 </details>
 
-[7.[2021-3-13] || 和 && 操作符的返回值是什么？](https://github.com/HJY-xh/plantTrees/issues/54)
+[9.[2021-3-13] || 和 && 操作符的返回值是什么？](https://github.com/HJY-xh/plantTrees/issues/54)
 
 <details>
 <summary>展开查看</summary>
@@ -143,7 +143,7 @@ ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供
 </pre>
 </details>
 
-[8.[2021-3-15]你理解的"use strict"是什么?使用它有什么优缺点？](https://github.com/HJY-xh/plantTrees/issues/58)
+[10.[2021-3-15]你理解的"use strict"是什么?使用它有什么优缺点？](https://github.com/HJY-xh/plantTrees/issues/58)
 
 <details>
 <summary>展开查看</summary>
