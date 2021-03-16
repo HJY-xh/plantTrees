@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 24:
+## Day 25:
 
-✅ [[2021-3-15] 你理解的"use strict"是什么?使用它有什么优缺点？ ](https://github.com/HJY-xh/plantTrees/issues/58)
-
-✅ [[2021-3-15] position 的 absolute 与 fixed 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/59)
+✅ [[2021-3-16] JavaScript 中的"attribute"和"property"有什么不同？](https://github.com/HJY-xh/plantTrees/issues/60)
 
 ## 目录结构 📁
 

@@ -182,3 +182,34 @@ ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供
 
 </pre>
 </details>
+
+[11.[2021-3-16]JavaScript 中的"attribute"和"property"有什么不同？](https://github.com/HJY-xh/plantTrees/issues/60)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+**_attribute_**
+
+-   是 DOM 中的属性，是 JavaScript 里的对象
+
+-   可以读取标签自带属性，包括没有写出来的
+
+-   不能读取 attribute 设置的属性
+
+-   获取方式：element.property; 如：p.className;
+
+-   设置方式：element.property = 'xxx'; 如：p.className = 'wong';
+
+**_property_**
+
+-   是 HTML 标签的属性,即直接在 html 标签添加的都是 attribute 属性
+
+-   不能读取 property 设置的属性
+
+-   读取方式：element.getAttribute('属性名','属性值'); 如：a.getAttribute('href');
+
+-   设置方式：element.setAttribute('属性名','属性值'); 如：a.getAttribute('href','wong.jpg');
+
+</pre>
+</details>
