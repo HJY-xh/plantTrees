@@ -17,6 +17,8 @@
 
 ✅ [[2021-3-16] JavaScript 中的"attribute"和"property"有什么不同？](https://github.com/HJY-xh/plantTrees/issues/60)
 
+✅ [[2021-3-16] 浏览器缓存有哪些分类？](https://github.com/HJY-xh/plantTrees/issues/61)
+
 ## 目录结构 📁
 
 ```
