@@ -72,3 +72,15 @@ HTTP/2 是一个二进制协议。
 HTTP/2 则是一个彻底的二进制协议，头信息和数据体都是二进制，并且统称为"帧"，可以分为头信息帧和数据帧。 帧的概念是它实现多路复用的基础。
 </pre>
 </details>
+
+[4.[2021-3-17] 命中强缓存有什么表现？](https://github.com/HJY-xh/plantTrees/issues/63)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+命中强缓存时，浏览器并不会将请求发送给服务器。在Chrome的开发者工具中看到http的返回码是200，但是在Size列会显示出该请求或文件为缓存中取得。
+
+强缓存是利用 http 的返回头中的 Expires 或者 Cache-Control 两个字段来控制的，用来表示资源的缓存时间。
+
+</pre>
+</details>
