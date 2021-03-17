@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 25:
+## Day 26:
 
-✅ [[2021-3-16] JavaScript 中的"attribute"和"property"有什么不同？](https://github.com/HJY-xh/plantTrees/issues/60)
-
-✅ [[2021-3-16] 浏览器缓存有哪些分类？](https://github.com/HJY-xh/plantTrees/issues/61)
+✅ [[2021-3-17] 说说你对 html 中的置换元素和非置换元素的理解？](https://github.com/HJY-xh/plantTrees/issues/62)
 
 ## 目录结构 📁
 
