@@ -1,21 +1,37 @@
+const fs = require("fs");
 const path = require("path");
 const superagent = require("superagent");
 const cheerio = require("cheerio");
 const h2m = require("h2m");
 
+// issue相关信息
 let title = "";
 let content = "";
+let tag = "";
 
+// 默认时间
 const defaultDate = new Date();
 
 // 要爬取的页面
-const url = `https://github.com/HJY-xh/plantTrees/issues/60`;
+const url = `https://github.com/HJY-xh/plantTrees/issues/62`;
 
 /**
  * @returns {String} 返回当天日期 example: [2021-3-16]
  */
 const formatDate = () => {
 	return `[${defaultDate.getFullYear()}-${defaultDate.getMonth() + 1}-${defaultDate.getDate()}]`;
+};
+
+// 获取标签,如果有多个标签，取第一个
+const getTag = (res) => {
+	const $ = cheerio.load(res.text);
+	let textArr = [];
+	$("div#discussion_bucket div#partial-discussion-sidebar div.js-issue-labels a span").each(
+		(index, element) => {
+			textArr.push($(element).html());
+		}
+	);
+	return textArr[0];
 };
 
 // 获取title
@@ -47,12 +63,27 @@ const getContent = (res) => {
 	return data.trim().replace("<em>", "").replace("</em>", "");
 };
 
+// 爬取页面
 superagent.get(url).end((err, res) => {
 	if (err) {
 		console.log("抓取失败", err);
 	} else {
-		title = getTitle(res);
-		getContent(res);
-		// console.log(title)
+		handleSuccess(res);
 	}
 });
+
+// 成功获取数据后的回调
+const handleSuccess = (res) => {
+	// tag = getTag(res);
+	// title = getTitle(res);
+	// content = getContent(res);
+	// const readme = {
+	//     date: "",
+	//     title: `✅ [${title}]`
+	// };
+	// console.log(tag)
+	fs.readFile("../../README.md", "utf8", (err, data) => {
+		if (err) throw err;
+		console.log(data);
+	});
+};
