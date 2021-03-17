@@ -22,6 +22,9 @@ const formatDate = () => {
 	return `[${defaultDate.getFullYear()}-${defaultDate.getMonth() + 1}-${defaultDate.getDate()}]`;
 };
 
+// readme.md路径
+const readmePath = path.resolve(__dirname, "../../README.md");
+
 // 获取标签,如果有多个标签，取第一个
 const getTag = (res) => {
 	const $ = cheerio.load(res.text);
@@ -68,12 +71,12 @@ superagent.get(url).end((err, res) => {
 	if (err) {
 		console.log("抓取失败", err);
 	} else {
-		handleSuccess(res);
+		handleHTMLSuccess(res);
 	}
 });
 
 // 成功获取数据后的回调
-const handleSuccess = (res) => {
+const handleHTMLSuccess = (res) => {
 	// tag = getTag(res);
 	// title = getTitle(res);
 	// content = getContent(res);
@@ -82,8 +85,12 @@ const handleSuccess = (res) => {
 	//     title: `✅ [${title}]`
 	// };
 	// console.log(tag)
-	fs.readFile("../../README.md", "utf8", (err, data) => {
-		if (err) throw err;
-		console.log(data);
-	});
+	const readmeOldFile = fs.readFileSync(readmePath, "utf8");
+	const dayIndex = readmeOldFile.split("\n").findIndex((item) => item.includes("## Day"));
+	const oldTitle = readmeOldFile.split("\n")[dayIndex];
+	const newDay = Number(oldTitle.match(/\s+(\d+):$/, "$1")[1]) + 1;
+	const newTitle = readmeOldFile.split("\n")[dayIndex].replace(/\d+/, newDay);
+	const readmeNewFile = readmeOldFile.replace(oldTitle, newTitle);
+	fs.writeFileSync(readmePath, readmeNewFile, "utf-8");
+	// console.log(readmeNewFile)
 };
