@@ -189,27 +189,91 @@ ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供
 <summary>展开查看</summary>
 <pre>
 
-**_attribute_**
+### **_attribute_**
 
--   是 DOM 中的属性，是 JavaScript 里的对象
+1. Attribute 由 HTML 来定义，并不存在于 DOM 中，即：只要是 HTML 标签内定义的都是 attribute。
 
--   可以读取标签自带属性，包括没有写出来的
+```
+<div id="test" class="button" custom-attr="1"></div>
+```
 
--   不能读取 attribute 设置的属性
+```
+document.getElementById('test').attributes;
+// 返回：[custom-attr="hello", class="button", id="test"]
+```
 
--   获取方式：element.property; 如：p.className;
+2. Attribute 是 String 类型。对于上面的 div，`document.getElementById('test').getAttribute('custom-attr')` 或 `$('#test').attr('custom-attr') `都会返回 string: "1"。
 
--   设置方式：element.property = 'xxx'; 如：p.className = 'wong';
+### **_property_**
 
-**_property_**
+1. Property 属于 DOM，DOM 的本质就是 JavaScript 中的一个 object。我们可以像操作普通 object 一样读取、设置 property，property 可以是任意类型。
 
--   是 HTML 标签的属性,即直接在 html 标签添加的都是 attribute 属性
+```
+document.getElementById('test').foo = 1;
+// 设置property：foo为number: 1
+document.getElementById('test').foo;
+// 读取property，返回number：1
+$('#test').prop('foo');
+// jQuery读取property，返回number：1
+```
 
--   不能读取 property 设置的属性
+```
+$('#test').prop('foo', {
+    age: 23,
+    name: 'John'
+});
+// jQuery设置property：foo为一个object
+document.getElementById('test').foo.age;
+// 返回number：23
+document.getElementById('test').foo.name;
+// 返回string："John"
+```
 
--   读取方式：element.getAttribute('属性名','属性值'); 如：a.getAttribute('href');
+2. 非自定义 attribute，如 id、class、titile 等，都会有对应的 property 映射。
 
--   设置方式：element.setAttribute('属性名','属性值'); 如：a.getAttribute('href','wong.jpg');
+```
+<div id="test" class="button" foo="1"></div>
+```
+
+```
+document.getElementById('test').id;
+// 返回string："test"
+document.getElementById('test').className;
+// 返回string："button"
+document.getElementById('test').foo;
+// 返回undefined，因为foo是自定义attribute
+```
+
+注：由于 **_class_** 为 JavaScript 的保留关键字，所以通过 property 操作 class 时应使用 **_className_**。
+
+3. 非自定义的 property 或 attribute 的变化多数是联动的。
+
+```
+<div id="test" class="button"></div>
+```
+
+```
+var div = document.getElementById('test');
+div.className = 'red-input';
+div.getAttribute('class');
+// 返回string："red-input"
+div.setAttribute('class','green-input');
+div.className;
+// 返回string："green-input"
+```
+
+4. 带有默认值的 attribute 不随 property 变化而变化。
+
+```
+<input id="search" value="foo" />
+```
+
+```
+var input = document.getElementById('search');
+input.value = 'foo2';
+input.getAttribute('value');
+// 返回string："foo"
+```
 
 </pre>
 </details>
