@@ -4,17 +4,19 @@ const superagent = require("superagent");
 const cheerio = require("cheerio");
 const h2m = require("h2m");
 const shell = require("shelljs");
+const colors = require("colors");
+const inquirer = require("inquirer");
 
 // issue相关信息
 let title = "";
 let content = "";
 let tag = "";
 
-// 默认时间
-const defaultDate = new Date();
-
 // 要爬取的页面url
-const url = `https://github.com/HJY-xh/plantTrees/issues/${process.argv[3]}`;
+let url = `https://github.com/HJY-xh/plantTrees/issues/`;
+
+//是否需要修改Readme.md文件中的日期 ## Day 20
+let isUpdateDate = false;
 
 // readme.md路径
 const readmePath = path.resolve(__dirname, "../../README.md");
@@ -67,7 +69,7 @@ const runTask = () => {
 			console.log("抓取失败", err);
 		} else {
 			await handleHTMLSuccess(res);
-			shell.echo("已生成相关文档，请检查格式及日期~");
+			console.log("\n", colors.green("已生成相关文档，请检查格式及日期~"));
 		}
 	});
 };
@@ -89,7 +91,7 @@ const handleHTMLSuccess = async (res) => {
  * @function 对readme.md文件进行更新
  */
 const updateReadme = (title) => {
-	const readmeOldFile = fs.readFileSync(readmePath, "utf8");
+	const readmeOldFile = fs.readFileSync(readmePath, "utf-8");
 
 	// 移除##Day至##目录结构之间的内容
 	const readmeOldFileArr = readmeOldFile.split("\n");
@@ -105,7 +107,10 @@ const updateReadme = (title) => {
 
 	// 更新readme.md文件
 	readmeOldFileArr.splice(index, 0, `\n✅ [${title}](${url})\n`);
-	const readmeNewFile = readmeOldFileArr.join("\n").replace(oldDayTitle, newDayTitle);
+	let readmeNewFile = readmeOldFileArr.join("\n");
+	if (isUpdateDate) {
+		readmeNewFile = readmeNewFile.replace(oldDayTitle, newDayTitle);
+	}
 	fs.writeFileSync(readmePath, readmeNewFile, "utf-8");
 };
 
@@ -143,13 +148,31 @@ const updateQuestionFile = (tag, title, content) => {
 	fs.writeFileSync(objectFilePath, objectNewFile, "utf-8");
 };
 
-if (!process.argv[3] || process.argv.length !== 4) {
-	shell.echo("缺少issue编号或传参错误");
-	shell.exit();
-}
-
-try {
-	runTask();
-} catch (e) {
-	shell.echo(e || "发生未知错误");
-}
+inquirer
+	.prompt([
+		{
+			type: "input",
+			name: "No",
+			message: "请输入issue编号",
+			validate: (value) => {
+				if (/^[0-9]*$/.test(value)) {
+					return true;
+				}
+				return colors.red("请输入数字");
+			},
+		},
+		{
+			type: "confirm",
+			name: "isUpdateDate",
+			message: "是否需要修改Readme.md文件中的日期",
+		},
+	])
+	.then((res) => {
+		url += String(res.No);
+		isUpdateDate = res.isUpdateDate;
+		try {
+			runTask();
+		} catch (e) {
+			shell.echo(e || "发生未知错误");
+		}
+	});
