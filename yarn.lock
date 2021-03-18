@@ -1287,7 +1287,7 @@
     "split2" "^3.0.0"
     "through2" "^4.0.0"
 
-"glob@7.1.4":
+"glob@^7.0.0", "glob@7.1.4":
   "integrity" "sha512-hkLPepehmnKk41pUGm3sYxoFs/umurYfYJCerbXEyFIWcAzvpipAgVkBqqT9RBKMGjnq6kMuyYwha6csxbiM1A=="
   "resolved" "http://npmjs.ezbuy.me/glob/-/glob-7.1.4.tgz"
   "version" "7.1.4"
@@ -1534,6 +1534,11 @@
     "string-width" "^2.1.0"
     "strip-ansi" "^5.1.0"
     "through" "^2.3.6"
+
+"interpret@^1.0.0":
+  "integrity" "sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA=="
+  "resolved" "http://npmjs.ezbuy.me/interpret/-/interpret-1.4.0.tgz"
+  "version" "1.4.0"
 
 "is-accessor-descriptor@^0.1.6":
   "integrity" "sha1-qeEss66Nh2cn7u84Q/igiXtcmNY="
@@ -2450,6 +2455,13 @@
     "string_decoder" "^1.1.1"
     "util-deprecate" "^1.0.1"
 
+"rechoir@^0.6.2":
+  "integrity" "sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q="
+  "resolved" "http://npmjs.ezbuy.me/rechoir/-/rechoir-0.6.2.tgz"
+  "version" "0.6.2"
+  dependencies:
+    "resolve" "^1.1.6"
+
 "redent@^3.0.0":
   "integrity" "sha512-6tDA8g98We0zd0GvVeMT9arEOnTw9qM03L9cJXaCjrip1OO764RDBLBfrB4cwzNGDj5OA5ioymC9GkizgWJDUg=="
   "resolved" "http://npmjs.ezbuy.me/redent/-/redent-3.0.0.tgz"
@@ -2537,7 +2549,7 @@
   "resolved" "http://npmjs.ezbuy.me/resolve-url/-/resolve-url-0.2.1.tgz"
   "version" "0.2.1"
 
-"resolve@^1.10.0", "resolve@^1.17.0":
+"resolve@^1.1.6", "resolve@^1.10.0", "resolve@^1.17.0":
   "integrity" "sha512-wENBPt4ySzg4ybFQW2TT1zMQucPK95HSh/nq2CFTZVOGut2+pQvSsgtda4d26YrYcr067wjbmzOG8byDPBX63A=="
   "resolved" "http://npmjs.ezbuy.me/resolve/-/resolve-1.20.0.tgz"
   "version" "1.20.0"
@@ -2650,6 +2662,15 @@
   "integrity" "sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A=="
   "resolved" "http://npmjs.ezbuy.me/shebang-regex/-/shebang-regex-3.0.0.tgz"
   "version" "3.0.0"
+
+"shelljs@^0.8.4":
+  "integrity" "sha512-7gk3UZ9kOfPLIAbslLzyWeGiEqx9e3rxwZM0KE6EL8GlGwjym9Mrlx5/p33bWTu9YG6vcS4MBxYZDHYr5lr8BQ=="
+  "resolved" "http://npmjs.ezbuy.me/shelljs/-/shelljs-0.8.4.tgz"
+  "version" "0.8.4"
+  dependencies:
+    "glob" "^7.0.0"
+    "interpret" "^1.0.0"
+    "rechoir" "^0.6.2"
 
 "signal-exit@^3.0.0", "signal-exit@^3.0.2":
   "integrity" "sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA=="

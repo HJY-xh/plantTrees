@@ -3,6 +3,7 @@ const path = require("path");
 const superagent = require("superagent");
 const cheerio = require("cheerio");
 const h2m = require("h2m");
+const shell = require("shelljs");
 
 // issue相关信息
 let title = "";
@@ -14,8 +15,6 @@ const defaultDate = new Date();
 
 // 要爬取的页面url
 const url = `https://github.com/HJY-xh/plantTrees/issues/${process.argv[3]}`;
-
-console.log(url);
 
 /**
  * @returns {String} 返回当天日期 example: [2021-3-16]
@@ -68,14 +67,16 @@ const getContent = (res) => {
 	return data.trim().replace("<em>", "").replace("</em>", "");
 };
 
-// 爬取页面
-superagent.get(url).end((err, res) => {
-	if (err) {
-		console.log("抓取失败", err);
-	} else {
-		// handleHTMLSuccess(res);
-	}
-});
+// 开始任务
+const runTask = () => {
+	superagent.get(url).end((err, res) => {
+		if (err) {
+			console.log("抓取失败", err);
+		} else {
+			handleHTMLSuccess(res);
+		}
+	});
+};
 
 /**
  * @param {request.Response} res
@@ -147,3 +148,14 @@ const updateQuestionFile = (tag, title, content) => {
 	const objectNewFile = objectOldFile + text.join("\n");
 	fs.writeFileSync(objectFilePath, objectNewFile, "utf-8");
 };
+
+if (!process.argv[3] || typeof process.argv[3] !== "number") {
+	shell.echo("缺少issue编号或传参错误");
+	shell.exit();
+}
+
+try {
+	runTask();
+} catch (e) {
+	shell.echo(e || "发生未知错误");
+}
