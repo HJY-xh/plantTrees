@@ -13,7 +13,7 @@ let tag = "";
 const defaultDate = new Date();
 
 // 要爬取的页面
-const url = `https://github.com/HJY-xh/plantTrees/issues/62`;
+const url = `https://github.com/HJY-xh/plantTrees/issues/64`;
 
 /**
  * @returns {String} 返回当天日期 example: [2021-3-16]
@@ -75,22 +75,38 @@ superagent.get(url).end((err, res) => {
 	}
 });
 
-// 成功获取数据后的回调
+/**
+ * @param {request.Response} res
+ * @function 成功获取数据后的回调
+ */
 const handleHTMLSuccess = (res) => {
-	// tag = getTag(res);
-	// title = getTitle(res);
-	// content = getContent(res);
-	// const readme = {
-	//     date: "",
-	//     title: `✅ [${title}]`
-	// };
-	// console.log(tag)
+	tag = getTag(res);
+	title = getTitle(res);
+	content = getContent(res);
+	updateReadme(title);
+};
+
+/**
+ * @param {string} title 题目标题
+ * @function 对readme.md文件进行更新
+ */
+const updateReadme = (title) => {
 	const readmeOldFile = fs.readFileSync(readmePath, "utf8");
-	const dayIndex = readmeOldFile.split("\n").findIndex((item) => item.includes("## Day"));
-	const oldTitle = readmeOldFile.split("\n")[dayIndex];
-	const newDay = Number(oldTitle.match(/\s+(\d+):$/, "$1")[1]) + 1;
-	const newTitle = readmeOldFile.split("\n")[dayIndex].replace(/\d+/, newDay);
-	const readmeNewFile = readmeOldFile.replace(oldTitle, newTitle);
+
+	// 移除##Day至##目录结构之间的内容
+	const readmeOldFileArr = readmeOldFile.split("\n");
+	const dayIndex = readmeOldFileArr.findIndex((item) => item.includes("## Day"));
+	const directoryIndex = readmeOldFileArr.findIndex((item) => item.includes("## 目录结构"));
+	let index = dayIndex + 1;
+	readmeOldFileArr.splice(index, directoryIndex - dayIndex - 1);
+
+	// 新的日期
+	const oldDayTitle = readmeOldFileArr[dayIndex];
+	const newDay = Number(oldDayTitle.match(/\s+(\d+):$/, "$1")[1]) + 1;
+	const newDayTitle = readmeOldFileArr[dayIndex].replace(/\d+/, newDay);
+
+	// 更新readme.md文件
+	readmeOldFileArr.splice(index, 0, `\n✅ [${title}](${url})\n`);
+	const readmeNewFile = readmeOldFileArr.join("\n").replace(oldDayTitle, newDayTitle);
 	fs.writeFileSync(readmePath, readmeNewFile, "utf-8");
-	// console.log(readmeNewFile)
 };
