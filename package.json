@@ -4,7 +4,8 @@
 	"description": "<h1 align=\"center\">plantTrees</h1>",
 	"scripts": {
 		"commit": "git add . && git-cz",
-		"update": "node ./utils/autoProcess/autoProcess.js && lint-staged"
+		"update": "node ./utils/autoProcess/autoProcess.js && lint-staged",
+		"test": "node ./utils/autoProcess/autoProcess.js url"
 	},
 	"repository": {
 		"type": "git",

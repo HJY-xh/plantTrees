@@ -12,8 +12,10 @@ let tag = "";
 // 默认时间
 const defaultDate = new Date();
 
-// 要爬取的页面
-const url = `https://github.com/HJY-xh/plantTrees/issues/61`;
+// 要爬取的页面url
+const url = `https://github.com/HJY-xh/plantTrees/issues/${process.argv[3]}`;
+
+console.log(url);
 
 /**
  * @returns {String} 返回当天日期 example: [2021-3-16]
@@ -71,7 +73,7 @@ superagent.get(url).end((err, res) => {
 	if (err) {
 		console.log("抓取失败", err);
 	} else {
-		handleHTMLSuccess(res);
+		// handleHTMLSuccess(res);
 	}
 });
 
@@ -135,12 +137,12 @@ const updateQuestionFile = (tag, title, content) => {
 	// 写入内容
 	const text = [
 		`\n[${index + 1}.${title}](${url})\n`,
-		`<details>
-		<summary>展开查看</summary>
-		<pre>`,
+		`<details>`,
+		`<summary>展开查看</summary>`,
+		`<pre>`,
 		`\n${h2m(content)}\n`,
-		`</pre>
-		</details>`,
+		`</pre>`,
+		`</details>`,
 	];
 	const objectNewFile = objectOldFile + text.join("\n");
 	fs.writeFileSync(objectFilePath, objectNewFile, "utf-8");
