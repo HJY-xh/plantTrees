@@ -83,7 +83,7 @@ const handleHTMLSuccess = (res) => {
 	tag = getTag(res);
 	title = getTitle(res);
 	content = getContent(res);
-	// updateReadme(title);
+	updateReadme(title);
 	updateQuestionFile(tag, title, content);
 };
 
@@ -134,7 +134,7 @@ const updateQuestionFile = (tag, title, content) => {
 
 	// 写入内容
 	const text = [
-		`\n[${index + 1}.${title}](${url})`,
+		`\n[${index + 1}.${title}](${url})\n`,
 		`<details>
 		<summary>展开查看</summary>
 		<pre>`,
