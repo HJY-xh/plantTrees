@@ -16,13 +16,6 @@ const defaultDate = new Date();
 // 要爬取的页面url
 const url = `https://github.com/HJY-xh/plantTrees/issues/${process.argv[3]}`;
 
-/**
- * @returns {String} 返回当天日期 example: [2021-3-16]
- */
-const formatDate = () => {
-	return `[${defaultDate.getFullYear()}-${defaultDate.getMonth() + 1}-${defaultDate.getDate()}]`;
-};
-
 // readme.md路径
 const readmePath = path.resolve(__dirname, "../../README.md");
 
@@ -69,11 +62,12 @@ const getContent = (res) => {
 
 // 开始任务
 const runTask = () => {
-	superagent.get(url).end((err, res) => {
+	superagent.get(url).end(async (err, res) => {
 		if (err) {
 			console.log("抓取失败", err);
 		} else {
-			handleHTMLSuccess(res);
+			await handleHTMLSuccess(res);
+			shell.echo("已生成相关文档，请检查格式及日期~");
 		}
 	});
 };
@@ -82,7 +76,7 @@ const runTask = () => {
  * @param {request.Response} res
  * @function 成功获取数据后的回调
  */
-const handleHTMLSuccess = (res) => {
+const handleHTMLSuccess = async (res) => {
 	tag = getTag(res);
 	title = getTitle(res);
 	content = getContent(res);
@@ -137,7 +131,7 @@ const updateQuestionFile = (tag, title, content) => {
 
 	// 写入内容
 	const text = [
-		`\n[${index + 1}.${title}](${url})\n`,
+		`\n[${Number(index) + 1}.${title}](${url})\n`,
 		`<details>`,
 		`<summary>展开查看</summary>`,
 		`<pre>`,
@@ -149,7 +143,7 @@ const updateQuestionFile = (tag, title, content) => {
 	fs.writeFileSync(objectFilePath, objectNewFile, "utf-8");
 };
 
-if (!process.argv[3] || typeof process.argv[3] !== "number") {
+if (!process.argv[3] || process.argv.length !== 4) {
 	shell.echo("缺少issue编号或传参错误");
 	shell.exit();
 }
