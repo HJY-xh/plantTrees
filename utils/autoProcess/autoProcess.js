@@ -21,6 +21,12 @@ let isUpdateDate = false;
 // readme.md路径
 const readmePath = path.resolve(__dirname, "../../README.md");
 
+// 昨天的日期
+const yesterdat = new Date(new Date().getTime() - 86400 * 1000);
+const yesterdatStr = `[${yesterdat.getFullYear()}-${
+	yesterdat.getMonth() + 1
+}-${yesterdat.getDate()}]`;
+
 // 获取标签,如果有多个标签，取第一个
 const getTag = (res) => {
 	const $ = cheerio.load(res.text);
@@ -101,7 +107,8 @@ const updateReadme = (title) => {
 	const dayIndex = readmeOldFileArr.findIndex((item) => item.includes("## Day"));
 	const directoryIndex = readmeOldFileArr.findIndex((item) => item.includes("## 目录结构"));
 	let index = dayIndex + 1;
-	readmeOldFileArr.splice(index, directoryIndex - dayIndex - 1);
+	readmeOldFileArr.some((item) => item.includes(yesterdatStr)) &&
+		readmeOldFileArr.splice(index, directoryIndex - dayIndex - 1);
 
 	// 新的日期
 	const oldDayTitle = readmeOldFileArr[dayIndex];
