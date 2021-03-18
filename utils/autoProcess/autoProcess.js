@@ -13,7 +13,7 @@ let tag = "";
 const defaultDate = new Date();
 
 // 要爬取的页面
-const url = `https://github.com/HJY-xh/plantTrees/issues/64`;
+const url = `https://github.com/HJY-xh/plantTrees/issues/61`;
 
 /**
  * @returns {String} 返回当天日期 example: [2021-3-16]
@@ -83,7 +83,8 @@ const handleHTMLSuccess = (res) => {
 	tag = getTag(res);
 	title = getTitle(res);
 	content = getContent(res);
-	updateReadme(title);
+	// updateReadme(title);
+	updateQuestionFile(tag, title, content);
 };
 
 /**
@@ -109,4 +110,38 @@ const updateReadme = (title) => {
 	readmeOldFileArr.splice(index, 0, `\n✅ [${title}](${url})\n`);
 	const readmeNewFile = readmeOldFileArr.join("\n").replace(oldDayTitle, newDayTitle);
 	fs.writeFileSync(readmePath, readmeNewFile, "utf-8");
+};
+
+/**
+ * @param {string} tag 题目标签
+ * @param {string} title 题目标题
+ * @param {string} content 题目答案
+ * @function 将与标签相匹配的目标文件进行更新
+ */
+const updateQuestionFile = (tag, title, content) => {
+	// 获取目标文件路径
+	const questionDirectoty = path.resolve(__dirname, "../../Questions");
+	const files = fs.readdirSync(questionDirectoty, "utf-8");
+	const fileIndex = files.findIndex((item) => item.toLowerCase().includes(tag.toLowerCase()));
+	const objectFilePath = path.resolve(questionDirectoty, files[fileIndex]);
+
+	// 获取题目编号
+	const objectOldFile = fs.readFileSync(objectFilePath, "utf-8");
+	const questions = objectOldFile
+		.split("\n")
+		.filter((item) => /^\[\d+\.\[\d+\-\d+\-\d+\]/.test(item));
+	const index = questions.pop().match(/^\[(\d+)\./, "$1")[1];
+
+	// 写入内容
+	const text = [
+		`\n[${index + 1}.${title}](${url})`,
+		`<details>
+		<summary>展开查看</summary>
+		<pre>`,
+		`\n${h2m(content)}\n`,
+		`</pre>
+		</details>`,
+	];
+	const objectNewFile = objectOldFile + text.join("\n");
+	fs.writeFileSync(objectFilePath, objectNewFile, "utf-8");
 };
