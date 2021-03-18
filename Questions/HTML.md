@@ -170,3 +170,34 @@ Flash Of Unstyled Content：用户定义样式表加载之前浏览器使用默�
 解决方法：把样式表放到文档的head。
 </pre>
 </details>
+
+[10.[2021-3-18] 描述一下 HTML 元素的显示优先级？](https://github.com/HJY-xh/plantTrees/issues/64)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+**在 html 中，帧元素（frameset）的优先级最高，表单元素比非表单元素的优先级要高**
+
+表单元素：
+
+> 文本输入框，密码输入框，单选框，复选框，文本输入域，列表框等等
+
+非表单元素：
+
+> 链接（a），div, table, span 等等
+
+**有窗口元素比无窗口元素的优先级高**
+
+有窗口元素：
+
+> select 元素，object 元素，以及 frames 元素等等
+
+无窗口元素：
+
+> 大部分 html 元素都是无窗口元素
+
+`z-index` 属性也可以改变显示优先级，但只对同种类型的元素才有效。如果两个元素分别为 **表单元素** 和 **非表单元素** 那么 `z-index` 是无效的
+
+</pre>
+</details>
