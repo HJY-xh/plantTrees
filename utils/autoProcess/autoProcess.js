@@ -84,6 +84,9 @@ const handleHTMLSuccess = async (res) => {
 	content = getContent(res);
 	updateReadme(title);
 	updateQuestionFile(tag, title, content);
+
+	console.log("\n", colors.green(`本次操作添加的Issue标题为:${title}`));
+	console.log("\n", colors.green(`本次操作改动的文件有:${tag}.md, README.MD`));
 };
 
 /**
