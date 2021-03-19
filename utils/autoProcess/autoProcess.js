@@ -62,8 +62,9 @@ const getContent = (res) => {
 		temp.push(String($(element).html()));
 	});
 
-	const reg = new RegExp(/<\w+[\s]{1}[class\=\"]\w+/);
-	const data = temp.filter((element, index) => reg.test(`${element}`) === false)[0];
+	const reg = new RegExp(/^<\w+[\s]{1}[class\=\"]\w+/);
+	const data = temp.filter((element, index) => reg.test(`${element?.trim()}`) === false)[0];
+	console.log(data?.trim().replace("<em>", "").replace("</em>", ""));
 
 	return data?.trim().replace("<em>", "").replace("</em>", "");
 };
@@ -88,6 +89,7 @@ const handleHTMLSuccess = async (res) => {
 	tag = getTag(res);
 	title = getTitle(res);
 	content = getContent(res);
+	return;
 	updateReadme(title);
 	updateQuestionFile(tag, title, content);
 
