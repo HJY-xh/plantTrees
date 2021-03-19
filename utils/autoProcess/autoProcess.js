@@ -112,7 +112,7 @@ const updateReadme = (title) => {
 
 	// 新的日期
 	const oldDayTitle = readmeOldFileArr[dayIndex];
-	const newDay = Number(oldDayTitle.match(/\s+(\d+):$/, "$1")[1]) + 1;
+	const newDay = Number(oldDayTitle.match(/\s+(\d+):$/, "$1")?.[1] || 0) + 1;
 	const newDayTitle = readmeOldFileArr[dayIndex].replace(/\d+/, newDay);
 
 	// 更新readme.md文件
