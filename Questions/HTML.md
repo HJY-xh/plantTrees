@@ -201,3 +201,20 @@ Flash Of Unstyled Content：用户定义样式表加载之前浏览器使用默�
 
 </pre>
 </details>
+
+[11.[2021-3-19] 谈谈你对 input 元素中 readonly 和 disabled 属性的理解](https://github.com/HJY-xh/plantTrees/issues/67)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+在表现上 `readonly` 和 `disabled` 都不能让用户对 `input` 进行编辑。但从含义上来看两者还是有较大的差别的。
+
+`readonly` 直译为 “只读”，一般用于只允许用户填写一次的信息，提交过一次之后，就不允许再次修改了。
+
+`disabled` 直译为 “禁用”，即这个 `input` 就是不允许填写和使用的（可能是因为权限或者其他原因）。
+
+因此在外观上，`readonly` 与普通 `input` 无异，只是点击后无法进行编辑；而 `disabled` 的 `input` 呈灰色，也不允许点击。从这两点其实也可以看出，对于 `input` 的事件，`readonly` 会响应，而 `disabled` 是不响应的。并且在传输数据上，`disabled` 的数据是不会被获取和上传，`readonly` 的数据会被获取和上传。
+
+</pre>
+</details>
