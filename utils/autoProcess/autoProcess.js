@@ -65,7 +65,7 @@ const getContent = (res) => {
 	const reg = new RegExp(/<\w+[\s]{1}[class\=\"]\w+/);
 	const data = temp.filter((element, index) => reg.test(`${element}`) === false)[0];
 
-	return data.trim().replace("<em>", "").replace("</em>", "");
+	return data?.trim().replace("<em>", "").replace("</em>", "");
 };
 
 // 开始任务
@@ -92,7 +92,7 @@ const handleHTMLSuccess = async (res) => {
 	updateQuestionFile(tag, title, content);
 
 	console.log("\n", colors.green(`本次操作添加的Issue标题为:${title}`));
-	console.log("\n", colors.green(`本次操作改动的文件有:${tag}.md, README.MD`));
+	console.log("\n", colors.green(`本次操作改动的文件有:${tag}.md, README.md`));
 };
 
 /**
