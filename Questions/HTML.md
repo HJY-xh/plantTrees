@@ -218,3 +218,20 @@ Flash Of Unstyled Content：用户定义样式表加载之前浏览器使用默�
 
 </pre>
 </details>
+
+[12.[2021-3-19] dir 属性有什么作用？](https://github.com/HJY-xh/plantTrees/issues/68)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+dir 属性用来规定元素中文字的方向。有效值有两个：ltr(从左到右)、rtl(从右到左)。
+
+```javascript
+<!-- dir属性应用 -->
+<p dir="ltr">从左到右</p>
+<p dir="rtl">从右到左</p>
+```
+
+</pre>
+</details>
