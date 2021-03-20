@@ -128,3 +128,14 @@ Cache-Control 可以由多个字段组合而成，主要有以下几个取值：
 
 </pre>
 </details>
+
+[7.[2021-3-20] 协商缓存是什么？](https://github.com/HJY-xh/plantTrees/issues/71)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+若未命中强缓存，则浏览器会将请求发送至服务器。服务器根据 http 头信息中的 Last-Modify/If-Modify-Since 或 Etag/If-None-Match 来判断是否命中协商缓存。如果命中，则 http 返回码为 304，浏览器从缓存中加载资源。
+
+</pre>
+</details>

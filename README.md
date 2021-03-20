@@ -15,6 +15,8 @@
 
 ## Day 29:
 
+✅ [[2021-3-20] 协商缓存是什么？](https://github.com/HJY-xh/plantTrees/issues/71)
+
 ✅ [[2021-3-20] Cache-Control 的具体含义是什么？](https://github.com/HJY-xh/plantTrees/issues/70)
 
 ## 目录结构 📁
