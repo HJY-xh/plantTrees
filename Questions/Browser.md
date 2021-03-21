@@ -105,3 +105,17 @@ on 对象、navigator 对象、screen 对象等子对象，并且 DOM 的对象 
 
 </pre>
 </details>
+
+[8.[2021-3-21] 浏览器的渲染流程是怎么样的？](https://github.com/HJY-xh/plantTrees/issues/73)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   构建 DOM 树（parse）：渲染引擎解析 HTML 文档，首先将标签转换成 DOM 树中的 DOM node（包括 js 生成的标签）**生成内容树**（Content Tree/DOM Tree）；
+-   构建渲染树（construct）：解析对应的 CSS 样式文件信息（包括 js 生成的样式和外部 css 文件），而这些文件信息以及 HTML 中可见的指令（如）**，构建渲染树**（Rendering Tree/Frame Tree）；render tree 中每个 NODE 都有自己的 style，而且 render tree 不包含隐藏的节点(比如 display:none 的节点，还有 head 节点)，因为这些节点不会用于呈现
+-   布局渲染树（reflow/layout）：从根节点递归调用，计算每一个元素的大小、位置等，给出每个节点所应该在屏幕上出现的精确坐标；
+-   绘制渲染树（paint/repaint）：遍历渲染树，使用 UI 层来绘制每个节点。
+
+</pre>
+</details>
