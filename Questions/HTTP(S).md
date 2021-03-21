@@ -139,3 +139,18 @@ Cache-Control 可以由多个字段组合而成，主要有以下几个取值：
 
 </pre>
 </details>
+
+[8.[2021-3-21] Last-Modify/If-Modify-Since 的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/72)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+浏览器第一次请求一个资源的时候，服务器返回的 header 中会加上 Last-Modify，Last-modify 是一个时间标识该资源的最后修改时间，例如 Last-Modify: Thu,31 Dec 2037 23:59:59 GMT。
+
+当浏览器再次请求该资源时，发送的请求头中会包含 If-Modify-Since，该值为缓存之前返回的 Last-Modify。服务器收到 If-Modify-Since 后，根据资源的最后修改时间判断是否命中缓存。
+
+如果命中缓存，则返回 http304，并且不会返回资源内容，并且不会返回 Last-Modify。由于对比的服务端时间，所以客户端与服务端时间差距不会导致问题。但是有时候通过最后修改时间来判断资源是否修改还是不太准确（资源变化了最后修改时间也可以一致）。于是出现了 ETag/If-None-Match。
+
+</pre>
+</details>

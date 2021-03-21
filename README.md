@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 29:
+## Day 30:
 
-✅ [[2021-3-20] 协商缓存是什么？](https://github.com/HJY-xh/plantTrees/issues/71)
-
-✅ [[2021-3-20] Cache-Control 的具体含义是什么？](https://github.com/HJY-xh/plantTrees/issues/70)
+✅ [[2021-3-21] Last-Modify/If-Modify-Since 的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/72)
 
 ## 目录结构 📁
 
