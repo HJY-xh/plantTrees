@@ -154,3 +154,37 @@ Cache-Control 可以由多个字段组合而成，主要有以下几个取值：
 
 </pre>
 </details>
+
+[9.[2021-3-22] 如何理解 URI？](https://github.com/HJY-xh/plantTrees/issues/75)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+URI, 全称为(Uniform Resource Identifier), 也就是统一资源标识符，它的作用很简单，就是区分互联网上不同的资源。
+
+但是，它并不是我们常说的网址, 网址指的是 URL, 实际上 URI 包含了 URN 和 URL 两个部分，由于 URL 过于普及，就默认将 URI 视为 URL 了。
+
+URI 真正最完整的结构是这样的。
+[![](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_75/uri.PNG)](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_75/uri.PNG)
+
+scheme 表示协议名，比如 http, https, file 等等。后面必须和://连在一起。
+
+user:passwd@ 表示登录主机时的用户信息，不过很不安全，不推荐使用，也不常用。
+
+host:port 表示主机名和端口。
+
+path 表示请求路径，标记资源所在位置。
+
+query 表示查询参数，为 key=val 这种形式，多个键值对之间用&隔开。
+
+fragment 表示 URI 所定位的资源内的一个锚点，浏览器可以根据这个锚点跳转到对应的位置。
+
+举个例子:
+
+    https://www.baidu.com/s?wd=HTTP&rsv_spt=1
+
+在这个 URI 中，https 即 scheme 部分，www.baidu.com为host:port部分（注意，http 和 https 的默认端口分别为 80、443），/s 为 path 部分，而 wd=HTTP&rsv_spt=1 就是 query 部分。
+
+</pre>
+</details>

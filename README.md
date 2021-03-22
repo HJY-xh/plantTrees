@@ -15,6 +15,8 @@
 
 ## Day 31:
 
+✅ [[2021-3-22] 如何理解 URI？](https://github.com/HJY-xh/plantTrees/issues/75)
+
 ✅ [[2021-3-22]说说"form"标签的 enctype 属性？](https://github.com/HJY-xh/plantTrees/issues/74)
 
 ## 目录结构 📁
