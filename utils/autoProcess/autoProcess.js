@@ -45,6 +45,19 @@ const handleHTMLSuccess = async (res, url, isUpdateDate) => {
 	console.log("\n", colors.green(`本次操作改动的文件有:${tag}.md, README.md`));
 
 	console.log("\n", colors.green("已生成相关文档，请检查格式及日期~"));
+
+	inquirer
+		.prompt([
+			{
+				type: "confirm",
+				name: "commit",
+				message: "您需要执行提交操作吗？",
+			},
+		])
+		.then((res) => {
+			const msg = `docs(${tag.toLowerCase()}.md, readme.md): ${title}`;
+			res.commit && shell.exec(`git add . && git commit -m '${msg}'`);
+		});
 };
 
 inquirer
