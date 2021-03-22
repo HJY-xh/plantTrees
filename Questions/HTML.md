@@ -235,3 +235,21 @@ dir 属性用来规定元素中文字的方向。有效值有两个：ltr(从左
 
 </pre>
 </details>
+
+[13.[2021-3-22] 说说"form"标签的 enctype 属性？](https://github.com/HJY-xh/plantTrees/issues/74)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+`<form>` 标签的 `enctype` 属性，用来控制表单上传的数据的编码格式。其值和 HTTP 请求的 `Content-type` 值一样。在数据提交到服务器之前，会以 `enctype` 的值进行编码。
+`enctype` 对应的值如下
+
+| 值                                | 用法                                                                                  |
+| --------------------------------- | ------------------------------------------------------------------------------------- |
+| application/x-www-form-urlencoded | 默认值，会对所有字符转进行编码 （将空格转换为 "+" 符号，特殊字符转换为 ASCII HEX 值） |
+| multipart/form-data               | 不会对字符进行编码，当表单中有文件时必须要此编码                                      |
+| text/plain                        | 将空格转换为 "+" 符号，但不编码特殊字符                                               |
+
+</pre>
+</details>

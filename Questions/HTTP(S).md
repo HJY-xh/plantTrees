@@ -84,3 +84,73 @@ HTTP/2 则是一个彻底的二进制协议，头信息和数据体都是二进�
 
 </pre>
 </details>
+
+[5.[2021-3-19] Expires 的具体含义是什么？](https://github.com/HJY-xh/plantTrees/issues/69)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+缓存过期时间，用来指定资源到期的时间，是服务器端的具体的时间点。也就是说，Expires=max-age + 请求时间，需要和 Last-modified 结合使用。 Expires 是 Web 服务器响应消息头字段，在响应 http 请求时告诉浏览器在过期时间前浏览器可以直接从浏览器缓存取数据，而无需再次请求。
+
+该字段会返回一个时间，比如 Expires:Thu,31 Dec 2037 23:59:59 GMT。这个时间代表着这个资源的失效时间，也就是说在 2037 年 12 月 31 日 23 点 59 分 59 秒之前都是有效的，即命中缓存。
+
+这种方式有一个明显的缺点，由于失效时间是一个`绝对时间`，所以当客户端本地时间被修改以后，服务器与客户端时间偏差变大以后，就会导致缓存混乱。于是发展出了 Cache-Control。cache-control 的优先级更高。
+
+</pre>
+</details>
+
+[6.[2021-3-20] Cache-Control 的具体含义是什么？](https://github.com/HJY-xh/plantTrees/issues/70)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+Cache-Control 是一个`相对时间`，例如 Cache-Control:3600，代表着资源的有效期是 3600 秒。由于是相对时间，并且都是与客户端时间比较，所以服务器与客户端时间偏差也不会导致问题。
+
+Cache-Control 与 Expires 可以在服务端配置同时启用或者启用任意一个，同时启用的时候 Cache-Control 优先级高。
+
+Cache-Control 可以由多个字段组合而成，主要有以下几个取值：
+
+-   **max-age** 指定一个时间长度，在这个时间段内缓存是有效的，单位是 s。例如设置 Cache-Control:max-age=31536000，也就是说缓存有效期为（31536000 / 24 / 60 \* 60）天，第一次访问这个资源的时候，服务器端也返回了 Expires 字段，并且过期时间是一年后。在没有禁用缓存并且没有超过有效时间的情况下，再次访问这个资源就命中了缓存，不会向服务器请求资源而是直接从浏览器缓存中取。
+
+-   **s-maxage** 同 max-age，覆盖 max-age、Expires，但仅适用于共享缓存，在私有缓存中被忽略。
+
+-   **public** 表明响应可以被任何对象（发送请求的客户端、代理服务器等等）缓存。
+
+-   **private** 表明响应只能被单个用户（可能是操作系统用户、浏览器用户）缓存，是非共享的，不能被代理服务器缓存。
+
+-   **no-cache** 强制所有缓存了该响应的用户，在使用已缓存的数据前，发送带验证器的请求到服务器。不是字面意思上的不缓存。
+
+-   **no-store** 禁止缓存，每次请求都要向服务器重新获取数据。
+
+-   **must-revalidate**指定如果页面是过期的，则去服务器进行获取。这个指令并不常用，就不做过多的讨论了。
+
+</pre>
+</details>
+
+[7.[2021-3-20] 协商缓存是什么？](https://github.com/HJY-xh/plantTrees/issues/71)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+若未命中强缓存，则浏览器会将请求发送至服务器。服务器根据 http 头信息中的 Last-Modify/If-Modify-Since 或 Etag/If-None-Match 来判断是否命中协商缓存。如果命中，则 http 返回码为 304，浏览器从缓存中加载资源。
+
+</pre>
+</details>
+
+[8.[2021-3-21] Last-Modify/If-Modify-Since 的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/72)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+浏览器第一次请求一个资源的时候，服务器返回的 header 中会加上 Last-Modify，Last-modify 是一个时间标识该资源的最后修改时间，例如 Last-Modify: Thu,31 Dec 2037 23:59:59 GMT。
+
+当浏览器再次请求该资源时，发送的请求头中会包含 If-Modify-Since，该值为缓存之前返回的 Last-Modify。服务器收到 If-Modify-Since 后，根据资源的最后修改时间判断是否命中缓存。
+
+如果命中缓存，则返回 http304，并且不会返回资源内容，并且不会返回 Last-Modify。由于对比的服务端时间，所以客户端与服务端时间差距不会导致问题。但是有时候通过最后修改时间来判断资源是否修改还是不太准确（资源变化了最后修改时间也可以一致）。于是出现了 ETag/If-None-Match。
+
+</pre>
+</details>

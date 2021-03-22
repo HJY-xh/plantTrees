@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 28:
+## Day 31:
 
-✅ [[2021-3-19] dir 属性有什么作用？](https://github.com/HJY-xh/plantTrees/issues/68)
-
-✅ [[2021-3-19] 谈谈你对 input 元素中 readonly 和 disabled 属性的理解](https://github.com/HJY-xh/plantTrees/issues/67)
+✅ [[2021-3-22]说说"form"标签的 enctype 属性？](https://github.com/HJY-xh/plantTrees/issues/74)
 
 ## 目录结构 📁
 
