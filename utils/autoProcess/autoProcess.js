@@ -15,6 +15,7 @@ const runTask = (url, isUpdateDate) => {
 		if (err) {
 			console.log("抓取失败", err);
 		} else {
+			console.log("\n", colors.yellow(`如果长时间无响应,请Ctrl+C退出重试`));
 			await handleHTMLSuccess(res, url, isUpdateDate);
 		}
 	});
@@ -33,7 +34,7 @@ const handleHTMLSuccess = async (res, url, isUpdateDate) => {
 	const content = getContent(res, contentDom);
 
 	if (!tag || !title || !content) {
-		console.log("\n", colors.red(`请检查该Issue名称、内容、相关Tag是否填写`));
+		console.log("\n", colors.red(`命令执行失败, 请检查该Issue名称、内容、相关Tag是否填写`));
 		return;
 	}
 
