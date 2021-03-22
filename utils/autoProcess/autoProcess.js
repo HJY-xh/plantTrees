@@ -16,7 +16,6 @@ const runTask = (url, isUpdateDate) => {
 			console.log("抓取失败", err);
 		} else {
 			await handleHTMLSuccess(res, url, isUpdateDate);
-			console.log("\n", colors.green("已生成相关文档，请检查格式及日期~"));
 		}
 	});
 };
@@ -33,11 +32,18 @@ const handleHTMLSuccess = async (res, url, isUpdateDate) => {
 	const title = getTitle(res, titleDom);
 	const content = getContent(res, contentDom);
 
+	if (!tag || !title || !content) {
+		console.log("\n", colors.red(`请检查该Issue名称、内容、相关Tag是否填写`));
+		return;
+	}
+
 	updateReadme(title, url, isUpdateDate);
 	updateQuestionFile(tag, title, content, url);
 
 	console.log("\n", colors.green(`本次操作添加的Issue标题为:${title}`));
 	console.log("\n", colors.green(`本次操作改动的文件有:${tag}.md, README.md`));
+
+	console.log("\n", colors.green("已生成相关文档，请检查格式及日期~"));
 };
 
 inquirer
