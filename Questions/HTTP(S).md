@@ -166,7 +166,7 @@ URI, 全称为(Uniform Resource Identifier), 也就是统一资源标识符，�
 但是，它并不是我们常说的网址, 网址指的是 URL, 实际上 URI 包含了 URN 和 URL 两个部分，由于 URL 过于普及，就默认将 URI 视为 URL 了。
 
 URI 真正最完整的结构是这样的。
-[![](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_75/uri.PNG)](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_75/uri.PNG)
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_75/uri.png)
 
 scheme 表示协议名，比如 http, https, file 等等。后面必须和://连在一起。
 
@@ -182,7 +182,9 @@ fragment 表示 URI 所定位的资源内的一个锚点，浏览器可以根据
 
 举个例子:
 
-    https://www.baidu.com/s?wd=HTTP&rsv_spt=1
+```html
+https://www.baidu.com/s?wd=HTTP&rsv_spt=1
+```
 
 在这个 URI 中，https 即 scheme 部分，www.baidu.com为host:port部分（注意，http 和 https 的默认端口分别为 80、443），/s 为 path 部分，而 wd=HTTP&rsv_spt=1 就是 query 部分。
 
