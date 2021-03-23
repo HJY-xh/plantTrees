@@ -15,6 +15,8 @@
 
 ## Day 32:
 
+✅ [[2021-3-23] ECMAScript6 中的 class 怎么理解？](https://github.com/HJY-xh/plantTrees/issues/79)
+
 ✅ [[2021-3-23] documen.write 和 innerHTML 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/78)
 
 ✅ [[2021-3-23] 说说你对属性 data-的理解？](https://github.com/HJY-xh/plantTrees/issues/77)

@@ -277,3 +277,16 @@ input.getAttribute('value');
 
 </pre>
 </details>
+
+[12.[2021-3-23] ECMAScript6 中的 class 怎么理解？](https://github.com/HJY-xh/plantTrees/issues/79)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+本质上来说它只是一种语法糖，不是一个新的东西，其背后还是原型继承的思想。通过加入 class 可以有利于我们更好的组织代码。
+
+在 class 中添加的方法，其实是添加在类的原型上的。
+
+</pre>
+</details>
