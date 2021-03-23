@@ -119,3 +119,16 @@ on 对象、navigator 对象、screen 对象等子对象，并且 DOM 的对象 
 
 </pre>
 </details>
+
+[9.[2021-3-23] documen.write 和 innerHTML 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/78)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+document.write 的内容会代替整个文档内容，会重写整个页面。
+
+innerHTML 的内容只是替代指定元素的内容，只会重写页面中的部分内容。
+
+</pre>
+</details>

@@ -44,7 +44,7 @@ const handleHTMLSuccess = async (res, url, isUpdateDate) => {
 	console.log("\n", colors.green(`本次操作添加的Issue标题为:${title}`));
 	console.log("\n", colors.green(`本次操作改动的文件有:${tag}.md, README.md`));
 
-	console.log("\n", colors.green("已生成相关文档，请检查格式及日期~"));
+	console.log("\n", colors.green("已生成相关文档，请检查格式及日期~"), "\n");
 
 	inquirer
 		.prompt([
@@ -56,7 +56,7 @@ const handleHTMLSuccess = async (res, url, isUpdateDate) => {
 		])
 		.then((res) => {
 			const msg = [
-				`docs(${tag}.md, readme.md): ${title}`,
+				`docs(${tag.toLowerCase()}.md, readme.md): ${title}`,
 				`re #${url.split("/").pop()}`,
 			].join("\n\n");
 			res.commit && shell.exec(`git add . && git commit -m '${msg}'`);
