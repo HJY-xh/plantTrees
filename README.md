@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 31:
+## Day 32:
 
-✅ [test](https://github.com/HJY-xh/plantTrees/issues/76)
-
-✅ [[2021-3-22] 如何理解 URI？](https://github.com/HJY-xh/plantTrees/issues/75)
-
-✅ [[2021-3-22]说说"form"标签的 enctype 属性？](https://github.com/HJY-xh/plantTrees/issues/74)
+✅ [[2021-3-23] 说说你对属性 data-的理解？](https://github.com/HJY-xh/plantTrees/issues/77)
 
 ## 目录结构 📁
 
