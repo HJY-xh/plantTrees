@@ -200,7 +200,7 @@ block
 </pre>
 </details>
 
-[14.[2021-3-12] 说一下 CSS sprites 的原理和优缺点？](https://github.com/HJY-xh/plantTrees/issues/51)
+[14.[2021-3-12] CSS sprites 的原理和优缺点是什么？](https://github.com/HJY-xh/plantTrees/issues/51)
 
 <details>
 <summary>展开查看</summary>
@@ -249,7 +249,7 @@ absolute 的”根元素“是可以设置的，而 fixed 的”根元素“固�
 </pre>
 </details>
 
-[15.[2021-3-17] 说说你对 html 中的置换元素和非置换元素的理解？](https://github.com/HJY-xh/plantTrees/issues/62)
+[15.[2021-3-17] 如何理解 html 中的置换元素和非置换元素？](https://github.com/HJY-xh/plantTrees/issues/62)
 
 <details>
 <summary>展开查看</summary>

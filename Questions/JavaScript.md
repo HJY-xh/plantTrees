@@ -143,7 +143,7 @@ ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供
 </pre>
 </details>
 
-[10.[2021-3-15]你理解的"use strict"是什么?使用它有什么优缺点？](https://github.com/HJY-xh/plantTrees/issues/58)
+[10.[2021-3-15]"use strict"是什么?使用它有什么优缺点？](https://github.com/HJY-xh/plantTrees/issues/58)
 
 <details>
 <summary>展开查看</summary>

@@ -171,7 +171,7 @@ Flash Of Unstyled Content：用户定义样式表加载之前浏览器使用默�
 </pre>
 </details>
 
-[10.[2021-3-18] 描述一下 HTML 元素的显示优先级？](https://github.com/HJY-xh/plantTrees/issues/64)
+[10.[2021-3-18] 怎么理解 HTML 元素的显示优先级？](https://github.com/HJY-xh/plantTrees/issues/64)
 
 <details>
 <summary>展开查看</summary>
@@ -202,7 +202,7 @@ Flash Of Unstyled Content：用户定义样式表加载之前浏览器使用默�
 </pre>
 </details>
 
-[11.[2021-3-19] 谈谈你对 input 元素中 readonly 和 disabled 属性的理解](https://github.com/HJY-xh/plantTrees/issues/67)
+[11.[2021-3-19] input 元素中 readonly 和 disabled 属性是什么？](https://github.com/HJY-xh/plantTrees/issues/67)
 
 <details>
 <summary>展开查看</summary>
@@ -236,7 +236,7 @@ dir 属性用来规定元素中文字的方向。有效值有两个：ltr(从左
 </pre>
 </details>
 
-[13.[2021-3-22] 说说"form"标签的 enctype 属性？](https://github.com/HJY-xh/plantTrees/issues/74)
+[13.[2021-3-22] "form"标签的 enctype 属性是什么？](https://github.com/HJY-xh/plantTrees/issues/74)
 
 <details>
 <summary>展开查看</summary>
@@ -254,7 +254,7 @@ dir 属性用来规定元素中文字的方向。有效值有两个：ltr(从左
 </pre>
 </details>
 
-[14.[2021-3-23] 说说你对属性 data-的理解？](https://github.com/HJY-xh/plantTrees/issues/77)
+[14.[2021-3-23] 怎么理解属性 HTML5 中的 data- 属性？](https://github.com/HJY-xh/plantTrees/issues/77)
 
 <details>
 <summary>展开查看</summary>
@@ -269,7 +269,7 @@ dir 属性用来规定元素中文字的方向。有效值有两个：ltr(从左
 </pre>
 </details>
 
-[15.[2021-3-24] 说说你对 GBK 和 UTF-8 的理解？并思考一下页面上产生乱码的可能原因](https://github.com/HJY-xh/plantTrees/issues/80)
+[15.[2021-3-24] GBK 和 UTF-8 是什么？并思考一下页面上产生乱码的可能原因](https://github.com/HJY-xh/plantTrees/issues/80)
 
 <details>
 <summary>展开查看</summary>
