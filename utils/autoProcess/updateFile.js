@@ -59,7 +59,7 @@ const updateQuestionFile = (tag, title, content, url) => {
 	const questions = objectOldFile
 		.split("\n")
 		.filter((item) => /^\[\d+\.\[\d+\-\d+\-\d+\]/.test(item));
-	const index = questions.pop().match(/^\[(\d+)\./, "$1")[1];
+	const index = questions.pop()?.match(/^\[(\d+)\./, "$1")[1] || 0;
 
 	// 写入内容
 	const text = [
