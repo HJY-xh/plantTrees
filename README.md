@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 32:
+## Day 33:
 
-✅ [[2021-3-23] ECMAScript6 中的 class 怎么理解？](https://github.com/HJY-xh/plantTrees/issues/79)
-
-✅ [[2021-3-23] documen.write 和 innerHTML 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/78)
-
-✅ [[2021-3-23] 说说你对属性 data-的理解？](https://github.com/HJY-xh/plantTrees/issues/77)
+✅ [[2021-3-24] 说说你对 GBK 和 UTF-8 的理解？并思考一下页面上产生乱码的可能原因](https://github.com/HJY-xh/plantTrees/issues/80)
 
 ## 目录结构 📁
 
