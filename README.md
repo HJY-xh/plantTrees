@@ -15,6 +15,8 @@
 
 ## Day 33:
 
+✅ [[2021-3-24] Base64 是什么？](https://github.com/HJY-xh/plantTrees/issues/81)
+
 ✅ [[2021-3-24] 说说你对 GBK 和 UTF-8 的理解？并思考一下页面上产生乱码的可能原因](https://github.com/HJY-xh/plantTrees/issues/80)
 
 ## 目录结构 📁
