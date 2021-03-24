@@ -15,6 +15,8 @@
 
 ## Day 33:
 
+✅ [[2021-3-24] Git 常用基本命令有哪些？](https://github.com/HJY-xh/plantTrees/issues/82)
+
 ✅ [[2021-3-24] Base64 是什么？](https://github.com/HJY-xh/plantTrees/issues/81)
 
 ✅ [[2021-3-24] 说说你对 GBK 和 UTF-8 的理解？并思考一下页面上产生乱码的可能原因](https://github.com/HJY-xh/plantTrees/issues/80)
@@ -51,6 +53,8 @@ plantTrees
 [**React**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/React.md)
 
 [**前端工程化**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96.md)
+
+[**Git**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/Git.md)
 
 ## 参与贡献 ✍️
 
