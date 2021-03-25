@@ -341,3 +341,27 @@ input.getAttribute('value');
 
 </pre>
 </details>
+
+[14.[2021-3-25] String.prototype.trimStart() 和 String.prototype.trimEnd()有什么作用？](https://github.com/HJY-xh/plantTrees/issues/85)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+trimStart() 方法从字符串的开头删除空格。trimLeft() 是此方法的别名。
+trimEnd() 方法从字符串的开头删除空格。trimRight() 是此方法的别名。
+
+```javascript
+const greeting = "   Hello world!   ";
+
+console.log(greeting);
+// expected output: "   Hello world!   ";
+
+console.log(greeting.trimEnd());
+// expected output: "   Hello world!";
+
+console.log(greeting.trimStart());
+// expected output: "Hello world!   ";
+```
+
+</pre>
+</details>
