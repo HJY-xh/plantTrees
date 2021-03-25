@@ -290,3 +290,54 @@ input.getAttribute('value');
 
 </pre>
 </details>
+
+[13.[2021-3-25] clientWidth、offsetWidth、scrollWidth 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/83)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+### 1. clientWidth 和 clientHeigh 、 clientTop 和 clientLeft
+
+-   clientWidth 的实际宽度
+    clientWidth = width + 左右 padding
+
+-   clientHeight 的实际宽度
+    clientHeight = height + 上下 padding
+
+-   clientTop 的实际宽度
+    clientTop = boder.top（上边框的宽度）
+
+-   clientLeft 的实际宽度
+    clientLeft = boder.left（左边框的宽度）
+
+### 2. offsetWidth 和 offsetHight 、 offsetTop 和 offsetLeft
+
+-   offsetWidth 的实际宽度
+    offsetWidth = width + 左右 padding + 左右 boder
+
+-   offsetHeight 的实际宽度
+    offsetHeight = height + 上下 padding + 上下 border
+
+-   offsetTop 的实际宽度
+    offsetTop：当前元素**上边框外边缘**到最近的**已定位父级**（offsetParent）**上边框内边距**的距离。如果父级都没有定位，则分别是到 body 顶部和左边的距离。
+
+-   offsetLeft 的实际宽度
+    offsetLeft：当前元素**左边框外边缘**到最近的**已定位父级**（offsetParent）**左边框内边缘**的距离。如果父级都没有定位，则分别是到 body 顶部和左边的距离
+
+### 3. scrollWidth 和 scrollHeight 、 scrollTop 和 scrollLeft
+
+-   scrollWidth 的实际宽度
+    scrollWidth：获取指定标签内容层的真实宽度（可视区域宽度 + 被隐藏区域宽度）
+
+-   scrollHeight 的实际宽度
+    scrollHeight：获取指定标签内容层的真实高度（可视区域高度+ 被隐藏区域高度）
+
+-   scrollTop 的实际宽度
+    scrollTop：内容层顶部到可视区域顶部的距离
+
+-   scrollLeft 的实际宽度
+    scrollLeft：内容层左端到可视区域左端的距离
+
+</pre>
+</details>
