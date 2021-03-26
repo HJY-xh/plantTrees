@@ -365,3 +365,16 @@ console.log(greeting.trimStart());
 
 </pre>
 </details>
+
+[15.[2021-3-26] ES7 中求幂运算符\*\*如何使用?](https://github.com/HJY-xh/plantTrees/issues/87)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+在ES7中引入了指数运算符，具有与Math.pow()等效的计算结果
+```javascript
+console.log(2**10); // 1024
+console.log(Math.pow(2, 10)) // 1024
+```
+</pre>
+</details>
