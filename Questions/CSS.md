@@ -302,3 +302,25 @@ w3c 并没有给出明确的非置换元素的解释，但能确定的是除置�
 
 </pre>
 </details>
+
+[16.[2021-3-26] 如何通过设置 css 样式实现水平居中与垂直居中？](https://github.com/HJY-xh/plantTrees/issues/86)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+### 1. 水平居中
+
+-   inline 元素：text-align: center
+-   block 元素：margin: auto
+-   absolute 元素：left: 50% + margin-left 负宽度 1/2
+
+### 2. 垂直居中
+
+-   inline 元素：line-height 的值等于 height 的值
+-   absolute 元素：top: 50% + margin-top 负宽度 1/2
+-   absolute 元素：transform(-50%, -50%)
+-   absolute 元素：top, left, bottom, right = 0 + margin: auto
+
+</pre>
+</details>

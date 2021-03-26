@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 34:
+## Day 35:
 
-✅ [[2021-3-25] String.prototype.trimStart() 和 String.prototype.trimEnd()有什么作用？](https://github.com/HJY-xh/plantTrees/issues/85)
-
-✅ [[2021-3-25] sourceMap 是什么？](https://github.com/HJY-xh/plantTrees/issues/84)
-
-✅ [[2021-3-25] clientWidth、offsetWidth、scrollWidth 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/83)
+✅ [[2021-3-26] 如何通过设置 css 样式实现水平居中与垂直居中？](https://github.com/HJY-xh/plantTrees/issues/86)
 
 ## 目录结构 📁
 
