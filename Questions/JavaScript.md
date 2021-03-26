@@ -378,3 +378,35 @@ console.log(Math.pow(2, 10)) // 1024
 ```
 </pre>
 </details>
+
+[16.[2021-3-26] ES8 中 String 的 padStart 和 padEnd 怎么使用？](https://github.com/HJY-xh/plantTrees/issues/88)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+在 ES8 中 String 新增了两个实例函数 `String.prototype.padStart` 和 `String.prototype.padEnd`，允许将空字符串或其他字符串添加到原始字符串的开头或结尾。先看看使用语法：
+
+```javascript
+String.padStart(targetLength, [padString]);
+```
+
+-   targetLength(必填):当前字符串需要填充到的目标长度。如果这个数值小于当前字符串的长度，则返回当前字符串本身
+-   padString(可选):填充字符串。如果字符串太长，使填充后的字符串长度超过了目标长度，则只保留最左侧的部分，其他部分会被截断，此参数的缺省值为 " "
+
+举个 🌰
+
+```javascript
+"x".padStart(4); // "   x"
+"x".padEnd(5, "1"); // "x1111"
+```
+
+有时候我们处理日期、金额的时候经常要格式化，这个特性就派上用场：
+
+```javascript
+"12".padStart(10, "YYYY-MM-DD"); // "YYYY-MM-12"
+"09-12".padStart(10, "YYYY-MM-DD"); // "YYYY-09-12"
+```
+
+</pre>
+</details>
