@@ -318,9 +318,9 @@ w3c 并没有给出明确的非置换元素的解释，但能确定的是除置�
 ### 2. 垂直居中
 
 -   inline 元素：line-height 的值等于 height 的值
--   absolute 元素：top: 50% + margin-top 负宽度 1/2 （需知道元素宽度）
--   absolute 元素：transform(-50%, -50%) （不需知道元素宽度，但有兼容性问题）
--   absolute 元素：top, left, bottom, right = 0 + margin: auto （不需知道元素宽度，且无兼容性问题）
+-   absolute 元素：top: 50% + margin-top 负高度 1/2 （需知道元素高度）
+-   absolute 元素：transform(-50%, -50%) （不需知道元素高度，但有兼容性问题）
+-   absolute 元素：top, left, bottom, right = 0 + margin: auto （不需知道元素高度，且无兼容性问题）
 
 </pre>
 </details>
