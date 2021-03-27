@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 35:
+## Day 36:
 
-✅ [[2021-3-26] ES8 中 String 的 padStart 和 padEnd 怎么使用？](https://github.com/HJY-xh/plantTrees/issues/88)
-
-✅ [[2021-3-26] ES7 中求幂运算符\*\*如何使用?](https://github.com/HJY-xh/plantTrees/issues/87)
-
-✅ [[2021-3-26] 如何通过设置 css 样式的方式实现水平居中与垂直居中？](https://github.com/HJY-xh/plantTrees/issues/86)
+✅ [[2021-3-27] **ETag/If-None-Match**的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/89)
 
 ## 目录结构 📁
 

@@ -190,3 +190,14 @@ https://www.baidu.com/s?wd=HTTP&rsv_spt=1
 
 </pre>
 </details>
+
+[10.[2021-3-27] ETag/If-None-Match 的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/89)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+与 Last-Modify/If-Modify-Since 不同的是，Etag/If-None-Match 返回的是一个校验码（ETag: entity tag）。ETag 可以保证每一个资源是唯一的，资源变化都会导致 ETag 变化。ETag 值的变更则说明资源状态已经被修改。服务器根据浏览器上发送的 If-None-Match 值来判断是否命中缓存。
+
+</pre>
+</details>
