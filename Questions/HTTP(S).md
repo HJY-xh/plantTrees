@@ -201,3 +201,22 @@ https://www.baidu.com/s?wd=HTTP&rsv_spt=1
 
 </pre>
 </details>
+
+[11.[2021-3-27] Last-Modified 和 Etag 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/90)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+我们可能会觉得使用 Last-Modified 已经足以让浏览器知道本地的缓存副本是否足够新，为什么还需要 Etag（实体标识）呢？
+
+HTTP1.1 中 Etag 的出现主要是为了解决几个 Last-Modified 比较难解决的问题：
+
+-   Last-Modified 标注的最后修改只能精确到秒级，如果某些文件在 1 秒钟以内，被修改多次的话，它将不能准确标注文件的修改时间
+-   如果某些文件会被定期生成，当有时内容并没有任何变化，但 Last-Modified 却改变了，导致文件没法使用缓存
+-   有可能存在服务器没有准确获取文件修改时间，或者与代理服务器时间不一致等情形
+
+Etag 是服务器自动生成或者由开发者生成的对应资源在服务器端的唯一标识符，能够更加准确的控制缓存。Last-Modified 与 ETag 是可以一起使用的，服务器会优先验证 ETag，一致的情况下，才会继续比对 Last-Modified，最后才决定是否返回 304。
+
+</pre>
+</details>

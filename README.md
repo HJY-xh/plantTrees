@@ -15,6 +15,8 @@
 
 ## Day 36:
 
+✅ [[2021-3-27] Last-Modified 和 Etag 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/90)
+
 ✅ [[2021-3-27] **ETag/If-None-Match**的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/89)
 
 ## 目录结构 📁
