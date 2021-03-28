@@ -15,6 +15,8 @@
 
 ## Day 37:
 
+✅ [[2021-3-28] xss 类型有哪些？](https://github.com/HJY-xh/plantTrees/issues/92)
+
 ✅ [[2021-3-28] 什么是 XSS？](https://github.com/HJY-xh/plantTrees/issues/91)
 
 ## 目录结构 📁
