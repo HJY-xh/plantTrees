@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 36:
+## Day 37:
 
-✅ [[2021-3-27] Last-Modified 和 Etag 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/90)
-
-✅ [[2021-3-27] **ETag/If-None-Match**的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/89)
+✅ [[2021-3-28] 什么是 XSS？](https://github.com/HJY-xh/plantTrees/issues/91)
 
 ## 目录结构 📁
 
