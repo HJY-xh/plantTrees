@@ -410,3 +410,27 @@ String.padStart(targetLength, [padString]);
 
 </pre>
 </details>
+
+[17.[2021-3-29] 如何手写一个深拷贝？](https://github.com/HJY-xh/plantTrees/issues/95)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+在考虑这个问题前，希望您已了解基本的深浅拷贝，若您还没概念，可先移步[“彻底讲明白浅拷贝与深拷贝”](https://www.jianshu.com/p/35d69cf24f1f)学习
+
+深拷贝的写法有很多种，这里介绍一种用递归实现的深拷贝，整体语法也比较简单，重点是递归调用。
+
+先看看未使用深拷贝处理之前引用类型间的赋值：
+[![brand_new](https://user-images.githubusercontent.com/70680781/112794161-0dbfc600-9099-11eb-8549-c292604e7afd.PNG)](https://user-images.githubusercontent.com/70680781/112794161-0dbfc600-9099-11eb-8549-c292604e7afd.PNG)
+[![brand_new_console](https://user-images.githubusercontent.com/70680781/112794171-11ebe380-9099-11eb-871b-17fcb460fd34.PNG)](https://user-images.githubusercontent.com/70680781/112794171-11ebe380-9099-11eb-871b-17fcb460fd34.PNG)
+
+经过深拷贝处理之后的结果：
+[![used](https://user-images.githubusercontent.com/70680781/112794225-24feb380-9099-11eb-9897-b57b8d1b5bcc.PNG)](https://user-images.githubusercontent.com/70680781/112794225-24feb380-9099-11eb-9897-b57b8d1b5bcc.PNG)
+[![used_console](https://user-images.githubusercontent.com/70680781/112794247-28923a80-9099-11eb-93c5-e83be87f6c9f.PNG)](https://user-images.githubusercontent.com/70680781/112794247-28923a80-9099-11eb-93c5-e83be87f6c9f.PNG)
+
+源码附上：
+[![deepClone](https://user-images.githubusercontent.com/70680781/112794313-4364af00-9099-11eb-9ea9-b6c7678eaa54.PNG)](https://user-images.githubusercontent.com/70680781/112794313-4364af00-9099-11eb-9ea9-b6c7678eaa54.PNG)
+
+</pre>
+</details>
