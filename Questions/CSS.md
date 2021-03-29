@@ -339,3 +339,72 @@ z-index的意思就是在z轴的顺序，如果说网页是由x轴和y轴所决�
 
 </pre>
 </details>
+
+[18.[2021-3-29] 弹性盒子中 flex: 0 1 auto 是什么意思？](https://github.com/HJY-xh/plantTrees/issues/97)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+三个参数分别对应的是 flex-grow, flex-shrink 和 flex-basis，默认值为0 1 auto。
+
+flex-grow: 0; // 增长比例，子项合计宽度小于容器宽度，需要根据每个子项设置的此属性比例对剩下的长度进行分配
+flex-shrink: 1; // 回缩比例，子项合计宽度大于容器宽度，需要根据每个子项设置的此属性比例对多出的长度进行分配
+flex-basis: auto; // 设置了宽度跟宽度走，没设置宽度跟内容实际宽度走
+
+看个 🌰
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.container1 {
+				width: 600px;
+				height: 300px;
+				display: flex;
+			}
+			.left1 {
+				flex: 1 2 300px;
+				background: #eaeaea;
+			}
+			.right1 {
+				flex: 2 1 400px;
+				background: #33ddee;
+			}
+			.container2 {
+				width: 900px;
+				height: 300px;
+				display: flex;
+			}
+			.left2 {
+				flex: 1 2 300px;
+				background: #eaeaea;
+			}
+			.right2 {
+				flex: 2 1 400px;
+				background: #33ddee;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container1">
+			<div class="left1"></div>
+			<div class="right1"></div>
+		</div>
+		<div class="container2">
+			<div class="left2"></div>
+			<div class="right2"></div>
+		</div>
+	</body>
+</html>
+```
+
+分析 container1： 1.先确定看 flex-grow 还是 flex-shrink：父级宽度(600)<子集宽度之和(`300 + 400 = 700`)，因此子集需要收缩，收缩比`2:1` 2.收缩总量：`700 - 600 = 100`；权重计算:`2 * 300 + 1 * 400 = 1000`，left 最终宽：`300 - 100 * 2 * 300 / 1000 = 240`；right 最终宽度：`400 - 100 * 2 * 300 / 1000 = 360`
+
+分析 container2： 1.先确定看 flex-grow 还是 flex-shrink：父级宽度(900)>子集宽度之和(`300 + 400 = 700`)，因此子集需要扩张，扩张比`1:2` 2.扩张总量：`900 - 700 = 200`；left 最终宽：`300 + 200 * 1 /（1+2) = 366`；right 最终宽度：`400 + 200 * 2 /（1+2） = 533`
+
+</pre>
+</details>

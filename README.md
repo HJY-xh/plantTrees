@@ -15,6 +15,8 @@
 
 ## Day 38:
 
+✅ [[2021-3-29] 弹性盒子中 flex: 0 1 auto 是什么意思？](https://github.com/HJY-xh/plantTrees/issues/97)
+
 ✅ [[2021-3-29] 如何手写一个深拷贝？](https://github.com/HJY-xh/plantTrees/issues/95)
 
 ✅ [[2021-3-29] CSS 中的 z-index 是什么？](https://github.com/HJY-xh/plantTrees/issues/93)
