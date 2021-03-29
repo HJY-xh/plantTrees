@@ -291,3 +291,18 @@ dir 属性用来规定元素中文字的方向。有效值有两个：ltr(从左
 
 </pre>
 </details>
+
+[16.[2021-3-29] 怎么理解影子（Shadow）DOM？](https://github.com/HJY-xh/plantTrees/issues/94)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+`Shadow DOM` 可以想象成我们在 Vue 或者 React 中使用的一个个组件，是一种将 HTML 结构、Style 封装起来的结构。我们熟悉的 `<video>` 标签，其实就是 `Shadow DOM` 的封装。
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_94/1.png)
+
+借用 MDN 上的图，可以看到 `Shadow DOM` 允许我们在 DOM 文档中插入一个 DOM 的子树。`Shadow Tree` 会挂在 `Shadow host` 对应的 DOM 上。之后，`Shadow DOM` 与外层 DOM 不会相互影响，因此可以放心用来做组件。
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_94/2.png)
+
+</pre>
+</details>
