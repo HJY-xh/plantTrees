@@ -422,15 +422,15 @@ String.padStart(targetLength, [padString]);
 深拷贝的写法有很多种，这里介绍一种用递归实现的深拷贝，整体语法也比较简单，重点是递归调用。
 
 先看看未使用深拷贝处理之前引用类型间的赋值：
-[![brand_new](https://user-images.githubusercontent.com/70680781/112794161-0dbfc600-9099-11eb-8549-c292604e7afd.PNG)](https://user-images.githubusercontent.com/70680781/112794161-0dbfc600-9099-11eb-8549-c292604e7afd.PNG)
-[![brand_new_console](https://user-images.githubusercontent.com/70680781/112794171-11ebe380-9099-11eb-871b-17fcb460fd34.PNG)](https://user-images.githubusercontent.com/70680781/112794171-11ebe380-9099-11eb-871b-17fcb460fd34.PNG)
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_95/brand_new.PNG)
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_95/brand_new_console.PNG)
 
 经过深拷贝处理之后的结果：
-[![used](https://user-images.githubusercontent.com/70680781/112794225-24feb380-9099-11eb-9897-b57b8d1b5bcc.PNG)](https://user-images.githubusercontent.com/70680781/112794225-24feb380-9099-11eb-9897-b57b8d1b5bcc.PNG)
-[![used_console](https://user-images.githubusercontent.com/70680781/112794247-28923a80-9099-11eb-93c5-e83be87f6c9f.PNG)](https://user-images.githubusercontent.com/70680781/112794247-28923a80-9099-11eb-93c5-e83be87f6c9f.PNG)
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_95/used.PNG)
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_95/used_console.PNG)
 
 源码附上：
-[![deepClone](https://user-images.githubusercontent.com/70680781/112794313-4364af00-9099-11eb-9ea9-b6c7678eaa54.PNG)](https://user-images.githubusercontent.com/70680781/112794313-4364af00-9099-11eb-9ea9-b6c7678eaa54.PNG)
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_95/deepClone.PNG)
 
 </pre>
 </details>
