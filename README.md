@@ -17,6 +17,8 @@
 
 ✅ [[2021-3-30] call()、apply()、bind()的用法是什么？](https://github.com/HJY-xh/plantTrees/issues/98)
 
+✅ [[2021-3-30] 如何手写一个 bind 方法？](https://github.com/HJY-xh/plantTrees/issues/99)
+
 ## 目录结构 📁
 
 ```

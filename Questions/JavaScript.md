@@ -445,13 +445,51 @@ String.padStart(targetLength, [padString]);
 
 call 、bind 、 apply 这三个函数的第一个参数都是 `this` 的指向对象，第二个参数差别就来了：
 
-- call 的参数是直接放进去的，第二第三第 n 个参数全都用逗号分隔，直接放到后面 `obj.myFun.call(th,'string1', ... ,'stringN' )`
+-   call 的参数是直接放进去的，第二第三第 n 个参数全都用逗号分隔，直接放到后面 `obj.myFun.call(th,'string1', ... ,'stringN' )`
 
-- apply 的所有参数都必须放在一个数组里面传进去 `obj.myFun.apply(th,['string1', ..., 'stringN' ])`
+-   apply 的所有参数都必须放在一个数组里面传进去 `obj.myFun.apply(th,['string1', ..., 'stringN' ])`
 
-- bind 除了返回是`函数`以外，它的参数和 call 一样
+-   bind 除了返回是`函数`以外，它的参数和 call 一样
 
 当然，三者的参数不限定是 string 类型，允许是各种类型，包括函数 、 object 等等.
+
+</pre>
+</details>
+
+[19.[2021-3-30] 如何手写一个 bind 方法？](https://github.com/HJY-xh/plantTrees/issues/99)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+代码如下：
+
+```
+Function.prototype.bind1 = function(){
+    //将参数拆解为数组
+    const args = Array.prototype.slice.call(arguments);
+
+    //获取this（数组第一项）
+    const t = args.shift();
+
+    //fn1.bind(...) 中的fn1
+    const self = this;
+
+    return function(){
+        return self.apply(t, args);
+    }
+}
+
+function fn1(a, b, c){
+    console.log(this);
+    console.log(a, b, c);
+    return 'this is fn1'
+}
+
+const fn2 = fn1.bind1({x: 100}, 10, 20, 30);
+const res = fn2();
+console.log(res);
+```
 
 </pre>
 </details>
