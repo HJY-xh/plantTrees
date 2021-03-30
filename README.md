@@ -15,6 +15,8 @@
 
 ## Day 39:
 
+✅ [[2021-3-30] 前端开发中有哪些内存泄露的情况？](https://github.com/HJY-xh/plantTrees/issues/101)
+
 ✅ [[2021-3-30] CSS 优先级有哪些注意事项？](https://github.com/HJY-xh/plantTrees/issues/100)
 
 ✅ [[2021-3-30] call()、apply()、bind()的用法是什么？](https://github.com/HJY-xh/plantTrees/issues/98)
