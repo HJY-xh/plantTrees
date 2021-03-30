@@ -434,3 +434,24 @@ String.padStart(targetLength, [padString]);
 
 </pre>
 </details>
+
+[18.[2021-3-30] call()、apply()、bind()的用法是什么？](https://github.com/HJY-xh/plantTrees/issues/98)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+**call()、apply()、bind() 都是用来重定义 this 对象的**
+
+call 、bind 、 apply 这三个函数的第一个参数都是 `this` 的指向对象，第二个参数差别就来了：
+
+-   call 的参数是直接放进去的，第二第三第 n 个参数全都用逗号分隔，直接放到后面 `obj.myFun.call(th,'string1', ... ,'stringN' )`
+
+-   apply 的所有参数都必须放在一个数组里面传进去 `obj.myFun.apply(th,['string1', ..., 'stringN' ])`
+
+-   bind 除了返回是`函数`以外，它的参数和 call 一样
+
+当然，三者的参数不限定是 string 类型，允许是各种类型，包括函数 、 object 等等.
+
+</pre>
+</details>
