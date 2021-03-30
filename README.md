@@ -15,6 +15,8 @@
 
 ## Day 39:
 
+✅ [[2021-3-30] CSS 优先级有哪些注意事项？](https://github.com/HJY-xh/plantTrees/issues/100)
+
 ✅ [[2021-3-30] call()、apply()、bind()的用法是什么？](https://github.com/HJY-xh/plantTrees/issues/98)
 
 ✅ [[2021-3-30] 如何手写一个 bind 方法？](https://github.com/HJY-xh/plantTrees/issues/99)

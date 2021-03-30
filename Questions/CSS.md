@@ -408,3 +408,17 @@ flex-basis: auto; // 设置了宽度跟宽度走，没设置宽度跟内容实�
 
 </pre>
 </details>
+
+[19.[2021-3-30] CSS 优先级有哪些注意事项？](https://github.com/HJY-xh/plantTrees/issues/100)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   每个选择器都有权值，权值越大越优先
+-   继承的样式优先级低于自身指定样式
+-   ！important 优先级最高 js 也无法修改
+-   权值相同时，靠近元素的样式优先级高 顺序为内联样式表（标签内部）> 内部样式表（当前文件中）> 外部样式表（外部文件中）
+
+</pre>
+</details>
