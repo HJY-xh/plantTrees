@@ -220,3 +220,44 @@ Etag 是服务器自动生成或者由开发者生成的对应资源在服务器
 
 </pre>
 </details>
+
+[12.[2021-3-31] 如何手写一个简易的 ajax 请求？](https://github.com/HJY-xh/plantTrees/issues/104)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+代码如下：
+
+    ```
+    function ajax(url){
+        const p = new Promise((resolve, reject) => {
+            //创建ajax对象并实例化
+            const xhr = new XMLHttpRequest()
+            xhr.open('GET', url, true)
+            //readystate是xhr对象中的属性，用来获取ajax状态码 0 1 2 3 4
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState === 4){
+                    if(xhr.status === 200){
+                        resolve(
+                            JSON.parse(xhr.responseText)
+                        )
+                    }else if(xhr.status === 404){
+                        reject(new Error('404'))
+                    }
+                }
+            }
+            xhr.send(null)
+        })
+        return p
+    }
+    const url = '/data/data.json';
+    ajax(url).then(res => {
+        console.log(res);
+    }).catch(err => {
+        console.log(err);
+    })
+    ```
+
+</pre>
+</details>
