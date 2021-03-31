@@ -15,7 +15,7 @@
 
 ## Day 40:
 
-✅ [[2021-3-31] 如何手写一个简易的 ajax 请求？](https://github.com/HJY-xh/plantTrees/issues/106)
+✅ [[2021-3-31] 状态码的分类以及常见的几个状态码是什么？](https://github.com/HJY-xh/plantTrees/issues/106)
 
 ✅ [[2021-3-31] 如何理解 localStorage 和 sessionStorage？](https://github.com/HJY-xh/plantTrees/issues/105)
 
