@@ -13,15 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 39:
+## Day 40:
 
-✅ [[2021-3-30] 前端开发中有哪些内存泄露的情况？](https://github.com/HJY-xh/plantTrees/issues/101)
-
-✅ [[2021-3-30] CSS 优先级有哪些注意事项？](https://github.com/HJY-xh/plantTrees/issues/100)
-
-✅ [[2021-3-30] call()、apply()、bind()的用法是什么？](https://github.com/HJY-xh/plantTrees/issues/98)
-
-✅ [[2021-3-30] 如何手写一个 bind 方法？](https://github.com/HJY-xh/plantTrees/issues/99)
+✅ [[2021-3-31] 为什么需要 fiber](https://github.com/HJY-xh/plantTrees/issues/102)
 
 ## 目录结构 📁
 

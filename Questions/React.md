@@ -29,3 +29,14 @@ React 使用“双缓存”来完成 Fiber 树的构建与替换——对应着 
 
 </pre>
 </details>
+
+[3.[2021-3-31] 为什么需要 fiber](https://github.com/HJY-xh/plantTrees/issues/102)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+对于大型项目，组件树会很大，这个时候递归遍历的成本就会很高，会造成主线程被持续占用，结果就是主线程上的布局、动画等周期性的任务就无法立即得到处理，造成视觉上的卡顿，影响用户体验。
+
+</pre>
+</details>
