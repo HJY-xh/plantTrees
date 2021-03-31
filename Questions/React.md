@@ -40,3 +40,29 @@ React 使用“双缓存”来完成 Fiber 树的构建与替换——对应着 
 
 </pre>
 </details>
+
+[4.[2021-3-31] Hook 是什么？](https://github.com/HJY-xh/plantTrees/issues/103)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+Hook是React 16.8 的新增特性。它可以让你在不编写class的情况下使用state一级其他的 Reacr 特性。
+- 拥抱函数式
+- 让函数组件有了状态和其他的React特性，可以替代class
+
+```javascript
+import React, { useState } from "react";
+function Example() {
+	// 声明⼀个新的叫做 “count” 的 state 变量
+	const [count, setCount] = useState(0);
+	return (
+		<div>
+			<p>You clicked {count} times</p>
+			<button onClick={() => setCount(count + 1)}>Click me</button>
+		</div>
+	);
+}
+```
+
+</pre>
+</details>
