@@ -261,3 +261,23 @@ Etag 是服务器自动生成或者由开发者生成的对应资源在服务器
 
 </pre>
 </details>
+
+[13.[2021-3-31] 如何理解 localStorage 和 sessionStorage？](https://github.com/HJY-xh/plantTrees/issues/105)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+**跟古老的 cookie 缓存方法相比：**
+
+-   HTML5 专门为存储而设计，最大可存 5M
+-   API 简单易用 setItem getItem
+-   不会随着 http 请求被发送出去
+
+**不同点：**
+
+-   localStorage 数据会永久存储，除非代码或手动删除
+-   sessionStorage 数据只存在于当前会话，浏览器关闭则清空
+-   一般用 localStorage 会更多一些
+</pre>
+</details>

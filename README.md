@@ -15,6 +15,8 @@
 
 ## Day 40:
 
+✅ [[2021-3-31] 如何理解 localStorage 和 sessionStorage？](https://github.com/HJY-xh/plantTrees/issues/105)
+
 ✅ [[2021-3-31] 如何手写一个简易的 ajax 请求？](https://github.com/HJY-xh/plantTrees/issues/104)
 
 ✅ [[2021-3-31] Hook 是什么？](https://github.com/HJY-xh/plantTrees/issues/103)
