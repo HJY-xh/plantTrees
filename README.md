@@ -15,6 +15,8 @@
 
 ## Day 41:
 
+✅ [[2021-4-1] 可选链式操作符是什么？](https://github.com/HJY-xh/plantTrees/issues/109)
+
 ✅ [[2021-4-1] 空值合并运算符是什么?](https://github.com/HJY-xh/plantTrees/issues/108)
 
 ✅ [[2021-4-1] 如何理解 http headers？](https://github.com/HJY-xh/plantTrees/issues/107)

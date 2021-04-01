@@ -517,3 +517,36 @@ console.log(baz); // 0
 
 </pre>
 </details>
+
+[21.[2021-4-1] 可选链式操作符是什么？](https://github.com/HJY-xh/plantTrees/issues/109)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+这是 ECMAScript 2020（ES2020）新增的语法。
+
+与[空值合并操作符](https://github.com/HJY-xh/plantTrees/issues/108)类似。
+
+可选链操作符( ?. )允许读取位于连接对象链深处的属性的值，而不必明确验证链中的每个引用是否有效。
+
+通过在点表示法之前添加一个问号，我们可以使值的路径的任何部分成为可选的，如果访问对象上不存在的属性上的属性，使用`.`操作符会直接报错。
+
+看个 🌰
+
+```javascript
+let person = {};
+
+// 如果person对象不包含profile会报错
+console.log(person.profile.name ?? "Anonymous"); // Uncaught TypeError: Cannot read property 'name' of undefined
+
+// 下面的路径是可选的，如果person对象不包含profile属性直接返回"Anonymous"
+console.log(person?.profile?.name ?? "Anonymous"); // Anonymous
+
+// 没有这个语法前，为了安全访问相关属性，我们是这么写的
+console.log((person && person.profile && person.profile.age) || 18);
+console.log(person?.profile?.age ?? 18); // 18
+```
+
+</pre>
+</details>
