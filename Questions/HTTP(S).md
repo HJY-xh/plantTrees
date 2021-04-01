@@ -308,3 +308,72 @@ Etag 是服务器自动生成或者由开发者生成的对应资源在服务器
 -   504 网关超时
 </pre>
 </details>
+
+[15.[2021-4-1] 如何理解 http headers？](https://github.com/HJY-xh/plantTrees/issues/107)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+**http headers** 分为常见的 `Request Headers` 和常见的 `Response Headers`
+
+### Request Headers
+
+-   `Accept` 浏览器可接收的数据格式
+-   `Accept-Encoding` 浏览器可接收的压缩算法，如 gzip
+-   `Accept-Language` 浏览器可接收的语言，如 zh-CN
+-   `Connection: keep-alive` 一次 TCP 连接重复使用
+-   `cookie`
+-   `Host` 域名
+-   `User-Agent` （简称 UA）浏览器信息
+-   `Content-type` 发送数据的格式，如 application/json
+
+### Response Headers
+
+-   `Content-type` 返回数据的格式，如 application/json
+-   `Content-length` 返回数据的大小，多少字节
+-   `Content-Encoding` 返回数据的压缩算法，如 gzip
+-   `Set-Cookie` server 端修改 cookie
+
+### 缓存相关的 headers
+
+-   ` Cache-Control``Expires `
+-   ` Last-Modified``If-Modified-Since `
+-   ` Etag``If-None-Match `
+
+### Cache-Control
+
+-   在 `Response Headers` 中
+-   控制强制缓存的逻辑
+-   例如 Cache-Control: max-age = 31536000 （单位是秒）
+
+### Cache-Control 的值
+
+-   `max-age`
+-   `no-cache` 不用强制缓存，让 server 端处理
+-   `no-store` 不用本地缓存，server 端也不处理
+
+### http 缓存-协商缓存
+
+-   服务器缓存策略
+-   服务器判断客户端资源，是否和服务端资源一样
+-   一致则返回 304，否则返回 200 和最新的资源
+
+### 资源标识
+
+-   在 Response Headers 中，有两种
+-   `Last-Modified` 资源的最后修改时间
+-   `Etag` 资源的唯一标识（一个字符串，可理解为指纹）
+
+### Last-Modified 和 Etag
+
+-   会优先使用 Etag
+-   Last-Modified 只能精确到秒级
+-   如果资源被重复生成，而内容不变，则 Etag 更准确
+
+### HTTP 缓存总结
+
+![imag](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_107/http-cache.png)
+
+</pre>
+</details>

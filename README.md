@@ -13,17 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 40:
+## Day 41:
 
-✅ [[2021-3-31] 状态码的分类以及常见的几个状态码是什么？](https://github.com/HJY-xh/plantTrees/issues/106)
-
-✅ [[2021-3-31] 如何理解 localStorage 和 sessionStorage？](https://github.com/HJY-xh/plantTrees/issues/105)
-
-✅ [[2021-3-31] 如何手写一个简易的 ajax 请求？](https://github.com/HJY-xh/plantTrees/issues/104)
-
-✅ [[2021-3-31] Hook 是什么？](https://github.com/HJY-xh/plantTrees/issues/103)
-
-✅ [[2021-3-31] 为什么需要 fiber](https://github.com/HJY-xh/plantTrees/issues/102)
+✅ [[2021-4-1] 如何理解 http headers？](https://github.com/HJY-xh/plantTrees/issues/107)
 
 ## 目录结构 📁
 
