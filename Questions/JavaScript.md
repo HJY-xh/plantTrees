@@ -493,3 +493,27 @@ console.log(res);
 
 </pre>
 </details>
+
+[20.[2021-4-1] 空值合并运算符是什么?](https://github.com/HJY-xh/plantTrees/issues/108)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+这是 ECMAScript 2020（ES2020）新增的语法。
+
+**空值合并运算符（??）**是一个逻辑运算符。当左侧操作数为 null 或 undefined 时，其返回右侧的操作数。否则返回左侧的操作数。
+与逻辑或（||）操作符不同，逻辑或会在左操作数为 假值 时返回右侧操作数。也就是说，如果你使用 || 来为某些变量设置默认的值时，你可能会遇到意料之外的行为。比如为假值（例如，'' 或 0）时。
+
+看个 🌰
+
+```javascript
+const foo = null ?? "default string";
+console.log(foo); // "default string"
+
+const baz = 0 ?? 42;
+console.log(baz); // 0
+```
+
+</pre>
+</details>
