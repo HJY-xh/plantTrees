@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 41:
+## Day 42:
 
-✅ [[2021-4-1] 可选链式操作符是什么？](https://github.com/HJY-xh/plantTrees/issues/109)
-
-✅ [[2021-4-1] 空值合并运算符是什么?](https://github.com/HJY-xh/plantTrees/issues/108)
-
-✅ [[2021-4-1] 如何理解 http headers？](https://github.com/HJY-xh/plantTrees/issues/107)
+✅ [[2021-4-2] 如何准确的检测某个数据的数据类型？](https://github.com/HJY-xh/plantTrees/issues/110)
 
 ## 目录结构 📁
 

@@ -494,7 +494,27 @@ console.log(res);
 </pre>
 </details>
 
-[20.[2021-4-1] 空值合并运算符是什么?](https://github.com/HJY-xh/plantTrees/issues/108)
+[20.[2021-3-31] 如何理解 localStorage 和 sessionStorage？](https://github.com/HJY-xh/plantTrees/issues/105)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+**跟古老的 cookie 缓存方法相比：**
+
+-   HTML5 专门为存储而设计，最大可存 5M
+-   API 简单易用 setItem getItem
+-   不会随着 http 请求被发送出去
+
+**不同点：**
+
+-   localStorage 数据会永久存储，除非代码或手动删除
+-   sessionStorage 数据只存在于当前会话，浏览器关闭则清空
+-   一般用 localStorage 会更多一些
+</pre>
+</details>
+
+[21.[2021-4-1] 空值合并运算符是什么?](https://github.com/HJY-xh/plantTrees/issues/108)
 
 <details>
 <summary>展开查看</summary>
@@ -521,7 +541,7 @@ console.log(baz); // 0
 </pre>
 </details>
 
-[21.[2021-4-1] 可选链式操作符是什么？](https://github.com/HJY-xh/plantTrees/issues/109)
+[22.[2021-4-1] 可选链式操作符是什么？](https://github.com/HJY-xh/plantTrees/issues/109)
 
 <details>
 <summary>展开查看</summary>
@@ -550,6 +570,37 @@ console.log(person?.profile?.name ?? "Anonymous"); // Anonymous
 console.log((person && person.profile && person.profile.age) || 18);
 console.log(person?.profile?.age ?? 18); // 18
 ```
+
+</pre>
+</details>
+
+[23.[2021-4-2] 如何准确的检测某个数据的数据类型？](https://github.com/HJY-xh/plantTrees/issues/110)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+说到检测数据类型，你一定会想到**typeof**和**instanceof**
+
+### typeof
+
+-   typeof 返回值是一个字符串，该字符串说明运算数的类型，结果为 number、boolean、string、function、**object（Null、数组、对象）**、undefined
+-   缺点是，可检测基本数据类型，但是遇到引用类型（数组、对象等）只能显示为 object
+
+### instanceof
+
+-   instanceof 返回值为 boolean，true 或 false
+-   instanceof 是用来判断 A 是否为 B 的实例对象，检测的是原型
+
+### 开发中常用的检测数据类型方法
+
+Object.prototype.toString.call("1") //string
+Object.prototype.toString.call([]) //Array
+Object.prototype.toString.call(Null) //Null
+Object.prototype.toString.call({}) //object
+...
+...
+...
 
 </pre>
 </details>
