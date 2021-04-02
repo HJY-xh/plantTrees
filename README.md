@@ -15,6 +15,8 @@
 
 ## Day 42:
 
+✅ [[2021-4-2] Promise.allSettled()的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/111)
+
 ✅ [[2021-4-2] 如何准确的检测某个数据的数据类型？](https://github.com/HJY-xh/plantTrees/issues/110)
 
 ## 目录结构 📁

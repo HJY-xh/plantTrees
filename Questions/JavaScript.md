@@ -604,3 +604,35 @@ Object.prototype.toString.call({}) //object
 
 </pre>
 </details>
+
+[24.[2021-4-2] Promise.allSettled()的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/111)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+这是 ES2020 新特性之一。
+
+该`Promise.allSettled()`方法返回一个在所有给定的`Promise`都已经`fulfilled`或`rejected`后的`Promise`，并带有一个对象数组，每个对象表示对应的`Promise`结果。
+
+看个 🌰
+
+```javascript
+const p1 = new Promise((res, rej) => setTimeout(res, 1000));
+
+const p2 = new Promise((res, rej) => setTimeout(rej, 1000));
+
+const p3 = Promise.resolve(3);
+
+Promise.allSettled([p1, p2, p3]).then((data) => console.log(data));
+
+// output:
+// [
+//     { status: "fulfilled", value: undefined },
+//     { status: "rejected", reason: undefined },
+//     { status: "fulfilled", value: 3 },
+// ];
+```
+
+</pre>
+</details>
