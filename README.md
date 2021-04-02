@@ -15,6 +15,8 @@
 
 ## Day 42:
 
+✅ [[2021-4-2] 动态引入（Dynamic Import）是什么？](https://github.com/HJY-xh/plantTrees/issues/113)
+
 ✅ [[2021-4-2] ES2020 的 BigInt 特性是什么？](https://github.com/HJY-xh/plantTrees/issues/112)
 
 ✅ [[2021-4-2] Promise.allSettled()的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/111)

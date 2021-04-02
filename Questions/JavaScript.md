@@ -669,3 +669,37 @@ console.log(bigNum + 1n); // 100000000000000000000000000001n
 
 </pre>
 </details>
+
+[26.[2021-4-2] 动态引入（Dynamic Import）是什么？](https://github.com/HJY-xh/plantTrees/issues/113)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+如果你有一个工具函数文件，其中一些函数可能很少被使用，将他们完整导入可能只是浪费资源。现在我们可以使用async/await来动态地导入我们需要的依赖项。
+
+看个 🌰 以下代码运行在`Node`环境
+**math.js**
+
+```javascript
+const add = (x, y) => x + y;
+
+module.exports = {
+	add,
+};
+```
+
+**index.js**
+
+```javascript
+const doMath = async (num1, num2) => {
+	if (num1 && num2) {
+		const math = await import("./math.js");
+		console.log(math.add(num1, num2));
+	}
+};
+
+doMath(1, 2); // 3
+```
+
+</pre>
+</details>
