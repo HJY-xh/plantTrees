@@ -636,3 +636,36 @@ Promise.allSettled([p1, p2, p3]).then((data) => console.log(data));
 
 </pre>
 </details>
+
+[25.[2021-4-2] ES2020 的 BigInt 特性是什么？](https://github.com/HJY-xh/plantTrees/issues/112)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+JavaScript能处理的最大数字是2的53次方，我们可以使用Number的`MAX_SAFE_INTEGER`属性得到这个值。
+看个🌰
+```javascript
+const max = Number.MAX_SAFE_INTEGER;
+console.log(max); // 9007199254740991
+```
+
+如果超过了这个安全范围，就会出现一些错误情况。
+看个 🌰
+
+```javascript
+console.log(max + 1); // 9007199254740992
+console.log(max + 2); // 9007199254740992
+console.log(max + 3); // 9007199254740994
+console.log(Math.pow(2, 53) == Math.pow(2, 53) + 1); // true
+```
+
+我们可以使用新的 BigInt 数据类型来解决这个问题。通过把字母 n 放在末尾，我们可以开始使用并与大得离谱的数字进行交互。我们无法将标准数字与 BigInt 数字混合在一起，因此任何数学运算都需要使用 BigInt 来完成。
+看个 🌰
+
+```javascript
+const bigNum = 100000000000000000000000000000n;
+console.log(bigNum + 1n); // 100000000000000000000000000001n
+```
+
+</pre>
+</details>
