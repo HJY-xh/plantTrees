@@ -17,7 +17,7 @@
 
 ✅ [[2021-4-3] CSRF 攻击攻击过程是什么样的？](https://github.com/HJY-xh/plantTrees/issues/116)
 
-✅ [[2021-4-3] CSRF 攻击攻击原理是什么样的？](https://github.com/HJY-xh/plantTrees/issues/115)
+✅ [[2021-4-3] CSRF 攻击攻击原理是什么？](https://github.com/HJY-xh/plantTrees/issues/115)
 
 ## 目录结构 📁
 
