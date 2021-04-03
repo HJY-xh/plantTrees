@@ -13,15 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 42:
+## Day 43:
 
-✅ [[2021-4-2] 动态引入（Dynamic Import）是什么？](https://github.com/HJY-xh/plantTrees/issues/113)
-
-✅ [[2021-4-2] ES2020 的 BigInt 特性是什么？](https://github.com/HJY-xh/plantTrees/issues/112)
-
-✅ [[2021-4-2] Promise.allSettled()的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/111)
-
-✅ [[2021-4-2] 如何准确的检测某个数据的数据类型？](https://github.com/HJY-xh/plantTrees/issues/110)
+✅ [[2021-4-3] CSRF 攻击攻击原理是什么样的？](https://github.com/HJY-xh/plantTrees/issues/115)
 
 ## 目录结构 📁
 
