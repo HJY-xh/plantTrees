@@ -15,6 +15,8 @@
 
 ## Day 43:
 
+✅ [[2021-4-3] 如何防范 CSRF](https://github.com/HJY-xh/plantTrees/issues/117)
+
 ✅ [[2021-4-3] CSRF 攻击攻击过程是什么样的？](https://github.com/HJY-xh/plantTrees/issues/116)
 
 ✅ [[2021-4-3] CSRF 攻击攻击原理是什么？](https://github.com/HJY-xh/plantTrees/issues/115)
