@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 43:
+## Day 44:
 
-✅ [[2021-4-3] 如何防范 CSRF?](https://github.com/HJY-xh/plantTrees/issues/117)
-
-✅ [[2021-4-3] CSRF 攻击攻击过程是什么样的？](https://github.com/HJY-xh/plantTrees/issues/116)
-
-✅ [[2021-4-3] CSRF 攻击攻击原理是什么？](https://github.com/HJY-xh/plantTrees/issues/115)
+✅ [[2021-4-4] SPA 单页应用的优缺点是什么？](https://github.com/HJY-xh/plantTrees/issues/118)
 
 ## 目录结构 📁
 
