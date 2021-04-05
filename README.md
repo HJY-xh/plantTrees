@@ -15,6 +15,8 @@
 
 ## Day 45:
 
+✅ [[2021-4-5] 什么情况下对象会出现在老生代空间中？](https://github.com/HJY-xh/plantTrees/issues/121)
+
 ✅ [[2021-4-5] 什么是新生代算法？](https://github.com/HJY-xh/plantTrees/issues/120)
 
 ✅ [[2021-4-5] V8 下的垃圾回收机制有哪些？](https://github.com/HJY-xh/plantTrees/issues/119)
