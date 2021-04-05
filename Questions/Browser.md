@@ -168,3 +168,48 @@ V8 实现了准确式 GC，GC 算法采用了分代式垃圾回收机制。因�
 
 </pre>
 </details>
+
+[13.[2021-4-5] 老生代算法是什么？](https://github.com/HJY-xh/plantTrees/issues/122)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+老生代中的对象一般存活时间较长且数量也多，使用了两个算法，分别是标记清除算法和标记压缩算法。
+
+老生代中的空间很复杂，有如下几个空间
+
+```javascript
+enum AllocationSpace {
+  // TODO(v8:7464): Actually map this space's memory as read-only.
+  RO_SPACE,    // 不变的对象空间
+  NEW_SPACE,   // 新生代用于 GC 复制算法的空间
+  OLD_SPACE,   // 老生代常驻对象空间
+  CODE_SPACE,  // 老生代代码对象空间
+  MAP_SPACE,   // 老生代 map 对象
+  LO_SPACE,    // 老生代大空间对象
+  NEW_LO_SPACE,  // 新生代大空间对象
+
+  FIRST_SPACE = RO_SPACE,
+  LAST_SPACE = NEW_LO_SPACE,
+  FIRST_GROWABLE_PAGED_SPACE = OLD_SPACE,
+  LAST_GROWABLE_PAGED_SPACE = MAP_SPACE
+}
+```
+
+在老生代中，以下情况会先启动标记清除算法：
+
+-   空间中对象超过一定限制
+-   空间不够新生代对象转移到老生代中
+-   某一个空间没有分块的时候
+
+在这个阶段中，会遍历堆中所有的对象，然后标记活的对象，在标记完成后，销毁所有没有被标记的对象。在标记大型堆内存时，可能需要几百毫秒才能完成一次标记。这就会导致一些性能上的问题。
+
+为了解决这个问题，2011 年，V8 从 stop-the-world 标记切换到增量标志。在增量标记期间，GC 将标记工作分解为更小的模块，可以让 JS 应用逻辑在模块间隙执行一会，从而不至于让应用出现停顿情况。
+
+但在 2018 年，GC 技术又有了一个重大突破，这项技术名为并发标记。该技术可以让 GC 扫描和标记对象时，同时允许 JS 运行，你可以点击 [该博客](https://v8.dev/blog/concurrent-marking) 详细阅读。
+
+清除对象后会造成堆内存出现碎片的情况，当碎片超过一定限制后会启动压缩算法。在压缩过程中，将活的对象像一端移动，直到所有对象都移动完成然后清理掉不需要的内存。
+
+</pre>
+</details>
