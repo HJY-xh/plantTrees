@@ -132,3 +132,14 @@ innerHTML 的内容只是替代指定元素的内容，只会重写页面中的�
 
 </pre>
 </details>
+
+[10.[2021-4-5] V8 下的垃圾回收机制有哪些？](https://github.com/HJY-xh/plantTrees/issues/119)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+V8 实现了准确式 GC，GC 算法采用了分代式垃圾回收机制。因此，V8 将内存（堆）分为新生代和老生代两部分。
+
+</pre>
+</details>
