@@ -357,3 +357,31 @@ Etag 是服务器自动生成或者由开发者生成的对应资源在服务器
 
 </pre>
 </details>
+
+[15.[2021-4-6] HTTP/1.1 中的队头阻塞有哪些解决方法？](https://github.com/HJY-xh/plantTrees/issues/123)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+虽然近几年来网络带宽增长非常快，然而我们却并没有看到网络延迟有对应程度的降低。网络延迟问题主要由于队头阻塞(Head-Of-Line Blocking),导致带宽无法被充分利用。
+
+队头阻塞是指当顺序发送的请求序列中的一个请求因为某种原因被阻塞时，在后面排队的所有请求也一并被阻塞，会导致客户端迟迟收不到数据。
+
+针对队头阻塞,人们尝试过以下办法来解决:
+
+-   将同一页面的资源分散到不同域名下，提升连接上限。 Chrome 有个机制，对于同一个域名，默认允许同时建立 6 个 TCP 持久连接，使用持久连接时，虽然能公用一个 TCP 管道，但是在一个管道中同一时刻只能处理一个请求，在当前的请求没有结束之前，其他的请求只能处于阻塞状态。另外如果在同一个域名下同时有 10 个请求发生，那么其中 4 个请求会进入排队等待状态，直至进行中的请求完成。
+-   Spriting 合并多张小图为一张大图,再用 JavaScript 或者 CSS 将小图重新“切割”出来的技术。
+-   内联(Inlining)是另外一种防止发送很多小图请求的技巧，将图片的原始数据嵌入在 CSS 文件里面的 URL 里，减少网络请求次数。
+    ```javascript
+    .icon1 {
+        background: url(data:image/png;base64,<data>) no-repeat;
+      }
+    .icon2 {
+        background: url(data:image/png;base64,<data>) no-repeat;
+      }
+    ```
+-   拼接(Concatenation)将多个体积较小的 JavaScript 使用 webpack 等工具打包成 1 个体积更大的 JavaScript 文件,但如果其中 1 个文件的改动就会导致大量数据被重新下载多个文件。
+
+</pre>
+</details>
