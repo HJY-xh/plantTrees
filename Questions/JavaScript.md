@@ -703,3 +703,24 @@ doMath(1, 2); // 3
 
 </pre>
 </details>
+
+[27.[2021-4-7] 有什么常用的阻止默认行为的方式？](https://github.com/HJY-xh/plantTrees/issues/124)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+### 最常用
+
+`var input = document.getElementById("submit"); input.onclick = function(e) { e.preventDefault(); }`
+
+### 低版本浏览器
+
+`input.onclick = function(e) { e.returnValue; }`
+
+### 拓展
+
+`input.onclick = function(e) { return false; //可阻止默认行为，但是后面的代码不再执行，而且只限于传统事件注册方式 }`
+
+</pre>
+</details>
