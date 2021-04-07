@@ -15,6 +15,8 @@
 
 ## Day 47:
 
+✅ [[2021-4-7] HTTP 的无状态怎么理解？](https://github.com/HJY-xh/plantTrees/issues/125)
+
 ✅ [[2021-4-7] 有什么常用的阻止默认行为的方式？](https://github.com/HJY-xh/plantTrees/issues/124)
 
 ## 目录结构 📁
