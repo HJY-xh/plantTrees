@@ -724,3 +724,24 @@ doMath(1, 2); // 3
 
 </pre>
 </details>
+
+[28.[2021-4-8] JavaScript 和 ECMAScript 的关系是什么？](https://github.com/HJY-xh/plantTrees/issues/127)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+JavaScript 起源于 1995 年 Netscape 为自家游览器创造的脚本语言 LiveScript。后来因为 Sun 公司的 Java 语言兴起，Netscape 为了沾热度将 LiveScript 改名为 JavaScript，但其实 Java 和 JavaScript 没有一点关系。
+
+1997 年 Netscape 将 JavaScript 规范提交到 Ecma International（www.ecma-international.org，简称EI），诞生了ECMAScript （简称“ES”）第 1 个版本。
+
+随后在 1999 年诞生了十分稳定的 ES 3，也就是 2009 年 12 月之前前端工程师们最广泛使用的版本。
+
+在 2009 年 12 月诞生了 ES 5。你可能会问 ES 4 呢，抱歉，版本 4 因为太激进，EI 委员会成员之间的意见不一，最后胎死腹中，改由更加平滑温和的版本 5 继承版本 4 的一些新特性和功能。
+
+EI 于 2015 年 6 月发布了 ES 6，也就是我们今天广泛使用的版本。这之后每年 6 月发布一个极小更新的 ES 版本，比如 2016 年 6 月发布的 ES 2016 叫做 ES 7。
+
+综上可见，JavaScript 是 ECMAScript 规范的一种实现。
+
+</pre>
+</details>

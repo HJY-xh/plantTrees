@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 47:
+## Day 48:
 
-✅ [[2021-4-7] HTTP/1.1 中明文传输带来的不安全性怎么理解？](https://github.com/HJY-xh/plantTrees/issues/126)
-
-✅ [[2021-4-7] HTTP 的无状态怎么理解？](https://github.com/HJY-xh/plantTrees/issues/125)
-
-✅ [[2021-4-7] 有什么常用的阻止默认行为的方式？](https://github.com/HJY-xh/plantTrees/issues/124)
+✅ [[2021-4-8] JavaScript 和 ECMAScript 的关系是什么？](https://github.com/HJY-xh/plantTrees/issues/127)
 
 ## 目录结构 📁
 
