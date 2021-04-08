@@ -745,3 +745,33 @@ EI 于 2015 年 6 月发布了 ES 6，也就是我们今天广泛使用的版本
 
 </pre>
 </details>
+
+[29.[2021-4-8] ES7 中的 Array.prototype.includes 作用是什么？](https://github.com/HJY-xh/plantTrees/issues/128)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+`includes`是一个 Array 上很有用的方法，用于快速查找数组中是否包含某个元素，包括 NaN（`indexOf`不能查到 NaN)。
+
+```javascript
+(() => {
+	let arr = [1, 2, 3, NaN];
+
+	if (arr.includes(2)) {
+		//查找2是否存在于arr数组中
+		console.log("找到了!"); //>> 找到了！
+	}
+	if (!arr.includes(2, 3)) {
+		//第二个参数3表示数组下标为3的项，也即第4项开始查找
+		console.warn("不存在!"); //>> 不存在！
+	}
+
+	//下面两句说明incluedes和indexOf的区别
+	console.log(arr.includes(NaN)); //true
+	console.log(arr.indexOf(NaN) != -1); //false
+})();
+```
+
+</pre>
+</details>

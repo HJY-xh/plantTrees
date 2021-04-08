@@ -15,6 +15,8 @@
 
 ## Day 48:
 
+✅ [[2021-4-8] ES7 中的 Array.prototype.includes 作用是什么？](https://github.com/HJY-xh/plantTrees/issues/128)
+
 ✅ [[2021-4-8] JavaScript 和 ECMAScript 的关系是什么？](https://github.com/HJY-xh/plantTrees/issues/127)
 
 ## 目录结构 📁
