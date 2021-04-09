@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 48:
+## Day 49:
 
-✅ [[2021-4-8] ES7 有哪些新特性？](https://github.com/HJY-xh/plantTrees/issues/129)
-
-✅ [[2021-4-8] ES7 中的 Array.prototype.includes 作用是什么？](https://github.com/HJY-xh/plantTrees/issues/128)
-
-✅ [[2021-4-8] JavaScript 和 ECMAScript 的关系是什么？](https://github.com/HJY-xh/plantTrees/issues/127)
+✅ [[2021-4-9] BFC 是什么？](https://github.com/HJY-xh/plantTrees/issues/130)
 
 ## 目录结构 📁
 

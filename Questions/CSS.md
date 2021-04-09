@@ -422,3 +422,52 @@ flex-basis: auto; // 设置了宽度跟宽度走，没设置宽度跟内容实�
 
 </pre>
 </details>
+
+[20.[2021-4-9] BFC 是什么？](https://github.com/HJY-xh/plantTrees/issues/130)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+> BFC 是 Block Formatting Context，也就是块级格式化上下文，是用于布局块级盒子的一块渲染区域。
+
+简单来说，BFC 实际上是一块区域，在这块区域中遵循一定的规则，有一套独特的渲染规则。
+
+文档流其实分为普通流、定位流和浮动流和三种，普通流其实就是指 BFC 中的 FC，也即格式化上下文。
+
+-   普通流：元素按照其在 HTML 中的先后位置从上到下、从左到右布局，在这个过程中，行内元素水平排列，直到当行被占满然后换行，块级元素则会被渲染为完整的一个新行。
+
+-   格式化上下文：页面中的一块渲染区域，有一套渲染规则，决定了其子元素如何布局，以及和其他元素之间的关系和作用。
+
+使用 BFC 的几个注意点：
+
+-   BFC 区域内的元素外边距会发生重叠
+-   BFC 区域内的元素不会与浮动元素重叠
+-   计算 BFC 区域的高度时，浮动元素也参与计算
+-   BFC 区域就相当于一个容器，内部的元素不会影响到外部，同样外部的元素也不会影响到内部
+
+BFC 的应用场景：
+
+-   清除浮动：父元素设置`overflow: hidden`触发 BFC 实现清除浮动，防止父元素高度塌陷，后面的元素被覆盖，实现文字环绕等等。
+-   消除相邻元素垂直方向的边距重叠：第二个子元素套一层，并设置 overflow: hidden，构建 BFC 使其不影响外部元素。
+-   消除父子元素边距重叠，父元素设置`overflow: hidden`
+
+下列方式会创建块格式化上下文：
+
+-   根元素（）
+-   浮动元素（元素的 float 不是 none）
+-   绝对定位元素（元素的 position 为 absolute 或 fixed）
+-   行内块元素（元素的 display 为 inline-block）
+-   表格单元格（元素的 display 为 table-cell，HTML 表格单元格默认为该值）
+-   表格标题（元素的 display 为 table-caption，HTML 表格标题默认为该值）
+-   匿名表格单元格元素（元素的 display 为 table、table-row、 table-row-group、table-header-group、table-footer-group（分别是 HTML table、row、tbody、thead、tfoot 的默认属性）或 inline-table）
+-   overflow 计算值(Computed)不为 visible 的块元素
+-   display 值为 flow-root 的元素
+-   contain 值为 layout、content 或 paint 的元素
+-   弹性元素（display 为 flex 或 inline-flex 元素的直接子元素）
+-   网格元素（display 为 grid 或 inline-grid 元素的直接子元素）
+-   多列容器（元素的 column-count 或 column-width (en-US) 不为 auto，包括 column-count 为 1）
+-   column-span 为 all 的元素始终会创建一个新的 BFC，即使该元素没有包裹在一个多列容器中
+
+</pre>
+</details>
