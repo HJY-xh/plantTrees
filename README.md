@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 49:
+## Day 50:
 
-✅ [[2021-4-9] 浮动元素为什么会使高度塌陷?](https://github.com/HJY-xh/plantTrees/issues/131)
-
-✅ [[2021-4-9] BFC 是什么？](https://github.com/HJY-xh/plantTrees/issues/130)
+✅ [[2021-4-10] 为什么要预解析 DNS？](https://github.com/HJY-xh/plantTrees/issues/133)
 
 ## 目录结构 📁
 
