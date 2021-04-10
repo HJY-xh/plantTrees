@@ -15,6 +15,8 @@
 
 ## Day 50:
 
+✅ [[2021-4-10] 如何开启 DNS 预解析？](https://github.com/HJY-xh/plantTrees/issues/132)
+
 ✅ [[2021-4-10] 为什么要预解析 DNS？](https://github.com/HJY-xh/plantTrees/issues/133)
 
 ## 目录结构 📁
