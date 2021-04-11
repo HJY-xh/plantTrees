@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 50:
+## Day 51:
 
-✅ [[2021-4-10] 如何开启 DNS 预解析？](https://github.com/HJY-xh/plantTrees/issues/132)
-
-✅ [[2021-4-10] 为什么要预解析 DNS？](https://github.com/HJY-xh/plantTrees/issues/133)
+✅ [[2021-4-11] GET 和 POST 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/134)
 
 ## 目录结构 📁
 

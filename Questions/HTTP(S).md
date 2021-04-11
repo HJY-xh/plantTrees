@@ -419,3 +419,22 @@ HTTP/1.1 在传输数据时，所有传输的内容都是明文，客户端和�
 
 </pre>
 </details>
+
+[18.[2021-4-11] GET 和 POST 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/134)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+首先最直观的是语义上的区别。
+
+而后又有这样一些具体的差别:
+
+-   从缓存的角度，GET 请求会被浏览器主动缓存下来，留下历史记录，而 POST 默认不会。
+-   从编码的角度，GET 只能进行 URL 编码，只能接收 ASCII 字符，而 POST 没有限制。
+-   从参数的角度，GET 一般放在 URL 中，因此不安全，POST 放在请求体中，更适合传输敏感信息。
+-   从幂等性的角度，GET 是幂等的，而 POST 不是。(幂等表示执行相同的操作，结果也是相同的)
+-   从 TCP 的角度，GET 请求会把请求报文一次性发出去，而 POST 会分为两个 TCP 数据包，首先发 header 部分，如果服务器响应 100(continue)， 然后发 body 部分。(火狐浏览器除外，它的 POST 请求只发一个 TCP 包)
+
+</pre>
+</details>
