@@ -15,6 +15,8 @@
 
 ## Day 52:
 
+✅ [[2021-4-12] 生命周期 componentWillUpdate 为什么不安全？](https://github.com/HJY-xh/plantTrees/issues/137)
+
 ✅ [[2021-4-12] 生命周期 componentWillReceiveProps 为什么不安全？](https://github.com/HJY-xh/plantTrees/issues/136)
 
 ✅ [[2021-4-12] 生命周期 componentWillMount 为什么不安全？](https://github.com/HJY-xh/plantTrees/issues/135)

@@ -162,3 +162,45 @@ class Child extends React.Component{
 
 </pre>
 </details>
+
+[7.[2021-4-12] 生命周期 componentWillUpdate 为什么不安全？](https://github.com/HJY-xh/plantTrees/issues/137)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+componentWillUpdate生命周期在视图更新前触发。一般用于视图更新前保存一些数据方便视图更新完成后赋值。
+
+看个 🌰 ：列表加载更新后回到当前滚动条位置
+
+```javascript
+class ScrollingList extends React.Component {
+    listRef = null;
+    previousScrollOffset = null;
+    componentWillUpdate(nextProps, nextState) {
+        if (this.props.list.length < nextProps.list.length) {
+            this.previousScrollOffset = this.listRef.scrollHeight - this.listRef.scrollTop;
+        }
+    }
+    componentDidUpdate(prevProps, prevState) {
+        if (this.previousScrollOffset !== null) {
+            this.listRef.scrollTop = this.listRef.scrollHeight - this.previousScrollOffset;
+            this.previousScrollOffset = null;
+        }
+    }
+    render() {
+        return (
+            `<div>` {/* ...contents... */}`</div>`
+        );
+    }
+    setListRef = ref => {    this.listRef = ref;   };
+}
+```
+
+由于 componentWillUpdate 和 componentDidUpdate 这两个生命周期函数有一定的时间差（componentWillUpdate 后经过渲染、计算、再更新 DOM 元素，最后才调用 componentDidUpdate），如果这个时间段内用户刚好拉伸了浏览器高度，那 componentWillUpdate 计算的 previousScrollOffset 就不准确了。
+
+如果在 componentWillUpdate 进行 setState 操作，会出现多次调用只更新一次的问题，把 setState 放在 componentDidUpdate，能保证每次更新只调用一次。
+
+所以，react 官方建议把 componentWillUpdate 替换为 UNSAFE_componentWillUpdate。如果真的有以上例子的需求，可以使用新加入的一个周期函数 getSnapshotBeforeUpdate。
+
+</pre>
+</details>
