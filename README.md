@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 51:
+## Day 52:
 
-✅ [[2021-4-11] GET 和 POST 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/134)
+✅ [[2021-4-12] 生命周期 componentWillMount 为什么不安全？](https://github.com/HJY-xh/plantTrees/issues/135)
 
 ## 目录结构 📁
 

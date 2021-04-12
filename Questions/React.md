@@ -66,3 +66,41 @@ function Example() {
 
 </pre>
 </details>
+
+[5.[2021-4-12] 生命周期 componentWillMount 为什么不安全？](https://github.com/HJY-xh/plantTrees/issues/135)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+componentWillMount生命周期发生在首次渲染前，一般使用的小伙伴大多在这里初始化数据或异步获取外部数据赋值。初始化数据，react官方建议放在constructor里面。而异步获取外部数据，渲染并不会等待数据返回后再去渲染。
+
+看个 🌰 ：如下是安装时监听外部事件调度程序的组件示例
+
+```javascript
+class Example extends React.Component {
+	state = {
+		value: "",
+	};
+	componentWillMount() {
+		this.setState({
+			value: this.props.source.value,
+		});
+		this.props.source.subscribe(this.handleChange);
+	}
+	componentWillUnmount() {
+		this.props.source.unsubscribe(this.handleChange);
+	}
+	handleChange = (source) => {
+		this.setState({
+			value: source.value,
+		});
+	};
+}
+```
+
+试想一下，假如组件在第一次渲染的时候被中断，由于组件没有完成渲染，所以并不会执行 componentWillUnmount 生命周期（注：很多人经常认为 componentWillMount 和 componentWillUnmount 总是配对，但这并不是一定的。只有调用 componentDidMount 后，React 才能保证稍后调用 componentWillUnmount 进行清理）。因此 handleSubscriptionChange 还是会在数据返回成功后被执行，这时候 setState 由于组件已经被移除，就会导致内存泄漏。所以建议把异步获取外部数据写在 componentDidMount 生命周期里，这样就能保证 componentWillUnmount 生命周期会在组件移除的时候被执行，避免内存泄漏的风险。
+
+这里的 UNSAFE 并不是指安全性，而是表示使用这些生命周期的代码将更有可能在未来的 React 版本中存在缺陷，特别是一旦启用了异步渲染
+
+</pre>
+</details>
