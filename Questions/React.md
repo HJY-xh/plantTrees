@@ -104,3 +104,61 @@ class Example extends React.Component {
 
 </pre>
 </details>
+
+[6.[2021-4-12] 生命周期 componentWillReceiveProps 为什么不安全？](https://github.com/HJY-xh/plantTrees/issues/136)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+componentWillReceiveProps生命周期是在props更新时触发。一般用于props参数更新时同步更新state参数。但如果在componentWillReceiveProps生命周期直接调用父组件的某些有调用setState的函数，会导致程序死循环。
+
+看个 🌰 ：如下是子组件 componentWillReceiveProps 里调用父组件改变 state 的函数示例
+
+```javascript
+...
+class Parent extends React.Component{
+    constructor(){
+        super();
+        this.state={
+            list: [],
+            selectedData: {}
+        };
+    }
+
+    changeSelectData = selectedData => {
+        this.setState({
+            selectedData
+        });
+    }
+
+    render(){
+        return (
+            <Clild list={this.state.list} changeSelectData={this.changeSelectData}/>
+        );
+    }
+}
+
+...
+class Child extends React.Component{
+    constructor(){
+        super();
+        this.state={
+            list: []
+        };
+    }
+    componentWillReceiveProps(nextProps){
+        this.setState({
+            list: nextProps.list
+        })
+        nextProps.changeSelectData(nextProps.list[0]); //默认选择第一个
+    }
+    ...
+}
+```
+
+如上代码，在 Child 组件的 componentWillReceiveProps 里直接调用 Parent 组件的 changeSelectData 去更新 Parent 组件 state 的 selectedData 值。会触发 Parent 组件重新渲染，而 Parent 组件重新渲染会触发 Child 组件的 componentWillReceiveProps 生命周期函数执行。如此就会陷入死循环。导致程序崩溃。
+
+所以，React 官方把 componentWillReceiveProps 替换为 UNSAFE_componentWillReceiveProps，让小伙伴在使用这个生命周期的时候注意它会有缺陷，要注意避免，比如上面例子，Child 在 componentWillReceiveProps 调用 changeSelectData 时先判断 list 是否有更新再确定是否要调用，就可以避免死循环。
+
+</pre>
+</details>
