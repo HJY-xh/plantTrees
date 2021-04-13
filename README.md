@@ -15,6 +15,8 @@
 
 ## Day 53:
 
+✅ [[2021-4-13] EventEmitter 做了什么？](https://github.com/HJY-xh/plantTrees/issues/142)
+
 ✅ [[2021-4-13] ES8 中 Object.values() 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/141)
 
 ✅ [[2021-4-13] replace 和 replaceAll 的区别是什么?](https://github.com/HJY-xh/plantTrees/issues/140)
