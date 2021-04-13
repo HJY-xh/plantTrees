@@ -806,3 +806,30 @@ value.replaceAll(/-/g, ""); // 123456789
 
 </pre>
 </details>
+
+[31.[2021-4-13] ES8 中 Object.values() 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/141)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+`Object.values()`方法返回一个给定对象自身的所有可枚举属性值的数组，值的顺序与使用`for...in`循环的顺序相同 ( 区别在于 `for-in` 循环枚举原型链中的属性 )。
+看个 🌰 ：
+
+```javascript
+let obj = {
+	a: 1,
+	b: "哈哈哈哈",
+	c: false,
+};
+
+console.log(Object.values(obj)); // [ 1, '哈哈哈哈', false ]
+
+const vals = Object.keys(obj).map((key) => obj[key]);
+console.log(vals); // [ 1, '哈哈哈哈', false ]
+```
+
+从上面代码中可以看出`Object.values()`为我们省去了遍历 key，并根据这些 key 获取 value 的步骤。
+
+</pre>
+</details>
