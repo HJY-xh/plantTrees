@@ -484,3 +484,164 @@ BFC 的应用场景：
 
 </pre>
 </details>
+
+[22.[2021-4-13] CSS3 新增了哪些新特性？](https://github.com/HJY-xh/plantTrees/issues/139)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+### 一、选择器
+
+`CSS3` 中新增了一些选择器：
+
+![](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_139/640.png)
+
+### 二、新样式
+
+### **边框**
+
+`CSS3`新增了三个 边框属性，分别是：
+
+-   border-radius：创建圆角边框
+-   box-shadow：为元素添加阴影
+-   border-image：使用图片来绘制边框
+
+**box-shadow**
+
+设置元素阴影，设置属性如下：
+
+-   水平阴影
+-   垂直阴影
+-   模糊距离（虚实）
+-   阴影尺寸（影子大小）
+-   阴影颜色
+-   内/外阴影
+
+其中水平阴影和垂直阴影是必须设置的
+
+### **背景**
+
+新增了几个关于背景的属性，分别是`background-clip`、`background-origin`、`background-size`、`background-break`
+**background-clip**
+
+用于确定背景画区，有以下几种可能的属性：
+
+-   background-clip: border-box; 背景从 border 开始显示
+-   background-clip: padding-box; 背景从 padding 开始显示
+-   background-clip: content-box; 背景从 cotent 区域开始显示
+-   background-clip: no-clip; 默认属性，等同于 border-box
+
+通常情况，背景都是覆盖整个元素的，利用这个属性可以设定背景颜色或图片的覆盖范围
+
+**background-origin**
+
+当我们设置背景图片时，图片是会以左上角对齐，但是是以`border`的左上角对齐还是以`padding`的左上角或者`content`的左上角对齐? `border-origin`正是用来设置这个的：
+
+-   background-origin: border-box; 从 border 开始计算 background-position
+-   background-origin: padding-box; 从 padding 开始计算 background-position
+-   background-origin: content-box; 从 content 开始计算 background-position
+
+**background-size**
+`background-size`属性常用来调整背景图片的大小，主要用于设定图片本身。有以下可能的属性：
+
+-   background-size: contain; 缩小图片以适合元素（维持像素长宽比）
+-   background-size: cover; 扩展元素以填补元素（维持像素长宽比）
+-   background-size: 100px 100px; 缩小图片至指定的大小
+-   background-size: 50% 100%; 缩小图片至指定的大小，百分比是相对包含元素的尺寸
+
+**background-break**
+
+元素可以被分成几个独立的盒子（如使内联元素 span 跨越多行），`background-break` 属性用来控制背景怎样在这些不同的盒子中显示
+
+-   background-break: continuous; 默认值。忽略盒之间的距离（也就是像元素没有分成多个盒子，依然是一个整体一样）
+-   background-break: bounding-box; 把盒之间的距离计算在内；
+-   background-break: each-box; 为每个盒子单独重绘背景
+
+### **文字**
+
+**word-wrap**
+
+语法：`word-wrap: normal | break-word`
+
+-   normal：使用浏览器默认的换行
+-   break-all：允许在单词内换行
+
+**text-overflow**
+`text-overflow`设置或检索当当前行超过指定容器的边界时如何显示，属性有两个值选择：
+
+-   clip：修剪文本
+-   ellipsis：显示省略符号来代表被修剪的文本
+
+**text-shadow**
+`text-shadow`可向文本应用阴影。能够规定水平阴影、垂直阴影、模糊距离，以及阴影的颜色
+
+**text-decoration**
+
+CSS3 里面开始支持对文字的更深层次的渲染，具体有三个属性可供设置：
+
+-   text-fill-color：设置文字内部填充颜色
+-   text-stroke-color：设置文字边界填充颜色
+-   text-stroke-width：设置文字边界宽度
+
+### **颜色**
+
+`CSS3`新增了新的颜色表示方式`rgba`与`hsla`
+
+-   rgba 分为两部分，rgb 为颜色值，a 为透明度
+-   hsla 分为四部分，h 为色相，s 为饱和度，l 为宽度，a 为透明度
+
+### 三、transition 过渡
+
+`transition`属性可以被指定为一个或多个`CSS`属性的过渡效果，多个属性之间用逗号进行分隔，必须规定两项内容：
+
+-   过渡效果
+-   持续时间
+
+语法如下：
+
+transition: css 属性，花费时间，效果曲线（默认 ease），延迟时间（默认 0）
+
+### 四、transform 转换
+
+`transform`属性允许你旋转，缩放，倾斜或平移给定元素
+
+`transform-origin`：转换元素的位置（围绕哪个点进行转换），默认值为`(x, y, z) : (50%, 50%, 0)`
+
+使用方式：
+
+-   transform: translate(120px, 50%)：位移
+-   transform: scale(2, 0.5)：缩放
+-   transform: rotate(0.5turn)：旋转
+-   transform: skew(30deg, 20deg)：倾斜
+
+### 五、animation 动画
+
+动画这个平常用的也很多，主要是做一个预设的动画。和一些页面交互的动画效果，结果和过渡应该一样，让页面不会那么生硬
+
+animation 也有很多的属性：
+
+-   animation-name：动画名称
+-   animation-duration：动画持续时间
+-   animation-timing-functino：动画时间函数
+-   animation-delay：动画延迟时间
+-   animation-iteration-count：动画执行次数，可以设置为一个整数，也可以设置为 infinite
+-   animation-direction：动画执行方向
+-   animation-paly-state：动画播放状态
+-   animation-fill-mode：动画填充模式
+
+### 六、渐变
+
+颜色渐变是指在两个颜色之间平稳的过渡，`CSS3`渐变包括：
+
+-   linear-gradient：线性渐变
+    `background-image: linear-gradient(direction, color-stop1, color-stop2, ...);`
+-   radial-gradient：径向渐变
+    `linear-gradient(0deg, red, green);`
+
+### 七、其他
+
+除此之外，还包括 flex 弹性布局、Grid 栅格布局、多列布局、媒体查询、混合模式等等......
+
+</pre>
+</details>

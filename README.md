@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 52:
+## Day 53:
 
-✅ [[2021-4-12] 生命周期 componentWillUpdate 为什么不安全？](https://github.com/HJY-xh/plantTrees/issues/137)
-
-✅ [[2021-4-12] 生命周期 componentWillReceiveProps 为什么不安全？](https://github.com/HJY-xh/plantTrees/issues/136)
-
-✅ [[2021-4-12] 生命周期 componentWillMount 为什么不安全？](https://github.com/HJY-xh/plantTrees/issues/135)
+✅ [[2021-4-13] CSS3 新增了哪些新特性？](https://github.com/HJY-xh/plantTrees/issues/139)
 
 ## 目录结构 📁
 
