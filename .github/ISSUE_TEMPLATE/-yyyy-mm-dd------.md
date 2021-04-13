@@ -1,6 +1,6 @@
 ---
 name: "[YYYY-MM-DD] ×××？"
-about: Describe this issue template's purpose here.
+about: YYYY-MM-DD—>当天日期、××× —> 描述问题
 title: ''
 labels: ''
 assignees: HJY-xh
