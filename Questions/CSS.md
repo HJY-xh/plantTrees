@@ -681,7 +681,7 @@ animation 也有很多的属性：
 
 擅长将一个页面划分为几个主要区域，以及定义这些区域的大小、位置、层次等关系
 
-![1](https://user-images.githubusercontent.com/70680781/114640268-51a20480-9d02-11eb-9547-b816de3f7f9a.png)
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_144/1.png)
 
 设置`display:grid/inline-grid`的元素就是网格布局容器，这样就能触发浏览器渲染引擎的网格布局算法
 
@@ -698,7 +698,7 @@ animation 也有很多的属性：
 上述代码实例中，`.container`元素就是网格布局容器，`.item`元素就是网格的项目，由于网格元素只能是容器的顶层子元素，所以`p`元素并不是网格元素
 
 网格线，即划分网格的线：
-![2](https://user-images.githubusercontent.com/70680781/114640415-a9407000-9d02-11eb-8c6e-3852cb0f7f84.png)
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_144/2.png)
 上图是一个 **2 x 3** 的网格，共有**3 根**水平网格线和**4 根**垂直网格线
 
 ### 二、属性
@@ -799,9 +799,9 @@ grid-template-areas: ' a a a'
 **grid-auto-flow 属性**
 划分网格以后，容器的子元素会按照顺序，自动放置在每一个网格。
 顺序就是由`grid-auto-flow`决定，默认为行，代表“先行后列”，即先填满第一行，再开始放入第二行
-![3](https://user-images.githubusercontent.com/70680781/114644265-c0cf2700-9d09-11eb-8e15-946c4661b41f.png)
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_144/3.png)
 当修改成`column`后，放置变为如下：
-![4](https://user-images.githubusercontent.com/70680781/114644310-db090500-9d09-11eb-91d1-070c09d1a190.png)
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_144/4.png)
 
 **justify-items 属性，align-items 属性，place-items 属性**
 `justify-items`属性设置单元格的内容的水平位置（左中右）
@@ -839,13 +839,13 @@ grid-template-areas: ' a a a'
 -   end：对齐容器的结束边框
 -   center：容器内部居中
 
-![5](https://user-images.githubusercontent.com/70680781/114644865-e7da2880-9d0a-11eb-8a66-3b688f397eec.png)
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_144/5.png)
 
 -   space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目容器边框的间隔大一倍
 -   space-between：项目与项目的间隔相等，项目与容器边框之间没有间隔
 -   space-evenly：项目与项目的间隔相等，项目与容器边框之间也是同样长度的间隔
 -   stretch：项目大小没有指定时，拉伸占据整个网络容器
-    ![6](https://user-images.githubusercontent.com/70680781/114645207-8b2b3d80-9d0b-11eb-81df-a5a671354d5e.png)
+    ![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_144/6.png)
 
 **grid-auto-columns 属性和 grid-auto-rows 属性**
 有时候，一些项目的指定位置，在现有网格的外部，就会产生显示网格和隐式网格
@@ -884,7 +884,7 @@ grid-template-areas: ' a a a'
 ```
 
 通过设置`grid-column`属性，指定 1 号项目的左边框是第二根垂直网格线，右边框是第四根垂直网格线
-![7](https://user-images.githubusercontent.com/70680781/114646763-713f2a00-9d0e-11eb-9ee1-aa542c94e084.png)
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_144/7.png)
 
 **grid-area 属性**
 `grid-area`属性指定项目放在哪一个区域
