@@ -867,3 +867,32 @@ console.log(new Map(Object.entries(obj))); // Map(2) { 'a' => 1, 'b' => 'cola' }
 
 </pre>
 </details>
+
+[33.[2021-4-14] 如何获取一个对象中的属性的描述符？](https://github.com/HJY-xh/plantTrees/issues/147)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+可以使用 ES8 中的`Object.getOwnPropertyDescriptors()`
+
+看个 🌰 ：
+
+```javascript
+const obj = {
+	name: "cola",
+};
+console.log(Object.getOwnPropertyDescriptors(obj));
+
+// {
+//     name: {
+//       value: 'cola',
+//       writable: true,
+//       enumerable: true,
+//       configurable: true
+//     }
+// }
+```
+
+</pre>
+</details>
