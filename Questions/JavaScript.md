@@ -894,5 +894,40 @@ console.log(Object.getOwnPropertyDescriptors(obj));
 // }
 ```
 
+该方法的引入目的，主要是为了解决 Object.assign() 无法正确拷贝 get 属性和 set 属性的问题。
+看个 🌰 ：
+
+```javascript
+const source = {
+	set foo(value) {
+		console.log(value);
+	},
+	get bar() {
+		return "bar";
+	},
+};
+const target1 = {};
+Object.assign(target1, source);
+console.log(Object.getOwnPropertyDescriptor(target1, "foo"));
+
+// {
+//     value: undefined,
+//     writable: true,
+//     enumerable: true,
+//     configurable: true
+// }
+
+const target2 = {};
+Object.defineProperties(target2, Object.getOwnPropertyDescriptors(source));
+console.log(Object.getOwnPropertyDescriptor(target2, "foo"));
+
+// {
+//     get: undefined,
+//     set: [Function: set foo],
+//     enumerable: true,
+//     configurable: true
+// }
+```
+
 </pre>
 </details>
