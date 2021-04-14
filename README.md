@@ -15,6 +15,8 @@
 
 ## Day 54:
 
+✅ [[2021-4-14] ES8 中 Object.entries()的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/146)
+
 ✅ [[2021-4-14] Grid 网格布局是什么？](https://github.com/HJY-xh/plantTrees/issues/144)
 
 ## 目录结构 📁

@@ -833,3 +833,37 @@ console.log(vals); // [ 1, '哈哈哈哈', false ]
 
 </pre>
 </details>
+
+[32.[2021-4-14] ES8 中 Object.entries()的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/146)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+`Object. entries()`方法返回一个给定对象自身可枚举属性的键值对数组，其排列与使用`for...in`循环遍历该对象时返回的顺序一致（区别在于 for-in 循环还会枚举原型链中的属性）。
+看个 🌰 ：
+
+```javascript
+let obj = {
+	a: 1,
+	b: "哈哈哈哈",
+	c: false,
+};
+
+console.log(Object.entries(obj)); // [ [ 'a', 1 ], [ 'b', '哈哈哈哈' ], [ 'c', false ] ]
+```
+
+该方法可以将 Object 转换为 Map：
+
+```javascript
+let obj = {
+	a: 1,
+	a: 1,
+	b: "cola",
+};
+
+console.log(new Map(Object.entries(obj))); // Map(2) { 'a' => 1, 'b' => 'cola' }
+```
+
+</pre>
+</details>
