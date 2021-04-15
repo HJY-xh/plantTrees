@@ -1174,3 +1174,18 @@ grid-template-areas: ' a a a'
 
 </pre>
 </details>
+
+[25.[2021-4-15] rem 及其转换原理是什么？](https://github.com/HJY-xh/plantTrees/issues/150)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+rem 是 CSS3 新增的相对长度单位，是指相对于根元素 html 的 font-size 计算值的大小。
+
+默认根元素的 font-size 都是 16px 的。如果想要设置 12px 的字体大小也就是 12px/16px = 0.75rem。
+
+由于 px 是相对固定单位，因此字号大小无法随着浏览器进行缩放，rem 直接相对于根元素 html，避开层级关系，移动端新型浏览器对其支持较好。
+
+</pre>
+</details>
