@@ -1200,7 +1200,7 @@ rem 是 CSS3 新增的相对长度单位，是指相对于根元素 html 的 fon
 
 在 javaScript 中可以通过`window.screen.width/ window.screen.height` 查看
 
-比如我们会说“电脑屏幕在 2560x1600 分辨率下不适合玩游戏，我们把它调为 1440x900”，这里的“分辨率”（非严谨说法）指的就是**设备独立像素**
+比如我们会说“电脑屏幕在 2560x1600 分辨率下不适合玩游戏，我们把它调为 1440x900 ，这里的“分辨率”（非严谨说法）指的就是**设备独立像素**
 
 一个设备独立像素里可能包含 1 个或者多个物理像素点，包含的越多则屏幕看起来越清晰。
 至于为什么出现设备独立像素这种虚拟像素单位概念，👇 下面举个例子 🌰：
@@ -1229,7 +1229,7 @@ dpr（device pixel ratio），设备像素比，代表设备独立像素到设�
 
 如下图所示：
 
-![1](https://user-images.githubusercontent.com/70680781/114958969-abd3ce80-9e96-11eb-8232-e895f7b0c14a.png)
+![1](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_152/1.png)
 
 当`dpr`为 3，那么`1px`的`CSS`像素宽度对应`3px`的物理像素的宽度，`1px`的`CSS`像素高度对应`3px`的物理像素高度
 
