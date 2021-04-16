@@ -306,3 +306,32 @@ dir 属性用来规定元素中文字的方向。有效值有两个：ltr(从左
 
 </pre>
 </details>
+
+[17.[2021-4-16] label 标签有什么作用？如何使用？](https://github.com/HJY-xh/plantTrees/issues/154)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+label 标签用来定义表单控制间的关系,当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上。
+
+它有两种用法：
+
+-   通过 id 绑定
+
+```javascript
+<label for="age">年龄:</label>
+<input type="text" id="age" />
+```
+
+-   嵌套
+
+```javascript
+<label>
+	姓名:
+	<input type="text" />
+</label>
+```
+
+</pre>
+</details>
