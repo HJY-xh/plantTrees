@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 55:
+## Day 56:
 
-✅ [[2021-4-15] PWA 是什么？](https://github.com/HJY-xh/plantTrees/issues/151)
-
-✅ [[2021-4-15] rem 及其转换原理是什么？](https://github.com/HJY-xh/plantTrees/issues/150)
-
-✅ [[2021-4-15] flexbox 是什么？](https://github.com/HJY-xh/plantTrees/issues/149)
+✅ [[2021-4-16] 设备独立像素是什么？](https://github.com/HJY-xh/plantTrees/issues/152)
 
 ## 目录结构 📁
 
