@@ -979,3 +979,54 @@ function throttle(fn, delay) {
 
 </pre>
 </details>
+
+[35.[2021-4-19] ES2020 的 globalThis 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/159)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+globalThis 是一个全新的标准方法用来获取全局 this 。之前开发者会通过如下的一些方法获取：
+
+-   全局变量 window：是一个经典的获取全局对象的方法。但是它在 Node.js 和 Web Workers 中并不能使用
+-   全局变量 self：通常只在 Web Workers 和浏览器中生效。但是它不支持 Node.js。一些人会通过判断 self 是否存在识别代码是否运行在 Web Workers 和浏览器中
+-   全局变量 global：只在 Node.js 中生效
+
+过去获取全局对象，可通过一个全局函数：
+
+```javascript
+// ES10之前的解决方案
+const getGlobal = function () {
+	if (typeof self !== "undefined") return self;
+	if (typeof window !== "undefined") return window;
+	if (typeof global !== "undefined") return global;
+	throw new Error("unable to locate global object");
+};
+
+// ES10内置
+globalThis.alert("hi");
+
+// 定义一个全局对象v = { value:true } ,ES10用如下方式定义
+globalThis.v = { value: true };
+```
+
+globalThis 目的就是提供一种标准化方式访问全局对象，有了 globalThis 后，你可以在任意上下文，任意时刻都能获取到全局对象。因此，不再需要考虑不同的环境问题。
+
+```javascript
+// worker.js
+globalThis === self;
+// node.js
+globalThis === global;
+// browser.js
+globalThis === window;
+```
+
+另外`Object.prototype` 也在全局对象的原型链中。
+
+```javascript
+Object.prototype.isPrototypeOf(globalThis); // true
+```
+
+[globalThis 支持情况](https://www.caniuse.com/?search=globalThis)
+
+</pre>
+</details>

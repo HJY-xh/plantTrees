@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 58:
+## Day 59:
 
-✅ [[2021-4-18] HTTP/2 的多路复用有什么作用？](https://github.com/HJY-xh/plantTrees/issues/158)
-
-✅ [[2021-4-18] hosts 文件有什么作用？](https://github.com/HJY-xh/plantTrees/issues/157)
+✅ [[2021-4-19] ES2020 的 globalThis 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/159)
 
 ## 目录结构 📁
 
