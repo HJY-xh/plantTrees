@@ -15,6 +15,8 @@
 
 ## Day 59:
 
+✅ [[2021-4-19] ES2021 的数字分隔符有什么作用？](https://github.com/HJY-xh/plantTrees/issues/160)
+
 ✅ [[2021-4-19] ES2020 的 globalThis 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/159)
 
 ## 目录结构 📁

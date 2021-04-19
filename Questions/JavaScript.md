@@ -1030,3 +1030,21 @@ Object.prototype.isPrototypeOf(globalThis); // true
 
 </pre>
 </details>
+
+[36.[2021-4-19] ES2021 的数字分隔符有什么作用？](https://github.com/HJY-xh/plantTrees/issues/160)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+数字太长会导致可读性很差。使用了数字分隔符 \_ （下划线），就可以读得更快更舒服，看个 🌰 :
+
+```javascript
+let x = 233333333;
+
+let y = 2_3333_3333
+console.log(y): // 233333333
+```
+
+</pre>
+</details>
