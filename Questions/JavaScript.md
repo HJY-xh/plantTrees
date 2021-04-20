@@ -1072,3 +1072,46 @@ Promise.any(promises).then(
 
 </pre>
 </details>
+
+[38.[2021-4-20] 对于不安全的 JSON 对象，JSON.stringify()会如何处理它们?](https://github.com/HJY-xh/plantTrees/issues/163)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   undefined、function、symbol
+
+    -   单独处理它们，直接返回 undefined
+
+    ```javascript
+    JSON.stringify(undefined); //  undefined
+    JSON.stringify(function () {}); //  undefined
+    JSON.stringify(Symbol()); //  undefined
+    ```
+
+    -   包含它们的对象，自动将其忽略
+
+    ```javascript
+    JSON.stringify({ a: 1, b: undefined, c: function () {}, [Symbol()]: 1 }); //  "{"a":1}"
+    ```
+
+    -   包含它们的数组，自动将其转成 null
+
+    ```javascript
+    JSON.stringify([1, undefined, function () {}, Symbol()]); //  "[1,null,null,null]"
+    ```
+
+-   包含循环引用的对象
+    如果两个对象之间互相引用，形成一个无限循环，那么无论对其中的哪个对象进行 JSON 字符串化都会直接报错
+    ```javascript
+    let obj1 = {};
+    let obj2 = {
+    	a: obj1,
+    };
+    obj1.a = obj2;
+    JSON.stringify(obj1); //  Uncaught TypeError
+    JSON.stringify(obj2); //  Uncaught TypeError
+    ```
+
+</pre>
+</details>
