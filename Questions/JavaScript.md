@@ -1033,7 +1033,7 @@ Object.prototype.isPrototypeOf(globalThis); // true
 
 [36.[2021-4-19] ES2021 的数字分隔符有什么作用？](https://github.com/HJY-xh/plantTrees/issues/160)
 
-<details>
+<details></details>
 <summary>展开查看</summary>
 <pre>
 
@@ -1044,6 +1044,30 @@ let x = 233333333;
 
 let y = 2_3333_3333
 console.log(y): // 233333333
+```
+
+</pre>
+</details>
+
+[37.[2021-4-20] ES2021 的 Promise.any 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/161)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+从字面意思来看，应该也能大致猜出这个 API 的作用。与 Promise.all 类似，Promise.any 也接受一个 Promise 的数组。当其中任何一个 Promise 完成（fullfill）时，就返回那个已经有完成值的 Promise。如果所有的 Promise 都拒绝（reject），则返回一个拒绝的 Promise，该 Promise 的返回值是一个 AggregateError 对象。
+我们可以把 Promise.any 理解成 Promise.all 的相反操作。
+看个 🌰 ：
+
+```javascript
+Promise.any(promises).then(
+	(first) => {
+		// 任何一个 Promise 完成了
+	},
+	(error) => {
+		// 所有的 Promise 都拒绝了
+	}
+);
 ```
 
 </pre>

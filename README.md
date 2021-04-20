@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 59:
+## Day 60:
 
-✅ [[2021-4-19] ES2021 的数字分隔符有什么作用？](https://github.com/HJY-xh/plantTrees/issues/160)
-
-✅ [[2021-4-19] ES2020 的 globalThis 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/159)
+✅ [[2021-4-20] ES2021 的 Promise.any 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/161)
 
 ## 目录结构 📁
 
