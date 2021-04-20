@@ -1115,3 +1115,29 @@ Promise.any(promises).then(
 
 </pre>
 </details>
+
+[39.[2021-4-20] IIFE 是什么？](https://github.com/HJY-xh/plantTrees/issues/164)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+IIFE 是立即执行函数，在一些常见的框架中，会使用立即执行函数形成一个独立作用域，在这个函数通常会写一些依赖环境之类的东西；立即执行函数中，写完其中的变量不会被销毁，形成闭包。
+`(function( window, undefined ) {//……})(window);`
+
+jQuery 整個就是一個立即执行函数。
+
+`(function(){})();` 是立即执行函数常用的表现形式之一。
+
+另一种也很常用：`(function(){}());`
+
+用途？
+
+1.  当我们需要写一个 js 插件，并且复用率很高的时候，建议使用
+
+2.  如果命名的函数只需要使用一次，建议使用
+
+3.  独立模块，跟第一点差不多。开发的时候，能做到各组合模块的低耦合，减少对全局作用域的污染
+
+</pre>
+</details>
