@@ -15,6 +15,8 @@
 
 ## Day 60:
 
+✅ [[2021-4-20] Vue 中的事件修饰符和按键修饰符有哪些？ ](https://github.com/HJY-xh/plantTrees/issues/165)
+
 ✅ [[2021-4-20] IIFE 是什么？](https://github.com/HJY-xh/plantTrees/issues/164)
 
 ✅ [[2021-4-20] 对于不安全的 JSON 对象，JSON.stringify()会如何处理它们?](https://github.com/HJY-xh/plantTrees/issues/163)
@@ -53,6 +55,8 @@ plantTrees
 [**MongoDB**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/MongoDB.md)
 
 [**React**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/React.md)
+
+[**Vue**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/Vue.md)
 
 [**前端工程化**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96.md)
 
