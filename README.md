@@ -15,6 +15,8 @@
 
 ## Day 60:
 
+✅ [[2021-4-20] Flux 核心思想是什么？](https://github.com/HJY-xh/plantTrees/issues/162)
+
 ✅ [[2021-4-20] ES2021 的 Promise.any 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/161)
 
 ## 目录结构 📁
