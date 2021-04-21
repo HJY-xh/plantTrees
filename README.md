@@ -15,6 +15,8 @@
 
 ## Day 61:
 
+✅ [[2021-4-21] React 组件通信有哪些方式?](https://github.com/HJY-xh/plantTrees/issues/168)
+
 ✅ [[2021-4-21] setState 是异步的还是同步的?](https://github.com/HJY-xh/plantTrees/issues/167)
 
 ## 目录结构 📁
