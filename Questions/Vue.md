@@ -53,3 +53,93 @@ Vue.config.keyCodes.f1 = 112
 
 </pre>
 </details>
+
+[2.[2021-4-21] Vue 组件通信中的 props 检验是什么？](https://github.com/HJY-xh/plantTrees/issues/169)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+### 为什么会有 props 校验？
+
+想象一下当有一个人要使用组件的时候，他可能对于其要接受的参数有什么要求并不是很清楚，因此传入的参数可能会在开发子组件的人的意料之外，程序就会发生错误，就像我们在函数调用之前先检查一下函数一样，props 也可以进行一个预先检查。
+
+平时调用函数的时候在函数开头的地方都是一坨糊糊的参数检查，这种写法很不好了，所有后来就有了校验器模式，校验器模式就是指把在函数开头的对参数校验的部分提取出来作为一个公共的部分来管理，让某个函数或方法来专门负责校验，当类型不正确的时候就抛个异常或者根本不去调用这个函数，很多框架设计时都是这么设计的（Spring MVC、Struts2 等等），props 也提供了这个功能，想一下如果没有这个功能的话，为了保证正确性我们可能需要在每次使用 props 属性之前都写一坨代码来检查。校验器最大的好处就是大多数情况下我们只需要声明我需要什么样的数据，让校验器检查好了再塞给我。
+
+### 1.type
+
+可以使用 type 来声明这个参数可以接受的数据的类型，语法示例：
+
+    props: {
+        num: Number
+    }
+
+**type 可接受多个类型：**
+
+    props: {
+        num: [Number, String]
+    }
+
+**type 可指定的类型**
+
+-   String
+
+-   Number
+
+-   Boolean
+
+-   Function
+
+-   Object
+
+-   Array
+
+-   Symbol
+
+### 2.required
+
+可以使用 required 选项来声明这个参数是否必须传入：
+
+    props: {
+        num: {
+            type: Number,
+            required: true
+        }
+    }
+
+### 3.default
+
+使用 default 选项来指定当父组件未传入参数时 props 变量的默认值：
+
+    props: {
+        num: {
+            type: Number,
+            default: 123
+        }
+    }
+
+**注意：当 type 的类型为 Array 或者 Object 的时候 default 必须是一个函数！**
+
+    props: {
+        num: {
+            type: Array,
+            default: function(){
+                return ['12', '123'];
+            }
+        }
+    }
+
+### 4.validator
+
+当校验规则很复杂，默认提供的校验规则无法满足的时候可以使用自定义函数来校验:
+
+    props: {
+        num: {
+            validator: function(value){
+                return value>=0 && value<=123;
+            }
+        }
+    }
+
+</pre>
+</details>
