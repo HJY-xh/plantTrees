@@ -13,19 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 60:
+## Day 61:
 
-✅ [[2021-4-20] webP 是什么？](https://github.com/HJY-xh/plantTrees/issues/166)
-
-✅ [[2021-4-20] Vue 中的事件修饰符和按键修饰符有哪些？ ](https://github.com/HJY-xh/plantTrees/issues/165)
-
-✅ [[2021-4-20] IIFE 是什么？](https://github.com/HJY-xh/plantTrees/issues/164)
-
-✅ [[2021-4-20] 对于不安全的 JSON 对象，JSON.stringify()会如何处理它们?](https://github.com/HJY-xh/plantTrees/issues/163)
-
-✅ [[2021-4-20] Flux 核心思想是什么？](https://github.com/HJY-xh/plantTrees/issues/162)
-
-✅ [[2021-4-20] ES2021 的 Promise.any 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/161)
+✅ [[2021-4-21] setState 是异步的还是同步的?](https://github.com/HJY-xh/plantTrees/issues/167)
 
 ## 目录结构 📁
 
