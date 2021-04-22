@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 61:
+## Day 62:
 
-✅ [[2021-4-21] Vue 组件通信中的 props 检验是什么？](https://github.com/HJY-xh/plantTrees/issues/169)
-
-✅ [[2021-4-21] React 组件通信有哪些方式?](https://github.com/HJY-xh/plantTrees/issues/168)
-
-✅ [[2021-4-21] setState 是异步的还是同步的?](https://github.com/HJY-xh/plantTrees/issues/167)
+✅ [[2021-4-22] Vue 生命周期中的 created 和 mounted 有什么不同？](https://github.com/HJY-xh/plantTrees/issues/170)
 
 ## 目录结构 📁
 

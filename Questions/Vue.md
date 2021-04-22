@@ -143,3 +143,20 @@ Vue.config.keyCodes.f1 = 112
 
 </pre>
 </details>
+
+[3.[2021-4-22] Vue 生命周期中的 created 和 mounted 有什么不同？](https://github.com/HJY-xh/plantTrees/issues/170)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+### created
+
+将 Vue 实例初始化，为仅存在于 Js 模型中的一个内存变量，并没有开始渲染
+
+### mounted
+
+组件在网页上真正的绘制完成后的状态，大部分情况下都是在 mounted 里编写方法
+
+</pre>
+</details>
