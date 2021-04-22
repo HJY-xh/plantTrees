@@ -15,6 +15,8 @@
 
 ## Day 62:
 
+✅ [[2021-4-22] RESTful 架构中的幂等性体现在哪里？](https://github.com/HJY-xh/plantTrees/issues/172)
+
 ✅ [[2021-4-22] Vue 中父子组件生命周期调用顺序是什么样的？](https://github.com/HJY-xh/plantTrees/issues/171)
 
 ✅ [[2021-4-22] Vue 生命周期中的 created 和 mounted 有什么不同？](https://github.com/HJY-xh/plantTrees/issues/170)
