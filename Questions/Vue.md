@@ -179,7 +179,7 @@ Vue.config.keyCodes.f1 = 112
 
 父 beforeUpdate -> 父 updated
 
--   销毁课程
+-   销毁过程
 
 父 beforeDestroy -> 子 beforeDestroy -> 子 destroyed -> 父 destroyed
 
