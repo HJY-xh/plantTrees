@@ -250,3 +250,19 @@ setState 的批量更新优化也是建立在“异步”（合成事件、钩�
 
 </pre>
 </details>
+
+[11.[2021-4-23] 如何避免组件不必要的重新渲染？](https://github.com/HJY-xh/plantTrees/issues/176)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+React 中最常见的问题之一是组件不必要地重新渲染。React 提供了两个方法，在这些情况下非常有用：
+
+-   React.memo()
+-   pureComponent
+
+这两种方法都依赖于对传递给组件的 props 的浅比较，如果 props 没有改变，那么组件将不会重新渲染。虽然这两种工具都非常有用，但是浅比较会带来额外的性能损失，因此如果使用不当，这两种方法都会对性能产生负面影响。
+
+</pre>
+</details>
