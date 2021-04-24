@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 63:
+## Day 64:
 
-✅ [[2021-4-23] 如何避免组件不必要的重新渲染？](https://github.com/HJY-xh/plantTrees/issues/176)
-
-✅ [[2021-4-23] 类组件和函数组件之间的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/175)
-
-✅ [[2021-4-23] SCRUM 是什么?](https://github.com/HJY-xh/plantTrees/issues/174)
+✅ [[2021-4-24] 如何中断 ajax 请求？](https://github.com/HJY-xh/plantTrees/issues/177)
 
 ## 目录结构 📁
 

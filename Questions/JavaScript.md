@@ -1141,3 +1141,15 @@ jQuery 整個就是一個立即执行函数。
 
 </pre>
 </details>
+
+[40.[2021-4-24] 如何中断 ajax 请求？](https://github.com/HJY-xh/plantTrees/issues/177)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   设置超时时间让 ajax 自动断开
+-   手动停止 ajax 请求，其核心是调用 XML 对象的 abort 方法，ajax.abort()
+
+</pre>
+</details>
