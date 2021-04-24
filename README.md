@@ -15,6 +15,8 @@
 
 ## Day 64:
 
+✅ [[2021-4-24] 前端需要注意哪些 SEO？](https://github.com/HJY-xh/plantTrees/issues/178)
+
 ✅ [[2021-4-24] 如何中断 ajax 请求？](https://github.com/HJY-xh/plantTrees/issues/177)
 
 ## 目录结构 📁
