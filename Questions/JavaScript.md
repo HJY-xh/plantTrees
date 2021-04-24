@@ -1153,3 +1153,14 @@ jQuery 整個就是一個立即执行函数。
 
 </pre>
 </details>
+
+[41.[2021-4-25] 怎样理解作用域链？](https://github.com/HJY-xh/plantTrees/issues/181)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+作用域链的作用是保证执行环境里有权访问的变量和函数式有序的，作用域链的变量只能向上访问，变量访问到 window 对象即被终止，作用域链乡下访问变量是不被允许的。
+
+</pre>
+</details>
