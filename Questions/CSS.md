@@ -1235,3 +1235,20 @@ dpr（device pixel ratio），设备像素比，代表设备独立像素到设�
 
 </pre>
 </details>
+
+[27.[2021-4-25] 常见的 position 值分别是相对于什么进行定位的？](https://github.com/HJY-xh/plantTrees/issues/179)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+absolute 生成绝对定位的元素， 相对于最近一级的 定位不是 static 的父元素来进行定位。
+
+fixed （老 IE 不支持）生成绝对定位的元素，通常相对于浏览器窗口或 frame 进行定位。
+
+relative 生成相对定位的元素，相对于其在普通流中的位置进行定位。
+
+static 默认值。没有定位，元素出现在正常的流中
+
+</pre>
+</details>

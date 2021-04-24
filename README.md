@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 64:
+## Day 65:
 
-✅ [[2021-4-24] 前端需要注意哪些 SEO？](https://github.com/HJY-xh/plantTrees/issues/178)
-
-✅ [[2021-4-24] 如何中断 ajax 请求？](https://github.com/HJY-xh/plantTrees/issues/177)
+✅ [[2021-4-25] 常见的 position 值分别是相对于什么进行定位的？](https://github.com/HJY-xh/plantTrees/issues/179)
 
 ## 目录结构 📁
 
