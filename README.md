@@ -15,6 +15,8 @@
 
 ## Day 65:
 
+✅ [[2021-4-25] Vue 中 mixin 的优先级与组件相比是什么样的？](https://github.com/HJY-xh/plantTrees/issues/182)
+
 ✅ [[2021-4-25] 怎样理解作用域链？](https://github.com/HJY-xh/plantTrees/issues/181)
 
 ✅ [[2021-4-25] XML 和 JSON 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/180)

@@ -185,3 +185,17 @@ Vue.config.keyCodes.f1 = 112
 
 </pre>
 </details>
+
+[5.[2021-4-25] Vue 中 mixin 的优先级与组件相比是什么样的？](https://github.com/HJY-xh/plantTrees/issues/182)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+### mixin 混入
+
+-   **组件**中的 data 与 methods 优先级高于**mixin**中的 data 与 methods
+-   生命周期函数，先执行 mixin 里面的，再执行组件里面的
+
+</pre>
+</details>
