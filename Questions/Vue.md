@@ -195,7 +195,8 @@ Vue.config.keyCodes.f1 = 112
 ### mixin 混入
 
 -   **组件**中的 data 与 methods 优先级高于**mixin**中的 data 与 methods
--   生命周期函数，先执行 mixin 里面的，再执行组件里面的
+-   生命周期函数，先执行 mixin 里面的，再执行组件里面的（都会执行）
+-   自定义的属性，组件中的属性优先级高于 mixin 属性的优先级（可通过 `app.config.optionMergeStrategies.XXX` 重新配置）
 
 </pre>
 </details>
