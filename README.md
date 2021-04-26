@@ -13,15 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 65:
+## Day 66:
 
-✅ [[2021-4-25] Vue 中 mixin 的优先级与组件相比是什么样的？](https://github.com/HJY-xh/plantTrees/issues/182)
-
-✅ [[2021-4-25] 怎样理解作用域链？](https://github.com/HJY-xh/plantTrees/issues/181)
-
-✅ [[2021-4-25] XML 和 JSON 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/180)
-
-✅ [[2021-4-25] 常见的 position 值分别是相对于什么进行定位的？](https://github.com/HJY-xh/plantTrees/issues/179)
+✅ [[2021-4-26] $nextTick 是什么？](https://github.com/HJY-xh/plantTrees/issues/185)
 
 ## 目录结构 📁
 
