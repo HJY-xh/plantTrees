@@ -13,13 +13,11 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 66:
+## Day 65:
 
 ✅ [[2021-4-26] SQL 注入原理及防范措施有哪些？](https://github.com/HJY-xh/plantTrees/issues/184)
 
 ✅ [[2021-4-26] 创建一个 Ajax 调用的过程是什么样的？](https://github.com/HJY-xh/plantTrees/issues/183)
-
-✅ [[2021-4-26] $nextTick 是什么？](https://github.com/HJY-xh/plantTrees/issues/185)
 
 ## 目录结构 📁
 

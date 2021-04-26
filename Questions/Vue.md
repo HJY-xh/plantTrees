@@ -200,16 +200,3 @@ Vue.config.keyCodes.f1 = 112
 
 </pre>
 </details>
-
-[6.[2021-4-26] $nextTick 是什么？](https://github.com/HJY-xh/plantTrees/issues/185)
-
-<details>
-<summary>展开查看</summary>
-<pre>
-
--   Vue 是异步渲染
--   data 改变之后，DOM 不会立刻渲染
--   $nextTick 会在 DOM 渲染之后被触发，以获取最新 DOM 节点
-
-</pre>
-</details>
