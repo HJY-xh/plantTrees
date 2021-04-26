@@ -1164,3 +1164,18 @@ jQuery 整個就是一個立即执行函数。
 
 </pre>
 </details>
+
+[42.[2021-4-26] 创建一个 Ajax 调用的过程是什么样的？](https://github.com/HJY-xh/plantTrees/issues/183)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   创建一个 XMLHttpRequest 对象，也就是创建一个异步调用对象
+-   创建一个 Http 请求，并指定该请求的请求方法、URL 及验证信息
+-   设置响应 Http 请求状态变化的方法
+-   发送 Http 请求
+-   获取异步调用返回的结果
+
+</pre>
+</details>
