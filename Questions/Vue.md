@@ -200,3 +200,70 @@ Vue.config.keyCodes.f1 = 112
 
 </pre>
 </details>
+
+[6.[2021-4-27] $nextTick 是什么？](https://github.com/HJY-xh/plantTrees/issues/185)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+看一下以下代码：
+
+```
+<template>
+  <div id="app">
+    <ul ref="ul1">
+        <li v-for="(item, index) in list" :key="index">
+            {{item}}
+        </li>
+    </ul>
+    <button @click="addItem">添加一项</button>
+  </div>
+</template>
+
+//下面为script中代码
+
+data() {
+      return {
+        list: ['a', 'b', 'c']
+      }
+  },
+  methods: {
+    addItem() {
+        this.list.push(`${Date.now()}`);
+        this.list.push(`${Date.now()}`);
+        this.list.push(`${Date.now()}`);
+        //查看li个数
+        const ulElem = this.$refs.ul1
+        console.log( ulElem.childNodes.length )
+  }
+```
+
+该部分效果图如下：
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_185/1.png)
+点击**添加一项**后，会在列表中新增加三项：
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_185/2.png)
+按理来说，新添加三个`li`之后，method 中在控制台输出`ul`的`childNodes`应该是 6 才对，从图中也能清晰地看出有 6 个`li`。很可惜，控制台输出的并不是 6：
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_185/3.png)
+
+### 为什么会这样呢？
+
+因为 Vue 是**异步渲染**，data 改变之后，DOM 并不会立刻渲染。那如果想要按照我们理解的那样输出 6，该怎么办呢？此时就应该使用$nextTick：
+
+```
+this.$nextTick(() => {
+    // 获取 DOM 元素
+    const ulElem = this.$refs.ul1
+    console.log( ulElem.childNodes.length )
+})
+```
+
+此时就是输出 6 了：
+![img](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_185/4.png)
+
+### 总结
+
+$nextTick 会等待 DOM 渲染完再回调，而且注意一点，页面渲染时会将 data 的修改做整合，多次 data 修改只会渲染一次
+
+</pre>
+</details>
