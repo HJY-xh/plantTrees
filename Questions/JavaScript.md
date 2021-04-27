@@ -1195,8 +1195,7 @@ jQuery 整個就是一個立即执行函数。
 先了解一下在 DOM0 级事件之前，HTML 时间处理程序是怎样的？看个 🌰
 
 ```html
-<button type="button" onclick="showFn()"></button>
-function showFn() { alert('Hello World'); }
+<button type="button" onclick="showFn()"></button> function showFn() { alert('Hello World'); }
 ```
 
 那这种方法的特定就是：
@@ -1207,8 +1206,8 @@ function showFn() { alert('Hello World'); }
 那 DOM0 级处理事件就是将一个函数赋值给一个事件处理属性，看个 🌰
 
 ```html
-<button id="btn" type="button"></button>
-var btn = document.getElementById('btn'); btn.onclick = function() { console.log('Hello World'); }
+<button id="btn" type="button"></button> var btn = document.getElementById('btn'); btn.onclick =
+function() { console.log('Hello World'); }
 ```
 
 此外，还可以通过给事件处理属性赋值 null 来解绑事件。
@@ -1218,10 +1217,9 @@ var btn = document.getElementById('btn'); btn.onclick = function() { console.log
 DOM2 级事件解决了 DOM0 级事件中无法同时绑定多个处理函数的痛点，它允许给一个程序添加多个处理函数。看个 🌰
 
 ```html
-<button id="btn" type="button"></button>
-var btn = document.getElementById('btn'); function showFn() { alert('Hello World'); }
-btn.addEventListener('click', showFn, false); // btn.removeEventListener('click', showFn, false);
-解绑事件
+<button id="btn" type="button"></button> var btn = document.getElementById('btn'); function showFn()
+{ alert('Hello World'); } btn.addEventListener('click', showFn, false); //
+btn.removeEventListener('click', showFn, false); 解绑事件
 ```
 
 再来看看 DOM3 级事件，它是在 DOM2 级事件的基础上添加很多事件类型。
@@ -1236,6 +1234,19 @@ btn.addEventListener('click', showFn, false); // btn.removeEventListener('click'
 -   变动事件，当底层 DOM 结构发生变化时触发，如：DOMsubtreeModified
 
 同时 DOM3 级事件也允许使用者自定义一些事件。
+
+</pre>
+</details>
+
+[44.[2021-4-27] 客户区坐标、页面坐标、屏幕坐标分别是什么？](https://github.com/HJY-xh/plantTrees/issues/187)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   客户区坐标：鼠标指针在可视区中的水平坐标(clientX)和垂直坐标(clientY)
+-   页面坐标：鼠标指针在页面布局中的水平坐标(pageX)和垂直坐标(pageY)
+-   屏幕坐标：设备物理屏幕的水平坐标(screenX)和垂直坐标(screenY)
 
 </pre>
 </details>
