@@ -1250,3 +1250,16 @@ btn.removeEventListener('click', showFn, false); 解绑事件
 
 </pre>
 </details>
+
+[45.[2021-4-27] 如何获得一个 DOM 元素的绝对位置？](https://github.com/HJY-xh/plantTrees/issues/188)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   elem.offsetLeft：返回元素相对于其定位父级左侧的距离
+-   elem.offsetTop：返回元素相对于其定位父级顶部的距离
+-   elem.getBoundingClientRect()：返回一个 DOMRect 对象，包含一组描述边框的只读属性，单位像素
+
+</pre>
+</details>
