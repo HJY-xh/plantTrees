@@ -1179,3 +1179,63 @@ jQuery 整個就是一個立即执行函数。
 
 </pre>
 </details>
+
+[43.[2021-4-27] DOM 级别与 DOM 事件有哪些？](https://github.com/HJY-xh/plantTrees/issues/186)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   DOM 级别一共可以分为四个级别：DOM0 级、DOM1 级、DOM2 级和 DOM3 级。
+-   DOM 事件分为 3 个级别：DOM0 级事件处理，DOM2 级事件处理和 DOM3 级事件处理。
+
+那为什么没有 DOM1 级事件处理呢？
+因为 1 级 DOM 标准并没有定义事件相关的内容，所以没有所谓的 1 级 DOM 事件模型。
+
+先了解一下在 DOM0 级事件之前，HTML 时间处理程序是怎样的？看个 🌰
+
+```html
+<button type="button" onclick="showFn()"></button>
+function showFn() { alert('Hello World'); }
+```
+
+那这种方法的特定就是：
+
+-   HTML 和 JS 耦合太强，我们如果需要修改函数名就必须修改两个地方
+-   不需要操作 DOM 来完成事件的绑定
+
+那 DOM0 级处理事件就是将一个函数赋值给一个事件处理属性，看个 🌰
+
+```html
+<button id="btn" type="button"></button>
+var btn = document.getElementById('btn'); btn.onclick = function() { console.log('Hello World'); }
+```
+
+此外，还可以通过给事件处理属性赋值 null 来解绑事件。
+
+由此可见，DOM0 级事件处理程序的一个缺点是处理程序无法同时绑定多个处理函数。
+
+DOM2 级事件解决了 DOM0 级事件中无法同时绑定多个处理函数的痛点，它允许给一个程序添加多个处理函数。看个 🌰
+
+```html
+<button id="btn" type="button"></button>
+var btn = document.getElementById('btn'); function showFn() { alert('Hello World'); }
+btn.addEventListener('click', showFn, false); // btn.removeEventListener('click', showFn, false);
+解绑事件
+```
+
+再来看看 DOM3 级事件，它是在 DOM2 级事件的基础上添加很多事件类型。
+
+-   UI 事件，当用户与页面上的元素交互时触发，如：load、scroll
+-   焦点事件，当元素获得或失去焦点时触发，如：blur、focus
+-   鼠标事件，当用户通过鼠标在页面执行操作时触发如：dbclick、mouseup
+-   滚轮事件，当使用鼠标滚轮或类似设备时触发，如：mousewheel
+-   文本事件，当在文档中输入文本时触发，如：textInput
+-   键盘事件，当用户通过键盘在页面上执行操作时触发，如：keydown、keypress
+-   合成事件，当为 IME（输入法编辑器）输入字符时触发，如：compositionstart
+-   变动事件，当底层 DOM 结构发生变化时触发，如：DOMsubtreeModified
+
+同时 DOM3 级事件也允许使用者自定义一些事件。
+
+</pre>
+</details>
