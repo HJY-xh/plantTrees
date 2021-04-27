@@ -1263,3 +1263,29 @@ btn.removeEventListener('click', showFn, false); 解绑事件
 
 </pre>
 </details>
+
+[46.[2021-4-27] ['1', '2', '3'].map(parseInt) 运行结果是什么样的？](https://github.com/HJY-xh/plantTrees/issues/189)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+运行结果:[1, NaN, NaN]
+
+为什么呢？
+
+-   parseInt(string, radix) 第 2 个参数 radix 表示进制。省略 radix 或 radix = 0，则数字将以十进制解析
+-   map 每次为 parseInt 传 3 个参数(elem, index, array)，其中 index 为数组索引
+
+结合这两点，可以知道 map 遍历 ["1", "2", "3"]，相应 parseInt 接收参数如下
+
+parseInt('1', 0); // 1
+
+parseInt('2', 1); // NaN
+
+parseInt('3', 2); // NaN
+
+所以，parseInt 参数 radix 不合法，导致返回值为 NaN
+
+</pre>
+</details>

@@ -15,6 +15,8 @@
 
 ## Day 66:
 
+✅ [[2021-4-27] ['1', '2', '3'].map(parseInt) 运行结果是什么样的？](https://github.com/HJY-xh/plantTrees/issues/189)
+
 ✅ [[2021-4-27] 如何获得一个 DOM 元素的绝对位置？](https://github.com/HJY-xh/plantTrees/issues/188)
 
 ✅ [[2021-4-27] 客户区坐标、页面坐标、屏幕坐标分别是什么？](https://github.com/HJY-xh/plantTrees/issues/187)
