@@ -1318,3 +1318,16 @@ parseInt('3', 2); // NaN
 
 </pre>
 </details>
+
+[48.[2021-4-28] Window 和 Document 有什么联系？](https://github.com/HJY-xh/plantTrees/issues/191)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   Window 对象表示当前浏览器窗口，是 JavaScript 的顶级对象，我们创建的所有对象、函数、变量都是 Window 对象的成员。且 Window 对象的属性和方法在全局范围内都有效。
+-   Document 对象是 HTML 文档的根节点与其它所有节点（元素节点、文本节点、属性节点、注释节点），它使我们可以通过脚本对 HTML 页面中的所有元素进行访问
+-   Document 对象是 Window 对象的一部分，可通过 window.document 属性进行访问
+
+</pre>
+</details>

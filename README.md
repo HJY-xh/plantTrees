@@ -15,6 +15,8 @@
 
 ## Day 67:
 
+✅ [[2021-4-28] Window 和 Document 有什么联系？](https://github.com/HJY-xh/plantTrees/issues/191)
+
 ✅ [[2021-4-28] ajax 有哪几种返回状态？](https://github.com/HJY-xh/plantTrees/issues/190)
 
 ## 目录结构 📁
