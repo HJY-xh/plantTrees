@@ -1252,3 +1252,14 @@ static 默认值。没有定位，元素出现在正常的流中
 
 </pre>
 </details>
+
+[28.[2021-4-28] 为什么要初始化 CSS 样式?](https://github.com/HJY-xh/plantTrees/issues/193)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+因为浏览器的兼容问题，不同的浏览器对某些标签的默认值是不同的。如果没有初始化 CSS，往往会显示出浏览器之间的页面显示差异。
+
+</pre>
+</details>

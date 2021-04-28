@@ -15,6 +15,8 @@
 
 ## Day 67:
 
+✅ [[2021-4-28] 为什么要初始化 CSS 样式?](https://github.com/HJY-xh/plantTrees/issues/193)
+
 ✅ [[2021-4-28] documen.write 和 innerHTML 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/192)
 
 ✅ [[2021-4-28] Window 和 Document 有什么联系？](https://github.com/HJY-xh/plantTrees/issues/191)
