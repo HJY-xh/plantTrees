@@ -1289,3 +1289,32 @@ parseInt('3', 2); // NaN
 
 </pre>
 </details>
+
+[47.[2021-4-28] ajax 有哪几种返回状态？](https://github.com/HJY-xh/plantTrees/issues/190)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   (0) UNINITIALIZED
+
+未初始化；（XMLHttpRequest）对象已经创建，但尚未初始化（还没有调用 open 方法）
+
+-   (1) LOADING
+
+载入；（XMLHttpRequest）对象已经创建，但尚未调用 send 方法
+
+-   (2) LOADED
+
+载入完成；已经调用 send 方法，（HTTP 响应）状态及头部还不可用
+
+-   (3) INTERACTIVE
+
+交互；已经接收部分数据。但若在此时调用 responseBody 和 responseText 属性获取部分结果将会产生错误，因为状态和响应头部还不完全可用
+
+-   (4) COMPLETED
+
+完成；已经接收到了全部数据，并且在 responseBody 和 responseText 属性中可以提取到完整的数据
+
+</pre>
+</details>
