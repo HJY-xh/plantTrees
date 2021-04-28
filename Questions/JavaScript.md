@@ -1331,3 +1331,15 @@ parseInt('3', 2); // NaN
 
 </pre>
 </details>
+
+[49.[2021-4-28] documen.write 和 innerHTML 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/192)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   document.write 会重绘整个页面
+-   innerHTML 重绘页面的一部分
+
+</pre>
+</details>
