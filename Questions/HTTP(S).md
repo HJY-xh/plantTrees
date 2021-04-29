@@ -474,3 +474,52 @@ HPACK 算法是专门为 HTTP/2 服务的，它主要的亮点有两个：
 
 </pre>
 </details>
+
+[21.[2021-4-29] 怎么理解 http 和 https？](https://github.com/HJY-xh/plantTrees/issues/195)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+### 一、基本概念
+
+-   HTTP
+
+超文本传输协议，是互联网上应用最为广泛的一种网络协议，是一个客户端和服务端请求和应答的标准（TCP），用于从 WWW 服务器传输超文本到本地浏览器的传输协议，它可以使浏览器更加高效，使网络传输减少
+
+-   HTTPS
+
+是以安全为目标的 http 通道，简单来讲是 http 的安全版，即 http 下加入 SSL 层，https 的安全基础是 SSL，因此加密的详细内容就需要 SSL。需知道，https 的 SSL 加密是在传输层实现的
+
+### 二、两者区别
+
+http 传输的数据都是未加密的，也就是明文的，网景公司设置了 SSL 协议来对 http 协议传输的数据进行加密处理，简单来说就是 https 协议是由 http 和 ssl 协议构建的可进行加密传输和身份认证的网络协议，比 http 协议的安全性更高。主要区别如下：
+
+-   https 协议需要 ca 证书，大部分证书费用较高
+-   http 的超文本传输协议，信息是明文传输，https 则是具有安全性的 ssl 加密传输协议
+-   二者使用不同的链接方式，端口也不同。一般来说，http 协议的端口号为 80，https 的端口号为 443
+
+</pre>
+</details>
+[22.[2021-4-29] WebSocket是什么？](https://github.com/HJY-xh/plantTrees/issues/196)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   WebSocket 是 HTML5 中的协议，支持持久连接，http 协议不支持持久性连接
+-   http 的生命周期通过 request 来界定，也就是 request 一个 response，那么在 http1.0 协议中，这次 http 请求就结束了。在 http1.1 中进行了改进，出现了`keep-alive`。也就是说在一个 http 连接中，可以发送多个 request，接受多个 response。但是必须记住，在 http 中一个 request 只能对应有一个 response，而且这个 response 是被动的，不能主动发起。WebSocket 是基于 http 协议的，或者说借用了 http 协议来完成一部分握手，在握手阶段与 http 是相同的。以下为一个 websocket 握手协议的实现：
+
+    GET/char HTTP/1.1
+    Host: server.example.com
+    Upgrade: websocket
+    Connection: Upgrade
+    //告诉服务端发送的是 websocket--------start
+    Sec-WebSocket-Key: x3JJHMbDL1EzLkh9GBhXDw==
+    Sec-WebSocket-Protocol: chat, superchat
+    Sec-WebSocket-Version: 13
+    //告诉服务端发送的是 websocket--------end
+    Origin: http://example.com
+
+</pre>
+</details>
