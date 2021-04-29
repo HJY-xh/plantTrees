@@ -1343,3 +1343,34 @@ parseInt('3', 2); // NaN
 
 </pre>
 </details>
+
+[50.[2021-4-29] 如何实现数组的 flatten 方法？](https://github.com/HJY-xh/plantTrees/issues/197)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+实现如下：
+
+```javascript
+let arr = [1, 2, 3, [4, 5], [6, [7, [8]]]];
+
+const wrap = () => {
+	let res = [];
+	return function flat(array) {
+		for (let item of array) {
+			if (item.constructor === Array) {
+				res.concat(flat(item));
+			} else {
+				res.push(item);
+			}
+		}
+		return res;
+	};
+};
+
+console.log(wrap()(arr)); // [1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+</pre>
+</details>

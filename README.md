@@ -15,6 +15,8 @@
 
 ## Day 68:
 
+✅ [[2021-4-29] 如何实现数组的 flatten 方法？](https://github.com/HJY-xh/plantTrees/issues/197)
+
 ✅ [[2021-4-29] WebSocket 是什么？](https://github.com/HJY-xh/plantTrees/issues/196)
 
 ✅ [[2021-4-29] 怎么理解 http 和 https？](https://github.com/HJY-xh/plantTrees/issues/195)
