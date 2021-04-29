@@ -29,6 +29,4 @@ cond1(no)->exit
 exit->e
 ```
 
-👆 该流程图在 github 无法展示,可以将其输入到[这里](https://pandao.github.io/editor.md/)查看
-
-hahahh
+👆该流程图在github无法展示,可以将其输入到[这里](https://pandao.github.io/editor.md/)查看
