@@ -526,3 +526,18 @@ Origin: http://example.com
 
 </pre>
 </details>
+
+[23.[2021-4-30] TCP 与 UDP 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/198)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   TCP 是**面向连接**的；UDP 是**无连接**的，即发送数据前不需要先建立连接
+-   TCP 提供**可靠**的服务，也就是说通过 TCP 连接传送的数据无差错、不丢失、不重复，且按序到达，适合大数据量的交换；UDP 尽最大努力交付，即不保证可靠交付
+-   TCP 是**面向字节**流；UDP 是**面向报文**，并且网络出现拥塞不会使得发送速率降低（因此会出现丢包。适合实时应用，例如 IP 电话和视频会议等）
+-   TCP 是**1 对 1**;UDP 支持**1 对 1**与**1 对多**
+-   TCP 的首部较大为 20 字节；UDP 首部只有 8 字节
+
+</pre>
+</details>

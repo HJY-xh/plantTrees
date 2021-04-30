@@ -1263,3 +1263,16 @@ static 默认值。没有定位，元素出现在正常的流中
 
 </pre>
 </details>
+
+[29.[2021-4-30] 通过 CSS 让一个元素在视觉上不可见有哪些方法？](https://github.com/HJY-xh/plantTrees/issues/200)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   opacity: 0 这将会时元素不可见，但不会改变页面布局，并且，如果该元素已经绑定了一些事件，如 click 事件，那么点击该区域仍然能够触发点击事件
+-   visibility: hidden 将该元素设置无不可见，但不会改变页面布局，也不回触发该元素已经绑定的事件
+-   display: none 它使元素不显示，会改变页面布局
+
+</pre>
+</details>
