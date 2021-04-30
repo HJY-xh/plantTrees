@@ -1374,3 +1374,46 @@ console.log(wrap()(arr)); // [1, 2, 3, 4, 5, 6, 7, 8]
 
 </pre>
 </details>
+
+[51.[2021-4-30] 有哪些常用的 BOM 对象属性方法？](https://github.com/HJY-xh/plantTrees/issues/199)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+### 1. location 对象
+
+-   location.href ==> 返回或设置当前文档的 URL
+-   location.search ==> 返回 URL 中的查询字符串部分
+
+例：`http://www.example.com/example.php?id=5&name=hi`，返回包括`?`后面的内容，即`?id=5&name=hi`
+
+-   location.hash ==> 返回 URL`#`后面的内容，如果没有`#`，返回空
+-   location.host ==> 返回 URL 中的域名部分，例如`www.example.com`
+-   location.hostname ==> 返回 URL 中主域名部分，例如`example.com`
+-   location.pathname ==> 返回 URL 中域名后的部分
+
+例：`http://www/example.com/xhtml/`，返回`/xhtml/`
+
+-   location.port ==> 返回 URL 中的端口部分
+-   location.protocol ==> 返回 URL 中的协议部分，例如`http:`
+-   location.assign ==> 设置当前文档的 URL
+-   location.replace() ==> 设置当前文档的 URL，即用一个新文档取代当前文档，语法`location.replace(url)`
+-   location.reload() ==> 重载当前页面
+
+### 2. history 对象
+
+-   history.go() ==> 前进或后退指定的页面数，语法`history.go(num)`
+-   history.back() ==> 后退一页
+-   history.forword() ==> 前进一页
+
+### 3. Navigator 对象
+
+-   navigator.userAgent ==> 返回用户代理头的字符串表示（就是包括浏览器版本信息等等的字符串）
+
+例如：`Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4540.147 Safari/537.36`
+
+-   navigator.cookieEnabled ==> 返回浏览器是否支持（启用）cookie
+
+</pre>
+</details>
