@@ -506,18 +506,21 @@ HTTP 传输的数据都是未加密的，也就是明文的，网景公司设置
 <pre>
 
 -   WebSocket 是 HTML5 中的协议，支持持久连接
--   http 的生命周期通过 request 来界定，也就是 request 一个 response，那么在默认情况下的 http1.0 协议中，这次 http 请求就结束了。在 http1.1 中进行了改进，出现了`keep-alive`，http/1.1 和之前版本的显著区别是 http/1.1 默认使用持久连接。在一个 http 连接中，可以发送多个 request，接受多个 response。但是必须记住，在 http 中一个 request 只能对应有一个 response，而且这个 response 是被动的，不能主动发起。WebSocket 是基于 http 协议的，或者说借用了 http 协议来完成一部分握手，在握手阶段与 http 是相同的。以下为一个 websocket 握手协议的实现：
+-   WebSocket 基于 HTTP 协议，它借用了 http 协议来完成一部分握手，在握手阶段的操作与 http 是相同。
+
+以下为一个 websocket 握手协议的实现：
 
 ```
 GET/char HTTP/1.1
 Host: server.example.com
 Upgrade: websocket
 Connection: Upgrade
-//告诉服务端发送的是websocket--------start
+// 告诉服务端发送的是websocket
+// --------start
 Sec-WebSocket-Key: x3JJHMbDL1EzLkh9GBhXDw==
 Sec-WebSocket-Protocol: chat, superchat
 Sec-WebSocket-Version: 13
-//告诉服务端发送的是websocket--------end
+// --------end
 Origin: http://example.com
 ```
 
