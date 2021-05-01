@@ -556,3 +556,16 @@ Origin: http://example.com
 
 </pre>
 </details>
+
+[25.[2021-5-1] GET 请求传参长度是否有限制？](https://github.com/HJY-xh/plantTrees/issues/203)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+实际上 HTTP 协议从未规定 GET/POST 的请求长度限制是多少。
+
+对 GET 请求参数的限制是来源于浏览器或 Web 服务器，浏览器或 Web 服务器限制了 URL 的长度。
+
+</pre>
+</details>

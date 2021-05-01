@@ -13,15 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 69:
+## Day 70:
 
-✅ [[2021-4-30] 衬线字体是什么？](https://github.com/HJY-xh/plantTrees/issues/202)
-
-✅ [[2021-4-30] 有哪些常用的 BOM 对象属性方法？](https://github.com/HJY-xh/plantTrees/issues/199)
-
-✅ [[2021-4-30] TCP 与 UDP 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/198)
-
-✅ [[2021-4-30] 通过 CSS 让一个元素在视觉上不可见有哪些方法？](https://github.com/HJY-xh/plantTrees/issues/200)
+✅ [[2021-5-1] GET 请求传参长度是否有限制？](https://github.com/HJY-xh/plantTrees/issues/203)
 
 ## 目录结构 📁
 
