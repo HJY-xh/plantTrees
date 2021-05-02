@@ -213,3 +213,15 @@ enum AllocationSpace {
 
 </pre>
 </details>
+
+[14.[2021-5-3] 页面可见性（Page Visibility API）有哪些用途？](https://github.com/HJY-xh/plantTrees/issues/207)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   通过 visibilityState 的值检测页面当前是否可见，以及打开网页的时间
+-   在页面被切换到其他后台进程的时候，自动暂停音乐或视频的播放
+
+</pre>
+</details>
