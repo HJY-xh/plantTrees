@@ -84,3 +84,18 @@ readableStream.on("end", () => {
 
 </pre>
 </details>
+
+[5.[2021-5-3] npm 模块安装机制是什么样的？](https://github.com/HJY-xh/plantTrees/issues/206)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   执行`npm install`命令查询 node_modules 目录之中是否已经存在指定模块
+-   若存在，不再重新安装
+-   若不存在，npm 向 registry 查询模块压缩包的地址
+-   下载压缩包，存放在根目录下.npm 目录中
+-   解压压缩包到当前项目的 node_modules 目录
+
+</pre>
+</details>

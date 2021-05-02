@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 71:
+## Day 72:
 
-✅ [[2021-5-2] 如何实现一个 sleep 函数](https://github.com/HJY-xh/plantTrees/issues/205)
-
-✅ [[2021-5-2] HTTPS 中间人攻击过程是什么样的?](https://github.com/HJY-xh/plantTrees/issues/204)
+✅ [[2021-5-3] npm 模块安装机制是什么样的？](https://github.com/HJY-xh/plantTrees/issues/206)
 
 ## 目录结构 📁
 
