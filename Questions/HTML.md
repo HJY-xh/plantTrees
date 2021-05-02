@@ -335,3 +335,19 @@ label 标签用来定义表单控制间的关系,当用户选择该标签时，�
 
 </pre>
 </details>
+
+[18.[2021-5-3] link 标签各属性有什么作用？](https://github.com/HJY-xh/plantTrees/issues/208)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   href 规定被链接文档的位置
+-   hreflang 规定被链接文档中文本的语言
+-   media 规定被链接文档将被显示在什么设备上
+-   rel 规定当前文档与被链接文档之间的关系
+-   sizes 规定被链接资源的尺寸（仅适用于 rel = "icon")
+-   type 规定被链接文档的 MIME 类型
+
+</pre>
+</details>
