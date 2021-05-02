@@ -1417,3 +1417,16 @@ console.log(wrap()(arr)); // [1, 2, 3, 4, 5, 6, 7, 8]
 
 </pre>
 </details>
+
+[52.[2021-5-2] 如何实现一个 sleep 函数](https://github.com/HJY-xh/plantTrees/issues/205)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+比如 sleep(1000) 意味着等待 1000 毫秒，可从 Promise、Generator、Async/Await 等角度实现：
+
+    constsleep=(time)=>{returnnewPromise(resolve=>setTimeout(resolve,time));}sleep(1000).then(()=>{// todo})
+
+</pre>
+</details>
