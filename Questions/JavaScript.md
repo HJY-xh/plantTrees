@@ -1426,7 +1426,15 @@ console.log(wrap()(arr)); // [1, 2, 3, 4, 5, 6, 7, 8]
 
 比如 sleep(1000) 意味着等待 1000 毫秒，可从 Promise、Generator、Async/Await 等角度实现：
 
-    constsleep=(time)=>{returnnewPromise(resolve=>setTimeout(resolve,time));}sleep(1000).then(()=>{// todo})
+```javascript
+const sleep = (time) => {
+	return new Promise((resolve) => setTimeout(resolve, time));
+};
+
+sleep(1000).then(() => {
+	// todo
+});
+```
 
 </pre>
 </details>
