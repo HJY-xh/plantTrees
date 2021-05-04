@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 72:
+## Day 73:
 
-✅ [[2021-5-3] link 标签各属性有什么作用？](https://github.com/HJY-xh/plantTrees/issues/208)
-
-✅ [[2021-5-3] 页面可见性（Page Visibility API）有哪些用途？](https://github.com/HJY-xh/plantTrees/issues/207)
-
-✅ [[2021-5-3] npm 模块安装机制是什么样的？](https://github.com/HJY-xh/plantTrees/issues/206)
+✅ [[2021-5-4] 函数的 length 属性代表什么?](https://github.com/HJY-xh/plantTrees/issues/209)
 
 ## 目录结构 📁
 
