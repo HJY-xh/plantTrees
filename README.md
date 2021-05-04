@@ -15,6 +15,8 @@
 
 ## Day 73:
 
+✅ [[2021-5-4] 柯里化如何实现？](https://github.com/HJY-xh/plantTrees/issues/210)
+
 ✅ [[2021-5-4] 函数的 length 属性代表什么?](https://github.com/HJY-xh/plantTrees/issues/209)
 
 ## 目录结构 📁

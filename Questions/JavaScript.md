@@ -1461,3 +1461,34 @@ console.log(sum.length); // 3
 
 </pre>
 </details>
+
+[54.[2021-5-4] 柯里化如何实现？](https://github.com/HJY-xh/plantTrees/issues/210)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+直接上代码啦：
+
+```javascript
+function curry(func) {
+	return function curried(...args) {
+		if (args.length >= func.length) {
+			return func.apply(this, args);
+		} else {
+			return function (...args2) {
+				return curried.apply(this, args.concat(args2));
+			};
+		}
+	};
+}
+```
+
+当我们运行它时，这里有两个 if 执行分支：
+
+如果传入的 args 长度与原始函数所定义的（func.length）相同或者更长，那么只需要将调用传递给它即可。
+
+否则获取一个偏函数，func 不会被调用，会返回另一个包装器 pass，它将重新应用 curried，将之前传入的参数与新的参数一起传入。然后，在一个新的调用中获得一个新的偏函数（如果参数不足的话），或者最终的结果。
+
+</pre>
+</details>
