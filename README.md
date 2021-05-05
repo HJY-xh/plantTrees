@@ -15,6 +15,8 @@
 
 ## Day 74:
 
+✅ [[2021-5-5] rgba() 和 opacity 的透明效果有什么不同？](https://github.com/HJY-xh/plantTrees/issues/214)
+
 ✅ [[2021-5-5] ES6 代码转成 ES5 代码的实现思路是什么?](https://github.com/HJY-xh/plantTrees/issues/213)
 
 ## 目录结构 📁

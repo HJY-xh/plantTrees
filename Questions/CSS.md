@@ -1276,3 +1276,16 @@ static 默认值。没有定位，元素出现在正常的流中
 
 </pre>
 </details>
+
+[30.[2021-5-5] rgba() 和 opacity 的透明效果有什么不同？](https://github.com/HJY-xh/plantTrees/issues/214)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+`opacity` 作用于元素以及元素内的所有内容（包括文字）的透明度。
+
+`rgba()` 只作用于元素自身的颜色或其背景色，子元素不会继承透明效果。
+
+</pre>
+</details>
