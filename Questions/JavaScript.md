@@ -1492,3 +1492,18 @@ function curry(func) {
 
 </pre>
 </details>
+
+[55.[2021-5-5] ES6 代码转成 ES5 代码的实现思路是什么?](https://github.com/HJY-xh/plantTrees/issues/213)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+ES6 转 ES5 目前常用 Babel，转换的大致流程如下：
+
+-   解析：解析代码字符串，生成 AST
+-   转换：按一定的规则转换、修改 AST
+-   生成：将修改后的 AST 转换成普通代码
+
+</pre>
+</details>

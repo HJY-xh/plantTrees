@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 73:
+## Day 74:
 
-✅ [[2021-5-4] 柯里化如何实现？](https://github.com/HJY-xh/plantTrees/issues/210)
-
-✅ [[2021-5-4] 函数的 length 属性代表什么?](https://github.com/HJY-xh/plantTrees/issues/209)
+✅ [[2021-5-5] ES6 代码转成 ES5 代码的实现思路是什么?](https://github.com/HJY-xh/plantTrees/issues/213)
 
 ## 目录结构 📁
 
