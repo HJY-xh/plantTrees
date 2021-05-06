@@ -351,3 +351,42 @@ label 标签用来定义表单控制间的关系,当用户选择该标签时，�
 
 </pre>
 </details>
+
+[19.[2021-5-6] HTML5 中的 drag API 有哪些？](https://github.com/HJY-xh/plantTrees/issues/215)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   dragstart：事件主体是**被拖放元素**，在开始拖放被拖放元素时触发
+-   drag：事件主体是**被拖放元素**，在正在拖放被拖放元素时触发
+-   dragenter：事件主体是**目标元素**，在被拖放元素进入某元素时触发
+-   dragover：事件主体是**目标元素**，在被拖放元素在某元素内移动时触发
+-   dragleave：事件主体是**目标元素**，在被拖放元素移出目标元素时触发
+-   drop：事件主体是**目标元素**，在目标元素完全接受被拖放元素时触发
+-   dragend：事件主体是**被拖放元素**，在整个拖放操作结束时触发
+
+### 补充：HTML5 新增的文件操作对象
+
+File：代表一个文件对象
+FileList：代表一个文件列表对象，类数组
+FileReader：用于从文件中读取数据
+FileWriter：用于向文件中写数据
+
+### 例：
+
+```
+div.ondrop = function(e){
+  var f = e.dataTransfer.files[0];    //找到拖放文件
+  var fr = new FileReader();    //创建文件读取器
+  fr.readAsURLData(f);    //读取文件内容
+  fr.onload = function(){
+    img src = fr.result;    //使用读取到的数据
+  }
+}
+```
+
+主要配合 drag 事件使用，常用于页面中拖放文件上传等操作，更多详情资料见拓展阅读：[HTML5--拖拽 API](https://blog.csdn.net/paullinjie/article/details/80691193)
+
+</pre>
+</details>
