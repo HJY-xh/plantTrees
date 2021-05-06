@@ -15,6 +15,8 @@
 
 ## Day 75:
 
+✅ [[2021-5-6] HTTP 状态码 301 和 302 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/216)
+
 ✅ [[2021-5-6] HTML5 中的 drag API 有哪些？](https://github.com/HJY-xh/plantTrees/issues/215)
 
 ## 目录结构 📁
