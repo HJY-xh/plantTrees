@@ -1524,3 +1524,31 @@ ES6 转 ES5 目前常用 Babel，转换的大致流程如下：
 
 </pre>
 </details>
+
+[57.[2021-5-8] var，let 和 const 之间有什么区别?](https://github.com/HJY-xh/plantTrees/issues/224)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   变量提升方面：var 声明的变量存在变量提升，即变量可以在声明之前调用，值为 undefined。
+    let 和 const 不存在变量提升问题(注意这个‘问题’后缀，其实是有提升的，只不过是 let 和 const 具有一个暂时性死区的概念，即没有到其赋值时，之前就不能用)，即它们所声明的变量一定要在声明后使用，否则报错。
+
+-   块级作用域方面：var 不存在块级作用域,let 和 const 存在块级作用域
+
+-   声明方面：var 允许重复声明变量,let 和 const 在同一作用域不允许重复声明变量。其中 const 声明一个只读的常量(因为如此，其声明时就一定要赋值，不然报错)。一旦声明，常量的值就不能改变。
+
+如何使 const 声明的对象内属性不可变，只可读呢？
+如果 const 声明了一个对象，对象里的属性是可以改变的。
+
+```javascript
+const obj = { name: "cola" };
+obj.name = "water";
+console.log(obj.name); // water
+```
+
+因为 const 声明的 obj 只是保存着其对象的引用地址，只要地址不变，就不会出错。
+使用 Object.freeze(obj) 冻结 obj,就能使其内的属性不可变,但它有局限，就是 obj 对象中要是有属性是对象，该对象内属性还能改变，要全不可变，就需要使用递归等方式一层一层全部冻结。
+
+</pre>
+</details>
