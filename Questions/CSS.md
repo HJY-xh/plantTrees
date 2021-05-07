@@ -1289,3 +1289,57 @@ static 默认值。没有定位，元素出现在正常的流中
 
 </pre>
 </details>
+
+[31.[2021-5-7] 如何实现多行文本溢出显示省略号效果？](https://github.com/HJY-xh/plantTrees/issues/218)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+代码如下 👇：
+
+```
+    div{
+      margin: 0 auto;
+      width: 300px;
+      color: red;
+      /*以下为重点*/
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+```
+
+补充 ✍️**单行**文字溢出显示省略号：
+
+```
+    div{
+      margin: 0 auto;
+      width: 300px;
+      color: red;
+      /*以下为重点*/
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+```
+
+</pre>
+</details>
+[32.[2021-5-7] sticky定位是什么？](https://github.com/HJY-xh/plantTrees/issues/219)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+sticky 是 css 定位新增的属性；可以说是相对定位**relative**和固定定位**fixed**的结合；
+
+它主要用在对 scroll 事件的监听上，简单说在滑动过程中，某个元素的距离其父元素的距离达到 sticky 粘性定位要求时，
+
+position:sticky 这时的效果就相对于 fixed 定位，固定到适当的位置
+
+这里有个 demo 可以自己尝试一下：[https://www.cnblogs.com/yuzhongyu/p/10517755.html](https://www.cnblogs.com/yuzhongyu/p/10517755.html)
+
+</pre>
+</details>

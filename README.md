@@ -13,11 +13,13 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 75:
+## Day 76:
 
-✅ [[2021-5-6] HTTP 状态码 301 和 302 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/216)
+✅ [[2021-5-7] 如何理解前端模块化？](https://github.com/HJY-xh/plantTrees/issues/222)
 
-✅ [[2021-5-6] HTML5 中的 drag API 有哪些？](https://github.com/HJY-xh/plantTrees/issues/215)
+✅ [[2021-5-7] sticky 定位是什么？](https://github.com/HJY-xh/plantTrees/issues/219)
+
+✅ [[2021-5-7] 如何实现多行文本溢出显示省略号效果？](https://github.com/HJY-xh/plantTrees/issues/218)
 
 ## 目录结构 📁
 
