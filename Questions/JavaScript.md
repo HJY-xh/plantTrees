@@ -1507,3 +1507,20 @@ ES6 转 ES5 目前常用 Babel，转换的大致流程如下：
 
 </pre>
 </details>
+
+[56.[2021-5-8] 箭头函数和普通函数有什么区别?](https://github.com/HJY-xh/plantTrees/issues/223)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   箭头函数和普通函数的样式不同，箭头函数语法更加简洁、清晰，箭头函数是=>定义函数,普通函数是 function 定义函数
+-   箭头函数会捕获其所在上下文的 this 值，作为自己的 this 值，定义的时候就确定并固定了
+-   箭头函数不能作为构造函数使用，也不能使用 new 关键字(因为箭头函数没有自己的 this，它的 this 其实是继承了外层执行环境中的 this，且 this 指向永远不会改变,作为构造函数其的 this 要是指向创建的新对象)
+-   箭头函数没有自己的 arguments。在箭头函数中访问 arguments 实际上获得的是外层局部（函数）执行环境中的值
+-   call、apply、bind 并不会影响箭头函数 this 的指向
+-   箭头函数没有原型 prototype
+-   箭头函数不能当作 Generator 函数，不能使用 yield 关键字
+
+</pre>
+</details>

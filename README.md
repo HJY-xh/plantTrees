@@ -13,15 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 76:
+## Day 77:
 
-✅ [[2021-5-7] Linux 系统目录结构是什么样的？](https://github.com/HJY-xh/plantTrees/issues/221)
-
-✅ [[2021-5-7] 如何理解前端模块化？](https://github.com/HJY-xh/plantTrees/issues/222)
-
-✅ [[2021-5-7] sticky 定位是什么？](https://github.com/HJY-xh/plantTrees/issues/219)
-
-✅ [[2021-5-7] 如何实现多行文本溢出显示省略号效果？](https://github.com/HJY-xh/plantTrees/issues/218)
+✅ [[2021-5-8] 箭头函数和普通函数有什么区别?](https://github.com/HJY-xh/plantTrees/issues/223)
 
 ## 目录结构 📁
 
