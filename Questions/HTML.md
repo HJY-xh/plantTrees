@@ -390,3 +390,31 @@ div.ondrop = function(e){
 
 </pre>
 </details>
+
+[20.[2021-4-30] 电商平台常见的 meta 有哪些？](https://github.com/HJY-xh/plantTrees/issues/201)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+以下皆以[https://world.taobao.com 为例：](https://world.taobao.com%E4%B8%BA%E4%BE%8B%EF%BC%9A)
+
+META 标签是 HTML 标记 HEAD 区的一个关键标签，提供文档字符集、使用语言、作者等基本信息，以及对关键词和网页等级的设定等，最大的作用是能够做搜索引擎优化（SEO）。
+
+### 1. name 属性
+
+    <!-- 页面关键词 keywords 有利于seo--><metaname="keywords" content="**"><!-- 页面关键词 description 有利于seo--><metaname="description" content="***"><!-- 多核时指定渲染内核为webkit --><metaname="renderer" content="webkit"><!-- 没查到，自定义？--><metaname="spm-id" content="a2141.241046-jp"><!--适配移动设备屏幕大小--><metaid="viewport" name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes,maximum-scale=1"><!-- 用于google认证，享受google的服务，有利于seo--><!--类似的还有baidu-site-verification,sogou-site-verification---><metaname="google-site-verification" content="KtdGedNynGGK36BaVzMLbVB14YqvY1PdSZGSUV5Un-8">
+
+### 2. http-equiv
+
+    <!---告诉IE使用最新的引擎渲染网页-><meta http-equiv="X-UA-Compatible" content="IE=Edge"><!--打开dns预读取，有利于提升网站性能--><metahttp-equiv="x-dns-prefetch-control" content="on"><!--字符编码--><metahttp-equiv="content-type" content="text/html; charset=utf-8">
+
+### 3. charset
+
+    <metacharset="utf-8">
+
+参考文献：
+[https://lonhon.top/2018/09/04/Useful-HTML-meta/](https://lonhon.top/2018/09/04/Useful-HTML-meta/)
+
+</pre>
+</details>
