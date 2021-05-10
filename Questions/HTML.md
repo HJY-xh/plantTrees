@@ -401,20 +401,48 @@ div.ondrop = function(e){
 
 META 标签是 HTML 标记 HEAD 区的一个关键标签，提供文档字符集、使用语言、作者等基本信息，以及对关键词和网页等级的设定等，最大的作用是能够做搜索引擎优化（SEO）。
 
+以下皆以https://world.taobao.com为例：
+
+META 标签是 HTML 标记 HEAD 区的一个关键标签，提供文档字符集、使用语言、作者等基本信息，以及对关键词和网页等级的设定等，最大的作用是能够做搜索引擎优化（SEO）。
+
 ### 1. name 属性
 
-    <!-- 页面关键词 keywords 有利于seo--><metaname="keywords" content="**"><!-- 页面关键词 description 有利于seo--><metaname="description" content="***"><!-- 多核时指定渲染内核为webkit --><metaname="renderer" content="webkit"><!-- 没查到，自定义？--><metaname="spm-id" content="a2141.241046-jp"><!--适配移动设备屏幕大小--><metaid="viewport" name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes,maximum-scale=1"><!-- 用于google认证，享受google的服务，有利于seo--><!--类似的还有baidu-site-verification,sogou-site-verification---><metaname="google-site-verification" content="KtdGedNynGGK36BaVzMLbVB14YqvY1PdSZGSUV5Un-8">
+```html
+<!-- 页面关键词 keywords 有利于seo-->
+<meta name="keywords" content="**" />
+<!-- 页面关键词 description 有利于seo-->
+<meta name="description" content="***" />
+<!-- 多核时指定渲染内核为webkit -->
+<meta name="renderer" content="webkit" />
+<!-- 没查到，自定义？-->
+<meta name="spm-id" content="a2141.241046-jp" />
+<!--适配移动设备屏幕大小-->
+<meta
+	id="viewport"
+	name="viewport"
+	content="width=device-width,initial-scale=1,user-scalable=yes,maximum-scale=1"
+/>
+<!-- 用于google认证，享受google的服务，有利于seo-->
+<!--类似的还有baidu-site-verification,sogou-site-verification--->
+<meta name="google-site-verification" content="KtdGedNynGGK36BaVzMLbVB14YqvY1PdSZGSUV5Un-8" />
+```
 
 ### 2. http-equiv
 
-    <!---告诉IE使用最新的引擎渲染网页-><meta http-equiv="X-UA-Compatible" content="IE=Edge"><!--打开dns预读取，有利于提升网站性能--><metahttp-equiv="x-dns-prefetch-control" content="on"><!--字符编码--><metahttp-equiv="content-type" content="text/html; charset=utf-8">
+```html
+<!---告诉IE使用最新的引擎渲染网页->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!--打开dns预读取，有利于提升网站性能-->
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<!--字符编码-->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+```
 
 ### 3. charset
 
-    <metacharset="utf-8">
-
-参考文献：
-[https://lonhon.top/2018/09/04/Useful-HTML-meta/](https://lonhon.top/2018/09/04/Useful-HTML-meta/)
+```html
+<meta charset="utf-8" />
+```
 
 </pre>
 </details>
