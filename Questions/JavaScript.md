@@ -1552,3 +1552,14 @@ console.log(obj.name); // water
 
 </pre>
 </details>
+
+[58.[2021-5-10] 空值运算符和可选链运算符在 Node 环境下运行最低版本要求是多少？](https://github.com/HJY-xh/plantTrees/issues/227)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+v14.0.0
+
+</pre>
+</details>
