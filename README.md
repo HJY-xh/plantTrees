@@ -15,7 +15,7 @@
 
 ## Day 78:
 
-✅ [[2021-5-9] 堆和栈有什么区别？](https://github.com/HJY-xh/plantTrees/issues/226)
+✅ [[2021-5-6] babel 常用配置参数有哪些？](https://github.com/HJY-xh/plantTrees/issues/217)
 
 ## 目录结构 📁
 
