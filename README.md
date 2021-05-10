@@ -64,6 +64,8 @@ plantTrees
 
 [**Git**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/Git.md)
 
+[**Linux**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/Linux.md)
+
 ## 参与贡献 ✍️
 
 [点我](https://github.com/HJY-xh/plantTrees/wiki/%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE%EF%BC%9F)
