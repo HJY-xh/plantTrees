@@ -99,3 +99,59 @@ readableStream.on("end", () => {
 
 </pre>
 </details>
+
+[6.[2021-5-7] package.json 参数含义以及常用配置](https://github.com/HJY-xh/plantTrees/issues/220)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+## 一、package.json
+
+1.  属性
+    `version`表明了当前的版本。
+    `name `设置了应用程序/软件包的名称。
+    `description `是应用程序/软件包的简短描述。
+    `main `设置了应用程序的入口点。
+    `private` 如果设置为 true，则可以防止应用程序/软件包被意外地发布到 npm。
+    `scripts` 定义了一组可以运行的 node 脚本。
+    `dependencies` 设置了作为依赖安装的 npm 软件包的列表。
+    `devDependencies` 设置了作为开发依赖安装的 npm 软件包的列表。
+    `engines` 设置了此软件包/应用程序在哪个版本的 Node.js 上运行。
+    `browserslist` 用于告知要支持哪些浏览器（及其版本）。
+
+2.  特殊属性
+
+3.  软件包版本：
+
+"express": "^4.17.1"
+
+"express": "~4.17.1"
+
+"express": "4.17.1"
+`^`: 只会执行不更改最左边非零数字的更新。 如果写入的是 ^0.13.0，则当运行 npm update 时，可以更新到 0.13.1、0.13.2 等，但不能更新到 0.14.0 或更高版本。 如果写入的是 ^1.13.0，则当运行 npm update 时，可以更新到 1.13.1、1.14.0 等，但不能更新到 2.0.0 或更高版本。
+`~`: 如果写入的是 〜0.13.0，则当运行 npm update 时，会更新到补丁版本：即 0.13.1 可以，但 0.14.0 不可以。
+`>`: 接受高于指定版本的任何版本。
+`>=`: 接受等于或高于指定版本的任何版本。
+`<=`: 接受等于或低于指定版本的任何版本。
+`<`: 接受低于指定版本的任何版本。[http://nodejs.cn/learn/semantic-versioning-using-npm`=`](http://nodejs.cn/learn/semantic-versioning-using-npm%60=%60): 接受确切的版本。
+`-`: 接受一定范围的版本。例如：2.1.0 - 2.6.2。
+`||`: 组合集合。例如 < 2.1 || > 2.6。
+`无符号`: 仅接受指定的特定版本（例如 1.2.1）。
+`latest`: 使用可用的最新版本。
+
+## 二、package-lock.json
+
+如果写入的是 `〜0.13.0`，则只更新补丁版本：即 0.13.1 可以，但 0.14.0 不可以。
+
+如果写入的是` ^0.13.0`，则要更新补丁版本和次版本：即 0.13.1、0.14.0、依此类推。
+
+如果写入的是 `0.13.0`，则始终使用确切的版本。
+
+参考文献：
+[使用 npm 的语义版本控制](http://nodejs.cn/learn/semantic-versioning-using-npm)
+[package.json 指南](http://nodejs.cn/learn/the-package-json-guide)
+[package-lock.json 文件](http://nodejs.cn/learn/the-package-lock-json-file)
+
+</pre>
+</details>

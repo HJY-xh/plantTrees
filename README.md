@@ -15,6 +15,8 @@
 
 ## Day 78:
 
+✅ [[2021-5-7] package.json 参数含义以及常用配置](https://github.com/HJY-xh/plantTrees/issues/220)
+
 ✅ [[2021-4-28] 前端反爬虫策略？](https://github.com/HJY-xh/plantTrees/issues/194)
 
 ✅ [[2021-4-30] 电商平台常见的 meta 有哪些？](https://github.com/HJY-xh/plantTrees/issues/201)
