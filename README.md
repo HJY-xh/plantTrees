@@ -15,6 +15,8 @@
 
 ## Day 78:
 
+✅ [[2021-4-28] 前端反爬虫策略？](https://github.com/HJY-xh/plantTrees/issues/194)
+
 ✅ [[2021-4-30] 电商平台常见的 meta 有哪些？](https://github.com/HJY-xh/plantTrees/issues/201)
 
 ✅ [[2021-5-5] 手机浏览器和 PC 浏览器的区别？](https://github.com/HJY-xh/plantTrees/issues/211)
