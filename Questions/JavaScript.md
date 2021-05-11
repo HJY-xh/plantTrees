@@ -1563,3 +1563,41 @@ v14.0.0
 
 </pre>
 </details>
+
+[59.[2021-5-11] Array.of() 的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/229)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+该方法可以将一系列值转换成数组。
+
+为什么会有这个方法呢？这得从`new Array()`说起，当我们调用`new Array()`时，它会根据传入参数的类型和个数的不同生成不同的结果。看个 🌰 ：
+
+```javascript
+let items = new Array(5);
+console.log(items.length); // 5
+console.log(items[0]); // undefined
+
+let items = new Array(1, 2, 3);
+console.log(items.length); // 3
+console.log(items[0]); // 1
+console.log(items[1]); // 2
+```
+
+-   当使用单个数值参数来调用 Array 构造器时，数组的长度属性会被设置为该参数
+-   当使用多个参数(无论是否为数值类型)来调用，这些参数也会成为目标数组的项
+
+数组的这种行为可能会超出我们的预期，因为有时不会留意所传参数的类型。
+
+ES6 引入了`Array.of( )`，该方法的作用非常类似 Array 构造器，但在使用单个数值参数的时候并不会导致特殊结果。`Array.of( )`方法总会创建一个包含所有传入参数的数组，而不管参数的数量与类型：
+
+```javascript
+let items = Array.of(1, 2, 3);
+console.log(items.length); // 3
+console.log(items[0]); // 1
+console.log(items[1]); // 2
+```
+
+</pre>
+</details>
