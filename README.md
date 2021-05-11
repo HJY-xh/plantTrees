@@ -15,6 +15,8 @@
 
 ## Day 80:
 
+✅ [[2021-5-11] git 的数据流走向是什么样的？](https://github.com/HJY-xh/plantTrees/issues/233)
+
 ✅ [[2021-5-11] 什么是 Linux 容器？](https://github.com/HJY-xh/plantTrees/issues/232)
 
 ✅ [[2021-5-11] 虚拟机是什么？](https://github.com/HJY-xh/plantTrees/issues/231)

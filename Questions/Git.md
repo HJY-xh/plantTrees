@@ -19,3 +19,14 @@
 
 </pre>
 </details>
+
+[2.[2021-5-11] git 的数据流走向是什么样的？](https://github.com/HJY-xh/plantTrees/issues/233)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+[![git数据流走向](https://user-images.githubusercontent.com/39485286/117751619-ffdc9380-b247-11eb-948b-ee9a13a37899.png)](https://user-images.githubusercontent.com/39485286/117751619-ffdc9380-b247-11eb-948b-ee9a13a37899.png)
+
+</pre>
+</details>
