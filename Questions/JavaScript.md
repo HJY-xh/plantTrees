@@ -1599,5 +1599,7 @@ console.log(items[0]); // 1
 console.log(items[1]); // 2
 ```
 
+无论传入的参数个数是多少，该方法的行为都保持一致，因此`Array.of`基本上可以用来替代`Array()`或`new Array()`。
+
 </pre>
 </details>
