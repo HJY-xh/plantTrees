@@ -1603,3 +1603,17 @@ console.log(items[1]); // 2
 
 </pre>
 </details>
+
+[60.[2021-5-12] 柯里化有哪些性能问题？](https://github.com/HJY-xh/plantTrees/issues/236)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   一些实现基于存取`argument`对象，通常比存取参数名慢一些
+-   一些老版本的`argument.length`的实现上很慢
+-   使用 fn.apply( … ) 和 fn.call( … )通常比直接调用 fn( … ) 稍微慢点
+-   创建大量的嵌套作用域和闭包函数会带来花销，无论是内存还是速度
+
+</pre>
+</details>

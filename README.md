@@ -13,15 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 80:
+## Day 81:
 
-✅ [[2021-5-11] git 的数据流走向是什么样的？](https://github.com/HJY-xh/plantTrees/issues/233)
-
-✅ [[2021-5-11] 什么是 Linux 容器？](https://github.com/HJY-xh/plantTrees/issues/232)
-
-✅ [[2021-5-11] 虚拟机是什么？](https://github.com/HJY-xh/plantTrees/issues/231)
-
-✅ [[2021-5-11] Array.of() 的作用是什么？](https://github.com/HJY-xh/plantTrees/issues/229)
+✅ [[2021-5-12] 柯里化有哪些性能问题？](https://github.com/HJY-xh/plantTrees/issues/236)
 
 ## 目录结构 📁
 
