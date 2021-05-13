@@ -1617,3 +1617,35 @@ console.log(items[1]); // 2
 
 </pre>
 </details>
+
+[61.[2021-5-13] JavaScript 中的元编程体现在哪里?](https://github.com/HJY-xh/plantTrees/issues/237)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+## 什么是元编程?
+
+先来看看百度百科的定义：
+
+> 元编程（Metaprogramming）是指某类计算机程序的编写，这类计算机程序编写或者操纵其他程序（或者自身）作为它们的数据，或者在运行时完成部分本应在编译时完成的工作。很多情况下与手工编写全部代码相比，元编程的工作效率更高。
+> 编写元程序的语言称之为元语言，被操作的语言称之为目标语言。
+> 一门语言同时也是自身的元语言的能力称之为反射。
+
+## JavaScript 中的元编程体现在哪里?
+
+根据定义，`eval`就是是实实在在的元编程了，看个 🌰 ：
+
+```javascript
+let str = `(function hello(){
+    console.log('hello');
+})()`;
+eval(str); // hello
+```
+
+`eval`可以编写计算机程序从而动态生成一段程序，实现**用程序造程序**，这就是元编程。
+
+而如果是程序具备自己造自己的能力，那么这门程序语言就具备反射的能力。上面的 JavaScript 就是自己造自己：通过输入一段 JavaScript 字符串，造出一段新的 JavaScript 函数，因此 JavaScript 具备反射的能力。
+
+</pre>
+</details>
