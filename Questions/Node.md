@@ -155,3 +155,24 @@ readableStream.on("end", () => {
 
 </pre>
 </details>
+
+[7.[2021-5-13] Node 的高性能体现在哪里？](https://github.com/HJY-xh/plantTrees/issues/241)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   执行速度快
+
+Node.js 是构建在 Chrome V8 引擎之上的，执行速度可能是动态语言运行时环境里最快的。
+
+-   天生异步
+
+事件驱动和非阻塞 I/O 特性决定了 Node.js 必须采用异步机制，每个 I/O 任务都是异步的，因此集成到 libuv 的事件循环里才能让开发者代码对并发操作无感知。
+
+-   适用于 I/O 密集的网络应用开发
+
+网络应用开发（包括 Web 应用开发）的瓶颈在于 I/O 处理，而这恰恰是 Node.js 的强项。对于 CPU 密集型应用而言，能够使用其他语言开发最好使用其它语言，如果必须使用 Node.js，可以通过 C/C++拓展机制来实现。
+
+</pre>
+</details>
