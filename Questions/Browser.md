@@ -225,3 +225,20 @@ enum AllocationSpace {
 
 </pre>
 </details>
+
+[15.[2021-5-14] 什么是跨域资源共享(CORS)，它解决什么问题？](https://github.com/HJY-xh/plantTrees/issues/243)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+CORS 全称为 Cross-Origin Resource Sharing，被译为跨域资源共享，新增了一组 HTTP 首部字段，允许服务器声明哪些源站有权限访问哪些资源。
+
+跨域资源共享标准规范要求，对那些可能对服务器数据产生副作用的 HTTP 请求方法（特别是 GET 以外的 HTTP 请求，或者搭配某些 MIME 类型的 POST 请求），浏览器必须首先使用 OPTIONS 方法发 起一个预检请求，从而获知服务端是否允许该跨域请求。服务器确认允许之后，才发起实际的 HTTP 请求。在预检请求的返回中，服务器端也可以通知客户端，是否需要携带身份凭证。
+
+当使用 Ajax 跨域请求时，浏览器报错：`Origin null is not allowed by Access-Control-Allow-Origin.`出现跨域的问题，如果用 JSONP 或者 proxy 的方式进行修改的话未免需要太大的工程量，所以采用 CORS 这种比较简单高效的技术。
+
+相比 JSONP 的方式，CORS 更为高效。JSONP 由于它的原理只能实现 GET 请求，而 CORS 支持所有类型的 HTTP 请求。使用 CORS,可以使用普通的 ajax 实现跨域。
+
+</pre>
+</details>
