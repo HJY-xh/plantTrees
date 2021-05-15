@@ -176,3 +176,25 @@ Node.js 是构建在 Chrome V8 引擎之上的，执行速度可能是动态语�
 
 </pre>
 </details>
+
+[8.[2021-5-15] CommonJS 和 Node.js 的关系是什么样的？](https://github.com/HJY-xh/plantTrees/issues/244)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+Node.js 借鉴 CommonJS 模块规范实现了一套非常易用的模块系统，npm 对模块规范的完美支持，也是的 Node.js 应用开发事半功倍。
+
+尽管他们有些不同，但大家还是习惯说，Node.js 是基于 CommonJS 规范的。先有规范，后有实现，这种在实现过程中做过改进的规范和原规范的关系，用“基于”来概括也并不为过。
+
+CommonJS 项目定义了一系列的规范，可以辅助 JavaScript 应用程序在服务端进行开发。Node.js 开发人员起初打算完全遵循 CommonJS 规范，但后来又推翻了起初的摄像，因为设计模块时，CommonJS 非常影响 Node.js 的实现。
+
+Node.js 和 CommonJS 在模块系统中主要通过两个关键字进行交互，即 require 和 export。require 是一个用于引入模块的函数，参数是所需模块的标识。在 Node.js 的实现中，模块的名字 node_modules 目录下，如果不在，就会去查找指定路径。exports 是一个特殊的对象，它的任何输出都将作为一个对外暴露的公共 API。
+
+Node.js 和 CommonJS 的区别主要体现在 module.exports 对象的具体实现上：
+
+-   在 Node.js 中，module.exports 是真正的特殊对象，是真正的对外暴露接口，而 exports 只是一个变量，是被默认的 module.exports 绑定的
+-   CommonJS 规范里没有 module.exports 对象。在 Node.js 中，它的实际含义是一个完全预先构建的对象，不经过 module.exports 是不可能对外暴露的
+
+</pre>
+</details>
