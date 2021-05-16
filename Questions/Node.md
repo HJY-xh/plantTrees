@@ -218,3 +218,17 @@ require 其实还有按需加载的含义，就像前端常见的 AMD、CMD、UM
 
 </pre>
 </details>
+
+[10.[2021-5-16] Node.js 的可拓展体现在哪里？](https://github.com/HJY-xh/plantTrees/issues/246)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   可以使用 npm 上的大量模块
+-   可以通过编写 C/C++扩展实现 CPU 密集型任务
+-   可以轻松搭配 Java、Rust 等语言使用
+-   架构互补：在架构上以业务边界来进行服务拆分，外加各种“组合拳”，可以让合适的轮子出现在合适的位置上，比如 Java 在基础平台建设及大数据等领域有非常身后的基础，那么直接使用即可
+
+</pre>
+</details>
