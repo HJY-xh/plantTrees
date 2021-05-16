@@ -198,3 +198,23 @@ Node.js 和 CommonJS 的区别主要体现在 module.exports 对象的具体实�
 
 </pre>
 </details>
+
+[9.[2021-5-16] Node.js 中模块的核心是什么？](https://github.com/HJY-xh/plantTrees/issues/245)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+Node.js 对模块的定义十分简单，主要分为模块引用、模块定义和模块标识 3 个部分。
+
+其中常用的模块处理命令如下：
+
+-   require：用来引用模块
+-   export：用来到处模块，包括标识符和模块内容
+    -   module.exports：对外导出的对象只能有 1 个
+    -   exports.×××：对外导出的值可以有多个
+
+require 其实还有按需加载的含义，就像前端常见的 AMD、CMD、UMD 规范等，当多次引用一个模块的时候，该模块只会被加载一次，其他情况下都在缓存中加载，不需要重新加载，这其实就是 Node.js 的模块缓存机制。
+
+</pre>
+</details>
