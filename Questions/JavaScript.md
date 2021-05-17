@@ -1668,3 +1668,14 @@ let id = symbol("id"）
 
 </pre>
 </details>
+
+[63.[2021-5-17] 为什么会有 BigInt 的提案？](https://github.com/HJY-xh/plantTrees/issues/249)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+JavaScript 中`Number.MAX_SAFE_INTEGER`表示最⼤安全数字，计算结果是`9007199254740991`，即在这个数范围内不会出现精度丢失（⼩数除外）。但是⼀旦超过这个范围，js 就会出现计算不准确的情况，这在⼤数计算的时候不得不依靠⼀些第三⽅库进⾏解决，因此官⽅提出了 BigInt 来解决此问题。
+
+</pre>
+</details>

@@ -15,6 +15,8 @@
 
 ## Day 86:
 
+✅ [[2021-5-17] 为什么会有 BigInt 的提案？](https://github.com/HJY-xh/plantTrees/issues/249)
+
 ✅ [[2021-5-17] ES6 中的 Symbol 是什么？](https://github.com/HJY-xh/plantTrees/issues/248)
 
 ## 目录结构 📁
