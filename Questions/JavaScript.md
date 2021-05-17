@@ -1649,3 +1649,22 @@ eval(str); // hello
 
 </pre>
 </details>
+
+[62.[2021-5-17] ES6 中的 Symbol 是什么？](https://github.com/HJY-xh/plantTrees/issues/248)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+**Symbol**是 ES6 的新增属性，代表用给定名称作为唯一标识，这种类型的值可以这样创建：
+
+```
+let id = symbol("id"）
+```
+
+-   Symbol 确保唯一，即使采用相同的名称，也会产生不同的值。当创建一个字段后，仅知道对应 Symbol 的人能访问
+-   Symbol 并不是 100%隐藏，有内置方法 `Object.getOwnPropertySymbols(obj)` 可以获得所有的 Symbol
+-   `Reflect.ownKeys(obj)` 可返回对象所有的键，包括 Symbol
+
+</pre>
+</details>

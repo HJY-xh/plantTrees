@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 85:
+## Day 86:
 
-✅ [[2021-5-16] Node.js 的可拓展体现在哪里？](https://github.com/HJY-xh/plantTrees/issues/246)
-
-✅ [[2021-5-16] Node.js 中模块的核心是什么？](https://github.com/HJY-xh/plantTrees/issues/245)
+✅ [[2021-5-17] ES6 中的 Symbol 是什么？](https://github.com/HJY-xh/plantTrees/issues/248)
 
 ## 目录结构 📁
 
