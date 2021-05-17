@@ -623,3 +623,33 @@ HTTP/2 使用了数据流的概念，因为 HTTP/2 的数据包是不按顺序�
 
 </pre>
 </details>
+
+[29.[2021-5-17] 如何使用 WebSocket 实现多人编辑？](https://github.com/HJY-xh/plantTrees/issues/238)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+websocket 是 HTML5 的一种新协议（浏览器对象），允许服务器想客户端传递信息，实现浏览器和客户端全双工通信。
+
+特点：
+
+服务端可以发起请求
+
+好处：
+
+避免轮询，减少开销
+
+多人编辑思路：
+
+1. user1，user2，user3。分别建立 websocket 长链接；
+2. user1 新文本 text1，上传到服务器；
+3. 服务器不做处理，直接推送到 user2，user3。
+
+参考文档：
+[阮一峰 websocket 教程](http://www.ruanyifeng.com/blog/2017/05/websocket.html)
+[MDN websocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
+[基于 websocket 的多人编辑实现](https://blog.csdn.net/weixin_45766122/article/details/108230070)
+
+</pre>
+</details>
