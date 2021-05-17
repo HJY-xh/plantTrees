@@ -610,3 +610,16 @@ Origin: http://example.com
 
 </pre>
 </details>
+
+[28.[2021-5-17] HTTP/2 中数据流的概念是什么？](https://github.com/HJY-xh/plantTrees/issues/250)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+数据流 (stream)：已建立的连接内的双向字节流，可以承载一条或多条消息。
+
+HTTP/2 使用了数据流的概念，因为 HTTP/2 的数据包是不按顺序发送的，同一个连接里面连续的数据包，可能属于不同的请求。因此，必须要对数据包做标记，指出它属于哪个请求。HTTP/2 将每个请求或回应的所有数据包，称为一个数据流。每个数据流都有一个独一无二的编号。数据包发送时，都必须标记数据流 ID ，用来区分它属于哪个数据流。
+
+</pre>
+</details>
