@@ -1343,3 +1343,42 @@ position:sticky 这时的效果就相对于 fixed 定位，固定到适当的位
 
 </pre>
 </details>
+
+[33.[2021-5-19] 伪元素和伪类的区别和作用是什么？](https://github.com/HJY-xh/plantTrees/issues/252)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   伪元素：在内容元素的前后插入额外的元素或样式，但是这些元素实际上并不在文档中生成。它们只在外部显示可见，但不会在文档的源代码中找到它们，因此，称为“伪”元素。例如：
+
+```css
+p::before {
+	content: "第一章：";
+}
+p::after {
+	content: "Hot!";
+}
+p::first-line {
+	background: red;
+}
+p::first-letter {
+	font-size: 30px;
+}
+```
+
+-   伪类：将特殊的效果添加到特定选择器上。它是已有元素上添加类别的，不会产生新的元素。例如：
+
+```css
+a:hover {
+	color: #ff00ff;
+}
+p:first-child {
+	color: red;
+}
+```
+
+总结：伪类是通过在元素选择器上加⼊伪类改变元素状态，⽽伪元素通过对元素的操作进⾏对元素的改变。
+
+</pre>
+</details>
