@@ -15,6 +15,8 @@
 
 ## Day 90:
 
+✅ [[2021-5-20] git rebase 与 git merge 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/256)
+
 ✅ [[2021-5-20] 懒加载的概念?](https://github.com/HJY-xh/plantTrees/issues/255)
 
 ✅ [[2021-5-20] React 的事件和普通的 HTML 事件有什么不同？](https://github.com/HJY-xh/plantTrees/issues/254)

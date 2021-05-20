@@ -30,3 +30,26 @@
 
 </pre>
 </details>
+
+[3.[2021-5-20] git rebase 与 git merge 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/256)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+`git rebase`和`git merge`一样都是用于从一个分支获取并且合并到当前分支。假设一个场景，我们开发的[feature/todo]分支要合并到 master 主分支，那么用 rebase 或者 merge 有什么不同呢？
+
+### merge
+
+-   merge 特点：自动创建一个新的 commit，如果合并的时候遇到冲突，仅需要修改后重新 commit
+-   优点：记录了真实的 commit 情况，包括每个分支的详情
+-   缺点：因为每次 merge 会自动产生一个 merge commit，所以在 commit 比较频繁时，看到的分支很杂乱
+
+### rebase
+
+-   rebase 特点：会合并之前的 commit 历史
+-   优点：得到更简洁的项目历史，去掉了 merge history
+-   缺点：如果合并出现代码问题不容易定位，因此当需要保留详细的合并信息的时候建议使用 git merge，特别是需要将分支合并进入 master 分支时。
+
+</pre>
+</details>
