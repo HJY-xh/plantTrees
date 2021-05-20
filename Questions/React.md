@@ -266,3 +266,31 @@ React 中最常见的问题之一是组件不必要地重新渲染。React 提�
 
 </pre>
 </details>
+
+[12.[2021-5-20] React 的事件和普通的 HTML 事件有什么不同？](https://github.com/HJY-xh/plantTrees/issues/254)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+区别：
+
+-   对于事件名称处理方式：原生事件名均为小写形式，React 事件名采用小驼峰命名形式
+-   对于事件处理语法：原生事件为字符串，React 事件为函数
+-   React 事件使用`return false`的方式不能阻止浏览器默认行为，必须使用`preventDefault()`来阻止默认行为
+
+合成事件是 React 模拟原生 DOM 事件所有能力的一个事件对象，其优点在于兼容所有浏览器，更好的跨平台。
+
+React 中事件池的概念：
+
+合成事件对象池是 React 事件系统提供的一种性能优化方式。合成事件对象在事件池统一管理，不同类型的合成事件具有不同的事件池。
+
+-   当事件池未满时，React 创建新的事件对象，派发给组件。
+-   当事件池装满时，React 从事件池中复用事件对象，派发给组件。
+
+SyntheticEvent 对象会被放入池中统一管理。这意味着 SyntheticEvent 对象可以被复用，当所有事件处理函数被调用之后，其所有属性都会被置空
+
+注意：Web 端的 React 17 不使用事件池，即`e.persist()`将不再生效。
+
+</pre>
+</details>
