@@ -446,3 +446,18 @@ META 标签是 HTML 标记 HEAD 区的一个关键标签，提供文档字符集
 
 </pre>
 </details>
+
+[21.[2021-5-22] head 标签有什么作用？](https://github.com/HJY-xh/plantTrees/issues/258)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+标签用于定义文档的头部，它是所有头部元素的容器。 中的元素可以引用脚本、指示浏览器在哪里找到样式表、提供元信息等。
+
+文档的头部描述了文档的各种属性和信息，包括文档的标题、在 Web 中的位置以及和其他文档的关系等。
+
+下面这些标签可用在 head 部分：, , , <script>, <style>, <title>
+
+</pre>
+</details>
