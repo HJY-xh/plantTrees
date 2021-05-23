@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 92:
+## Day 93:
 
-✅ [[2021-5-22] head 标签有什么作用？](https://github.com/HJY-xh/plantTrees/issues/258)
+✅ [[2021-5-23] img 标签的 srcset 属性的作⽤是什么？](https://github.com/HJY-xh/plantTrees/issues/259)
 
 ## 目录结构 📁
 
