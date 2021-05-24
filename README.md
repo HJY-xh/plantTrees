@@ -15,6 +15,8 @@
 
 ## Day 94:
 
+✅ [[2021-5-24] 通过 const 关键字声明的对象的属性可以修改吗？](https://github.com/HJY-xh/plantTrees/issues/261)
+
 ✅ [[2021-5-24] Web 开发中的用户代理是什么？](https://github.com/HJY-xh/plantTrees/issues/260)
 
 ## 目录结构 📁
