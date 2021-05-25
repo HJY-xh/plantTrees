@@ -1692,3 +1692,50 @@ const 保证的并不是变量的值不能改动，而是变量指向的那个�
 
 </pre>
 </details>
+
+[65.[2021-5-25] async、await 对比 Promise 的优缺点有哪些？](https://github.com/HJY-xh/plantTrees/issues/262)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+async/await 优点：
+
+-   它做到了真正的串行的同步写法，代码阅读相对容易
+-   处理复杂流程时，代码清晰度方面有优势
+-   对于条件语句和其它流程语句比较友好，看个 🌰 ：
+
+```javascript
+function a() {
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {
+			resolve("cola");
+		}, 1000);
+	});
+}
+async function b() {
+	try {
+		if ((await a()) === "cola") {
+			console.log("yes, it is!"); // 会打印
+		}
+	} catch (err) {
+		// ...
+	}
+}
+```
+
+async/await 缺点：
+
+-   无法处理`Promise`返回的 reject 对象，要借助`try...catch...`
+-   用 `await` 可能会导致性能问题，因为`await`会阻塞代码，也许之后的异步代码并不依赖于前者，但仍然需要等待前者完成，导致代码失去了并发性
+-   `try...catch..`.内部的变量无法传递给下一个`try...catch...`,`Promise`和`then/catch`内部定义的变量，能通过`then`链条的参数传递到下一个`then/catch`，但是`async/await`的`try`内部的变量，如果用`let`和`const`定义则无法传递到下一个`try...catch...`，只能在外层作用域先定义好
+
+但`async/await`确确实实是解决了`Promise`一些问题的。更加灵活的处理异步。
+
+`Promise`的一些问题：
+
+-   一旦执行，不能中途取消，链式调用多个`then`中间不能随意跳出
+-   错误无法在外部被捕捉，只能在内部进行预判处理，如果不设置回调函数，`Promise`内部抛出的错误，不会反映到外部
+
+</pre>
+</details>

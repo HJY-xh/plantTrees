@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 94:
+## Day 95:
 
-✅ [[2021-5-24] 通过 const 关键字声明的对象的属性可以修改吗？](https://github.com/HJY-xh/plantTrees/issues/261)
-
-✅ [[2021-5-24] Web 开发中的用户代理是什么？](https://github.com/HJY-xh/plantTrees/issues/260)
+✅ [[2021-5-25] async、await 对比 Promise 的优缺点有哪些？](https://github.com/HJY-xh/plantTrees/issues/262)
 
 ## 目录结构 📁
 
