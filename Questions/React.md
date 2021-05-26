@@ -294,3 +294,34 @@ SyntheticEvent 对象会被放入池中统一管理。这意味着 SyntheticEven
 
 </pre>
 </details>
+
+[13.[2021-5-26] React 16.X 中 props 改变后在哪个生命周期中处理?](https://github.com/HJY-xh/plantTrees/issues/263)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+**在`getDerivedStateFromProps`中进行处理。**
+
+这个生命周期替代了`componentWillReceiveProps`，所以在需要使用`componentWillReceiveProps`时，就可以考虑使用`getDerivedStateFromProps`来进行替代。
+
+二者参数不同，`getDerivedStateFromProps`是一个静态函数，也就是这个函数不能通过 this 访问到 Class 属性，也不推荐直接访问属性。而是应该通过参数提供的 nextProps 以及 prevState 来进行判断，根据新传入的 props 来映射到 props。
+
+需要注意的是，如果 props 传入的内容不需要影响到 state，那么就需要返回一个 null，这个值时必须的，所以尽量将其写到函数的末尾。
+
+```javascript
+static getDerivedStateFromProps(nextProps, prevState) {
+    const {type} = nextProps;
+    // 当传入的type发生变化的时候，更新state
+    if (type !== prevState.type) {
+        return {
+            type,
+        };
+    }
+    // 否则，对于state不进行任何操作
+    return null;
+}
+```
+
+</pre>
+</details>
