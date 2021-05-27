@@ -15,6 +15,8 @@
 
 ## Day 97:
 
+✅ [[2021-5-27] OPTIONS 请求方法使用场景有哪些?](https://github.com/HJY-xh/plantTrees/issues/266)
+
 ✅ [[2021-5-27] git pull 和 git fetch 的区别是什么?](https://github.com/HJY-xh/plantTrees/issues/265)
 
 ## 目录结构 📁
