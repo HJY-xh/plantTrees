@@ -53,3 +53,15 @@
 
 </pre>
 </details>
+
+[4.[2021-5-27] git pull 和 git fetch 的区别是什么?](https://github.com/HJY-xh/plantTrees/issues/265)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   `git fetch` 只是将远程仓库的变化下载下来，并没有和本地分支合并
+-   `git pull` 会将远程仓库的变化下载下来，并和本地分支合并
+
+</pre>
+</details>

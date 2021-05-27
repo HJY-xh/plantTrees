@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 96:
+## Day 97:
 
-✅ [[2021-5-26] 组件通信的方式有哪些?](https://github.com/HJY-xh/plantTrees/issues/264)
-
-✅ [[2021-5-26] React 16.X 中 props 改变后在哪个生命周期中处理?](https://github.com/HJY-xh/plantTrees/issues/263)
+✅ [[2021-5-27] git pull 和 git fetch 的区别是什么?](https://github.com/HJY-xh/plantTrees/issues/265)
 
 ## 目录结构 📁
 
