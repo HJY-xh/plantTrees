@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 97:
+## Day 98:
 
-✅ [[2021-5-27] OPTIONS 请求方法使用场景有哪些?](https://github.com/HJY-xh/plantTrees/issues/266)
-
-✅ [[2021-5-27] git pull 和 git fetch 的区别是什么?](https://github.com/HJY-xh/plantTrees/issues/265)
+✅ [[2021-5-28] 为什么需要 CSS 预处理?](https://github.com/HJY-xh/plantTrees/issues/267)
 
 ## 目录结构 📁
 
