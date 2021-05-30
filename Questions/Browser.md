@@ -274,3 +274,16 @@ JavaScript 的加载、解析与执行会阻塞文档的解析，也就是说，
 
 </pre>
 </details>
+
+[18.[2021-5-30] GUI 渲染线程有什么作用?](https://github.com/HJY-xh/plantTrees/issues/269)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+它负责渲染浏览器页面，解析 HTML、CSS，构建 DOM 树、构建 CSSOM 树、构建渲染树和绘制页面；当界面需要重绘或由于某种操作引发回流时，该线程就会执行。
+
+注意：GUI 渲染线程和 JS 引擎线程是互斥的，当 JS 引擎执行时 GUI 线程会被挂起，GUI 更新会被保存在一个队列中等到 JS 引擎空闲时立即被执行。
+
+</pre>
+</details>
