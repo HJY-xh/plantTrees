@@ -15,6 +15,8 @@
 
 ## Day 101:
 
+✅ [[2021-5-31] TCP 的重传机制是什么样的？](https://github.com/HJY-xh/plantTrees/issues/271)
+
 ✅ [[2021-5-31] UDP 协议为什么不可靠？](https://github.com/HJY-xh/plantTrees/issues/270)
 
 ## 目录结构 📁
