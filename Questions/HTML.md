@@ -453,11 +453,11 @@ META 标签是 HTML 标记 HEAD 区的一个关键标签，提供文档字符集
 <summary>展开查看</summary>
 <pre>
 
-标签用于定义文档的头部，它是所有头部元素的容器。 中的元素可以引用脚本、指示浏览器在哪里找到样式表、提供元信息等。
+<head> 标签用于定义文档的头部，它是所有头部元素的容器。<head> 中的元素可以引用脚本、指示浏览器在哪里找到样式表、提供元信息等。
 
 文档的头部描述了文档的各种属性和信息，包括文档的标题、在 Web 中的位置以及和其他文档的关系等。
 
-下面这些标签可用在 head 部分：, , , <script>, <style>, <title>
+下面这些标签可用在 head 部分：`<base>, <link>, <meta>, <script>, <style>, <title>`
 
 </pre>
 </details>
@@ -540,7 +540,12 @@ META 标签是 HTML 标记 HEAD 区的一个关键标签，提供文档字符集
 <metaname="viewport" content="width="device-width,inital-scale=1,maximum-scale=1">
 ```
 
-其中，content 参数有以下几种： - width viewport ：宽度(数值/device-width) - height viewport ：高度(数值/device-height) - initial-scale ：初始缩放比例 - maximum-scale ：最大缩放比例 - minimum-scale ：最小缩放比例 - user-scalable ：是否允许用户缩放(yes/no）
+其中，content 参数有以下几种：
+
+-   width viewport ：宽度(数值/device-width)
+-   height viewport ：高度(数值/device-height)
+-   initial-scale ：初始缩放比例 - maximum-scale ：最大缩放比例
+-   minimum-scale ：最小缩放比例 - user-scalable ：是否允许用户缩放(yes/no）
 
 -   robots, 搜索引擎索引方式
 
@@ -548,7 +553,14 @@ META 标签是 HTML 标记 HEAD 区的一个关键标签，提供文档字符集
 <metaname ="robots" content="index,follow" />
 ```
 
-其中，content 参数有以下几种： - all：文件将被检索，且页面上的链接可以被查询； - none：文件将不被检索，且页面上的链接不可以被查询； - index：文件将被检索； - follow：页面上的链接可以被查询； - noindex：文件将不被检索； - nofollow：页面上的链接不可以被查询。
+其中，content 参数有以下几种：
+
+-   all：文件将被检索，且页面上的链接可以被查询；
+-   none：文件将不被检索，且页面上的链接不可以被查询；
+-   index：文件将被检索；
+-   follow：页面上的链接可以被查询；
+-   noindex：文件将不被检索；
+-   nofollow：页面上的链接不可以被查询。
 
 </pre>
 </details>
