@@ -15,6 +15,8 @@
 
 ## Day 104:
 
+✅ [[2021-6-3] typeof NaN 的结果是什么？](https://github.com/HJY-xh/plantTrees/issues/279)
+
 ✅ [[2021-6-3] 删除数组用 delete 和 Vue.delete 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/278)
 
 ✅ [[2021-6-3] Vue 中 watch 怎么深度监听对象变化？](https://github.com/HJY-xh/plantTrees/issues/277)
