@@ -46,3 +46,20 @@ sourceMap 其实并不是 Webpack 特有的功能，而是 Webpack 支持 source
 
 </pre>
 </details>
+
+[4.[2021-6-3] 如何⽤ webpack 来优化前端性能？](https://github.com/HJY-xh/plantTrees/issues/280)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+用 webpack 优化前端性能是指优化 webpack 的输出结果，让打包的最终结果在浏览器里运行更加快速高效。
+
+-   压缩代码：有删除多余的代码、注释、简化代码的写法等等方式
+-   利用 CDN 加速：在构建过程中，将引用的静态资源路径修改为 CDN 上对应的路径。可以利用 webpack 对于 output 参数和各 loader 的 publicPath 参数来修改资源路径
+-   Tree Shaking：将代码中永远不会走到的片段删除掉
+-   Code Splitting: 将代码按路由维度或者组件分块(chunk),这样做到按需加载,同时可以充分利⽤浏览器缓存
+-   提取公共第三⽅库: SplitChunksPlugin 插件来进⾏公共模块抽取,利⽤浏览器缓存可以⻓期缓存这些⽆需频繁变动的公共代码
+
+</pre>
+</details>
