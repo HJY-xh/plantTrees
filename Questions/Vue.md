@@ -1,4 +1,4 @@
-## React 相关
+## Vue 相关
 
 [1.[2021-4-20] Vue 中的事件修饰符和按键修饰符有哪些？ ](https://github.com/HJY-xh/plantTrees/issues/165)
 
@@ -264,6 +264,46 @@ this.$nextTick(() => {
 ### 总结
 
 $nextTick 会等待 DOM 渲染完再回调，而且注意一点，页面渲染时会将 data 的修改做整合，多次 data 修改只会渲染一次
+
+</pre>
+</details>
+
+[6.[2021-6-3] Vue 中 watch 怎么深度监听对象变化？](https://github.com/HJY-xh/plantTrees/issues/277)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+**将 deep 设置成 ture 即可，代码如下：**
+
+```
+let vm = new Vue({
+    el: "#app",
+    data: {
+        msg: {name: "北京"},
+    },
+    watch: {
+        msg: {
+            handler(newMsg, oldMsg){
+                console.log(newMsg);
+            },
+            immediate: true,
+            deep: true  //深度监听
+        }
+    }
+```
+
+</pre>
+</details>
+
+[7.[2021-6-3] 删除数组用 delete 和 Vue.delete 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/278)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   **delete**：只是被删除数组成员变为 empty/undefined，其他元素键值不变。
+-   **Vue.delete**：直接删了数组成员，并改变了数组的键值（对象是响应式的，确保删除能触发更新视图，这个方法主要用于避开 Vue 不能检测到属性被删除的限制）
 
 </pre>
 </details>
