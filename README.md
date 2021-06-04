@@ -13,15 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 104:
+## Day 105:
 
-✅ [[2021-6-3] 如何⽤ webpack 来优化前端性能？](https://github.com/HJY-xh/plantTrees/issues/280)
-
-✅ [[2021-6-3] typeof NaN 的结果是什么？](https://github.com/HJY-xh/plantTrees/issues/279)
-
-✅ [[2021-6-3] 删除数组用 delete 和 Vue.delete 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/278)
-
-✅ [[2021-6-3] Vue 中 watch 怎么深度监听对象变化？](https://github.com/HJY-xh/plantTrees/issues/277)
+✅ [[2021-6-4] Vue 中的 watch 和计算属性有什么区别？](https://github.com/HJY-xh/plantTrees/issues/281)
 
 ## 目录结构 📁
 

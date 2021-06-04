@@ -307,3 +307,17 @@ let vm = new Vue({
 
 </pre>
 </details>
+
+[7.[2021-6-4] Vue 中的 watch 和计算属性有什么区别？](https://github.com/HJY-xh/plantTrees/issues/281)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+> 通俗情况下，既能用 computed 实现又可以用 watch 监听来实现的功能，推荐用 computed，重点在于 computed 的**缓存功能**。
+
+-   `computed` 属性是用来声明式地描述一个值依赖了其他的值，当所依赖的值或者变量改变时，计算属性也会跟着改变
+-   `watch` 监听的是已经在 data 中定义的变量，当该变量变化时，会触发 watch 中的方法
+
+</pre>
+</details>
