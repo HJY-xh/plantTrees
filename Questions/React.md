@@ -346,3 +346,16 @@ static getDerivedStateFromProps(nextProps, prevState) {
 
 </pre>
 </details>
+
+[15.[2021-6-4] React 如何判断什么时候重新渲染组件？](https://github.com/HJY-xh/plantTrees/issues/283)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+组件状态的改变是因为`props`或者`state`的改变，组件获得新的状态后，React 决定是否应该重新渲染组件，此时会执行`shouldComponentUpdate`方法，返回 true 时则更新组件，否则不更新。
+
+因此需要重写 shouldComponentUpdate 方法让它根据情况返回 true 或者 false 来告诉 React 什么时候重新渲染什么时候跳过重新渲染。
+
+</pre>
+</details>
