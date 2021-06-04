@@ -322,7 +322,7 @@ let vm = new Vue({
 </pre>
 </details>
 
-[8.[2021-6-4] Vue 的双向绑定原理是什么？](https://github.com/HJY-xh/plantTrees/issues/282)
+[8.[2021-6-4] Vue2 的双向绑定原理是什么？](https://github.com/HJY-xh/plantTrees/issues/282)
 
 <details>
 <summary>展开查看</summary>

@@ -17,7 +17,7 @@
 
 ✅ [[2021-6-4] Vue 中的 watch 和计算属性有什么区别？](https://github.com/HJY-xh/plantTrees/issues/281)
 
-✅ [[2021-6-4] Vue 的双向绑定原理是什么？](https://github.com/HJY-xh/plantTrees/issues/282)
+✅ [[2021-6-4] Vue2 的双向绑定原理是什么？](https://github.com/HJY-xh/plantTrees/issues/282)
 
 ## 目录结构 📁
 
