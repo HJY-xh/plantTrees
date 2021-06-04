@@ -321,3 +321,14 @@ let vm = new Vue({
 
 </pre>
 </details>
+
+[8.[2021-6-4] Vue 的双向绑定原理是什么？](https://github.com/HJY-xh/plantTrees/issues/282)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+Vue 数据双向绑定是通过数据劫持结合发布者-订阅者模式的方式来实现的。利用了 `Object.defineProperty()` 这个方法重新定义了对象获取属性值（get）和设置属性值（set）。
+
+</pre>
+</details>
