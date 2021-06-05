@@ -1754,3 +1754,18 @@ typeof NaN; // "number"
 
 </pre>
 </details>
+
+[67.[2021-6-5] 使用 documentFragment 与直接操作 DOM 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/285)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+MDN 中对 documentFragment 的解释：
+
+> DocumentFragment，文档片段接口，一个没有父对象的最小文档对象。它被作为一个轻量版的 Document 使用，就像标准的 document 一样，存储由节点（nodes）组成的文档结构。与 document 相比，最大的区别是 DocumentFragment 不是真实 DOM 树的一部分，它的变化不会触发 DOM 树的重新渲染，且不会导致性能等问题。
+
+当我们把一个 documentFragment 节点插入文档树时，插入的不是 documentFragment 自身，而是它所有的子孙节点。在频繁的 DOM 操作时，我们就可以将 DOM 元素插入 documentFragment，之后一次性的将所有子孙节点插入文档中。和直接操作 DOM 相比，将 documentFragment 节点插入 DOM 树时，而这个操作仅发生一个重渲染的操作，而不是每个节点分别被插入到文档中，因为后者会发生多次重渲染的操作，这样就提高了页面性能。
+
+</pre>
+</details>

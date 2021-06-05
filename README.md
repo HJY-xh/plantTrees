@@ -15,6 +15,8 @@
 
 ## Day 106:
 
+✅ [[2021-6-5] 使用 documentFragment 与直接操作 DOM 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/285)
+
 ✅ [[2021-6-5] CDN 的使用场景有哪些？](https://github.com/HJY-xh/plantTrees/issues/284)
 
 ## 目录结构 📁
