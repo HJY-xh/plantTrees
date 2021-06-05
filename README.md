@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 105:
+## Day 106:
 
-✅ [[2021-6-4] React 如何判断什么时候重新渲染组件？](https://github.com/HJY-xh/plantTrees/issues/283)
-
-✅ [[2021-6-4] Vue 中的 watch 和计算属性有什么区别？](https://github.com/HJY-xh/plantTrees/issues/281)
-
-✅ [[2021-6-4] Vue2 的双向绑定原理是什么？](https://github.com/HJY-xh/plantTrees/issues/282)
+✅ [[2021-6-5] CDN 的使用场景有哪些？](https://github.com/HJY-xh/plantTrees/issues/284)
 
 ## 目录结构 📁
 
