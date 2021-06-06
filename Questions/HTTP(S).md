@@ -700,3 +700,16 @@ TCP 在发送一个数据之后，就会开启一个定时器，若是在这个�
 
 </pre>
 </details>
+
+[33.[2021-6-6] 如何区分 SSL 和 TLS?](https://github.com/HJY-xh/plantTrees/issues/286)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+SSL:Secure Socket Layer,安全套接字层,是位于可靠的面向连接的网络协议层和应用协议层的一种协议层.SSL 通过互相认证,使用数字签名确保完整性,使用加密确保私密性,以实现客户端和服务器端的通信安全.SSL 由两部分组成,分别是 SSL 记录协议和 SSL 握手协议.
+
+TLS: Transport Layer Security,安全传输层协议,用于保证两个应用程序之间的保密性和数据完整性.TLS 协议由两部分组成,分别是 TLS 记录协议和 TLS 握手协议.
+
+</pre>
+</details>
