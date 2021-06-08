@@ -229,7 +229,7 @@ Etag 是服务器自动生成或者由开发者生成的对应资源在服务器
 
 代码如下：
 
-    ```
+    ```javascript
     function ajax(url){
         const p = new Promise((resolve, reject) => {
             //创建ajax对象并实例化
@@ -510,7 +510,7 @@ HTTP 传输的数据都是未加密的，也就是明文的，网景公司设置
 
 以下为一个 websocket 握手协议的实现：
 
-```
+```http
 GET/char HTTP/1.1
 Host: server.example.com
 Upgrade: websocket

@@ -373,9 +373,9 @@ FileList：代表一个文件列表对象，类数组
 FileReader：用于从文件中读取数据
 FileWriter：用于向文件中写数据
 
-### 例：
+### 🌰
 
-```
+```javascript
 div.ondrop = function(e){
   var f = e.dataTransfer.files[0];    //找到拖放文件
   var fr = new FileReader();    //创建文件读取器

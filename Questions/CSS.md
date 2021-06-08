@@ -118,8 +118,8 @@ box-sizing 的默认属性是 **content-box**
 <pre>
 很多人会想到：
 
-```
-border: 10px solid hsla(0,0%,100%,.5);
+```css
+border: 10px solid hsla(0, 0%, 100%, 0.5);
 background: white;
 ```
 
@@ -132,8 +132,8 @@ background: white;
 
 在 CSS 2.1 中，这就是背景的工作原理。我们只能接受它并且向前看。谢天谢地，从背景与边框（第三版）http://w3.org/TR/css3-background开始，我们可以通过 `background-clip` 属性来调整上述默认行为所带来的不便。这个属性的初始值是 `border-box`，意味着背景会被元素的 `border box`（边框的外沿框）裁切掉。如果不希望背景侵入边框所在的范围，我们要做的就是把它的值设为 `padding-box`，这样浏览器就会用内边距的外沿来把背景裁切掉。即：
 
-```
-border: 10px solid hsla(0,0%,100%,.5);
+```css
+border: 10px solid hsla(0, 0%, 100%, 0.5);
 background: white;
 background-clip: padding-box;
 ```
@@ -270,19 +270,19 @@ w3c 并没有给出明确的非置换元素的解释，但能确定的是除置�
 
 -   若宽高的计算值都为 `auto` 且元素有固有宽度，则 `width` 的使用值为该固有宽度；
 
-```
+```html
 典型的例子是：拥有默认宽高的 input 当宽度的计算值为auto时，则宽度使用值为其默认的固有宽度
 ```
 
 -   若宽度的计算值为 `auto` 且高度有 `非auto` 的计算值，并且元素有固有宽高比，则 `width` 的使用值为 `高度使用值 * 固有宽高比`；
 
-```
+```html
 典型的例子：img 当只定义了其高度值时，其宽度将会根据固有宽高比进行等比设置
 ```
 
 -   除此之外，当 `width` 的计算值为 `auto` 时，则宽度的使用值为 `300px`
 
-```
+```html
 典型的例子：比如iframe, canvas
 ```
 
@@ -333,9 +333,7 @@ w3c 并没有给出明确的非置换元素的解释，但能确定的是除置�
 
 当网页上出现多个由绝对定位（position:absolute）或固定定位（position:fixed）所产生的浮动层时，必然就会产生一个问题，就是当这些层的位置产生重合时，谁在谁的上面呢？或者说谁看得见、谁看不见呢？这时候就可以通过设置 z-index 的值来解决，这个值较大的就在上面，较小的在下面。
 
-```
-z-index的意思就是在z轴的顺序，如果说网页是由x轴和y轴所决定的一个平面，那么z轴就是垂直于屏幕的一条虚拟坐标轴，浮动层就在这个坐标轴上，那么它们的顺序号就决定了谁上谁下了
-```
+z-index 的意思就是在 z 轴的顺序，如果说网页是由 x 轴和 y 轴所决定的一个平面，那么 z 轴就是垂直于屏幕的一条虚拟坐标轴，浮动层就在这个坐标轴上，那么它们的顺序号就决定了谁上谁下了
 
 </pre>
 </details>
@@ -685,13 +683,13 @@ animation 也有很多的属性：
 
 设置`display:grid/inline-grid`的元素就是网格布局容器，这样就能触发浏览器渲染引擎的网格布局算法
 
-```
+```html
 <div class="container">
-    <div class="item item-1">
-        <p class="sub-item"></p>
- </div>
-    <div class="item item-2"></div>
-    <div class="item item-3"></div>
+	<div class="item item-1">
+		<p class="sub-item"></p>
+	</div>
+	<div class="item item-2"></div>
+	<div class="item item-3"></div>
 </div>
 ```
 
@@ -708,7 +706,7 @@ animation 也有很多的属性：
 -   容器属性
 -   项目属性
 
-### 容器属性：
+### 容器属性
 
 **display 属性**
 
@@ -721,14 +719,14 @@ animation 也有很多的属性：
 -   `grid-template-columns` 属性设置列宽
 -   `grid-template-rows` 属性设置行高
 
-```
-.wrapper{
-  display: gird;
-  /* 声明了三列，宽度分别为 200px 200px 200px */
-  grid-template-columns: 200px 200px 200px;
-  grid-gap: 5px;
-  /* 声明了两行，行高分别为 50px 50px */
-  grid-template-rows: 50px 50 px;
+```css
+.wrapper {
+	display: gird;
+	/* 声明了三列，宽度分别为 200px 200px 200px */
+	grid-template-columns: 200px 200px 200px;
+	grid-gap: 5px;
+	/* 声明了两行，行高分别为 50px 50px */
+	grid-template-rows: 50px 50 px;
 }
 ```
 
@@ -738,12 +736,12 @@ animation 也有很多的属性：
 -   第一个参数是重复的次数
 -   第二个参数是重复的值
 
-```
+```css
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-gap: 5px;
-  grid-template-rows:repeat(2, 50px);
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
+	grid-gap: 5px;
+	grid-template-rows: repeat(2, 50px);
 }
 ```
 
@@ -773,24 +771,26 @@ animation 也有很多的属性：
 **grid-template-areas 属性**
 用于定义区域，一个区域由一个或者多个单元格组成
 
-```
-.container{
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 100px 100px 100px;
-  grid-template-areas: ' a b c'
-                       ' d e f'
-                       ' g h i';
+```css
+.container {
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+	grid-template-areas:
+		" a b c"
+		" d e f"
+		" g h i";
 }
 ```
 
 上述代码先划分出 9 个单元格，然后将其定名为 a 到 i 的九个区域，分别对应这九个单元格。
 多个单元格合并为一个区域的写法如下：
 
-```
-grid-template-areas: ' a a a'
-                     ' b b b'
-                     ' c c c';
+```css
+grid-template-areas:
+	" a a a"
+	" b b b"
+	" c c c";
 ```
 
 上面代码将 9 个单元格分为 a、b、c 三个区域
@@ -808,10 +808,10 @@ grid-template-areas: ' a a a'
 `align-items`属性设置单元格的垂直位置（上中下）
 两者属性的值完全相同
 
-```
-.container{
-  justify-items: start | end | center | stretch;
-  align-items: start | end | center | stretch;
+```css
+.container {
+	justify-items: start | end | center | stretch;
+	align-items: start | end | center | stretch;
 }
 ```
 
@@ -826,10 +826,10 @@ grid-template-areas: ' a a a'
 **justify-content 属性，align-content 属性，place-content 属性**
 `justify-content`属性是整个内容区域在容器里面的水平位置（左中右），`align-content`属性是整个内容区域的垂直位置（上中下）
 
-```
+```css
 .container {
-  justify-content: start | end | center | stretch | space-around | space-between | space-evenly;
-  align-content: start | end | center | stretch | space-around | space-between | space-evenly;
+	justify-content: start | end | center | stretch | space-around | space-between | space-evenly;
+	align-content: start | end | center | stretch | space-around | space-between | space-evenly;
 }
 ```
 
@@ -863,7 +863,7 @@ grid-template-areas: ' a a a'
 
 👇 举个例子 🌰：
 
-```
+```css
 <style>
    #container{
        display: grid;
@@ -889,9 +889,9 @@ grid-template-areas: ' a a a'
 **grid-area 属性**
 `grid-area`属性指定项目放在哪一个区域
 
-```
+```css
 .item-1 {
-  grid-area: e;
+	grid-area: e;
 }
 ```
 
@@ -903,11 +903,10 @@ grid-template-areas: ' a a a'
 `justify-self`属性设置单元格内容的水平位置（左中右），跟`justify-items`属性的用法完全一致，但只作用于单个项目。
 `align-self`属性设置单元格内容的垂直位置（上中下），跟`align-items`属性的用法完全一致，也是只作用于单个项目
 
-```
-
+```css
 .item {
-  justify-self: start | end | center | stretch;
-  align-self: start | end | center | stretch;
+	justify-self: start | end | center | stretch;
+	align-self: start | end | center | stretch;
 }
 ```
 
@@ -963,9 +962,9 @@ grid-template-areas: ' a a a'
 
 决定主轴的方向（项目排列方向）
 
-```
-.container{
-  flex-direction: row | row-reverse | column | column-reverse;
+```css
+.container {
+	flex-direction: row | row-reverse | column | column-reverse;
 }
 ```
 
@@ -982,9 +981,9 @@ grid-template-areas: ' a a a'
 
 弹性元素永远沿主轴排列，那么如果主轴排不下，通过`flex-wrap`决定容器内项目是否可换行
 
-```
-.container{
-  flex-wrap: nowrap | wrap | wrap-reverse;
+```css
+.container {
+	flex-wrap: nowrap | wrap | wrap-reverse;
 }
 ```
 
@@ -1000,9 +999,9 @@ grid-template-areas: ' a a a'
 
 是`flex-direction`属性和`flex-wrap`属性的简写形式，默认值为`row nowrap`
 
-```
+```css
 .box {
-  flex-flow: <flex-direction> || <flex-wrap>;
+	flex-flow: <flex-direction> || <flex-wrap>;
 }
 ```
 
@@ -1010,9 +1009,9 @@ grid-template-areas: ' a a a'
 
 定义了项目在主轴上的对齐方式
 
-```
-.box{
-  justify-content: flex-start | flex-end | center | space-between | space-around;
+```css
+.box {
+	justify-content: flex-start | flex-end | center | space-between | space-around;
 }
 ```
 
@@ -1030,9 +1029,9 @@ grid-template-areas: ' a a a'
 
 定义项目在交叉轴上如何对齐
 
-```
-.box{
-  align-items: flex-start | flex-end | center | baseline | stretch;
+```css
+.box {
+	align-items: flex-start | flex-end | center | baseline | stretch;
 }
 ```
 
@@ -1048,9 +1047,9 @@ grid-template-areas: ' a a a'
 
 定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用
 
-```
+```css
 .box {
-    align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+	align-content: flex-start | flex-end | center | space-between | space-around | stretch;
 }
 ```
 
@@ -1078,9 +1077,9 @@ grid-template-areas: ' a a a'
 
 定义项目的排列顺序。数值越小，排列越靠前，默认为 0
 
-```
-.item{
-  order: <integer>;
+```css
+.item {
+	order: <integer>;
 }
 ```
 
@@ -1089,9 +1088,9 @@ grid-template-areas: ' a a a'
 当容器设为`flex-wrap: nowrap;`不换行的时候，容器宽度有不够分的情况，弹性元素会根据`flex-grow`来决定定义项目的放大比例（容器宽度 > 元素总宽度时如何伸展）
 默认为`0`，即如果存在剩余空间，也不放大
 
-```
-.item{
-  flex-grow: <number>;
+```css
+.item {
+	flex-grow: <number>;
 }
 ```
 
@@ -1109,9 +1108,9 @@ grid-template-areas: ' a a a'
 
 定义了项目的缩小比例（容器宽度<元素总宽度时如何收缩），默认为 1，即如果空间不足，该项目将缩小
 
-```
+```css
 .item {
-    flex-shrink: <number>; /* default 1 */
+	flex-shrink: <number>; /* default 1 */
 }
 ```
 
@@ -1126,9 +1125,9 @@ grid-template-areas: ' a a a'
 设置的是元素在主轴上的初始尺寸，所谓的初始尺寸就是元素在`flex-grow`和`flex-shrink`生效前的尺寸
 浏览器根据这个属性，计算主轴是否有多余空间，默认值为`auto`，即项目的本来大小，如设置了`width`则元素尺寸由`width/height`决定（主轴方向），没有设置则由内容决定
 
-```
-.item{
-  flex-basis: <length> | auto; /* default auto*/
+```css
+.item {
+	flex-basis: <length> | auto; /* default auto*/
 }
 ```
 
@@ -1139,9 +1138,9 @@ grid-template-areas: ' a a a'
 
 `flex`属性是`flex-grow`、`flex-shrink`和`flex-basis`的简写，默认值为`0 1 auto`
 
-```
-.item{
-  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'>]
+```css
+.item {
+	flex: none | [ < "flex-grow" > < "flex-shrink" >? || < "flex-basis" >];
 }
 ```
 
@@ -1298,31 +1297,31 @@ static 默认值。没有定位，元素出现在正常的流中
 
 代码如下 👇：
 
-```
-    div{
-      margin: 0 auto;
-      width: 300px;
-      color: red;
-      /*以下为重点*/
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
-      overflow: hidden;
-    }
+```css
+div {
+	margin: 0 auto;
+	width: 300px;
+	color: red;
+	/*以下为重点*/
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
 ```
 
 补充 ✍️**单行**文字溢出显示省略号：
 
-```
-    div{
-      margin: 0 auto;
-      width: 300px;
-      color: red;
-      /*以下为重点*/
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
+```css
+div {
+	margin: 0 auto;
+	width: 300px;
+	color: red;
+	/*以下为重点*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
 ```
 
 </pre>

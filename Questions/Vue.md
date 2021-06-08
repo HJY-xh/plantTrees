@@ -22,7 +22,7 @@ vue 提倡的是在方法中只有对数据的处理，所以提供了事件修�
 
 **官方给出的修饰符：**
 
-```
+```javascript
 .enter => // enter键
 .tab => // tab键
 .delete (捕获“删除”和“退格”按键) => // 删除键
@@ -36,15 +36,15 @@ vue 提倡的是在方法中只有对数据的处理，所以提供了事件修�
 
 **自定义按键修饰符：**
 
-```
+```javascript
 // 可以使用 `v-on:keyup.f1`
-Vue.config.keyCodes.f1 = 112
+Vue.config.keyCodes.f1 = 112;
 ```
 
 **系统辅助按键：**
 仅在以下修饰符对应的按键被按下时，才会触发鼠标或键盘事件监听器
 
-```
+```javascript
 .ctrl
 .alt
 .shift
@@ -70,15 +70,19 @@ Vue.config.keyCodes.f1 = 112
 
 可以使用 type 来声明这个参数可以接受的数据的类型，语法示例：
 
-    props: {
-        num: Number
-    }
+```javascript
+props: {
+	num: Number;
+}
+```
 
 **type 可接受多个类型：**
 
-    props: {
-        num: [Number, String]
-    }
+```javascript
+props: {
+	num: [Number, String];
+}
+```
 
 **type 可指定的类型**
 
@@ -100,26 +104,31 @@ Vue.config.keyCodes.f1 = 112
 
 可以使用 required 选项来声明这个参数是否必须传入：
 
+```javascript
     props: {
         num: {
             type: Number,
             required: true
         }
     }
+```
 
 ### 3.default
 
 使用 default 选项来指定当父组件未传入参数时 props 变量的默认值：
 
+```javascript
     props: {
         num: {
             type: Number,
             default: 123
         }
     }
+```
 
 **注意：当 type 的类型为 Array 或者 Object 的时候 default 必须是一个函数！**
 
+```javascript
     props: {
         num: {
             type: Array,
@@ -128,11 +137,13 @@ Vue.config.keyCodes.f1 = 112
             }
         }
     }
+```
 
 ### 4.validator
 
 当校验规则很复杂，默认提供的校验规则无法满足的时候可以使用自定义函数来校验:
 
+```javascript
     props: {
         num: {
             validator: function(value){
@@ -140,6 +151,7 @@ Vue.config.keyCodes.f1 = 112
             }
         }
     }
+```
 
 </pre>
 </details>
@@ -209,34 +221,19 @@ Vue.config.keyCodes.f1 = 112
 
 看一下以下代码：
 
-```
+```html
 <template>
-  <div id="app">
-    <ul ref="ul1">
-        <li v-for="(item, index) in list" :key="index">
-            {{item}}
-        </li>
-    </ul>
-    <button @click="addItem">添加一项</button>
-  </div>
+	<div id="app">
+		<ul ref="ul1">
+			<li v-for="(item, index) in list" :key="index">{{item}}</li>
+		</ul>
+		<button @click="addItem">添加一项</button>
+	</div>
 </template>
 
-//下面为script中代码
-
-data() {
-      return {
-        list: ['a', 'b', 'c']
-      }
-  },
-  methods: {
-    addItem() {
-        this.list.push(`${Date.now()}`);
-        this.list.push(`${Date.now()}`);
-        this.list.push(`${Date.now()}`);
-        //查看li个数
-        const ulElem = this.$refs.ul1
-        console.log( ulElem.childNodes.length )
-  }
+//下面为script中代码 data() { return { list: ['a', 'b', 'c'] } }, methods: { addItem() {
+this.list.push(`${Date.now()}`); this.list.push(`${Date.now()}`); this.list.push(`${Date.now()}`);
+//查看li个数 const ulElem = this.$refs.ul1 console.log( ulElem.childNodes.length ) }
 ```
 
 该部分效果图如下：
@@ -250,12 +247,12 @@ data() {
 
 因为 Vue 是**异步渲染**，data 改变之后，DOM 并不会立刻渲染。那如果想要按照我们理解的那样输出 6，该怎么办呢？此时就应该使用$nextTick：
 
-```
+```javascript
 this.$nextTick(() => {
-    // 获取 DOM 元素
-    const ulElem = this.$refs.ul1
-    console.log( ulElem.childNodes.length )
-})
+	// 获取 DOM 元素
+	const ulElem = this.$refs.ul1;
+	console.log(ulElem.childNodes.length);
+});
 ```
 
 此时就是输出 6 了：
@@ -276,7 +273,7 @@ $nextTick 会等待 DOM 渲染完再回调，而且注意一点，页面渲染�
 
 **将 deep 设置成 ture 即可，代码如下：**
 
-```
+```javascript
 let vm = new Vue({
     el: "#app",
     data: {
@@ -349,7 +346,7 @@ Vue2.x 中的响应式实现正是基于`defineProperty`中的`descriptor`对`da
 
 -
 
-### `Proxy API` 的监听是针对一个对象的，那么对这个对象的所有操作会进入监听操作，这就完全可以代理所有属性，将会带来很大的性能提升和更优的代码。
+### `Proxy API` 的监听是针对一个对象的，那么对这个对象的所有操作会进入监听操作，这就完全可以代理所有属性，将会带来很大的性能提升和更优的代码
 
 Proxy 可以理解成在目标对象之前架设一层“拦截”，外界对该对象的访问都必须先通过这层拦截，因此提供了一种机制可以对外界的访问进行过滤和改写。
 
@@ -363,17 +360,19 @@ Proxy 可以理解成在目标对象之前架设一层“拦截”，外界对�
 
 如下图代码所示：
 
-    let datas = {
-      num: 0
-    }
-    let proxy = new Proxy(datas, {
-      get(target, property) {
-        return target[property]
-      },
-      set(target, property, value) {
-        target[property] = value
-      }
-    })
+```javascript
+let datas = {
+	num: 0,
+};
+let proxy = new Proxy(datas, {
+	get(target, property) {
+		return target[property];
+	},
+	set(target, property, value) {
+		target[property] = value;
+	},
+});
+```
 
 </pre>
 </details>

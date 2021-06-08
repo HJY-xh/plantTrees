@@ -167,11 +167,11 @@ ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供
 
 例：
 
-```
-(function(){
-	"use strict"
-	b=1//Uncaught ReferenceError: b is not defined
-})()
+```javascript
+(function () {
+	"use strict";
+	b = 1; //Uncaught ReferenceError: b is not defined
+})();
 ```
 
 **_缺点_**：
@@ -193,12 +193,12 @@ ES6 创造了一种新的遍历命令 for...of 循环，Iterator 接口主要供
 
 1. Attribute 由 HTML 来定义，并不存在于 DOM 中，即：只要是 HTML 标签内定义的都是 attribute。
 
-```
+```javascript
 <div id="test" class="button" custom-attr="1"></div>
 ```
 
-```
-document.getElementById('test').attributes;
+```javascript
+document.getElementById("test").attributes;
 // 返回：[custom-attr="hello", class="button", id="test"]
 ```
 
@@ -208,39 +208,39 @@ document.getElementById('test').attributes;
 
 1. Property 属于 DOM，DOM 的本质就是 JavaScript 中的一个 object。我们可以像操作普通 object 一样读取、设置 property，property 可以是任意类型。
 
-```
-document.getElementById('test').foo = 1;
+```javascript
+document.getElementById("test").foo = 1;
 // 设置property：foo为number: 1
-document.getElementById('test').foo;
+document.getElementById("test").foo;
 // 读取property，返回number：1
-$('#test').prop('foo');
+$("#test").prop("foo");
 // jQuery读取property，返回number：1
 ```
 
-```
-$('#test').prop('foo', {
-    age: 23,
-    name: 'John'
+```javascript
+$("#test").prop("foo", {
+	age: 23,
+	name: "John",
 });
 // jQuery设置property：foo为一个object
-document.getElementById('test').foo.age;
+document.getElementById("test").foo.age;
 // 返回number：23
-document.getElementById('test').foo.name;
+document.getElementById("test").foo.name;
 // 返回string："John"
 ```
 
 2. 非自定义 attribute，如 id、class、titile 等，都会有对应的 property 映射。
 
-```
+```html
 <div id="test" class="button" foo="1"></div>
 ```
 
-```
-document.getElementById('test').id;
+```javascript
+document.getElementById("test").id;
 // 返回string："test"
-document.getElementById('test').className;
+document.getElementById("test").className;
 // 返回string："button"
-document.getElementById('test').foo;
+document.getElementById("test").foo;
 // 返回undefined，因为foo是自定义attribute
 ```
 
@@ -248,30 +248,30 @@ document.getElementById('test').foo;
 
 3. 非自定义的 property 或 attribute 的变化多数是联动的。
 
-```
+```html
 <div id="test" class="button"></div>
 ```
 
-```
-var div = document.getElementById('test');
-div.className = 'red-input';
-div.getAttribute('class');
+```javascript
+var div = document.getElementById("test");
+div.className = "red-input";
+div.getAttribute("class");
 // 返回string："red-input"
-div.setAttribute('class','green-input');
+div.setAttribute("class", "green-input");
 div.className;
 // 返回string："green-input"
 ```
 
 4. 带有默认值的 attribute 不随 property 变化而变化。
 
-```
+```html
 <input id="search" value="foo" />
 ```
 
-```
-var input = document.getElementById('search');
-input.value = 'foo2';
-input.getAttribute('value');
+```javascript
+var input = document.getElementById("search");
+input.value = "foo2";
+input.getAttribute("value");
 // 返回string："foo"
 ```
 
@@ -1658,7 +1658,7 @@ eval(str); // hello
 
 **Symbol**是 ES6 的新增属性，代表用给定名称作为唯一标识，这种类型的值可以这样创建：
 
-```
+```javascript
 let id = symbol("id"）
 ```
 
