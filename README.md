@@ -15,6 +15,8 @@
 
 ## Day 109:
 
+✅ [[2021-6-8] CPU 和 GPU 的区别和作用是什么？](https://github.com/HJY-xh/plantTrees/issues/290)
+
 ✅ [[2021-6-8] Vue3 里为什么要用 Proxy API 替代 defineProperty API ？](https://github.com/HJY-xh/plantTrees/issues/289)
 
 ## 目录结构 📁
