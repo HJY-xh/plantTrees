@@ -368,10 +368,10 @@ Proxy 可以理解成在目标对象之前架设一层“拦截”，外界对�
     }
     let proxy = new Proxy(datas, {
       get(target, property) {
-        return target[property[
+        return target[property]
       },
       set(target, property, value) {
-        target[property] += value
+        target[property] = value
       }
     })
 
