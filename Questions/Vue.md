@@ -332,3 +332,48 @@ Vue 数据双向绑定是通过数据劫持结合发布者-订阅者模式的方
 
 </pre>
 </details>
+
+[9.[2021-6-8] Vue3 里为什么要用 Proxy API 替代 defineProperty API ？](https://github.com/HJY-xh/plantTrees/issues/289)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-
+
+### defineProperty 最大的局限性是它只能针对单例属性进行监听
+
+Vue2.x 中的响应式实现正是基于`defineProperty`中的`descriptor`对`data`中的属性做了遍历` + 递归，为每个属性设置了 getter、setter。
+
+这也就是为什么 Vue 只能对 data 中预定义过的属性做出响应的原因，在 Vue 中使用下标的方式直接修改属性的值或者添加一个预先不存在的对象属性是无法做到 setter 监听的，这是`defineProperty`的局限性。
+
+-
+
+### `Proxy API` 的监听是针对一个对象的，那么对这个对象的所有操作会进入监听操作，这就完全可以代理所有属性，将会带来很大的性能提升和更优的代码。
+
+Proxy 可以理解成在目标对象之前架设一层“拦截”，外界对该对象的访问都必须先通过这层拦截，因此提供了一种机制可以对外界的访问进行过滤和改写。
+
+-
+
+### 响应式是惰性的
+
+在 Vue2 中，对于一个深层属性嵌套的对象，要劫持它内部深层次的变化，就需要递归遍历这个对象，**执行 Object.defineProperty 把每一层对象数据都变成响应式的，这无疑会有很大的性能消耗。**
+
+在 Vue3 中，使用`Proxy API`并不能监听到对象内部深层次的属性变化，因此它的处理方式是在 getter 中去递归响应式，这样的好处是**真正访问到的内部属性才会变成响应式，简单地说就是按需实现响应式，减少性能消耗。**
+
+如下图代码所示：
+
+    let datas = {
+      num: 0
+    }
+    let proxy = new Proxy(datas, {
+      get(target, property) {
+        return target[property[
+      },
+      set(target, property, value) {
+        target[property] += value
+      }
+    })
+
+</pre>
+</details>
