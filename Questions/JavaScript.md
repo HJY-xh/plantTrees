@@ -1769,3 +1769,47 @@ MDN 中对 documentFragment 的解释：
 
 </pre>
 </details>
+
+[68.[2021-6-9] 什么是魔术字符串](https://github.com/HJY-xh/plantTrees/issues/292)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+魔术字符串指的是在代码之中多次出现、与代码形成强耦合的某一个具体的字符串或者数值。
+
+魔术字符串不利于修改和维护，风格良好的代码，应该尽量消除魔术字符串，改由含义清晰的变量代替。
+
+看个 🌰
+
+```javascript
+const TYPE_AUDIO = Symbol();
+const TYPE_VIDEO = Symbol();
+const TYPE_IMAGE = Symbol();
+
+function consoleText(resource) {
+	switch (resource.type) {
+		case TYPE_AUDIO:
+			console.log("TYPE_AUDIO");
+			break;
+		case TYPE_VIDEO:
+			console.log("TYPE_VIDEO");
+			break;
+		case TYPE_IMAGE:
+			console.log("TYPE_IMAGE");
+			break;
+		default:
+			throw new Error("Unknown type of resource");
+	}
+}
+
+const data = {
+	name: "cola.jpg",
+	type: TYPE_IMAGE,
+};
+
+consoleText(data);
+```
+
+</pre>
+</details>
