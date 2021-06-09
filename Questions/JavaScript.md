@@ -1813,3 +1813,37 @@ consoleText(data);
 
 </pre>
 </details>
+
+[69.[2021-6-9] Symbol 如何用于私有变量的实现](https://github.com/HJY-xh/plantTrees/issues/293)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+看个 🌰
+
+```javascript
+const Example = (function () {
+	let _private = Symbol("private");
+
+	class Example {
+		constructor() {
+			this[_private] = "private";
+		}
+		getName() {
+			return this[_private];
+		}
+	}
+
+	return Example;
+})();
+
+const ex = new Example();
+
+console.log(ex.getName()); // private
+
+console.log(ex.name); // undefined
+```
+
+</pre>
+</details>

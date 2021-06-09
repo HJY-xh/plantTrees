@@ -15,6 +15,8 @@
 
 ## Day 110:
 
+✅ [[2021-6-9] Symbol 如何用于私有变量的实现](https://github.com/HJY-xh/plantTrees/issues/293)
+
 ✅ [[2021-6-9] 什么是魔术字符串](https://github.com/HJY-xh/plantTrees/issues/292)
 
 ✅ [[2021-6-9] Vue3 是如何变得更快的？](https://github.com/HJY-xh/plantTrees/issues/291)
