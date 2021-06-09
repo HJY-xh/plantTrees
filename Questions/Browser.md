@@ -71,7 +71,7 @@
 <pre>
 CSP 指的是内容安全策略，它的本质是建立一个白名单，告诉浏览器哪些外部资源可以加载和执行。只需要配置规则，如何拦截由浏览器自己来实现。
 
-通常有两种方式来开启 CSP，一种是设置 HTTP 首部中的` Content-Security-Policy`，一种是设置 meta 标签的方式` <meta http-equiv="Content-Security-Policy">`
+通常有两种方式来开启 CSP，一种是设置 HTTP 首部中的 `Content-Security-Policy` ，一种是设置 meta 标签的方式 `<meta http-equiv="Content-Security-Policy">`
 
 </pre>
 </details>
@@ -81,6 +81,7 @@ CSP 指的是内容安全策略，它的本质是建立一个白名单，告诉�
 <details>
 <summary>展开查看</summary>
 <pre>
+
 DOM 指的是文档对象模型，它指的是把文档当做一个对象来对待，这个对象主要定义了处理网页内容的方法和接口。
 
 BOM 指的是浏览器对象模型，它指的是把浏览器当做一个对象来对待，这个对象主要定义了与浏览器进行交互的法和接口。BOM
@@ -97,6 +98,7 @@ on 对象、navigator 对象、screen 对象等子对象，并且 DOM 的对象 
 <details>
 <summary>展开查看</summary>
 <pre>
+
 浏览器缓存分为强缓存和协商缓存，浏览器加载一个页面的简单流程如下：
 
 -   浏览器先根据这个资源的 http 头信息来判断是否命中强缓存。如果命中则直接加在缓存中的资源，并不会将请求发送到服务器。（强缓存）
