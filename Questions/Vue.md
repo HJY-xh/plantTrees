@@ -376,3 +376,28 @@ let proxy = new Proxy(datas, {
 
 </pre>
 </details>
+
+[10.[2021-6-9] Vue3 是如何变得更快的？](https://github.com/HJY-xh/plantTrees/issues/291)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   **diff 方法优化**
+
+Vue2 中的虚拟 dom 是进行全量的对比。
+
+Vue3 中新增了静态标记（PatchFlag）：在与上次虚拟节点进行对比的时候，只对比带有 patch flag 的节点，并且可以通过 flag 的信息得知当前节点要对比的具体内容。
+
+-   **hoistStatic 静态提升**
+
+Vue2：无论元素是否参与更新，每次都会重新创建。
+
+Vue3：对不参与更新的元素，只会被创建一次，之后会在每次渲染时不停地复用。
+
+-   **cacheHandlers 事件侦听器缓存**
+
+默认情况下 onClick 会被视为动态绑定，所以每次都会去追踪它的变化。但是因为是同一个函数，所以没必要去追踪它的变化，想办法将它直接缓存起来复用就会提升性能。
+
+</pre>
+</details>
