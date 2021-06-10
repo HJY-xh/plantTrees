@@ -1440,3 +1440,35 @@ p:first-child {
 
 </pre>
 </details>
+
+[37.[2021-6-10] em 和 rem 如何转换为像素值？](https://github.com/HJY-xh/plantTrees/issues/294)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   **em 是如何转换成 px 的**
+
+    1.当使用 em 单位时，像素值是将 em 值乘以使用 em 单位的元素的字体大小，例如一个 div 的字体为 18px，设置它的宽高为 10em，那么此时宽高就是 18px \* 10em = 180px。
+
+```CSS
+    .test{
+      width:10em;
+      height:10em;
+      background-color:#ff7d42;
+      font-size:18px;
+    }
+```
+
+一定要记住的是，em 是根据使用它的元素的 font-size 的大小来变化的，而不是根据父元素字体大小，有些元素大小是父元素的多少倍是因为继承了父元素中 font-size 的设定
+
+2.em 单位的继承效果
+
+使用 em 单位存在继承的时候，每个元素将自动继承其父元素的字体大小，继承的效果只能被明确的字体单位覆盖，比如 px 和 vw，只要父级元素上面一直有 font-size 为 em 单位，则会一直继承，但假如自己设置了 font-size 的单位为 px 的时候，则会直接使用自己的 px 单位的值
+
+-   **rem 是如何转换成 px 的**
+
+当使用 rem 时，页面转换为像素大小取决于根元素的字体大小乘 rem 的值，即 HTML 元素的字体大小乘 rem 的值。例如，根元素的字体大小为 16px，那么 10rem 就等同于 10rem \* 16px = 160px。
+
+</pre>
+</details>
