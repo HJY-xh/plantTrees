@@ -1479,13 +1479,19 @@ p:first-child {
 <summary>展开查看</summary>
 <pre>
 
+h5 移动端开发中，input 的 border 已经初始化设置为 none 了，根据需求进行了 border 样式的重置。但在苹果手机上渲染有问题。如下图所示：
+![a](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_297/a.png)
+
 通过以下代码设置样式：
 
 ```css
 element {
-	-webkit-appearance: none;
+	-webkit-appearance: none; //去掉苹果系统默认样式
 }
 ```
+
+解决后效果：
+![b](https://github.com/HJY-xh/plantTrees/blob/master/Image/%E8%AF%84%E8%AE%BA%E5%8C%BA%E5%9B%BE%E7%89%87/issues_297/b.png)
 
 </pre>
 </details>
@@ -1496,7 +1502,7 @@ element {
 <summary>展开查看</summary>
 <pre>
 
-通过以下代码设置样式：
+在手机端页面中，如果你对某个 div 或模块使用了 overflow: scroll 属性，特别是在 iPhone 端有时候上下拖动滚动条会比较卡，很不流畅，用户体验很差。为了解决这个问题可通过以下代码设置样式：
 
 ```css
 body {
@@ -1506,6 +1512,7 @@ body {
 ```
 
 **overflow-scrolling 为 CSS3 新增属性，Android 3+ 和 iOS 5+ 支持。**
+**注：这段代码创建了带有硬件加速的系统级控件，效率很高；但是会消耗更多的内存。**
 
 </pre>
 </details>
