@@ -1509,3 +1509,20 @@ body {
 
 </pre>
 </details>
+
+[40.[2021-6-11] 如何解决移动端长时间按住页面出现闪退的问题？](https://github.com/HJY-xh/plantTrees/issues/299)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+通过以下代码设置样式：
+
+```css
+element {
+	-webkit-touch-callout: none;
+}
+```
+
+</pre>
+</details>
