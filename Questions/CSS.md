@@ -1489,3 +1489,23 @@ element {
 
 </pre>
 </details>
+
+[39.[2021-6-11] 如何解决移动端上下拖动滚动条时的卡顿问题？](https://github.com/HJY-xh/plantTrees/issues/298)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+通过以下代码设置样式：
+
+```css
+body {
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
+```
+
+**overflow-scrolling 为 CSS3 新增属性，Android 3+ 和 iOS 5+ 支持。**
+
+</pre>
+</details>
