@@ -564,3 +564,18 @@ META 标签是 HTML 标记 HEAD 区的一个关键标签，提供文档字符集
 
 </pre>
 </details>
+
+[24.[2021-6-12] 如何通过 meta 标签把 HTTP 换成 HTTPS?](https://github.com/HJY-xh/plantTrees/issues/304)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+利用 meta 标签把 http 请求换为 https:
+
+```html
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+```
+
+</pre>
+</details>
