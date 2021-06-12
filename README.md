@@ -13,17 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 112：
+## Day 113：
 
-✅ [[2021-6-11] OAuth 鉴权流程是什么样的？](https://github.com/HJY-xh/plantTrees/issues/302)
-
-✅ [[2021-6-11] API 访问如何鉴权？](https://github.com/HJY-xh/plantTrees/issues/301)
-
-✅ [[2021-6-11] 如何解决 iPhone 和 iPad 下输入框默认内阴影？](https://github.com/HJY-xh/plantTrees/issues/297)
-
-✅ [[2021-6-11] 如何解决移动端上下拖动滚动条时的卡顿问题？](https://github.com/HJY-xh/plantTrees/issues/298)
-
-✅ [[2021-6-11] 如何解决移动端长时间按住页面出现闪退的问题？](https://github.com/HJY-xh/plantTrees/issues/299)
+✅ [[2021-6-12] CommonJS 和 ES6 模块的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/303)
 
 ## 目录结构 📁
 

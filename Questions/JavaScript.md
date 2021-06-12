@@ -1866,3 +1866,20 @@ JavaScript 中的异步机制可以分为以下几种：
 
 </pre>
 </details>
+
+[71.[2021-6-12] CommonJS 和 ES6 模块的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/303)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   CommonJS 模块是运行时加载，ES6 Modules 是编译时输出接口
+-   CommonJS 输出是值的拷贝；ES6 Modules 输出的是值的引用，被输出模块的内部的改变会影响引用的改变
+-   CommonJs 导入的模块路径可以是一个表达式，因为它使用的是 require()方法；而 ES6 Modules 只能是字符串
+-   CommonJS this 指向当前模块，ES6 Modules this 指向 undefined
+-   且 ES6 Modules 中没有这些顶层变量：arguments、require、module、exports、**filename、**dirname
+
+关于第一个差异，是因为 CommonJS 加载的是一个对象（即 module.exports 属性），该对象只有在脚本运行完才会生成。而 ES6 模块不是对象，它的对外接口只是一种静态定义，在代码静态解析阶段就会生成。
+
+</pre>
+</details>
