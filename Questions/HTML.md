@@ -513,31 +513,31 @@ META 标签是 HTML 标记 HEAD 区的一个关键标签，提供文档字符集
 -   charset，用来描述 HTML 文档的编码类型
 
 ```html
-<metacharset ="UTF-8"></metacharset>
+<meta charset ="UTF-8"></meta>
 ```
 
 -   keywords，页面关键词
 
 ```html
-<metaname ="keywords" content="关键词" />
+<meta name="keywords" content="关键词" />
 ```
 
 -   description，页面描述
 
 ```html
-<metaname ="description" content="页面描述内容" />
+<meta name="description" content="页面描述内容" />
 ```
 
 -   refresh
 
 ```html
-<metahttp-equiv ="refresh" content="0;url=" />
+<meta http-equiv="refresh" content="0;url=" />
 ```
 
 -   viewport， 适配移动端，可以控制视口的大小和比例：
 
 ```html
-<metaname="viewport" content="width="device-width,inital-scale=1,maximum-scale=1">
+<meta name="viewport" content="width=device-width,inital-scale=1,maximum-scale=1" />
 ```
 
 其中，content 参数有以下几种：
@@ -550,7 +550,7 @@ META 标签是 HTML 标记 HEAD 区的一个关键标签，提供文档字符集
 -   robots, 搜索引擎索引方式
 
 ```html
-<metaname ="robots" content="index,follow" />
+<meta name="robots" content="index,follow" />
 ```
 
 其中，content 参数有以下几种：
