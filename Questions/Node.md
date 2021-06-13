@@ -263,3 +263,14 @@ require 其实还有按需加载的含义，就像前端常见的 AMD、CMD、UM
 
 </pre>
 </details>
+
+[12.[2021-6-13] Node 在 V8 引擎之上构建的好处是什么？](https://github.com/HJY-xh/plantTrees/issues/306)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+Node 在选型时决定在 V8 引擎之上构建，也就意味着它的模型和浏览器类似。我们的 JavaScript 将会运行在单个进程的单个线程上。它带来的好处是：程序状态是单一的，在没有多线程的情况下没有锁、线程同步问题，操作系统在调度时也因为较少上下文的切换，可以很好地提高 CPU 的使用率。
+
+</pre>
+</details>
