@@ -15,6 +15,8 @@
 
 ## Day 114：
 
+✅ [[2021-6-14] 白银时代：多线程](https://github.com/HJY-xh/plantTrees/issues/310)
+
 ✅ [[2021-6-14] 青铜时代：复制进程](https://github.com/HJY-xh/plantTrees/issues/309)
 
 ## 目录结构 📁
