@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 113：
+## Day 114：
 
-✅ [[2021-6-13] 石器时代：同步](https://github.com/HJY-xh/plantTrees/issues/308)
-
-✅ [[2021-6-13] Node 在 V8 引擎之上构建的好处是什么？](https://github.com/HJY-xh/plantTrees/issues/306)
-
-✅ [[2021-6-13] 数据结构的基本操作有哪些？](https://github.com/HJY-xh/plantTrees/issues/305)
+✅ [[2021-6-14] 青铜时代：复制进程](https://github.com/HJY-xh/plantTrees/issues/309)
 
 ## 目录结构 📁
 
