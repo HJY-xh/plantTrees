@@ -49,7 +49,6 @@ const runTask = (url, isUpdateDate) => {
 				content,
 			};
 
-			console.log(issueData);
 			handleHTMLSuccess(issueData, isUpdateDate);
 		})
 		.catch((err) => {
@@ -82,8 +81,8 @@ const handleHTMLSuccess = async (res, isUpdateDate) => {
 		])
 		.then((res) => {
 			const msg = [
-				`docs(${res.tag.toLowerCase()}.md, readme.md): ${res.title}`,
-				`re #${res.url.split("/").pop()}`,
+				`docs(${res?.tag?.toLowerCase()}.md, readme.md): ${res?.title}`,
+				`re #${res?.url?.split("/").pop()}`,
 			].join("\n\n");
 			res.commit && shell.exec(`git add . && git commit -m '${msg}'`);
 		});
@@ -91,26 +90,25 @@ const handleHTMLSuccess = async (res, isUpdateDate) => {
 
 inquirer
 	.prompt([
-		// {
-		// 	type: "input",
-		// 	name: "No",
-		// 	message: "请输入issue编号",
-		// 	validate: (value) => {
-		// 		if (/^[0-9]*$/.test(value)) {
-		// 			return true;
-		// 		}
-		// 		return colors.red("请输入数字");
-		// 	},
-		// },
-		// {
-		// 	type: "confirm",
-		// 	name: "isUpdateDate",
-		// 	message: "是否需要修改Readme.md文件中的日期",
-		// },
+		{
+			type: "input",
+			name: "No",
+			message: "请输入issue编号",
+			validate: (value) => {
+				if (/^[0-9]*$/.test(value)) {
+					return true;
+				}
+				return colors.red("请输入数字");
+			},
+		},
+		{
+			type: "confirm",
+			name: "isUpdateDate",
+			message: "是否需要修改Readme.md文件中的日期",
+		},
 	])
 	.then((res) => {
-		// const url = `https://api.github.com/repos/HJY-xh/plantTrees/issues/${res.No}`;
-		const url = `https://api.github.com/repos/HJY-xh/plantTrees/issues/310`;
+		const url = `https://api.github.com/repos/HJY-xh/plantTrees/issues/${res.No}`;
 		const isUpdateDate = res.isUpdateDate || false;
 
 		try {
