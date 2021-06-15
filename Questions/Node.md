@@ -274,3 +274,14 @@ Node 在选型时决定在 V8 引擎之上构建，也就意味着它的模型�
 
 </pre>
 </details>
+
+[13.[2021-6-15] 为什么要异步 I/O?](https://github.com/HJY-xh/plantTrees/issues/315)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+关于异步 I/O 为何在 Node 里如此重要，这与 Node 面向网络而设计不无关系。Web 应用已经不再是单台服务器就能胜任的时代了，在跨网络的结构下，并发已经是现在编程中的标准配备了。具体到实处，则可以从用户体验和资源分配这两个方面说起。
+
+</pre>
+</details>
