@@ -1,6 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const h2m = require("h2m");
 
 /**
  * @param {string} res issue信息

@@ -58,7 +58,6 @@ const runTask = (url, isUpdateDate) => {
 
 /**
  * @param {request.Response} res
- * @param {string} url Issue地址
  * @param {boolean} isUpdateDate 是否需要修改Readme.md文件中的日期
  * @function 成功获取数据后的回调
  */
