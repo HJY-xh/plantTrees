@@ -13,13 +13,11 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 114：
+## Day 115:
 
-✅ [[2021-6-14] 黄金时代：事件驱动](https://github.com/HJY-xh/plantTrees/issues/311)
+✅ [[2021-6-15] 异步 I/O:用户体验](https://github.com/HJY-xh/plantTrees/issues/316)
 
-✅ [[2021-6-14] 白银时代：多线程](https://github.com/HJY-xh/plantTrees/issues/310)
-
-✅ [[2021-6-14] 青铜时代：复制进程](https://github.com/HJY-xh/plantTrees/issues/309)
+✅ [[2021-6-15] 为什么要异步 I/O?](https://github.com/HJY-xh/plantTrees/issues/315)
 
 ## 目录结构 📁
 
