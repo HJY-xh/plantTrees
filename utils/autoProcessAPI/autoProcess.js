@@ -82,7 +82,7 @@ const handleHTMLSuccess = async (res, isUpdateDate) => {
 		])
 		.then((res) => {
 			const msg = [
-				`docs(${tag}.md, readme.md): ${title}`,
+				`docs(${tag?.toLowerCase()}.md, readme.md): ${title}`,
 				`re #${url?.split("/").pop()}`,
 			].join("\n\n");
 			res.commit && shell.exec(`git add . && git commit -m '${msg}'`);

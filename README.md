@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 115:
+## Day 116:
 
-✅ [[2021-6-15] 异步 I/O:用户体验](https://github.com/HJY-xh/plantTrees/issues/316)
-
-✅ [[2021-6-15] 为什么要异步 I/O?](https://github.com/HJY-xh/plantTrees/issues/315)
+✅ [[2021-6-16] 异步 I/O:资源分配](https://github.com/HJY-xh/plantTrees/issues/318)
 
 ## 目录结构 📁
 
