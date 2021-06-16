@@ -70,6 +70,8 @@ const handleHTMLSuccess = async (res, isUpdateDate) => {
 
 	console.log("\n", colors.green("已生成相关文档，请检查格式及日期~"), "\n");
 
+	const { tag, title, url } = res;
+
 	inquirer
 		.prompt([
 			{
@@ -80,8 +82,8 @@ const handleHTMLSuccess = async (res, isUpdateDate) => {
 		])
 		.then((res) => {
 			const msg = [
-				`docs(${res?.tag?.toLowerCase()}.md, readme.md): ${res?.title}`,
-				`re #${res?.url?.split("/").pop()}`,
+				`docs(${tag}.md, readme.md): ${title}`,
+				`re #${url?.split("/").pop()}`,
 			].join("\n\n");
 			res.commit && shell.exec(`git add . && git commit -m '${msg}'`);
 		});
