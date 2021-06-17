@@ -15,6 +15,8 @@
 
 ## Day 117:
 
+✅ [[2021-6-17] 强类型语言和弱类型语言的区别？](https://github.com/HJY-xh/plantTrees/issues/321)
+
 ✅ [[2021-6-17] 什么是尾调用？](https://github.com/HJY-xh/plantTrees/issues/320)
 
 ## 目录结构 📁
