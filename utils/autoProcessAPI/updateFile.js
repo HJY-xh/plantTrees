@@ -30,8 +30,6 @@ const updateReadme = (res, isUpdateDate) => {
 	const newDay = Number(oldDayTitle.replace("## Day ", "").replace(":", "")) + 1;
 	const newDayTitle = readmeOldFileArr[dayIndex].replace(/\d+/, newDay);
 
-	console.log(oldDayTitle, newDay, newDayTitle);
-
 	// 更新readme.md文件
 	readmeOldFileArr.splice(index, 0, `\n✅ [${title}](${url})\n`);
 	let readmeNewFile = readmeOldFileArr.join("\n");
