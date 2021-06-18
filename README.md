@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 117:
+## Day 118:
 
-✅ [[2021-6-17] 强类型语言和弱类型语言的区别？](https://github.com/HJY-xh/plantTrees/issues/321)
-
-✅ [[2021-6-17] 什么是尾调用？](https://github.com/HJY-xh/plantTrees/issues/320)
+✅ [[2021-6-18] DNS 协议是什么?](https://github.com/HJY-xh/plantTrees/issues/323)
 
 ## 目录结构 📁
 
