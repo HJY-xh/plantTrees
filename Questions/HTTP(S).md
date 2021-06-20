@@ -741,3 +741,14 @@ TLS: Transport Layer Security,安全传输层协议,用于保证两个应用程�
 
 </pre>
 </details>
+
+[36.[2021-6-20] 为什么 HTTP/1.1 实现不了多路复用?](https://github.com/HJY-xh/plantTrees/issues/326)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+HTTP/1.1 并不是二进制传输，而是通过文本进行传输，由于没有流的概念，在使用并行传输（多路复用）传递数据时，接收端在接收到响应后，并不能区分多个响应分别对应的请求，所以无法将多个响应的结果重新进行组装，也就实现不了多路复用。
+
+</pre>
+</details>
