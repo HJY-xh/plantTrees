@@ -15,6 +15,8 @@
 
 ## Day 119:
 
+✅ [[2021-6-18] 怎么理解 JavaScript 中的垃圾回收机制？](https://github.com/HJY-xh/plantTrees/issues/322)
+
 ✅ [[2021-6-19] 什么是二叉查找树？](https://github.com/HJY-xh/plantTrees/issues/325)
 
 ✅ [[2021-6-19] git stash 相关的命令有哪些？](https://github.com/HJY-xh/plantTrees/issues/324)
