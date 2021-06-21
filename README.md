@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 119:
+## Day 120:
 
-✅ [[2021-6-18] 怎么理解 JavaScript 中的垃圾回收机制？](https://github.com/HJY-xh/plantTrees/issues/322)
-
-✅ [[2021-6-19] 什么是二叉查找树？](https://github.com/HJY-xh/plantTrees/issues/325)
-
-✅ [[2021-6-19] git stash 相关的命令有哪些？](https://github.com/HJY-xh/plantTrees/issues/324)
+✅ [[2021-6-21] 怎么样设计一个分页功能？](https://github.com/HJY-xh/plantTrees/issues/327)
 
 ## 目录结构 📁
 
