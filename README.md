@@ -17,6 +17,8 @@
 
 ✅ [[2021-6-22] PNG 图片有什么特点？](https://github.com/HJY-xh/plantTrees/issues/330)
 
+✅ [[2021-6-22] 前端常见的报错信息有哪些？](https://github.com/HJY-xh/plantTrees/issues/329)
+
 ## 目录结构 📁
 
 ```
