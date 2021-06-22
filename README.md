@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 121:
+## Day 122:
 
-✅ [[2021-6-21] V8 引擎如何执行 JS 代码?](https://github.com/HJY-xh/plantTrees/issues/328)
-
-✅ [[2021-6-21] 怎么样设计一个分页功能？](https://github.com/HJY-xh/plantTrees/issues/327)
+✅ [[2021-6-22] PNG 图片有什么特点？](https://github.com/HJY-xh/plantTrees/issues/330)
 
 ## 目录结构 📁
 
