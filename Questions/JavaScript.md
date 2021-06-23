@@ -1973,8 +1973,9 @@ if (x === "abc" || x === "def" || x === "ghi" || x === "jkl") {
 	//logic
 }
 
-//优化后
-if (["abc", "def", "ghi", "jkl"].includes(x)) {
+// 优化后
+const arr = ["abc", "def", "ghi", "jkl"];
+if (arr.includes(x)) {
 	//logic
 }
 ```
