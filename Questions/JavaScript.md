@@ -1958,3 +1958,26 @@ function problem() {
 
 </pre>
 </details>
+
+[74.[2021-6-23] 如何优化 JavaScript 中含有多个条件的 if 语句？](https://github.com/HJY-xh/plantTrees/issues/331)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+可以在数组中存储多个值，并且使用数组的 includes 方法，直接上代码 👇
+
+```javascript
+//一般写法
+if (x === "abc" || x === "def" || x === "ghi" || x === "jkl") {
+	//logic
+}
+
+//优化后
+if (["abc", "def", "ghi", "jkl"].includes(x)) {
+	//logic
+}
+```
+
+</pre>
+</details>

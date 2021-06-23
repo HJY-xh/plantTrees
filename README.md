@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 122:
+## Day 123:
 
-✅ [[2021-6-22] PNG 图片有什么特点？](https://github.com/HJY-xh/plantTrees/issues/330)
-
-✅ [[2021-6-22] 前端常见的报错信息有哪些？](https://github.com/HJY-xh/plantTrees/issues/329)
+✅ [[2021-6-23] 如何优化 JavaScript 中含有多个条件的 if 语句？](https://github.com/HJY-xh/plantTrees/issues/331)
 
 ## 目录结构 📁
 
