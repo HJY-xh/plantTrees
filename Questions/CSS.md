@@ -1533,3 +1533,21 @@ element {
 
 </pre>
 </details>
+
+[41.[2021-6-23] 常见的字体有哪些？](https://github.com/HJY-xh/plantTrees/issues/336)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   宋体 SimSun
+-   黑体 SimHei
+-   微软雅黑 Microsoft YaHei
+-   微软正黑体 Microsoft JhengHei
+-   新宋体 NSimSun
+-   仿宋 FangSong
+-   楷体 KaiTi
+-   隶书 LiSu
+
+</pre>
+</details>

@@ -15,6 +15,8 @@
 
 ## Day 123:
 
+✅ [[2021-6-23] 常见的字体有哪些？](https://github.com/HJY-xh/plantTrees/issues/336)
+
 ✅ [[2021-6-23] 基本数据类型和复杂数据类型存储有什么区别？](https://github.com/HJY-xh/plantTrees/issues/335)
 
 ✅ [[2021-6-23] 如何运用与运算符来优化多条件情况下的 JavaScript 代码？](https://github.com/HJY-xh/plantTrees/issues/333)
