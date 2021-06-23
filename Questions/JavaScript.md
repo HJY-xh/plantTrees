@@ -2003,3 +2003,24 @@ let test2 = test1 || "";
 
 </pre>
 </details>
+
+[76.[2021-6-23] 如何运用与运算符来优化多条件情况下的 JavaScript 代码？](https://github.com/HJY-xh/plantTrees/issues/333)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+如果需要实现某个变量为 true 时调用一个函数，可以使用 && 运算符 👇
+
+```javascript
+//一般写法
+if (test1) {
+	callMethod();
+}
+
+//优化后
+test1 && callMethod();
+```
+
+</pre>
+</details>

@@ -15,6 +15,8 @@
 
 ## Day 123:
 
+✅ [[2021-6-23] 如何运用与运算符来优化多条件情况下的 JavaScript 代码？](https://github.com/HJY-xh/plantTrees/issues/333)
+
 ✅ [[2021-6-23] 如何优化 JavaScript 中对 Null、Undefined、Empty 这些值的检查语法？](https://github.com/HJY-xh/plantTrees/issues/332)
 
 ✅ [[2021-6-23] 如何优化 JavaScript 中含有多个条件的 if 语句？](https://github.com/HJY-xh/plantTrees/issues/331)
