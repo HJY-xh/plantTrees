@@ -2024,3 +2024,15 @@ test1 && callMethod();
 
 </pre>
 </details>
+
+[77.[2021-6-23] 基本数据类型和复杂数据类型存储有什么区别？](https://github.com/HJY-xh/plantTrees/issues/335)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   基本数据类型存储在栈内存，存储的是值。
+-   复杂数据类型存储在堆内存，地址（指向堆中的值）存储在栈内存。当我们把对象赋值给另一个变量时，复制的是地址，指向同一块内存空间。
+
+</pre>
+</details>
