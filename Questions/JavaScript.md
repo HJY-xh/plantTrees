@@ -1981,3 +1981,25 @@ if (["abc", "def", "ghi", "jkl"].includes(x)) {
 
 </pre>
 </details>
+
+[75.[2021-6-23] 如何优化 JavaScript 中对 Null、Undefined、Empty 这些值的检查语法？](https://github.com/HJY-xh/plantTrees/issues/332)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+直接上代码 👇
+
+```javascript
+//一般写法
+if (test1 !== null || test1 !== undefined || test1 !== "") {
+	let test2 = test1;
+}
+// 优化后
+let test2 = test1 || "";
+```
+
+原理：根据 `||` 的基本使用方法而达到优化代码的效果，即**当数值参与逻辑或运算时，结果为 true，会返回第一个为真的值；如果结果为 false，会返回第二个为假的值**，具体可查看[资料](https://www.jb51.net/article/140789.htm)
+
+</pre>
+</details>
