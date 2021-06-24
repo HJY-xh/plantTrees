@@ -2074,3 +2074,38 @@ data[something] && data[something]();
 
 </pre>
 </details>
+
+[79.[2021-6-24] JavaScript 中扩展运算符的缩写法](https://github.com/HJY-xh/plantTrees/issues/338)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+直接看例子 👇
+
+```javascript
+//一般写法 // 连接数组
+const data = [1, 2, 3];
+const test = [4, 5, 6].concat(data);
+
+//优化后
+const data = [1, 2, 3];
+const test = [4, 5, 6, ...data];
+console.log(test); // [ 4, 5, 6, 1, 2, 3];
+```
+
+拓展 👉 用扩展运算符来完成深克隆操作：
+
+```javascript
+const test1 = {
+	name: "Jae",
+	age: 18,
+	sex: "boy",
+};
+const test2 = { ...test1 };
+test1.name = "Jack";
+console.log(test2); //name还是输出Jae，如果直接让test2 = test1的话此时test中的name也会被改成Jack
+```
+
+</pre>
+</details>
