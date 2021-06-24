@@ -15,6 +15,8 @@
 
 ## Day 124:
 
+✅ [[2021-6-24] React 如何判断什么时候重新渲染组件？](https://github.com/HJY-xh/plantTrees/issues/341)
+
 ✅ [[2021-6-24] JavaScript 中 Array.find 缩写法](https://github.com/HJY-xh/plantTrees/issues/340)
 
 ✅ [[2021-6-24] JavaScript 中的解构赋值缩写法](https://github.com/HJY-xh/plantTrees/issues/339)
