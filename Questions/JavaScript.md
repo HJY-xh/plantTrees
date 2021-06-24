@@ -2109,3 +2109,24 @@ console.log(test2); //name还是输出Jae，如果直接让test2 = test1的话�
 
 </pre>
 </details>
+
+[80.[2021-6-24] JavaScript 中的解构赋值缩写法](https://github.com/HJY-xh/plantTrees/issues/339)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+直接看代码 👇
+
+```javascript
+//一般写法
+const test1 = this.data.test1;
+const test2 = this.data.test2;
+const test2 = this.data.test3;
+
+//优化后
+const { test1, test2, test3 } = this.data;
+```
+
+</pre>
+</details>
