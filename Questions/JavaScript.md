@@ -2037,3 +2037,40 @@ test1 && callMethod();
 
 </pre>
 </details>
+
+[78.[2021-6-24] JavaScript 中 switch 语句对应的缩写法](https://github.com/HJY-xh/plantTrees/issues/337)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+可以把条件值保存在名值对中，基于这个条件使用键值对代替 switch👇
+
+```javascript
+//一般情况
+switch (data) {
+	case 1:
+		test1();
+		break;
+
+	case 2:
+		test2();
+		break;
+
+	case 3:
+		test();
+		break;
+	// And so on...
+}
+
+//优化后
+var data = {
+	1: test1,
+	2: test2,
+	3: test,
+};
+data[something] && data[something]();
+```
+
+</pre>
+</details>
