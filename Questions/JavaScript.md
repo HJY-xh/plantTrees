@@ -2130,3 +2130,49 @@ const { test1, test2, test3 } = this.data;
 
 </pre>
 </details>
+
+[81.[2021-6-24] JavaScript 中 Array.find 缩写法](https://github.com/HJY-xh/plantTrees/issues/340)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+当我们需要在一个对象数组中按属性值查找特定对象时，可使用 find 方法 👇
+
+### 一般情况
+
+```javascript
+const data = [
+	{
+		type: "test1",
+		name: "abc",
+	},
+	{
+		type: "test2",
+		name: "cde",
+	},
+	{
+		type: "test1",
+		name: "fgh",
+	},
+];
+function findtest1(name) {
+	for (let i = 0; i < data.length; ++i) {
+		if (data[i].type === "test1" && data[i].name === name) {
+			return data[i];
+		}
+	}
+}
+```
+
+### 优化后
+
+```javascript
+let filteredData = data.find((data) => data.type === "test1" && data.name === "fgh");
+console.log(filteredData); // { type: 'test1', name: 'fgh' }
+```
+
+**ps:** find() 方法返回通过测试（函数内判断）的数组的第一个元素的值。
+
+</pre>
+</details>

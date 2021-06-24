@@ -15,6 +15,8 @@
 
 ## Day 124:
 
+✅ [[2021-6-24] JavaScript 中 Array.find 缩写法](https://github.com/HJY-xh/plantTrees/issues/340)
+
 ✅ [[2021-6-24] JavaScript 中的解构赋值缩写法](https://github.com/HJY-xh/plantTrees/issues/339)
 
 ✅ [[2021-6-24] JavaScript 中扩展运算符的缩写法](https://github.com/HJY-xh/plantTrees/issues/338)
