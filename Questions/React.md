@@ -372,3 +372,41 @@ static getDerivedStateFromProps(nextProps, prevState) {
 
 </pre>
 </details>
+
+[17.[2021-6-24] React 中 Fragment 的使用场景是什么？](https://github.com/HJY-xh/plantTrees/issues/342)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+在 React 中，组件返回的元素只能有一个根元素，为了不添加多余的 DOM 节点，可以使用 Fragment 标签来包裹所有的元素，Fragment 标签不会渲染出任何元素。React 官方对 Fragment 的解释：
+
+> React 中的一个常见模式是一个组件返回多个元素。Fragments 允许你将子列表分组，而无需向 DOM 添加额外节点。
+
+看个例子：
+
+```javascript
+// 一般形式
+render() {
+  return (
+    <React.Fragment>
+      <ChildA />
+      <ChildB />
+      <ChildC />
+    </React.Fragment>
+  );
+}
+// 也可以写成以下形式
+render() {
+  return (
+    <>
+      <ChildA />
+      <ChildB />
+      <ChildC />
+    </>
+  );
+}
+```
+
+</pre>
+</details>
