@@ -2061,16 +2061,26 @@ switch (data) {
 		test();
 		break;
 	// And so on...
+
+	default:
+		throw new Error(`no such situation '${data}'`);
 }
 
 //优化后
-var data = {
+var datas = {
 	1: test1,
 	2: test2,
 	3: test,
 };
-data[something] && data[something]();
+
+var func = datas[data];
+if (!func) {
+	throw new Error(`no such situation '${data}'`);
+}
+func();
 ```
+
+**不过开发中尽量不要用这种方法噢，对象的形式很容易被人恶意篡改**
 
 </pre>
 </details>
