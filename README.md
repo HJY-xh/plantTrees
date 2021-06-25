@@ -15,6 +15,8 @@
 
 ## Day 125:
 
+✅ [[2021-6-25] JavaScript 中的 entries 方法是什么？](https://github.com/HJY-xh/plantTrees/issues/344)
+
 ✅ [[2021-6-25] 正则如何实现字符串的 trim 功能？](https://github.com/HJY-xh/plantTrees/issues/343)
 
 ## 目录结构 📁

@@ -2206,3 +2206,44 @@ trim("   哈哈哈哈   “）// 哈哈哈哈
 
 </pre>
 </details>
+
+[83.[2021-6-25] JavaScript 中的 entries 方法是什么？](https://github.com/HJY-xh/plantTrees/issues/344)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+### 定义和用法
+
+entries() 方法返回一个数组的迭代对象，该对象包含数组的键值对 (key/value)
+迭代对象中数组的索引值作为 key， 数组元素作为 value
+
+示例 💻
+
+```javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.entries();
+
+//结果如下
+[0, "Banana"][(1, "Orange")][(2, "Apple")][(3, "Mango")];
+```
+
+### 拓展：该特性可以把对象转换成一个由若干对象组成的数组
+
+示例 💻
+
+```javascript
+const data = { test1: "abc", test2: "cde", test3: "efg" };
+const arr = Object.entries(data);
+console.log(arr);
+/** Output:
+[ 
+  [ 'test1', 'abc' ],
+  [ 'test2', 'cde' ],
+  [ 'test3', 'efg' ]
+]
+**/
+```
+
+</pre>
+</details>
