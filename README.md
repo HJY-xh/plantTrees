@@ -13,19 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 124:
+## Day 125:
 
-✅ [[2021-6-24] React 中 Fragment 的使用场景是什么？](https://github.com/HJY-xh/plantTrees/issues/342)
-
-✅ [[2021-6-24] React 如何判断什么时候重新渲染组件？](https://github.com/HJY-xh/plantTrees/issues/341)
-
-✅ [[2021-6-24] JavaScript 中 Array.find 缩写法](https://github.com/HJY-xh/plantTrees/issues/340)
-
-✅ [[2021-6-24] JavaScript 中的解构赋值缩写法](https://github.com/HJY-xh/plantTrees/issues/339)
-
-✅ [[2021-6-24] JavaScript 中扩展运算符的缩写法](https://github.com/HJY-xh/plantTrees/issues/338)
-
-✅ [[2021-6-24] JavaScript 中 switch 语句对应的缩写法](https://github.com/HJY-xh/plantTrees/issues/337)
+✅ [[2021-6-25] 正则如何实现字符串的 trim 功能？](https://github.com/HJY-xh/plantTrees/issues/343)
 
 ## 目录结构 📁
 

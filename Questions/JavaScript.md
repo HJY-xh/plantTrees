@@ -2176,3 +2176,23 @@ console.log(filteredData); // { type: 'test1', name: 'fgh' }
 
 </pre>
 </details>
+
+[82.[2021-6-25] 正则如何实现字符串的 trim 功能？](https://github.com/HJY-xh/plantTrees/issues/343)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+代码如下：
+
+```javascript
+function trim(str) {
+  let reg = /^\s+|\s+$/g;
+  return str.replace(reg, "");
+}
+
+trim("   哈哈哈哈   “）// 哈哈哈哈
+```
+
+</pre>
+</details>
