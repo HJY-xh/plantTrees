@@ -2247,3 +2247,20 @@ console.log(arr);
 
 </pre>
 </details>
+
+[84.[2021-6-25] 利用扩展运算符找出一个数组中最大和最小的值](https://github.com/HJY-xh/plantTrees/issues/345)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+直接看代码 👇
+
+```javascript
+const arr = [1, 2, 3, 4];
+Math.max(…arr); // 4
+Math.min(…arr); // 1
+```
+
+</pre>
+</details>
