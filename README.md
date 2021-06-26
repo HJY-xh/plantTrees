@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 125:
+## Day 126:
 
-✅ [[2021-6-25] 利用扩展运算符找出一个数组中最大和最小的值](https://github.com/HJY-xh/plantTrees/issues/345)
-
-✅ [[2021-6-25] JavaScript 中的 entries 方法是什么？](https://github.com/HJY-xh/plantTrees/issues/344)
-
-✅ [[2021-6-25] 正则如何实现字符串的 trim 功能？](https://github.com/HJY-xh/plantTrees/issues/343)
+✅ [[2021-6-26] 负载均衡是什么？](https://github.com/HJY-xh/plantTrees/issues/346)
 
 ## 目录结构 📁
 
