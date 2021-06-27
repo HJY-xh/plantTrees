@@ -86,3 +86,29 @@ git stash clear // 删除所有缓存的stash
 
 </pre>
 </details>
+
+[6.[2021-6-27] git 分支的相关命令？](https://github.com/HJY-xh/plantTrees/issues/347)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+相关命令：
+
+```javascript
+# 新建本地分支，但不切换
+git branch <branch-name>
+# 查看本地分支
+git branch
+# 查看远程分支
+git branch -r
+# 查看本地和远程分支
+git branch -a
+# 删除本地分支
+git branch -D <branch-nane>
+# 重新命名分支
+git branch -m <old-branch-name> <new-branch-name>
+```
+
+</pre>
+</details>
