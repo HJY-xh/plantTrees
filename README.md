@@ -15,6 +15,8 @@
 
 ## Day 128:
 
+✅ [[2021-6-28] CDN 的加速原理是什么？](https://github.com/HJY-xh/plantTrees/issues/349)
+
 ✅ [[2021-6-28] CNAME 记录是什么？](https://github.com/HJY-xh/plantTrees/issues/348)
 
 ## 目录结构 📁
