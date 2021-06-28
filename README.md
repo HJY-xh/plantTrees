@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 127:
+## Day 128:
 
-✅ [[2021-6-27] git 分支的相关命令？](https://github.com/HJY-xh/plantTrees/issues/347)
+✅ [[2021-6-28] CNAME 记录是什么？](https://github.com/HJY-xh/plantTrees/issues/348)
 
 ## 目录结构 📁
 
