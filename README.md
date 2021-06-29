@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 128:
+## Day 129:
 
-✅ [[2021-6-28] CDN 的加速原理是什么？](https://github.com/HJY-xh/plantTrees/issues/349)
-
-✅ [[2021-6-28] CNAME 记录是什么？](https://github.com/HJY-xh/plantTrees/issues/348)
+✅ [[2021-6-29] BigInt 和 Number 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/350)
 
 ## 目录结构 📁
 

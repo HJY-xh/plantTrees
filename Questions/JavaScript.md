@@ -2264,3 +2264,22 @@ Math.min(…arr); // 1
 
 </pre>
 </details>
+
+[85.[2021-6-29] BigInt 和 Number 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/350)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   Number 类型的数字有**精度限制**，数值的精度只能到 53 个二进制位（相当于 16 个十进制位, ±9007199254740992），大于这个范围的整数，就无法精确表示了
+
+-   BigInt**没有位数的限制，任何位数的整数都可以精确表示**。但是其只能用于表示整数，且为了与 Number 进行区分，BigInt 类型的数据必须添加后缀 `n` 。BigInt 可以使用负号（-），但是不能使用正号（+）。
+
+-   Number 类型的数字和 BigInt 类型的数字不能混合计算
+
+```javascript
+12n + 12; //报错
+```
+
+</pre>
+</details>
