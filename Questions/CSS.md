@@ -1551,3 +1551,61 @@ element {
 
 </pre>
 </details>
+
+[42.[2021-6-29] gap 属性有什么作用？](https://github.com/HJY-xh/plantTrees/issues/352)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+CSS 的 `gap`(沟槽） 属性的出现，帮助我们解决了以前一直比较麻烦的布局效果： ​
+
+![1](https://user-images.githubusercontent.com/39485286/123771034-5176d580-d8fd-11eb-8886-11ef58744b2f.jpg)
+
+如上图所示，有时候我们需要紧邻容器边缘没有任何间距，但相邻项目之间（水平或垂直方向）都有一定的间距的效果。在没有 gap 属性之前使用 margin 是很烦人的，特别是多行多列的时候更麻烦。
+
+有了 gap 仅需要一行代码即可。 ​CSS 的 gap 属性是一个简写属性，分为 row-gap 和 column-gap ： ​
+
+![2](https://user-images.githubusercontent.com/39485286/123771151-694e5980-d8fd-11eb-9763-b24992334a38.jpg)
+
+该属性 gap 到目前为止只能运用于多列布局，Flexbox 布局和网格布局的容器上。这里看个 🌰
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.container {
+				width: 500px;
+				height: 500px;
+				background-color: #eee;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 300px;
+			}
+			.card {
+				width: 100px;
+				height: 100px;
+				background-color: rgb(235, 206, 168);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card"></div>
+			<div class="card"></div>
+			<div class="card"></div>
+			<div class="card"></div>
+		</div>
+	</body>
+</html>
+```
+
+该属性在 flex 布局中使用时，Safari 浏览器需要比较新的 14.1 的版本才能支持。
+
+</pre>
+</details>

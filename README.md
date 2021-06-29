@@ -13,7 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 129:
+## Day 130:
+
+✅ [[2021-6-29] gap 属性有什么作用？](https://github.com/HJY-xh/plantTrees/issues/352)
 
 ✅ [[2021-6-29] MongoDB 和 MySQL 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/351)
 
