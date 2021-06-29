@@ -15,6 +15,8 @@
 
 ## Day 129:
 
+✅ [[2021-6-29] MongoDB 和 MySQL 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/351)
+
 ✅ [[2021-6-29] BigInt 和 Number 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/350)
 
 ## 目录结构 📁
