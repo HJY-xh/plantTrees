@@ -752,3 +752,19 @@ HTTP/1.1 并不是二进制传输，而是通过文本进行传输，由于没�
 
 </pre>
 </details>
+
+[37.[2021-6-30] HTTP 状态码中出现 499 意味着什么？](https://github.com/HJY-xh/plantTrees/issues/354)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+状态码 499 对应的是“client has closed connection”， 客户端请求等待连接已经关闭，这很有可能是因为服务器端处理的时间过长，客户端等得“不耐烦”了。
+
+解决办法：
+
+-   前端将 timeout 最大等待时间设置大一些
+-   nginx 上配置 proxy_ignore_client_abort on，如果此项设置为 on 开启，则服务器会忽略客户端中断，一直等着代理服务执行返回
+
+</pre>
+</details>
