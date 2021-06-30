@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 130:
+## Day 131:
 
-✅ [[2021-6-29] gap 属性有什么作用？](https://github.com/HJY-xh/plantTrees/issues/352)
-
-✅ [[2021-6-29] MongoDB 和 MySQL 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/351)
-
-✅ [[2021-6-29] BigInt 和 Number 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/350)
+✅ [[2021-6-30] 微前端架构具备哪些核心价值？](https://github.com/HJY-xh/plantTrees/issues/353)
 
 ## 目录结构 📁
 
