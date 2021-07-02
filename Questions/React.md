@@ -510,3 +510,38 @@ class Timer extends React.Component {
 
 </pre>
 </details>
+
+[19.[2021-7-2] JSX 的原理是什么？](https://github.com/HJY-xh/plantTrees/issues/359)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+实际上，JSX 仅仅是`React.createElement(component, props, ...children)`函数的语法糖。如下 JSX 代码:
+
+```javascript
+const element = <h1 className="greeting">Hello, world!</h1>;
+```
+
+它会被转换为：
+
+```javascript
+const element = React.createElement("h1", { className: "greeting" }, "Hello, world!");
+```
+
+如果没有子节点，你还可以使用自闭合的标签形式，如
+
+```javascript
+<div className="sidebar" />
+```
+
+它会被转换为：
+
+```javascript
+React.createElement("div", {
+	className: "sidebar",
+});
+```
+
+</pre>
+</details>
