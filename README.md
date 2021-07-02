@@ -13,13 +13,11 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 133:
+## Day 134:
 
-✅ [[2021-7-1] 后序遍历是什么？](https://github.com/HJY-xh/plantTrees/issues/357)
+✅ [[2021-7-2] React 构建组件的方式有哪些？区别是什么？](https://github.com/HJY-xh/plantTrees/issues/358)
 
-✅ [[2021-7-1] 中序遍历是什么？](https://github.com/HJY-xh/plantTrees/issues/356)
-
-✅ [[2021-7-1] 前序遍历是什么？](https://github.com/HJY-xh/plantTrees/issues/355)
+✅ [[2021-7-2] React 构建组件的方式有哪些？区别是什么？](https://github.com/HJY-xh/plantTrees/issues/358)
 
 ## 目录结构 📁
 
