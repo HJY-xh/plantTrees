@@ -15,6 +15,8 @@
 
 ## Day 136:
 
+✅ [[2021-7-4] 为什么要埋点？](https://github.com/HJY-xh/plantTrees/issues/364)
+
 ✅ [[2021-7-4] 什么是埋点？](https://github.com/HJY-xh/plantTrees/issues/363)
 
 ## 目录结构 📁
