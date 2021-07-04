@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 135:
+## Day 136:
 
-✅ [[2021-7-3] 线程具备什么特点？](https://github.com/HJY-xh/plantTrees/issues/362)
-
-✅ [[2021-7-3] 线程是什么?](https://github.com/HJY-xh/plantTrees/issues/361)
-
-✅ [[2021-7-3] 进程是什么？ ](https://github.com/HJY-xh/plantTrees/issues/360)
+✅ [[2021-7-4] 什么是埋点？](https://github.com/HJY-xh/plantTrees/issues/363)
 
 ## 目录结构 📁
 
