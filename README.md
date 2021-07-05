@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 136:
+## Day 137:
 
-✅ [[2021-7-4] 埋点种类及常见埋点事件有哪些？](https://github.com/HJY-xh/plantTrees/issues/365)
-
-✅ [[2021-7-4] 为什么要埋点？](https://github.com/HJY-xh/plantTrees/issues/364)
-
-✅ [[2021-7-4] 什么是埋点？](https://github.com/HJY-xh/plantTrees/issues/363)
+✅ [[2021-7-5] event 对象中 target 和 currentTarget 属性有什么区别?](https://github.com/HJY-xh/plantTrees/issues/366)
 
 ## 目录结构 📁
 

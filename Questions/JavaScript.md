@@ -2283,3 +2283,17 @@ Math.min(…arr); // 1
 
 </pre>
 </details>
+
+[86.[2021-7-5] event 对象中 target 和 currentTarget 属性有什么区别?](https://github.com/HJY-xh/plantTrees/issues/366)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+本质区别如下：
+
+-   event.target 返回触发事件的元素
+-   event.currentTarget 返回绑定事件的元素
+
+</pre>
+</details>
