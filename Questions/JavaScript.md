@@ -2298,7 +2298,7 @@ Math.min(…arr); // 1
 </pre>
 </details>
 
-[87.[2021-7-6] es6 中新增的数组方法 Array.from()](https://github.com/HJY-xh/plantTrees/issues/367)
+[87.[2021-7-6] es6 中新增的数组方法 Array.from()如何使用？](https://github.com/HJY-xh/plantTrees/issues/367)
 
 <details>
 <summary>展开查看</summary>
@@ -2331,7 +2331,7 @@ const obj = {
 	name: "Jae",
 	length: 3,
 };
-console.log(Array.from()); // ["a", "b", undefined] length控制长度，只会将数字键的元素值放进数组
+console.log(Array.from(obj)); // ["a", "b", undefined] length控制长度，只会将数字键的元素值放进数组
 ```
 
 ## 第二个参数

@@ -15,7 +15,7 @@
 
 ## Day 138:
 
-✅ [[2021-7-6] es6 中新增的数组方法 Array.from()](https://github.com/HJY-xh/plantTrees/issues/367)
+✅ [[2021-7-6] es6 中新增的数组方法 Array.from()如何使用？](https://github.com/HJY-xh/plantTrees/issues/367)
 
 ## 目录结构 📁
 
