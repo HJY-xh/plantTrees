@@ -545,3 +545,18 @@ React.createElement("div", {
 
 </pre>
 </details>
+
+[20.[2021-7-6] 虚拟 DOM 为什么会提高性能？](https://github.com/HJY-xh/plantTrees/issues/368)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+虚拟 DOM 相当于在 JavaScript 和真实 DOM 中间加了一个缓存，利用 DOM diff 算法避免了没有必要的 DOM 操作，从而提高性能。
+具体实现步骤如下：
+1、用 JavaScript 对象结构表示 DOM 树的结构；然后用这个树构建一个真正的 DOM 树，插到文档当中
+2、当状态变更的时候，重新构造一棵新的对象树。然后用新的树和旧的树进行比较，记录两棵树差异
+3、把 2 所记录的差异应用到步骤 1 所构建的真正的 DOM 树上，视图就更新了
+
+</pre>
+</details>
