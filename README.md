@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 137:
+## Day 138:
 
-✅ [[2021-7-5] event 对象中 target 和 currentTarget 属性有什么区别?](https://github.com/HJY-xh/plantTrees/issues/366)
+✅ [[2021-7-6] es6 中新增的数组方法 Array.from()](https://github.com/HJY-xh/plantTrees/issues/367)
 
 ## 目录结构 📁
 

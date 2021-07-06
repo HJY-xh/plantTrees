@@ -2297,3 +2297,77 @@ Math.min(…arr); // 1
 
 </pre>
 </details>
+
+[87.[2021-7-6] es6 中新增的数组方法 Array.from()](https://github.com/HJY-xh/plantTrees/issues/367)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+**将其他数据类型转换为数组**
+
+## 基本用法
+
+```js
+console.log(Array.from("str")); // ["s", "t", "r"]
+```
+
+## 哪些可以通过 `Array.from()` 转换成数组？
+
+1. 所有**可遍历**的
+   例如：数组、字符串、Set、Map、NodeList、arguments
+
+```js
+console.log(Array.from(new Set[1, 2, 1)); // [1, 2]
+// 其实使用...new Set这种展开符的形式更直观些
+```
+
+2. 拥有 length 属性的任意对象
+
+```js
+const obj = {
+	0: "a",
+	1: "b",
+	name: "Jae",
+	length: 3,
+};
+console.log(Array.from()); // ["a", "b", undefined] length控制长度，只会将数字键的元素值放进数组
+```
+
+## 第二个参数
+
+是一个回调，作用类似于数组的 map 方法，用来对每个元素进行处理，将处理后的值放入返回的数组。相当于把 map 方法集成到第二个参数：
+
+```js
+const result = Array.from("12", (value) => value * 2);
+console.log(result); // [2, 4]
+```
+
+## 第三个参数
+
+修改 this 指向：
+
+```js
+Array.from("12", (value) => {
+	console.log(this); // window对象
+});
+
+Array.from(
+	"12",
+	(value) => {
+		console.log(this); // 还是window对象，这里注意箭头函数无法修改this指向
+	},
+	document
+);
+
+Array.from(
+	"12",
+	function (value) {
+		console.log(this); // #document
+	},
+	document
+);
+```
+
+</pre>
+</details>
