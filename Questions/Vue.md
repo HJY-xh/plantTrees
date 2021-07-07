@@ -401,3 +401,113 @@ Vue3：对不参与更新的元素，只会被创建一次，之后会在每次�
 
 </pre>
 </details>
+
+[11.[2021-7-7] 如何理解 Vue 中的具名插槽？](https://github.com/HJY-xh/plantTrees/issues/369)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+假设子组件 **layout** ：
+
+```html
+<div>
+	<div>content</div>
+</div>
+```
+
+父组件使用子组件：
+
+```html
+<layout></layout>
+```
+
+页面展示效果为：
+
+```
+content
+```
+
+如果我想让父组件显示：
+
+```
+header
+content
+footer
+```
+
+即：在父组件写了 header 与 footer 的 div，想在中间的 content 部分使用子组件即可。很容易想到，使用**插槽** ：
+
+```html
+<!--父组件-->
+<layout>
+	<div>header</div>
+	<div>footer</div>
+</layout>
+```
+
+```html
+<!--子组件-->
+<div>
+	<slot></slot>
+	<div>content</div>
+</div>
+```
+
+很可惜，出来的效果是这样的：
+
+```
+header
+footer
+content
+```
+
+很正常，因为 slot 是一整块的，当然是上面的效果。这时候就要使用 **具名插槽** 来将 slot 分为几小块，分别插在前面和后面：
+
+```html
+<!--父组件-->
+<layout>
+	<template v-slot:header>
+		<!--用v-slot来绑定子组件中的name-->
+		<div>header</div>
+		<!--注意，v-slot要写在template，写在div的话会报错，即是规定也利于语义化-->
+	</template>
+	<template v-slot:footer>
+		<div>footer</div>
+	</template>
+</layout>
+```
+
+```html
+<!--子组件-->
+<div>
+	<slot name="header"></slot>
+	<!--用name属性取名-->
+	<div>content</div>
+	<slot name="footer"></slot>
+</div>
+```
+
+完成效果~
+
+```
+header
+content
+footer
+```
+
+**小知识：** `v-solt` 可简写成 `#` ，即：
+
+```html
+<layout>
+	<template #header>
+		<div>header</div>
+	</template>
+	<template #footer>
+		<div>footer</div>
+	</template>
+</layout>
+```
+
+</pre>
+</details>

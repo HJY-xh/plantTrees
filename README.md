@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 138:
+## Day 139:
 
-✅ [[2021-7-6] 虚拟 DOM 为什么会提高性能？](https://github.com/HJY-xh/plantTrees/issues/368)
-
-✅ [[2021-7-6] es6 中新增的数组方法 Array.from()如何使用？](https://github.com/HJY-xh/plantTrees/issues/367)
+✅ [[2021-7-7] 如何理解 Vue 中的具名插槽？](https://github.com/HJY-xh/plantTrees/issues/369)
 
 ## 目录结构 📁
 
