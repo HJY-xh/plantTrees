@@ -15,6 +15,8 @@
 
 ## Day 139:
 
+✅ [[2021-7-7] 如何在移动端通过 a 标签调用通讯功能？](https://github.com/HJY-xh/plantTrees/issues/370)
+
 ✅ [[2021-7-7] 如何理解 Vue 中的具名插槽？](https://github.com/HJY-xh/plantTrees/issues/369)
 
 ## 目录结构 📁

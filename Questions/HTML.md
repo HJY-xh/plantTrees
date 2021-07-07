@@ -579,3 +579,44 @@ META 标签是 HTML 标记 HEAD 区的一个关键标签，提供文档字符集
 
 </pre>
 </details>
+
+[25.[2021-7-7] 如何在移动端通过 a 标签调用通讯功能？](https://github.com/HJY-xh/plantTrees/issues/370)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+a 标签可以调用移动设备上的拨打电话、发送短信和发送邮件等功能。
+
+示例代码如下:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			a {
+				display: block;
+				margin: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 拨打电话 -->
+		<a href="tel:10086">拨打电话至10086</a>
+
+		<!-- 发送短信 -->
+		<a href="sms:10086">发送短信至10086</a>
+
+		<!-- 发送邮件 -->
+		<a href="mailto:××@qq.com">发送邮件给××@qq.com</a>
+	</body>
+</html>
+```
+
+</pre>
+</details>
