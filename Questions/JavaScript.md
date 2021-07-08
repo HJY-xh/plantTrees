@@ -2371,3 +2371,34 @@ Array.from(
 
 </pre>
 </details>
+
+[88.[2021-7-8] 浏览器如何解析日期最稳妥？](https://github.com/HJY-xh/plantTrees/issues/372)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+在 Safari 浏览器上解析 YYYY-MM-DD HH:mm:ss 这种日期格式会报错`Invalid Dat`e，但 Chrome 上解析这种日期格式没有问题。
+
+Safari:
+
+```html
+new Date("2021-07-08 18:30:00"); // Invalid Date
+```
+
+Chrome:
+
+```html
+new Date("2021-07-08 18:30:00"); // Thu Jul 08 2021 18:30:00 GMT+0800 (中国标准时间)
+```
+
+Safari 浏览器上可用 YYYY/MM/DD HH:mm:ss 这种日期格式，简单来说就是年月日必须使用/衔接而不能使用-衔接。Chrome 也支持该格式，然而接口返回字段的日期格式通常是 YYYY-MM-DD HH:mm:ss，那么需替换其中的`-`为`/`。
+
+```javascript
+const date = "2021-07-08 18:30:00";
+new Date(date.replace(/\-/g, "/"));
+// Thu Jul 08 2021 18:30:00 GMT+0800 (中国标准时间)
+```
+
+</pre>
+</details>
