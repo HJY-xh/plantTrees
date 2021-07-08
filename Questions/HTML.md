@@ -620,3 +620,30 @@ a 标签可以调用移动设备上的拨打电话、发送短信和发送邮件
 
 </pre>
 </details>
+
+[26.[2021-7-8] 如何禁止浏览器自动识别电话，邮箱或者打开地图？](https://github.com/HJY-xh/plantTrees/issues/371)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+有些浏览器会自动将数字字母符号识别为电话，邮箱或者打开地图。
+
+可以使用 format-detection 来禁止，它的意思是“格式检测”，顾名思义，它是用来检测 html 里的一些格式的，那关于 meta 的 format-detection 属性主要是有以下几个设置：
+
+```html
+<!-- 忽略自动识别电话 -->
+<meta name="format-detection" content="telephone=no" />
+
+<!-- 忽略自动识别邮箱 -->
+<meta name="format-detection" content="email=no" />
+
+<!-- 禁止跳转至地图 -->
+<meta name="format-detection" content="adress=no" />
+
+<!-- 也可以连在一起写 -->
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+```
+
+</pre>
+</details>
