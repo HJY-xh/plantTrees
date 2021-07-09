@@ -2402,3 +2402,27 @@ new Date(date.replace(/\-/g, "/"));
 
 </pre>
 </details>
+
+[89.[2021-7-9] 浏览器回到顶部的简单方法是什么？](https://github.com/HJY-xh/plantTrees/issues/373)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+这个方法就是`Element`的一个方法：`scrollIntoView`。
+
+Element 接口的 scrollIntoView()方法会滚动元素的父容器，使被调用 scrollIntoView()的元素对用户可见。简单来说就是相对视窗让容器滚动到目标元素位置。它有三个可选参数能让 scrollIntoView 滚动起来更优雅：
+
+-   behavior：动画过渡效果，默认 auto 无，可选 smooth 平滑
+-   inline：水平方向对齐方式，默认 nearest 就近对齐，可选 start 顶部对齐、center 中间对齐和 end 底部对齐
+-   block：垂直方向对齐方式，默认 start 顶部对齐，可选 center 中间对齐、end 底部对齐和 nearest 就近对齐
+
+看个 🌰：
+
+```javascript
+document.body.scrollIntoView({ behavior: "smooth" });
+// 在控制台中运行即可回到页面顶部
+```
+
+</pre>
+</details>
