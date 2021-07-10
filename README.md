@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 141:
+## Day 142:
 
-✅ [[2021-7-9] 浏览器回到顶部的简单方法是什么？](https://github.com/HJY-xh/plantTrees/issues/373)
+✅ [[2021-7-10] export 和 export default 使用上有什么区别？](https://github.com/HJY-xh/plantTrees/issues/374)
 
 ## 目录结构 📁
 

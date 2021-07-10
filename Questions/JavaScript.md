@@ -2426,3 +2426,24 @@ document.body.scrollIntoView({ behavior: "smooth" });
 
 </pre>
 </details>
+
+[90.[2021-7-10] export 和 export default 使用上有什么区别？](https://github.com/HJY-xh/plantTrees/issues/374)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+export 是用于对外输出本模块（一个文件可以理解为一个模块）变量的接口。
+
+代码如下：
+
+```javascript
+export default  xxx
+import xxx from "./"
+
+export xxx
+import {xxx} from "./"
+```
+
+</pre>
+</details>
