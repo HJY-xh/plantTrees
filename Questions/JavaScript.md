@@ -2447,3 +2447,18 @@ import {xxx} from "./"
 
 </pre>
 </details>
+
+[91.[2021-7-11] JSONP 的原理是什么？](https://github.com/HJY-xh/plantTrees/issues/375)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+JSONP 是一种跨域通信的手段，它的原理如下:
+
+-   利用 script 标签的 src 属性来实现跨域
+-   通过将前端方法作为参数传递到服务器端，然后由服务器端注入参数之后再返回，实现服务器端向客户端通信
+-   由于使用 script 标签的 src 属性，因此只支持 get 方法
+
+</pre>
+</details>
