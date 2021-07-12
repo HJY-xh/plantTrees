@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 143:
+## Day 144:
 
-✅ [[2021-7-11] JSONP 的原理是什么？](https://github.com/HJY-xh/plantTrees/issues/375)
+✅ [[2021-7-12] 什么是纯函数？](https://github.com/HJY-xh/plantTrees/issues/376)
 
 ## 目录结构 📁
 
