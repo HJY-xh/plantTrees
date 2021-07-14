@@ -2462,3 +2462,34 @@ JSONP 是一种跨域通信的手段，它的原理如下:
 
 </pre>
 </details>
+
+[92.[2021-7-14] 柯里化是什么？](https://github.com/HJY-xh/plantTrees/issues/379)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+所谓"柯里化"，就是把一个多参数的函数，转化为单参数函数。
+
+看个例子：
+
+```javascript
+// 柯里化之前
+function add(x, y) {
+	return x + y;
+}
+
+add(1, 2); // 3
+
+// 柯里化之后
+function addX(y) {
+	return function (x) {
+		return x + y;
+	};
+}
+
+addX(2)(1); // 3
+```
+
+</pre>
+</details>
