@@ -15,6 +15,8 @@
 
 ## Day 147:
 
+✅ [[2021-7-15] Linux 系统 inode 是什么?](https://github.com/HJY-xh/plantTrees/issues/382)
+
 ✅ [[2021-7-15] JS 的 new 操作符做了哪些事情？](https://github.com/HJY-xh/plantTrees/issues/380)
 
 ✅ [[2021-7-15] 前端性能优化的方式有哪些？](https://github.com/HJY-xh/plantTrees/issues/381)
