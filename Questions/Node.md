@@ -366,3 +366,47 @@ Node 在两者之间给出了它的方案：利用单线程，远离多线程死
 
 </pre>
 </details>
+
+[16.[2021-7-15] Node 中如何获取一个文件的 inode 信息?](https://github.com/HJY-xh/plantTrees/issues/383)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+在 Node.js 中，fs 提供了 stat 函数查看相关信息:
+
+```javascript
+const fs = require("fs");
+
+const content = fs.statSync("./test5.js");
+
+console.log(content);
+```
+
+输出结果：
+
+```javascript
+Stats {
+  dev: 16777230,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2764176,
+  size: 93,
+  blocks: 8,
+  atimeMs: 1626333483821.387,
+  mtimeMs: 1626333482578.7705,
+  ctimeMs: 1626333482578.7705,
+  birthtimeMs: 1624612227185.2764,
+  atime: 2021-07-15T07:18:03.821Z,
+  mtime: 2021-07-15T07:18:02.579Z,
+  ctime: 2021-07-15T07:18:02.579Z,
+  birthtime: 2021-06-25T09:10:27.185Z
+}
+```
+
+</pre>
+</details>
