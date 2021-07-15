@@ -2493,3 +2493,14 @@ addX(2)(1); // 3
 
 </pre>
 </details>
+
+[93.[2021-7-15] JS 的 new 操作符做了哪些事情？](https://github.com/HJY-xh/plantTrees/issues/380)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+new 操作符新建了一个空对象，这个对象原型指向构造函数的 prototype，执行构造函数后返回这个对象
+
+</pre>
+</details>
