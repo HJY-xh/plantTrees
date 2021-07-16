@@ -15,6 +15,8 @@
 
 ## Day 148:
 
+✅ [[2021-7-16] 什么是硬链接?](https://github.com/HJY-xh/plantTrees/issues/385)
+
 ✅ [[2021-7-16] 什么是软链接?](https://github.com/HJY-xh/plantTrees/issues/384)
 
 ## 目录结构 📁
