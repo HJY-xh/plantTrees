@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 148:
+## Day 149:
 
-✅ [[2021-7-16] 什么是硬链接?](https://github.com/HJY-xh/plantTrees/issues/385)
-
-✅ [[2021-7-16] 什么是软链接?](https://github.com/HJY-xh/plantTrees/issues/384)
+✅ [[2021-7-17] 如何简单理解 B/S 架构？](https://github.com/HJY-xh/plantTrees/issues/386)
 
 ## 目录结构 📁
 
