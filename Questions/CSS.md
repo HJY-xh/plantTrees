@@ -1609,3 +1609,35 @@ CSS 的 `gap`(沟槽） 属性的出现，帮助我们解决了以前一直比�
 
 </pre>
 </details>
+
+[43.[2021-7-18] 网页置灰的效果如何实现？](https://github.com/HJY-xh/plantTrees/issues/387)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+可以使用 filter 属性的 grayscale 方法实现整个网页置灰效果。
+
+```css
+.gray {
+	filter: grayscale(100%);
+}
+```
+
+为了兼容 IE8 等其他低版本浏览器，我们可以加上浏览器前缀和 svg 滤镜
+
+```css
+.gray {
+	-webkit-filter: grayscale(1);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+	filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+	filter: grayscale(100%);
+}
+```
+
+</pre>
+</details>
