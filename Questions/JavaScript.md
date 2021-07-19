@@ -2504,3 +2504,49 @@ new 操作符新建了一个空对象，这个对象原型指向构造函数的 
 
 </pre>
 </details>
+
+[94.[2021-7-19] console 会造成内存泄露吗？](https://github.com/HJY-xh/plantTrees/issues/388)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+在日常开发中，我们经常在控制台打印数据，之所以在控制台能看到数据输出，是因为浏览器保存了我们输出对象的信息数据引用，也正是因此未清理的 console 如果输出了对象也会造成内存泄漏。
+
+这里看个 🌰
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console</title>
+</head>
+<body>
+    <button id="btn">新增数组</button>
+
+  <script>
+    (function () {
+      function Test() {
+        this.init();
+      }
+      Test.prototype.init = function () {
+        this.array = new Array(50000).fill('test');
+        console.log(this);
+      }
+
+      document.querySelector('#btn').onclick = function () {
+        new Test();
+      }
+    })()
+  </script>
+
+</body>
+</html>
+```
+
+在控制台中可以通过 Memory 面板来查看
+
+</pre>
+</details>
