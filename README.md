@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 151:
+## Day 152:
 
-✅ [[2021-7-19] console 会造成内存泄露吗？](https://github.com/HJY-xh/plantTrees/issues/388)
+✅ [[2021-7-20] TypeScript 的交叉类型如何使用？](https://github.com/HJY-xh/plantTrees/issues/389)
 
 ## 目录结构 📁
 
@@ -36,6 +36,8 @@ plantTrees
 [**JavaScript**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/JavaScript.md)
 
 [**Node**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/Node.md)
+
+[**TypeScript**](https://github.com/HJY-xh/plantTrees/blob/master/Questions/TypeScript.md)
 
 [**HTTP(S)**](<https://github.com/HJY-xh/plantTrees/blob/master/Questions/HTTP(S).md>)
 
