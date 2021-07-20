@@ -15,6 +15,8 @@
 
 ## Day 152:
 
+✅ [[2021-7-20] TypeScript 的联合类型如何使用？](https://github.com/HJY-xh/plantTrees/issues/390)
+
 ✅ [[2021-7-20] TypeScript 的交叉类型如何使用？](https://github.com/HJY-xh/plantTrees/issues/389)
 
 ## 目录结构 📁

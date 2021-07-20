@@ -29,3 +29,34 @@ const toyCat: Car & Toy = {
 
 </pre>
 </details>
+
+[2.[2021-7-20] TypeScript 的联合类型如何使用？](https://github.com/HJY-xh/plantTrees/issues/390)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+联合类型与交叉类型很有关联，但是使用上却完全不同。
+
+联合类型表示一个值可以是几种类型之一。 我们用竖线（|）分隔每个类型，所以 number | string | boolean 表示一个值可以是 number，string，或 boolean。
+
+如果一个值是联合类型，我们只能访问此联合类型的所有类型里共有的成员。
+
+看个例子：
+
+```javascript
+interface Car {
+	name: string;
+}
+
+interface Toy {
+	price: number;
+}
+
+const toyCat: Car | Toy = {
+	name: "BWN",
+};
+```
+
+</pre>
+</details>
