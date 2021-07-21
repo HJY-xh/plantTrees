@@ -15,6 +15,8 @@
 
 ## Day 153:
 
+✅ [[2021-7-21] 带有 async 标识的函数一定会返回 Promise 吗？](https://github.com/HJY-xh/plantTrees/issues/392)
+
 ✅ [[2021-7-21] Array.isArray 的 polyfill 如何实现？](https://github.com/HJY-xh/plantTrees/issues/391)
 
 ## 目录结构 📁

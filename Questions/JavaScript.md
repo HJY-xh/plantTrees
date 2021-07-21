@@ -2567,3 +2567,16 @@ Array.myIsArray = (arg) => {
 
 </pre>
 </details>
+
+[96.[2021-7-21] 带有 async 标识的函数一定会返回 Promise 吗？](https://github.com/HJY-xh/plantTrees/issues/392)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+async 函数一定会返回一个 Promise 对象。
+
+如果一个 async 函数的返回值看起来不是 Promise，那么它将会被隐式的包装在一个 Promise 中。
+
+</pre>
+</details>
