@@ -2550,3 +2550,20 @@ new 操作符新建了一个空对象，这个对象原型指向构造函数的 
 
 </pre>
 </details>
+
+[95.[2021-7-21] Array.isArray 的 polyfill 如何实现？](https://github.com/HJY-xh/plantTrees/issues/391)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+思路：传入需要检测的值，如果是数组，返回 true，否则 false。
+
+```javascript
+Array.myIsArray = (arg) => {
+	return Object.prototype.toString.call(arg) === "[object Array]";
+};
+```
+
+</pre>
+</details>

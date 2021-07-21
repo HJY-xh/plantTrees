@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 152:
+## Day 153:
 
-✅ [[2021-7-20] TypeScript 的联合类型如何使用？](https://github.com/HJY-xh/plantTrees/issues/390)
-
-✅ [[2021-7-20] TypeScript 的交叉类型如何使用？](https://github.com/HJY-xh/plantTrees/issues/389)
+✅ [[2021-7-21] Array.isArray 的 polyfill 如何实现？](https://github.com/HJY-xh/plantTrees/issues/391)
 
 ## 目录结构 📁
 
