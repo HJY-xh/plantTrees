@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 153:
+## Day 154:
 
-✅ [[2021-7-21] 带有 async 标识的函数一定会返回 Promise 吗？](https://github.com/HJY-xh/plantTrees/issues/392)
-
-✅ [[2021-7-21] Array.isArray 的 polyfill 如何实现？](https://github.com/HJY-xh/plantTrees/issues/391)
+✅ [[2021-7-22] 常规轮询是什么，它具有什么特点？](https://github.com/HJY-xh/plantTrees/issues/393)
 
 ## 目录结构 📁
 
