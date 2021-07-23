@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 154:
+## Day 155:
 
-✅ [[2021-7-22] 常规轮询是什么，它具有什么特点？](https://github.com/HJY-xh/plantTrees/issues/393)
+✅ [[2021-7-23] React 中 shouldComponentUpdate()方法什么时候被调用？](https://github.com/HJY-xh/plantTrees/issues/394)
 
 ## 目录结构 📁
 

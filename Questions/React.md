@@ -560,3 +560,16 @@ React.createElement("div", {
 
 </pre>
 </details>
+
+[21.[2021-7-23] React 中 shouldComponentUpdate()方法什么时候被调用？](https://github.com/HJY-xh/plantTrees/issues/394)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+当 props 或 state 发生变化时，`shouldComponentUpdate()`会在渲染执行之前被调用。
+
+该方法返回值默认为 true，另外在首次渲染或使用`forceUpdate()`时不会调用该方法。
+
+</pre>
+</details>
