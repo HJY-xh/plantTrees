@@ -1641,3 +1641,22 @@ CSS 的 `gap`(沟槽） 属性的出现，帮助我们解决了以前一直比�
 
 </pre>
 </details>
+
+[44.[2021-7-24] CSS 让图文不可复制的方法是什么？](https://github.com/HJY-xh/plantTrees/issues/395)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+CSS 属性`user-select`控制用户能否选中文本:
+
+```
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
+-khtml-user-select: none;
+user-select: none;
+```
+
+</pre>
+</details>
