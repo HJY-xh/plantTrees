@@ -431,3 +431,22 @@ npm version patch  # 修订号加 1
 
 </pre>
 </details>
+
+[18.[2021-7-26] 查看 npm 脚本命令的方式有哪些？](https://github.com/HJY-xh/plantTrees/issues/398)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+这里有两种方式：
+
+-   打开项目中的`package.json`文件并查看`scripts`字段
+
+-   使用不带任何参数的 npm run 命令查看
+
+```javascript
+npm run
+```
+
+</pre>
+</details>
