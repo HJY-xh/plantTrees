@@ -410,3 +410,24 @@ Stats {
 
 </pre>
 </details>
+
+[17.[2021-7-26] npm 项目版本号如何管理？](https://github.com/HJY-xh/plantTrees/issues/397)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+`package.json`中的`version`字段代表的是该项目的版本号。
+
+每当项目发布新版本时，需要将`version`字段进行相应的更新以便后期维护。
+
+虽然可以手动的修改`vsersion`字段，但是为了整个发布过程的自动化，尽量使用 `npm version` 指令来自动更新`version`：
+
+```javascript
+npm version major  # 大版本号加 1，其余版本号归 0
+npm version minor  # 小版本号加 1，修订号归 0
+npm version patch  # 修订号加 1
+```
+
+</pre>
+</details>
