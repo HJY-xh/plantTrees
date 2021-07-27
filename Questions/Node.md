@@ -450,3 +450,172 @@ npm run
 
 </pre>
 </details>
+
+[19.[2021-7-27] NPM 是什么？](https://github.com/HJY-xh/plantTrees/issues/399)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+npm（“Node 包管理器”）是 JavaScript 运行时 Node.js 的默认程序包管理器。
+
+npm 由两个主要部分组成:
+
+-   用于发布和下载程序包的 CLI（命令行界面）工具
+-   托管 JavaScript 程序包的在线存储库
+
+为了更直观地解释，我们可以将存储库 npmjs.com 视为一个物流集散中心，该中心从卖方（npm 包裹的作者）那里接收货物的包裹，并将这些货物分发给买方（npm 包裹的用户）。
+
+为了促进此过程，npmjs.com 物流集散中心雇用了一群勤劳的袋熊（npm CLI），他们将被分配给每个 npmjs.com 用户作为私人助理。因此，dependencies（依赖项）会如下传递给 JavaScript 开发人员：
+![1](https://user-images.githubusercontent.com/70680781/127117044-b40a0bd3-9712-4c5e-b0f2-acee259e39d9.png)
+发布 JS 软件包的过程如下：
+![2](https://user-images.githubusercontent.com/70680781/127126053-b576bcb0-df56-4532-a1b6-211bf6eed05c.png)
+
+</pre>
+</details>
+[20.[2021-7-27] package.json 文件里有什么？](https://github.com/HJY-xh/plantTrees/issues/400)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+## package.json
+
+每个 JavaScript 项目（无论是 Node.js 还是浏览器应用程序）都可以被当作 npm 软件包，并且通过 `package.json` 来描述项目和软件包信息。
+
+当运行 `npm init` 初始化 JavaScript/Node.js 项目时，将生成 `package.json` 文件，文件内的内容(基本元数据)由开发人员提供：
+
+-   **name**：JavaScript 项目或库的名称。
+-   **version**：项目的版本。通常，在应用程序开发中，由于没有必要对开源库进行版本控制，因此经常忽略这一块。但是，仍可以用它来定义版本。
+-   **description**：项目的描述。
+-   **license**：项目的许可证。
+
+## npm scripts
+
+`package.json` 还支持一个 `scripts` 属性，可以把它当作在项目本地运行的命令行工具。例如，一个 npm 项目的 `scripts` 部分可能看起来像这样：
+
+```js
+{
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "pack": "ncc build",
+    "test": "jest",
+    "all": "npm run build && npm run format && npm run lint && npm run pack && npm test"
+  }
+}
+```
+
+`eslint` ，`prettier` ，`ncc` ，`jest` 不是安装为全局可执行文件，而是安装在项目本地的 `node_modules/.bin/` 中。
+
+## dependencies vs devDependencies
+
+这两个以键值对象的形式出现，其中 npm 库的名称为键，其**语义格式**版本为值。大家可以看看 Github 的 TypeScript 操作模板中的示例：
+
+```json
+{
+	"dependencies": {
+		"@actions/core": "^1.2.3",
+		"@actions/github": "^2.1.1"
+	},
+	"devDependencies": {
+		"@types/jest": "^25.1.4",
+		"@types/node": "^13.9.0",
+		"@typescript-eslint/parser": "^2.22.0",
+		"@zeit/ncc": "^0.21.1",
+		"eslint": "^6.8.0",
+		"eslint-plugin-github": "^3.4.1",
+		"eslint-plugin-jest": "^23.8.2",
+		"jest": "^25.1.0",
+		"jest-circus": "^25.1.0",
+		"js-yaml": "^3.13.1",
+		"prettier": "^1.19.1",
+		"ts-jest": "^25.2.1",
+		"typescript": "^3.8.3"
+	}
+}
+```
+
+这些依赖通过带有 `--save` 或 `--save-dev` 标志的 `npm install` 命令安装。它们分别用于生产和开发/测试环境。
+
+同时，理解语义版本前面的符号非常重要：
+
+-   ^：表示最新的次版本，例如， ^1.0.4 可能会安装主版本系列 1 的最新次版本 1.3.0。
+-   〜：表示最新的补丁程序版本，与 ^ 类似， 〜1.0.4 可能会安装次版本系列 1.0 的最新次版本 1.0.7。
+    所有这些确切的软件包版本都将记录在 `package-lock.json` 文件中。
+
+## package-lock.json
+
+该文件描述了 npm JavaScript 项目中使用的依赖项的确切版本。如果 `package.json` 是通用的描述性标签，则 `package-lock.json` 是成分表。
+
+就像我们通常不会读取食品包装袋上的成分表（除非你太无聊或需要知道）一样，`package-lock.json` 并不会被开发人员一行一行进行读取。
+
+`package-lock.json` 通常是由 `npm install` 命令生成的，也可以由我们的 NPM CLI 工具读取，以确保使用 `npm ci` 复制项目的构建环境。
+
+</pre>
+</details>
+[21.[2021-7-27] 作为用户应该如何使用 NPM ？](https://github.com/HJY-xh/plantTrees/issues/401)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+## npm install
+
+这是现在我们开发 JavaScript/Node.js 应用程序时最常用的命令。
+
+默认情况下，`npm install <package-name>` 将安装带有 `^` 版本号的软件包的最新版本。npm 项目上下文中的 `npm install` 将根据 `package.json` 规范将软件包下载到项目的 `node_modules` 文件夹中，从而升级软件包的版本（并重新生成 `package-lock.json`）。 `npm install <package-name>` 可以基于 `^` 和 `〜` 版本匹配。
+
+如果要在全局上下文中安装程序包，可以在机器的任何地方使用它，则可以指定全局标志 `-g`（例如 live-server）。
+
+## npm ci
+
+如果 `npm install --production` 对于生产环境是最佳选项，那么是否必须有一个对本地环境，测试环境最合适的选项？
+
+答案是 `npm ci`
+
+就像如果 `package_lock.json` 尚不存在于项目中一样，无论何时调用 `npm install` 都会生成它，`npm ci` 会消耗该文件来下载项目所依赖的每个软件包的确切版本。
+
+这样，无论是用于本地开发的笔记本电脑还是 Github Actions 等 CI（持续集成）构建环境，我们都可以确保项目上下文在不同机器上保持完全相同。
+
+## npm audit
+
+随着越来越多的软件包发布，并且易于安装，因此 npm 软件包容易受到恶意作者的恶意攻击。
+
+意识到生态系统存在问题，npm.js 组织提出了 `npm audit` 的主意。他们维护了一个安全漏洞列表，开发人员可以使用 `npm audit` 命令来审核项目中的依赖项。
+
+`npm audit` 为开发人员提供了有关漏洞以及是否有要修复的版本的信息，例如：
+
+<table border="1">
+<tr>
+<td>High</td>
+<td>Remote Code Execution</td>
+</tr>
+<tr>
+<td>Package</td>
+<td>serialize-javascript</td>
+</tr>
+<tr>
+<td>Patched in</td>
+<td>>=3.1.0</td>
+</tr>
+<tr>
+<td>Dependency of</td>
+<td>uglifyjs-webpack-plugin [dev]</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>uglifyjs-webpack-plugin > serialize-javascript</td>
+</tr>
+<tr>
+<td>More info</td>
+<td>https://npmjs.com/advisories/1548</td>
+</tr>
+</table>
+
+如果补救措施在下一个不间断的版本升级中可用，则可以使用 `npm audit fix` 来自动升级受影响的依赖项的版本。
+
+</pre>
+</details>

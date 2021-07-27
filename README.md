@@ -13,11 +13,13 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 159:
+## Day 160:
 
-✅ [[2021-7-26] 查看 npm 脚本命令的方式有哪些？](https://github.com/HJY-xh/plantTrees/issues/398)
+✅ [[2021-7-27] 作为用户应该如何使用 NPM ？](https://github.com/HJY-xh/plantTrees/issues/401)
 
-✅ [[2021-7-26] npm 项目版本号如何管理？](https://github.com/HJY-xh/plantTrees/issues/397)
+✅ [[2021-7-27] package.json 文件里有什么？](https://github.com/HJY-xh/plantTrees/issues/400)
+
+✅ [[2021-7-27] NPM 是什么？](https://github.com/HJY-xh/plantTrees/issues/399)
 
 ## 目录结构 📁
 
