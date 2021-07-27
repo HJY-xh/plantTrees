@@ -15,6 +15,8 @@
 
 ## Day 160:
 
+✅ [[2021-7-27] encodeURI 和 decodeURI、encodeURIComponent 和 decodeURIComponent 可以多次编解码吗？](https://github.com/HJY-xh/plantTrees/issues/404)
+
 ✅ [[2021-7-27] Loader 和 Plugin 有什么不同？](https://github.com/HJY-xh/plantTrees/issues/402)
 
 ✅ [[2021-7-27] 作为用户应该如何使用 NPM ？](https://github.com/HJY-xh/plantTrees/issues/401)

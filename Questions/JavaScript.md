@@ -2580,3 +2580,47 @@ async 函数一定会返回一个 Promise 对象。
 
 </pre>
 </details>
+
+[97.[2021-7-27] encodeURI 和 decodeURI、encodeURIComponent 和 decodeURIComponent 可以多次编解码吗？](https://github.com/HJY-xh/plantTrees/issues/404)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+可以多次编解码，看两个例子：
+
+```javascript
+const str = `?a=1&b= 2&c=3`;
+
+const firstEncode = encodeURIComponent(str);
+console.log('[ firstEncode ]', firstEncode); // [ firstEncode ] %3Fa%3D1%26b%3D%202%26c%3D3
+
+const secondEncode = encodeURIComponent(firstEncode);
+console.log('[ secondEncode ]', secondEncode); // [ secondEncode ] %253Fa%253D1%2526b%253D%25202%2526c%253D3
+
+
+const firstDecode = decodeURIComponent(secondEncode);
+console.log('[ firstDecode ]', firstDecode); // [ firstDecode ] %3Fa%3D1%26b%3D%202%26c%3D3
+
+const secondDecode = decodeURIComponent(firstDecode);
+console.log('[ secondDecode ]', secondDecode) [ secondDecode ] ?a=1&b= 2&c=3
+```
+
+```javascript
+const str = `?a=1&b= 2&c=3`;
+
+const firstEncode = encodeURI(str);
+console.log("[ firstEncode ]", firstEncode); // [ firstEncode ] ?a=1&b=%202&c=3
+
+const secondEncode = encodeURI(firstEncode);
+console.log("[ secondEncode ]", secondEncode); // [ secondEncode ] ?a=1&b=%25202&c=3
+
+const firstDecode = decodeURI(secondEncode);
+console.log("[ firstDecode ]", firstDecode); // [ firstDecode ] ?a=1&b=%202&c=3
+
+const secondDecode = decodeURI(firstDecode);
+console.log("[ secondDecode ]", secondDecode); // [ secondDecode ] ?a=1&b= 2&c=3
+```
+
+</pre>
+</details>
