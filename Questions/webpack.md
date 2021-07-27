@@ -78,3 +78,22 @@ Webpack 是基于模块化打包的⼯具: ⾃动化处理模块，webpack 把�
 
 </pre>
 </details>
+
+[6.[2021-7-27] Loader 和 Plugin 有什么不同？](https://github.com/HJY-xh/plantTrees/issues/402)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+作用不同：
+
+-   Loader 直译为"加载器"，webpack 将一切文件视为模块，但是 webpack 原生只能解析 JS 文件，如果想打包其它类型文件，则需要 Loader。因此 Loader 的作用在于让 webpack 拥有解析和加载非 JS 文件的能力
+-   Plugin 直译为"插件"，它扩展了 webpack 的能力，在 webpack 运行的生命周期中会广播出许多事件，Plugin 可以监听这些事件，在合适的时机通过 webpack 提供的 API 来改变输出结果
+
+用法不同：
+
+-   Loader 在 module.rules 中配置，也就是说他作为模块的解析规则⽽存在。 类型为数组，每⼀项都是⼀个 Object ，⾥⾯描述了对于什么类型的⽂件（ test ），使⽤什么加载( loader )和使⽤的参数（ options ）
+-   Plugin 在 plugins 中单独配置。 类型为数组，每⼀项是⼀个 plugin 的实例，参数都通过构造函数传⼊
+
+</pre>
+</details>
