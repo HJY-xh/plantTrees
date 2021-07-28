@@ -60,3 +60,45 @@ const toyCat: Car | Toy = {
 
 </pre>
 </details>
+
+[3.[2021-7-28] 类型断言的用法有哪些？](https://github.com/HJY-xh/plantTrees/issues/405)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+可以使用关键字`as`和`<类型>`，看个例子：
+
+```typescript
+interface Student {
+	name: string;
+	studentId: string;
+}
+
+interface Teacher {
+	name: string;
+	teacherId: string;
+}
+
+const getPerson = (): Student | Teacher => {
+	return {
+		name: "小黄",
+		studentId: "001",
+	};
+};
+
+const person = getPerson();
+
+if ((<Student>person).studentId) {
+	console.log("[ person ]", (<Student>person).studentId);
+}
+
+if ((person as Student).studentId) {
+	console.log("[ person ]", (person as Student).studentId);
+}
+```
+
+这里的`getPerson`是联合类型，只能访问此联合类型的所有类型里共有的成员，为了让这段代码工作，可以使用类型断言。
+
+</pre>
+</details>

@@ -13,17 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 160:
+## Day 161:
 
-✅ [[2021-7-27] encodeURI 和 decodeURI、encodeURIComponent 和 decodeURIComponent 可以多次编解码吗？](https://github.com/HJY-xh/plantTrees/issues/404)
-
-✅ [[2021-7-27] Loader 和 Plugin 有什么不同？](https://github.com/HJY-xh/plantTrees/issues/402)
-
-✅ [[2021-7-27] 作为用户应该如何使用 NPM ？](https://github.com/HJY-xh/plantTrees/issues/401)
-
-✅ [[2021-7-27] package.json 文件里有什么？](https://github.com/HJY-xh/plantTrees/issues/400)
-
-✅ [[2021-7-27] NPM 是什么？](https://github.com/HJY-xh/plantTrees/issues/399)
+✅ [[2021-7-28] 类型断言的用法有哪些？](https://github.com/HJY-xh/plantTrees/issues/405)
 
 ## 目录结构 📁
 
