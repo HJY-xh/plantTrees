@@ -102,3 +102,30 @@ if ((person as Student).studentId) {
 
 </pre>
 </details>
+
+[4.[2021-7-29] 只读类型如何使用？](https://github.com/HJY-xh/plantTrees/issues/406)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+使用关键词`Readonly`:
+
+```javascript
+interface Info {
+	name: string;
+	price?: number;
+}
+
+const cola: Readonly<Info> = {
+	name: "coca cola",
+	price: 3,
+};
+
+info.price = 4; // error TS2540: Cannot assign to 'price' because it is a read-only property.
+```
+
+在对一个变量进行标记后，对其属性复制会报错。
+
+</pre>
+</details>
