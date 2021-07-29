@@ -125,7 +125,7 @@ const cola: Readonly<Info> = {
 info.price = 4; // error TS2540: Cannot assign to 'price' because it is a read-only property.
 ```
 
-在对一个变量进行标记后，对其属性复制会报错。
+在对一个变量进行标记后，对其属性赋值会报错。
 
 </pre>
 </details>
