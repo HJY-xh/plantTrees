@@ -1660,3 +1660,36 @@ user-select: none;
 
 </pre>
 </details>
+
+[45.[2021-7-31] CSS 是如何处理空白的？](https://github.com/HJY-xh/plantTrees/issues/408)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+一般来说，CSS 对待空白的方式跟 HTML 差不多：解析时，连续的空白会被合并为一个空白（不论空白是空格，制表符还是换行符，甚至是他们的组合）
+
+下面这几种编写方式效果一样:
+
+```CSS
+p{color:pink;}
+p {color: pink;}
+p {
+    color: pink;}
+p {
+    color: pink;
+}
+p
+{
+    color
+    :
+        pink
+        ;
+}
+
+```
+
+唯一的要求是，要使用空白分隔，可以是空格、制表符或换行符，可以是单个空白，也可以任意数量的随意组合。
+
+</pre>
+</details>
