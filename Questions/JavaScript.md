@@ -2624,3 +2624,18 @@ console.log("[ secondDecode ]", secondDecode); // [ secondDecode ] ?a=1&b= 2&c=3
 
 </pre>
 </details>
+
+[98.[2021-8-1] 获得对象上的属性有哪些办法？](https://github.com/HJY-xh/plantTrees/issues/409)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+这里提供三种方式：
+
+-   for（let I in obj）该方法依次访问一个对象及其原型链中所有可枚举的类型
+-   object.keys:返回一个数组，包括所有可枚举的属性名称
+-   object.getOwnPropertyNames:返回一个数组包含不可枚举的属性
+
+</pre>
+</details>
