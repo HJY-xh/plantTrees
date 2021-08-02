@@ -768,3 +768,18 @@ HTTP/1.1 并不是二进制传输，而是通过文本进行传输，由于没�
 
 </pre>
 </details>
+
+[38.[2021-8-2] HPACK 的由来是什么？](https://github.com/HJY-xh/plantTrees/issues/410)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+HTTP/2 以前的头部报文是以文本形式发送，HTTP/2 为了优化网络传输，对头部报文进行压缩编码使其内容更精简，只要发送更少的数据。它采用的压缩算法就是 HPACK。
+
+![](https://i.loli.net/2021/08/02/5IjUMENoBfQF6xt.png)
+
+该图说明了 HTTP/2 头部报文的压缩过程：首先把头部的键值对内容根据对应的表进行转换，最后经过编码生成最终的压缩后的数据。
+
+</pre>
+</details>
