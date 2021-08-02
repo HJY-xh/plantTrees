@@ -783,3 +783,14 @@ HTTP/2 以前的头部报文是以文本形式发送，HTTP/2 为了优化网络
 
 </pre>
 </details>
+
+[39.[2021-8-2] Keep-Alive 解决了什么问题？](https://github.com/HJY-xh/plantTrees/issues/411)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+在一定时间内，同一个域名下的多次请求，只建立一次 HTTP 请求，其它请求复用第一次请求建立的连接通道，这样可以减少新建和断开 TCP 连接的消耗。
+
+</pre>
+</details>
