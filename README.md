@@ -15,6 +15,8 @@
 
 ## Day 168:
 
+✅ [[2021-8-4] Pointfree 的本质是什么？](https://github.com/HJY-xh/plantTrees/issues/415)
+
 ✅ [[2021-8-4] 使用 appendChild 操作已存在的 Dom ，原来的 Dom 会消失吗？](https://github.com/HJY-xh/plantTrees/issues/414)
 
 ## 目录结构 📁
