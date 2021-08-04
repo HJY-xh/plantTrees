@@ -647,3 +647,45 @@ a 标签可以调用移动设备上的拨打电话、发送短信和发送邮件
 
 </pre>
 </details>
+
+[27.[2021-8-4] 使用 appendChild 操作已存在的 Dom ，原来的 Dom 会消失吗？](https://github.com/HJY-xh/plantTrees/issues/414)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+会，原来的 dom 会移除。(只有一份实例)
+
+看个例子：
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form>
+			<select id="select1">
+				<option>1</option>
+			</select>
+			<select id="select2">
+				<option>2</option>
+			</select>
+		</form>
+		<script>
+			var select1 = document.getElementById("select1");
+			var select2 = document.getElementById("select2");
+			select2.appendChild(select1.options[0]);
+		</script>
+	</body>
+</html>
+```
+
+在这个例子中，select1 的 option 会被转移到 select2 下。
+
+</pre>
+</details>
