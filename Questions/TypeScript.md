@@ -19,13 +19,13 @@ interface Toy {
 	price: number;
 }
 
-const toyCat: Car & Toy = {
+const toyCar: Car & Toy = {
 	name: "BWN",
 	price: 100,
 };
 ```
 
-这里的`toyCat`是` Car & Toy`联合类型，故必须有两个类型所包含的所有类型。
+这里的`toyCar`是` Car & Toy`联合类型，故必须有两个类型所包含的所有类型。
 
 </pre>
 </details>
