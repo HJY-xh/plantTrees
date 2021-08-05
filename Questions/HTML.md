@@ -689,3 +689,20 @@ a 标签可以调用移动设备上的拨打电话、发送短信和发送邮件
 
 </pre>
 </details>
+
+[28.[2021-8-5] 原生 table 固定表头有什么思路？](https://github.com/HJY-xh/plantTrees/issues/420)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   使用两个`table`标签，一个只展示表头，一个展示实际数据
+-   表头使用 CSS 属性
+
+```CSS
+position：sticky;
+top：0;
+```
+
+</pre>
+</details>

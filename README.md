@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 168:
+## Day 169:
 
-✅ [[2021-8-4] Pointfree 的本质是什么？](https://github.com/HJY-xh/plantTrees/issues/415)
-
-✅ [[2021-8-4] 使用 appendChild 操作已存在的 Dom ，原来的 Dom 会消失吗？](https://github.com/HJY-xh/plantTrees/issues/414)
+✅ [[2021-8-5] 原生 table 固定表头有什么思路？](https://github.com/HJY-xh/plantTrees/issues/420)
 
 ## 目录结构 📁
 
