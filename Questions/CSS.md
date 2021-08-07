@@ -1693,3 +1693,31 @@ p
 
 </pre>
 </details>
+
+[46.[2021-8-7] em 是如何转换成 px 的? ](https://github.com/HJY-xh/plantTrees/issues/423)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+当时用 em 单位的时候，像素值是将 em 的值乘以使用 em 单位的元素的字体大小。
+
+例如一个 div 的字体为 18px，设置它的宽高为 10em，那么此时宽高就是 18px \* 10em = 180px
+
+看个例子：
+
+```CSS
+.test{
+    width: 10em;
+    height: 10em;
+    background-color: #ff7d42;
+    font-size: 18px;
+}
+/**
+一定要记住的是，em 是根据使用它的元素的font-size 的大小来变化的，而不是根据父元素字体大小。
+有些元素大小是父元素的多少倍，那是因为继承了父元素中font-size 的设定，所以才起到的作用。
+*/
+```
+
+</pre>
+</details>
