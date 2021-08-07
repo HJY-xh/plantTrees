@@ -15,6 +15,8 @@
 
 ## Day 171:
 
+✅ [[2021-8-7] 输入 URL 到页面加载显示完成发生了什么？](https://github.com/HJY-xh/plantTrees/issues/424)
+
 ✅ [[2021-8-7] em 是如何转换成 px 的? ](https://github.com/HJY-xh/plantTrees/issues/423)
 
 ## 目录结构 📁
