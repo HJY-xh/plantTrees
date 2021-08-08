@@ -1721,3 +1721,16 @@ p
 
 </pre>
 </details>
+
+[47.[2021-8-8] 写动画时, 最小时间间隔是多少?](https://github.com/HJY-xh/plantTrees/issues/427)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+16.7ms
+
+多数显示器默认频率是`60Hz`，即`1`秒刷新`60`次，所以理论上最小间隔为`1/60*1000ms=16.7ms`
+
+</pre>
+</details>
