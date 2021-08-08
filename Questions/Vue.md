@@ -511,3 +511,293 @@ footer
 
 </pre>
 </details>
+
+[12.[2021-8-5] Vue 中父组件怎么向子组件传递值？](https://github.com/HJY-xh/plantTrees/issues/416)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+1. 在父组件中引入子组件
+
+2. 注册子组件
+
+3. 在页面中使用，子组件标签上动态绑定传入动态值 / 静态值
+
+4. 在子组件中，使用 props 来接受父组件传递过了的值
+
+子组件接收的父组件的值分为**引用类型**和**普通类型**两种：
+
+-   普通类型：字符串（String）、数字（Number）、布尔值（Boolean）、空（Null）
+-   引用类型：数组（Array）、对象（Object）
+
+```html js
+// 子组件
+<template>
+	<div>
+		<h1>{{obj.code}}</h1>
+		<br />
+		<h2>{{obj.title}}</h2>
+		<h3>{{info}}</h3>
+	</div>
+</template>
+
+<script>
+	export default {
+		name: "test",
+		props: {
+			obj: Object,
+			info: [String, Number], //info值为其中一种类型即可，其他类型报警告
+		},
+	};
+</script>
+```
+
+```html js
+//父组件
+
+<template>
+	<div>
+		<!-- 传递值 -->
+		<Test :obj="obj" info="测试" />
+	</div>
+</template>
+
+<script>
+	// 引入子组件
+	import Test from "../components/Test.vue";
+	export default {
+		name: "about",
+		// 注册子组件
+		components: {
+			Test,
+		},
+		data() {
+			return {
+				obj: {
+					code: 200,
+					title: "前端自学社区",
+				},
+			};
+		},
+	};
+</script>
+```
+
+注意：由于 Vue 是**单向数据流**， **子组件** 不能直接修改 **父组件** 的值
+
+</pre>
+</details>
+[13.[2021-8-5] Vue中子组件怎么向父组件传递值？](https://github.com/HJY-xh/plantTrees/issues/417)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+子组件通过绑定事件: `this.$emit('函数名'，传递参数)` 向父组件传值
+
+```html js
+// 子组件
+<button @click="modifyValue">修改父组件的值</button>
+
+<script>
+	export default {
+		name: "test",
+		methods: {
+			modifyValue() {
+				this.$emit("modify", "子组件传递过来的值");
+			},
+		},
+	};
+</script>
+```
+
+```html js
+// 父组件
+<Test @modify="modifyFatherValue" />
+
+<script>
+	// 引入子组件
+	import Test from "../components/Test.vue";
+	export default {
+		name: "about",
+		// 注册子组件
+		components: {
+			Test,
+		},
+		data() {
+			return {
+				msg: "我是父组件",
+			};
+		},
+		methods: {
+			// 接受子组件传递来的值，赋值给data中的属性
+			modifyFatherValue(e) {
+				this.msg = e;
+			},
+		},
+	};
+</script>
+```
+
+</pre>
+</details>
+[14.[2021-8-5] Vue中父组件怎么获取子组件值？](https://github.com/HJY-xh/plantTrees/issues/418)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+父组件 通过 $refs / $children 来获取子组件值
+
+`$refs` :
+
+-   获取 DOM 元素 和 组件实例来获取组件的属性和方法。
+-   通过在 子组件 上绑定 `ref` ，使用 `this.$refs.refName.子组件属性 / 子组件方法`
+
+`$children` :
+
+-   当前实例的子组件，它返回的是一个子组件的集合。如果想获取哪个组件属性和方法，可以通过 `this.$children[index].子组件属性/方法`
+
+**示例 Text 组件**
+
+```js
+<script>
+    export default {
+        name:'test',
+        data() {
+            return {
+                datas:"我是子组件值"
+            }
+        },
+        props:{
+            obj:Object,
+            info: [String,Number]
+        },
+        methods:{
+            getValue(){
+                console.log('我是Test1')
+            }
+        }
+    }
+</script>
+```
+
+**示例 Text2 组件**
+
+```html js
+<template>
+	<div>
+		<h1>我是Test2</h1>
+	</div>
+</template>
+
+<script>
+	export default {
+		name: "test",
+		data() {
+			return {
+				datas: "我是Test2",
+			};
+		},
+		created() {
+			console.log(this.$parent.obj);
+			this.$parent.getQuery();
+		},
+		methods: {
+			getTest2() {
+				console.log(this.datas);
+			},
+		},
+	};
+</script>
+```
+
+**$refs**
+
+```html js
+<template>
+	<div>
+		<!--给子组件上绑定 ref-->
+		<Test ref="son" />
+		<Test2 />
+	</div>
+</template>
+
+// 通过 $refs 示例来获取子组件的属性和方法 console.log( this.$refs.son.datas) // 我是子组件值
+this.$refs.son.getValue() // 我是Test1
+```
+
+**$children**
+
+```js
+//  通过 $children  来获取 子组件的属性和方法
+this.$children[0].getValue(); // 我是 Test1
+this.$children[1].getTest2(); // 我是 Test2
+console.log(this.$children[1].datas); // 我是Test2
+```
+
+</pre>
+</details>
+[15.[2021-8-8] Vue中子组件怎么获取父组件实例的属性和方法？](https://github.com/HJY-xh/plantTrees/issues/426)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+子组件 通过 `$parent` 来获取父组件实例的属性和方法
+
+父组件
+
+```html js
+<template>
+	<div>
+		<testVue></testVue>
+	</div>
+</template>
+<script>
+	import testVue from './test'
+	export default {
+	  data(){
+	    return {
+	      total: 108
+	    }
+	  },
+	  components: {
+	    testVue
+	  },
+	  methods: {
+	    funa(e){
+	        console.log(e)
+	    }
+	}
+</script>
+```
+
+子组件
+
+```js
+<template>
+<div>
+  <button @click="parentClick">点击访问父组件</button>
+</div>
+</template>
+<script>
+export default {
+  data(){
+    return {
+      msg:"test1"
+    }
+  },
+  methods: {
+    parentClick(){
+        this.$parent.funa("xx") // xx
+        console.log(this.$parent.total); // 108
+    }
+  }
+}
+</script>
+```
+
+</pre>
+</details>
