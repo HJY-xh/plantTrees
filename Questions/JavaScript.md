@@ -2639,3 +2639,16 @@ console.log("[ secondDecode ]", secondDecode); // [ secondDecode ] ?a=1&b= 2&c=3
 
 </pre>
 </details>
+
+[99.[2021-8-9] 包装类跟普通类有什么区别？](https://github.com/HJY-xh/plantTrees/issues/428)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+JS 提供了 3 个包装类 分别是 new String()，new Number()，new Boolean()。由于基础类型不能添加属性和方法，js 的包装类的作用是将基础类型包装成一个对象，这样就可以有属性和方法。
+
+tips:当我们对一些基本数据类型的值去调用属性和方法时，浏览器会临时使用包装类将其转换为对象，然后在调用对象的属性和方法；调用完以后，在将其转换为基本数据类型。
+
+</pre>
+</details>
