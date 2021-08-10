@@ -573,3 +573,35 @@ React.createElement("div", {
 
 </pre>
 </details>
+
+[22.[2021-8-10] componentDidUpdate 在什么时候被调用？](https://github.com/HJY-xh/plantTrees/issues/429)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+```javascript
+componentDidUpdate(preProps，preState，snapshot)
+```
+
+`componentDidUpdate()`在更新后会被立即调用，首次渲染不会执行此方法
+
+当组件更新后，可以在该方法中对 DOM 进行操作
+
+也可以在`componentDidUpdate()`中直接调用 setState()，但是必须被包裹在一个条件语句中，如下所示，否则会导致死循环。它会导致额外的重新渲染，虽然用户不可见，但会影响组件性能
+
+```javascript
+componentDidUpdate(prevProps) {
+  // 典型用法（不要忘记比较 props）：
+  if (this.props.userID !== prevProps.userID) {
+    this.fetchData(this.props.userID);
+  }
+}
+```
+
+如果组件实现了`getSnapshotBeforeUpdate()`生命周期（不常用），则它的返回值将作为`componentDidUpdate()`的第三个参数`snapshot`参数传递，否则该参数为`undefined`
+
+如果 `shouldComponentUpdate() `返回值为 `false`，则不会调用 `componentDidUpdate()`
+
+</pre>
+</details>

@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 173:
+## Day 174:
 
-✅ [[2021-8-9] 包装类跟普通类有什么区别？](https://github.com/HJY-xh/plantTrees/issues/428)
+✅ [[2021-8-10] componentDidUpdate 在什么时候被调用？](https://github.com/HJY-xh/plantTrees/issues/429)
 
 ## 目录结构 📁
 
