@@ -13,7 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 174:
+## Day 175:
+
+✅ [[2021-8-12] Object.assign()是深拷贝还是浅拷贝？](https://github.com/HJY-xh/plantTrees/issues/430)
 
 ✅ [[2021-8-10] componentDidUpdate 在什么时候被调用？](https://github.com/HJY-xh/plantTrees/issues/429)
 

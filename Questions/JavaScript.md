@@ -2652,3 +2652,36 @@ tips:当我们对一些基本数据类型的值去调用属性和方法时，浏
 
 </pre>
 </details>
+
+[100.[2021-8-12] Object.assign()是深拷贝还是浅拷贝？](https://github.com/HJY-xh/plantTrees/issues/430)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+先来看看`Object.assign()`的定义：用于将所有可枚举属性的值从一个或多个源对象分配到目标对象。它将返回目标目标对象。
+
+该方法拷贝的是属性值，假如源对象的属性值是一个对象的引用，那么它也指向那个引用。也就是说，如果对象的值为简单类型，那么该方法的表现为深拷贝，如果对象的值是引用类型，那么对于这个对象是浅拷贝。
+
+看个 🌰：
+
+```javascript
+let source = {
+	a: 1,
+	b: 2,
+	c: {
+		d: 3,
+		e: 4,
+	},
+};
+
+let target = Object.assign({}, source);
+
+target.a = 10;
+target.c.d = 30;
+
+console.log(source, target); // { a: 1, b: 2, c: { d: 30, e: 4 } } { a: 10, b: 2, c: { d: 30, e: 4 } }
+```
+
+</pre>
+</details>
