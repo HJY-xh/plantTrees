@@ -706,3 +706,16 @@ top：0;
 
 </pre>
 </details>
+
+[29.[2021-8-13] documentElement 和 body 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/432)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+body 是 DOM 对象里的 body 子节点，即<body>标签，document 是整个节点树的根节点 root，即<html>标签。
+
+页面具有 DTD 时，使用 document.documentElement，不具有 DTD 时，使用 document.body。
+
+</pre>
+</details>

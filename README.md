@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 175:
+## Day 176:
 
-✅ [[2021-8-12] JSON.stringify()转换规则是什么样的？](https://github.com/HJY-xh/plantTrees/issues/431)
-
-✅ [[2021-8-12] Object.assign()是深拷贝还是浅拷贝？](https://github.com/HJY-xh/plantTrees/issues/430)
-
-✅ [[2021-8-10] componentDidUpdate 在什么时候被调用？](https://github.com/HJY-xh/plantTrees/issues/429)
+✅ [[2021-8-13] documentElement 和 body 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/432)
 
 ## 目录结构 📁
 
