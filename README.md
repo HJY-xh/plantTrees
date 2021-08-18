@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 176:
+## Day 177:
 
-✅ [[2021-8-13] documentElement 和 body 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/432)
+✅ [[2021-8-18] Redux 有哪些特性？](https://github.com/HJY-xh/plantTrees/issues/433)
 
 ## 目录结构 📁
 
