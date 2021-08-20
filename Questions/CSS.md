@@ -1734,3 +1734,15 @@ p
 
 </pre>
 </details>
+
+[48.[2021-8-20] vmin 和 vmax 是什么？](https://github.com/HJY-xh/plantTrees/issues/435)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   vmin：视口高度 vw 和宽度 vh 两者之间的最小值
+-   vmax：视口高度 vw 和宽度 vh 两者之间的最大值
+
+</pre>
+</details>
