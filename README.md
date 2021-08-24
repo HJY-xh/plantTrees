@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 179:
+## Day 180:
 
-✅ [[2021-8-20] GFC 是什么？](https://github.com/HJY-xh/plantTrees/issues/436)
-
-✅ [[2021-8-20] vmin 和 vmax 是什么？](https://github.com/HJY-xh/plantTrees/issues/435)
+✅ [[2021-8-23] 如何在旧浏览器中使用新元素？](https://github.com/HJY-xh/plantTrees/issues/437)
 
 ## 目录结构 📁
 

@@ -719,3 +719,22 @@ body 是 DOM 对象里的 body 子节点，即<body>标签，document 是整个�
 
 </pre>
 </details>
+
+[30.[2021-8-23] 如何在旧浏览器中使用新元素？](https://github.com/HJY-xh/plantTrees/issues/437)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+HTML（例如 HTML5 规范）在更新的过程中加入了一些新元素。有些浏览器在这些新元素出现之前就已存在，因此可能无法识别新元素。例如 IE9 之前的版本中无法选择不支持的元素。解决方法是在 DOM 中创建元素，让浏览器知道元素的存在。
+
+例如 IE8 不识别<main>元素，可以使用如下方法：
+
+```javascript
+document.createElement("main");
+```
+
+运行这段代码后，旧版 IE 将认识到元素的存在，从而允许选择并为之赋予样式。
+
+</pre>
+</details>
