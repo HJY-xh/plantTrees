@@ -1761,3 +1761,14 @@ GFC(GridLayout Formatting Contexts)直译为"网格布局格式化上下文"。
 
 </pre>
 </details>
+
+[50.[2021-8-24] :only-of-type 和:only-child 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/438)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+:only-of-type 匹配同胞中惟一的那种元素，而:only-child 只匹配完全没有同胞的元素。
+
+</pre>
+</details>
