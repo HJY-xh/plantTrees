@@ -15,9 +15,9 @@
 
 ## Day 181:
 
-✅ [[2021-8-24] :only-of-type 和:only-child 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/438)
+✅ [[2021-8-24]var 声明及变量提升机制是什么？](https://github.com/HJY-xh/plantTrees/issues/439)
 
-✅ [[2021-8-23] 如何在旧浏览器中使用新元素？](https://github.com/HJY-xh/plantTrees/issues/437)
+✅ [[2021-8-24] :only-of-type 和:only-child 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/438)
 
 ## 目录结构 📁
 

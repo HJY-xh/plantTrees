@@ -2742,3 +2742,47 @@ console.log(target); // {"a":1}
 
 </pre>
 </details>
+
+[102.[2021-8-24]var 声明及变量提升机制是什么？](https://github.com/HJY-xh/plantTrees/issues/439)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+在函数作用域或者全局作用域通过关键字 var 声明的变量，无论实际上是在哪里声明的，都会被当成在当前作用域顶部声明的变量，这就是常说的提升机制。
+
+看个例子：
+
+```javascript
+function getValue(condition) {
+	if (condition) {
+		var value = "xh";
+		// 其它代码
+	} else {
+		console.log(value); // undefined
+	}
+	console.log(value); // undefined
+}
+
+getValue(false);
+```
+
+为什么会是 undefined，实际上代码变成了如下这样:
+
+```javascript
+function getValue(condition) {
+	var value;
+	if (condition) {
+		value = "xh";
+		// 其它代码
+	} else {
+		console.log(value);
+	}
+	console.log(value);
+}
+```
+
+变量 value 的声明被提升到函数顶部，而初始化操作依旧留在原处执行。
+
+</pre>
+</details>
