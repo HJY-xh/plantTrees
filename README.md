@@ -15,6 +15,8 @@
 
 ## Day 183:
 
+✅ [[2021-8-26] Redux 的设计思想是什么？](https://github.com/HJY-xh/plantTrees/issues/442)
+
 ✅ [[2021-8-26] Redux 的适用场景有哪些？](https://github.com/HJY-xh/plantTrees/issues/441)
 
 ## 目录结构 📁
