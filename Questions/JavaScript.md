@@ -2786,3 +2786,22 @@ function getValue(condition) {
 
 </pre>
 </details>
+
+[103.[2021-8-26] var 生命可以重复声明变量吗？](https://github.com/HJY-xh/plantTrees/issues/443)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+可以，不会报错。
+
+```javascript
+var a = 1;
+
+var a = 2;
+
+console.log(2); // 2
+```
+
+</pre>
+</details>
