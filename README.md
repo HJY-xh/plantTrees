@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 181:
+## Day 182:
 
-✅ [[2021-8-24]var 声明及变量提升机制是什么？](https://github.com/HJY-xh/plantTrees/issues/439)
-
-✅ [[2021-8-24] :only-of-type 和:only-child 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/438)
+✅ [[2021-8-25] 通过 CSS 让英文大写如何实现？](https://github.com/HJY-xh/plantTrees/issues/440)
 
 ## 目录结构 📁
 

@@ -1772,3 +1772,16 @@ GFC(GridLayout Formatting Contexts)直译为"网格布局格式化上下文"。
 
 </pre>
 </details>
+
+[51.[2021-8-25] 通过 CSS 让英文大写如何实现？](https://github.com/HJY-xh/plantTrees/issues/440)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+```css
+text-transform: uppercase;
+```
+
+</pre>
+</details>
