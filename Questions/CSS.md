@@ -1826,3 +1826,20 @@ CSS3 定义了几个“全局”关键字，规范中的每个属性都能使用
 
 </pre>
 </details>
+
+[54.[2021-8-29] CSS 定义了哪些通用字体？](https://github.com/HJY-xh/plantTrees/issues/446)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+CSS 定义了五种通用字体:
+
+-   衬线字体（Serif）- 在每个字母的边缘都有一个小的笔触。它们营造出一种形式感和优雅感。
+-   无衬线字体（Sans-serif）- 字体线条简洁（没有小笔画）。它们营造出现代而简约的外观。
+-   等宽字体（Monospace）- 这里所有字母都有相同的固定宽度。它们创造出机械式的外观。
+-   草书字体（Cursive）- 模仿了人类的笔迹。
+-   幻想/奇幻字体（Fantasy）- 是装饰性/俏皮的字体。
+
+</pre>
+</details>
