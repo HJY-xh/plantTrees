@@ -1811,3 +1811,18 @@ text-transform: uppercase;
 
 </pre>
 </details>
+
+[53.[2021-8-28] CSS 有哪些全局关键字?](https://github.com/HJY-xh/plantTrees/issues/445)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+CSS3 定义了几个“全局”关键字，规范中的每个属性都能使用：inherit、initial 和 unset。
+
+-   inherit 关键字把元素的某个属性的值设为与父元素同一属性的值一样。也就是说，这个关键字强制继承，即便是在通常情况下不继承时。例子：border-color。
+-   initial 关键字把属性的值设为预定义的初始值，不过，不是所有属性都有预定义的初始值。
+-   unset 关键字是 inherit 和 initial 的通用替身。对继承的属性来说，unset 的作用与 inherit 一样；对不继承的属性来说，unset 的作用与 initial 一样
+
+</pre>
+</details>
