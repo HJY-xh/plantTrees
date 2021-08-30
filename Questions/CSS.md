@@ -1785,3 +1785,29 @@ text-transform: uppercase;
 
 </pre>
 </details>
+
+[52.[2021-8-27] 否定伪类使用的注意点有哪些？](https://github.com/HJY-xh/plantTrees/issues/444)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+:not()伪类衣服在元素上，括号中是简单的选择符。
+
+根据 W3C 的定义，简单的选择符指：
+
+-   类型选择符
+-   通用选择符
+-   属性选择符
+-   类选择符
+-   ID 选择符
+-   伪类
+
+基本上，简单选择符是指没有祖辈 - 后代关系的选择符
+
+否定伪类不能嵌套，因此`p:not(:not(p))是无效的
+
+否定伪类可以串在一起，作用相当于“也不是”
+
+</pre>
+</details>
