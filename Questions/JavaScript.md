@@ -2816,3 +2816,14 @@ instanceof 是通过平判断对象的 prototype 链来确定对象是否是某�
 
 </pre>
 </details>
+
+[105.[2021-9-1] 如何获取上一个页面的 URL？](https://github.com/HJY-xh/plantTrees/issues/449)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+document.referrer 返回的是一个 URI, 当前页面就是从这个 URI 所代表的页面 跳转或打开的。
+
+</pre>
+</details>
