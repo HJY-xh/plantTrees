@@ -2805,3 +2805,14 @@ console.log(2); // 2
 
 </pre>
 </details>
+
+[104.[2021-8-31] instanceof 的工作原理是什么？](https://github.com/HJY-xh/plantTrees/issues/448)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+instanceof 是通过平判断对象的 prototype 链来确定对象是否是某个类的实例，而不关心对象与类的自身结构。
+
+</pre>
+</details>
