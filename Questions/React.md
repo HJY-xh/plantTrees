@@ -616,3 +616,14 @@ componentDidUpdate(prevProps) {
 
 </pre>
 </details>
+
+[24.[2021-9-6] React 中为什么自定义组件必须大写开头？](https://github.com/HJY-xh/plantTrees/issues/451)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+平时书写的 JSX 是语法糖，<MyComp /> 会被转换为 React.createElement(...)，在转换过程中，首字母小写的会被认为是原生 DOM 标签，首字母大写的被认为是组件。
+
+</pre>
+</details>
