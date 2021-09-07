@@ -605,3 +605,14 @@ componentDidUpdate(prevProps) {
 
 </pre>
 </details>
+
+[23.[2021-9-4] 虚拟 DOM 是什么?](https://github.com/HJY-xh/plantTrees/issues/450)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+一个能代表 DOM 树的对象，通常含有标签名、标签上的属性、事件监听和子元素们，以及其它的属性。
+
+</pre>
+</details>
