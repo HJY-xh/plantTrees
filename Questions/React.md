@@ -627,3 +627,18 @@ componentDidUpdate(prevProps) {
 
 </pre>
 </details>
+
+[25.[2021-9-8] concurrent 模式是什么？](https://github.com/HJY-xh/plantTrees/issues/452)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+concurrent Mode 是 React 之后会推出的新模式， 它将渲染工作分解为多个部分，对任务进行暂停和恢复操作以避免阻塞浏览器。
+
+它用时间片调度实现了异步可中断任务，根据设备性能的不同，时间片的长度也不一样，在每个时间片中，如果任务到了过期时间，就会主动让出线程给高优先级的任务。
+
+这意味着 React 可以在提交之前多次调用渲染阶段生命周期的方法，或者在不提交的情况下调用它们（由于出现错误或更高优先级的任务使其中断）。
+
+</pre>
+</details>
