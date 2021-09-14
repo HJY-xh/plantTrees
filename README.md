@@ -15,6 +15,8 @@
 
 ## Day 192:
 
+✅ [[2021-9-12] 类式继承如何实现？](https://github.com/HJY-xh/plantTrees/issues/454)
+
 ✅ [[2021-9-12] 什么是鸭子类型？](https://github.com/HJY-xh/plantTrees/issues/453)
 
 ## 目录结构 📁

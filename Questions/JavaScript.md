@@ -2840,3 +2840,45 @@ document.referrer 返回的是一个 URI, 当前页面就是从这个 URI 所代
 
 </pre>
 </details>
+
+[107.[2021-9-12] 类式继承如何实现？](https://github.com/HJY-xh/plantTrees/issues/454)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+类的原型对象的作用就是为类的原型添加共有方法，但类不能直接访问这些属性和方法，必须通过原型 prototype 来访问。
+
+看个例子：
+
+```javascript
+// 类式继承
+
+// 声明父类
+function SuperClass() {
+	this.superValue = true;
+}
+
+// 为父类添加共有方法
+SuperClass.prototype.getSuperValue = function () {
+	return this.superValue;
+};
+
+// 声明子类
+function SubClass() {
+	this.subValue = false;
+}
+
+// 继承父类
+SubClass.prototype = new SuperClass();
+
+// 为子类添加共有方法
+SubClass.prototype.getSubValue = function () {
+	return this.subValue;
+};
+```
+
+实例化一个父类的时候，新创建的对象复制了父类的构造函数内的属性和方法，并且将原型**proto**指向了父类的原型对象，这样就拥有了父类原型对象上的属性和方法，并且这个新创建的对象可直接访问到父类原型对象上的属性和方法，同样也可以访问从父类构造函数中复制的的属性和方法。如果将这个新创建的对象赋值给子类的原型，那么子类的原型就可以访问到父类的原型属性和方法。
+
+</pre>
+</details>
