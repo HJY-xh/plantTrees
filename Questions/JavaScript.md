@@ -2827,3 +2827,16 @@ document.referrer 返回的是一个 URI, 当前页面就是从这个 URI 所代
 
 </pre>
 </details>
+
+[106.[2021-9-12] 什么是鸭子类型？](https://github.com/HJY-xh/plantTrees/issues/453)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+鸭子类型的通俗说法是：如果它走起路来像鸭子，叫起来也是鸭子，那么它就是鸭子。
+
+鸭子类型指导我们只关注对象的行为，而不关注对象本身。
+
+</pre>
+</details>
