@@ -738,3 +738,16 @@ document.createElement("main");
 
 </pre>
 </details>
+
+[31.[2021-9-24] rel="noopener"有什么作用？](https://github.com/HJY-xh/plantTrees/issues/456)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+`rel="noopener"` 能够防止新页面访问该 `window.opener` 属性并确保它在单独的进程中运行。
+
+`rel="noreferrer"` 具有相同的效果，但也可以防止将 Referer 标头发送到新页面。
+
+</pre>
+</details>
