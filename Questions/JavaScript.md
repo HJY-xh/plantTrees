@@ -2882,3 +2882,14 @@ SubClass.prototype.getSubValue = function () {
 
 </pre>
 </details>
+
+[108.[2021-10-8] Number 与 BigInt 可以进行转换吗？](https://github.com/HJY-xh/plantTrees/issues/457)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+由于在 Number 与 BigInt 之间进行转换会损失精度，因而建议仅在值可能大于 253 时使用 BigInt 类型，并且不在两种类型之间进行相互转换。
+
+</pre>
+</details>
