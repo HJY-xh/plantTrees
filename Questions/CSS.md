@@ -1843,3 +1843,16 @@ CSS 定义了五种通用字体:
 
 </pre>
 </details>
+
+[55.[2021-10-10] 置换元素设置宽度时有什么需要注意的吗？](https://github.com/HJY-xh/plantTrees/issues/458)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+当设置 width 为 auto 时，置换元素的 width 等于内容自身的宽度。
+
+如果图像自身的宽度为 20 像素，那么图像宽度就为该数值。
+
+</pre>
+</details>
