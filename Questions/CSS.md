@@ -1856,3 +1856,14 @@ CSS 定义了五种通用字体:
 
 </pre>
 </details>
+
+[56.[2021-10-11] 行内框的定义是什么？](https://github.com/HJY-xh/plantTrees/issues/459)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+内容区加行距后得到的方框。对于非置换元素来说，行内框的高度正好等于 line-height 属性的值。对于置换元素而言，行内框的高度等于内容区的高度，因为置换元素没有行距。
+
+</pre>
+</details>
