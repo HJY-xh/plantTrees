@@ -1867,3 +1867,18 @@ CSS 定义了五种通用字体:
 
 </pre>
 </details>
+
+[57.[2021-10-11] 一行中各元素的行内框的高度是怎么确定的？](https://github.com/HJY-xh/plantTrees/issues/460)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+1、确定行内各非置换元素和匿名文本的 font-size 和 line-height 值，后者减去前者，得到行距。行距除以 2，分别添加到字体框的上部和下部。
+2、确定各置换元素的 height、margin-top、margin-bottom、padding-top、padding-bottom、border-top-width 和 border-bottom-width 值，各值相加。
+3、确定各内容区在一行的基线上方和下放分别超出多少。（这不是件简单的事，要知道各元素和匿名文本的基线在哪里，以及一行的基线在何处，然后把它们对齐。另外，要把置换元素的底边与一行的基线对齐）
+4、确定设定了 vertical-align 属性的元素纵向偏移有多少。这是为了查明元素的行内框向上或向下移动了多少，因为纵向对齐改变了元素与基线之间的距离。
+5、知道所有的行内框位置后，计算行内框的高度：基线与最高的那个行内框的顶边之间的距离加上基线与最低那个行内框底边之间的距离。
+
+</pre>
+</details>
