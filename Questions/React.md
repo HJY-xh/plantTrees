@@ -642,3 +642,19 @@ concurrent Mode 是 React 之后会推出的新模式， 它将渲染工作分�
 
 </pre>
 </details>
+
+[26.[2021-10-18] React 15 的架构是什么样的？](https://github.com/HJY-xh/plantTrees/issues/465)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+React15 架构可以分为两层：
+
+-   Reconciler（协调器）：负责找出变化的组件
+-   Renderer（渲染器）： 负责将变化的组件渲染到页面上
+
+当发生更新时，函数组件或者类组件的 render 方法会被调用，将 JSX 转化为虚拟 DOM，与上次更新时的虚拟 DOM 对比，找出最小变化，Renderer 接到 Reconciler 通知，将变化的组件渲染在当前宿主环境。
+
+</pre>
+</details>
