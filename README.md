@@ -15,7 +15,9 @@
 
 ## Day 201:
 
-✅ [[2021-10-18] React 15 的架构是什么样的？](https://github.com/HJY-xh/plantTrees/issues/465)
+✅ [[2021-10-19] React 15 的架构是什么样的？](https://github.com/HJY-xh/plantTrees/issues/465)
+
+✅ [[2021-10-19] React15 架构有什么缺点?](https://github.com/HJY-xh/plantTrees/issues/466)
 
 ## 目录结构 📁
 

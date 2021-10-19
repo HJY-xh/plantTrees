@@ -643,7 +643,7 @@ concurrent Mode 是 React 之后会推出的新模式， 它将渲染工作分�
 </pre>
 </details>
 
-[26.[2021-10-18] React 15 的架构是什么样的？](https://github.com/HJY-xh/plantTrees/issues/465)
+[26.[2021-10-19] React 15 的架构是什么样的？](https://github.com/HJY-xh/plantTrees/issues/465)
 
 <details>
 <summary>展开查看</summary>
@@ -655,6 +655,19 @@ React15 架构可以分为两层：
 -   Renderer（渲染器）： 负责将变化的组件渲染到页面上
 
 当发生更新时，函数组件或者类组件的 render 方法会被调用，将 JSX 转化为虚拟 DOM，与上次更新时的虚拟 DOM 对比，找出最小变化，Renderer 接到 Reconciler 通知，将变化的组件渲染在当前宿主环境。
+
+</pre>
+</details>
+
+[27.[2021-10-19] React15 架构有什么缺点?](https://github.com/HJY-xh/plantTrees/issues/466)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+主要是同步更新可能引发不好的用户体验。
+
+在协调过程中，mount 的组件会调用 mountComponent ，update 的组件会调用 updateComponent。这两个方法都会递归更新子组件。递归一旦开始，无法中途中断，当组件层级很深的时候，递归更新时间超过 16ms，浏览器没有足够的时间更新页面，用户就会觉得卡顿。
 
 </pre>
 </details>
