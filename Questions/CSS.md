@@ -1882,3 +1882,16 @@ CSS 定义了五种通用字体:
 
 </pre>
 </details>
+
+[58.[2021-10-16] 元素的背景会延伸到哪里？](https://github.com/HJY-xh/plantTrees/issues/464)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+默认情况下会延伸到边框的外边界。
+
+有些边框是间断的，例如 dotted 和 dashed，所以元素的北京会出现在边框的间隙中。
+
+</pre>
+</details>
