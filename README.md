@@ -15,6 +15,8 @@
 
 ## Day 202:
 
+✅ [[2021-10-21] HTTP 状态码 101 代表什么？](https://github.com/HJY-xh/plantTrees/issues/468)
+
 ✅ [[2021-10-21] babel 的插件和预设执行顺序是什么样的？](https://github.com/HJY-xh/plantTrees/issues/467)
 
 ## 目录结构 📁

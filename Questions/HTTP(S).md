@@ -794,3 +794,38 @@ HTTP/2 以前的头部报文是以文本形式发送，HTTP/2 为了优化网络
 
 </pre>
 </details>
+
+[40.[2021-10-21] HTTP 状态码 101 代表什么？](https://github.com/HJY-xh/plantTrees/issues/468)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+HTTP 101 Switching Protocol（协议切换）状态码表示服务器应客户端升级协议的请求对协议进行切换。
+
+此机制始终由客户端发起，并且服务器可能接受或拒绝切换到新协议。客户端可使用常用的协议（如 HTTP / 1.1）发起请求，请求说明需要切换到 HTTP / 2 或甚至到 WebSocket。
+
+```
+HTTP/1.1 101 Switching Protocols
+Connection: Upgrade
+Upgrade: websocket
+```
+
+其中 HTTP 头部字段`Connection: Upgrade`、`Upgrade: websocket`告诉服务器通信协议将发生改变，转为 WebSocket 协议。支持 WebSocket 的服务器端在确认以上请求后，应返回状态码为 101 Switching Protocols 的响应
+
+请求头：
+
+```
+Sec-WebSocket-Key: W4EJCJQlV5SCkUNKLUPwyA==
+```
+
+响应头：
+
+```
+Sec-WebSocket-Accept: xEsJE5iStBCUHNModWfjT2RJsDY=
+```
+
+其中字段 Sec-WebSocket-Accept 是由服务器对前面客户端发送的 Sec-WebSocket-Key 进行确认和加密后的结果，相当于一次验证，以帮助客户端确信对方是真实可用的 WebSocket 服务器。
+
+</pre>
+</details>
