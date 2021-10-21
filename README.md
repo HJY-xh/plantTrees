@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 201:
+## Day 202:
 
-✅ [[2021-10-19] React 15 的架构是什么样的？](https://github.com/HJY-xh/plantTrees/issues/465)
-
-✅ [[2021-10-19] React15 架构有什么缺点?](https://github.com/HJY-xh/plantTrees/issues/466)
+✅ [[2021-10-21] babel 的插件和预设执行顺序是什么样的？](https://github.com/HJY-xh/plantTrees/issues/467)
 
 ## 目录结构 📁
 

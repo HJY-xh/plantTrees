@@ -16,3 +16,16 @@ Babel 是一个工具链，主要用于将采用 ECMAScript 2015+ 语法编写�
 
 </pre>
 </details>
+
+[2.[2021-10-21] babel 的插件和预设执行顺序是什么样的？](https://github.com/HJY-xh/plantTrees/issues/467)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   插件在预设之前运行
+-   插件顺序从前往后排列
+-   Preset 顺序是颠倒的（从后往前）
+
+</pre>
+</details>
