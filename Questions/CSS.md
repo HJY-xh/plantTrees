@@ -1895,3 +1895,15 @@ CSS 定义了五种通用字体:
 
 </pre>
 </details>
+
+[59.[2021-10-25] 轮廓与边框的区别？](https://github.com/HJY-xh/plantTrees/issues/470)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   outline 是不占空间的，既不会增加额外的宽或者高；border 会占用宽度；因此 outline 不会象 border 那样影响元素的尺寸或者位置
+-   outline 有可能是非矩形的；border 就是普通边框
+
+</pre>
+</details>

@@ -17,6 +17,8 @@
 
 ✅ [[2021-10-25] 常见的 nodeType 值有哪些？](https://github.com/HJY-xh/plantTrees/issues/469)
 
+✅ [[2021-10-25] 轮廓与边框的区别？](https://github.com/HJY-xh/plantTrees/issues/470)
+
 ## 目录结构 📁
 
 ```
