@@ -751,3 +751,18 @@ document.createElement("main");
 
 </pre>
 </details>
+
+[32.[2021-10-25] 常见的 nodeType 值有哪些？](https://github.com/HJY-xh/plantTrees/issues/469)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+nodeType 共有 12 种可取值，但其中仅有 3 种具有实用价值：
+
+-   元素节点：1
+-   属性节点：2
+-   文本节点：3
+
+</pre>
+</details>
