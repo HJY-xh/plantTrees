@@ -671,3 +671,14 @@ React15 架构可以分为两层：
 
 </pre>
 </details>
+
+[28.[2021-10-27] React 阻止事件默认行为的方式是什么？](https://github.com/HJY-xh/plantTrees/issues/471)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+不能通过返回`false`的方式阻止默认行为，必须显式的使用`preventDefault`
+
+</pre>
+</details>

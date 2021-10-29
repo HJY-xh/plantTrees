@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 203:
+## Day 204:
 
-✅ [[2021-10-25] 常见的 nodeType 值有哪些？](https://github.com/HJY-xh/plantTrees/issues/469)
-
-✅ [[2021-10-25] 轮廓与边框的区别？](https://github.com/HJY-xh/plantTrees/issues/470)
+✅ [[2021-10-27] React 阻止事件默认行为的方式是什么？](https://github.com/HJY-xh/plantTrees/issues/471)
 
 ## 目录结构 📁
 
