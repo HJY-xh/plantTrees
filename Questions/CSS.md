@@ -1918,3 +1918,14 @@ CSS 定义了五种通用字体:
 
 </pre>
 </details>
+
+[61.[2021-10-28] CSS 渐变可以用在什么地方？](https://github.com/HJY-xh/plantTrees/issues/473)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+渐变就是图像，它可以用在任何可以使用图像的地方。
+
+</pre>
+</details>
