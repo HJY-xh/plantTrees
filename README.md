@@ -15,6 +15,8 @@
 
 ## Day 204:
 
+✅ [[2021-10-27] 如何把背景固定在视区中？](https://github.com/HJY-xh/plantTrees/issues/472)
+
 ✅ [[2021-10-27] React 阻止事件默认行为的方式是什么？](https://github.com/HJY-xh/plantTrees/issues/471)
 
 ## 目录结构 📁

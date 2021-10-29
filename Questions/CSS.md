@@ -1907,3 +1907,14 @@ CSS 定义了五种通用字体:
 
 </pre>
 </details>
+
+[60.[2021-10-27] 如何把背景固定在视区中？](https://github.com/HJY-xh/plantTrees/issues/472)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+`background-attachment: fixed;`
+
+</pre>
+</details>
