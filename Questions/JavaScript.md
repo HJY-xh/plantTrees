@@ -2893,3 +2893,20 @@ SubClass.prototype.getSubValue = function () {
 
 </pre>
 </details>
+
+[109.[2021-11-01] XMLHttpRequest 对象的 readyState 属性的值有哪些？](https://github.com/HJY-xh/plantTrees/issues/474)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+它有 5 个可能的值：
+
+-   0： 未初始化
+-   1：正在加载
+-   2：加载完毕
+-   3：正在交互
+-   4：完成
+
+</pre>
+</details>

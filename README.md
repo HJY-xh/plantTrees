@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 205:
+## Day 206:
 
-✅ [[2021-10-28] CSS 渐变可以用在什么地方？](https://github.com/HJY-xh/plantTrees/issues/473)
+✅ [[2021-11-01] XMLHttpRequest 对象的 readyState 属性的值有哪些？](https://github.com/HJY-xh/plantTrees/issues/474)
 
 ## 目录结构 📁
 
