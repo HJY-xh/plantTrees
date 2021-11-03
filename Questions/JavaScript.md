@@ -2910,3 +2910,23 @@ SubClass.prototype.getSubValue = function () {
 
 </pre>
 </details>
+
+[110.[2021-11-01] 如何实现一个 insertAfter 函数？](https://github.com/HJY-xh/plantTrees/issues/475)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+```javascript
+function insertAfter(newElement, targetElement) {
+	const parent = targetElement.parentNode;
+	if (parent.lastChild == targetElement) {
+		targetElement.appendChild(newElement);
+	} else {
+		parent.insertBefore(newElement, targetElement.nextSibling);
+	}
+}
+```
+
+</pre>
+</details>
