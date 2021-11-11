@@ -2930,3 +2930,16 @@ function insertAfter(newElement, targetElement) {
 
 </pre>
 </details>
+
+[111.[2021-11-11] 事件冒泡是什么？](https://github.com/HJY-xh/plantTrees/issues/478)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+![](https://i.loli.net/2021/11/11/gIiduCbfpZcnj92.png)
+
+如图所示，它的原理是：当一个事件发生在一个元素上时，它会首先执行在该元素上的处理程序，然后执行其父元素上的处理程序，然后一直向上执行其它祖先元素的处理程序。
+
+</pre>
+</details>
