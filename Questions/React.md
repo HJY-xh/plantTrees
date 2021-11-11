@@ -682,3 +682,14 @@ React15 架构可以分为两层：
 
 </pre>
 </details>
+
+[29.[2021-11-11] React 合成事件中如何获取浏览器的底层事件？](https://github.com/HJY-xh/plantTrees/issues/477)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+使用合成事件的`nativeEvent`属性。
+
+</pre>
+</details>
