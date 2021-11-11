@@ -2943,3 +2943,18 @@ function insertAfter(newElement, targetElement) {
 
 </pre>
 </details>
+
+[112.[2021-11-11] 如何知道事件当前处于什么阶段？](https://github.com/HJY-xh/plantTrees/issues/479)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+可以通过`event.eventPhase`属性知道当前阶段：
+
+-   capturing = 1
+-   target = 2
+-   bubbling = 3
+
+</pre>
+</details>

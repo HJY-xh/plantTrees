@@ -15,6 +15,8 @@
 
 ## Day 208:
 
+✅ [[2021-11-11] 如何知道事件当前处于什么阶段？](https://github.com/HJY-xh/plantTrees/issues/479)
+
 ✅ [[2021-11-11] 事件冒泡是什么？](https://github.com/HJY-xh/plantTrees/issues/478)
 
 ✅ [[2021-11-11] React 合成事件中如何获取浏览器的底层事件？](https://github.com/HJY-xh/plantTrees/issues/477)
