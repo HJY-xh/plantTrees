@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 206:
+## Day 207:
 
-✅ [[2021-11-01] 如何实现一个 insertAfter 函数？](https://github.com/HJY-xh/plantTrees/issues/475)
-
-✅ [[2021-11-01] XMLHttpRequest 对象的 readyState 属性的值有哪些？](https://github.com/HJY-xh/plantTrees/issues/474)
+✅ [[2021-11-03] 浮动元素与常规的内容出现重叠会怎么样？](https://github.com/HJY-xh/plantTrees/issues/476)
 
 ## 目录结构 📁
 
