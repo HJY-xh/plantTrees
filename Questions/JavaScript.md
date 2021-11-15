@@ -2958,3 +2958,24 @@ function insertAfter(newElement, targetElement) {
 
 </pre>
 </details>
+
+[113.[2021-11-11] 如何获取对象的原型？](https://github.com/HJY-xh/plantTrees/issues/480)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+举个 🌰
+
+```javascript
+function Person() {}
+
+var person = new Person();
+
+console.log(person.__proto__ == Person.prototype); // true
+console.log(Person.prototype.constructor == Person); // true
+console.log(Object.getPrototypeOf(person) === Person.prototype); // true
+```
+
+</pre>
+</details>
