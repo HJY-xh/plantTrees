@@ -2979,3 +2979,18 @@ console.log(Object.getPrototypeOf(person) === Person.prototype); // true
 
 </pre>
 </details>
+
+[114.[2021-11-15] 静态作用域与动态作用域有什么区别？](https://github.com/HJY-xh/plantTrees/issues/481)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+一段程序代码中所用到的名字并不总是有效/可用的，而限定这个名字的可用性的代码范围就是这个名字的作用域。
+
+-   静态作用域是函数的作用域在函数定义的时候决定
+
+-   动态作用域是在函数调用时决定
+
+</pre>
+</details>
