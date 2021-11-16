@@ -766,3 +766,20 @@ nodeType 共有 12 种可取值，但其中仅有 3 种具有实用价值：
 
 </pre>
 </details>
+
+[33.[2021-11-16] DHTML 是什么？](https://github.com/HJY-xh/plantTrees/issues/482)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+DHTML 是”Dynamic HTML"（动态 HTML)的简称。
+
+它不是一项新技术，而是藐视 HTML、CSS 和 JavaScript 技术组合的术语。DHTML 背后的含义是：
+
+-   利用 HTML 把网页标记为各种元素
+-   利用 CSS 设置元素样式和他们的显示位置
+-   利用 JavaScript 实时地操控页面和改变样式
+
+</pre>
+</details>
