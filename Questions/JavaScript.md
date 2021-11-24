@@ -2994,3 +2994,18 @@ console.log(Object.getPrototypeOf(person) === Person.prototype); // true
 
 </pre>
 </details>
+
+[115.[2021-11-24] 执行上下文有哪些属性？](https://github.com/HJY-xh/plantTrees/issues/484)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+对于每个执行上下文，都有三个重要属性：
+
+-   变量对象（Variable object，VO）
+-   作用域链（Scope chain）
+-   this
+
+</pre>
+</details>
