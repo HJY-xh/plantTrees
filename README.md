@@ -15,6 +15,8 @@
 
 ## Day 212:
 
+✅ [[2021-11-24] grid 布局常见的属性有哪些？](https://github.com/HJY-xh/plantTrees/issues/485)
+
 ✅ [[2021-11-24] 执行上下文有哪些属性？](https://github.com/HJY-xh/plantTrees/issues/484)
 
 ## 目录结构 📁

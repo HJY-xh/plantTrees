@@ -1945,3 +1945,31 @@ CSS2.1 阐明了具体规则：
 
 </pre>
 </details>
+
+[63.[2021-11-24] grid 布局常见的属性有哪些？](https://github.com/HJY-xh/plantTrees/issues/485)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   grid-template-columns: 定义每一列的列宽
+-   grid-template-rows:定义每一行的行高
+
+-   grid-row-gap:设置行与行的间隔（行间距）
+-   grid-column-gap:设置列与列的间隔（列间距）
+-   grid-gap:是 grid-column-gap 和 grid-row-gap 的合并简写形式
+
+-   grid-template-areas:允许指定“区域”，一个区域由单个或多个单元格组成
+
+-   grid-auto-flow:设置排列顺序，默认为"先行后列"(row)
+
+-   justify-items:设置单元格内容的水平位置（左中右）
+-   align-items:设置单元格内容的垂直位置（上中下）
+-   place-items:是 align-items 属性和 justify-items 属性的合并简写形式
+
+-   justify-content:整个内容区域在容器里面的水平位置
+-   align-content:整个内容区域在容器里的垂直位置
+-   place-content:是 align-content 属性和 justify-content 属性的合并简写形式
+
+</pre>
+</details>
