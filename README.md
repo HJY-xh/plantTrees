@@ -15,6 +15,8 @@
 
 ## Day 211:
 
+✅ [[2021-11-16] HTMLCollection 是什么？](https://github.com/HJY-xh/plantTrees/issues/483)
+
 ✅ [[2021-11-16] DHTML 是什么？](https://github.com/HJY-xh/plantTrees/issues/482)
 
 ## 目录结构 📁

@@ -783,3 +783,16 @@ DHTML 是”Dynamic HTML"（动态 HTML)的简称。
 
 </pre>
 </details>
+
+[34.[2021-11-16] HTMLCollection 是什么？](https://github.com/HJY-xh/plantTrees/issues/483)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+HTMLCollection 接口表示一个包含了元素（元素顺序为文档流中的顺序）的通用集合（generic collection），还提供了用来从该集合中选择元素的方法和属性。
+
+HTML DOM 中的 HTMLCollection 是即时更新的（live）；当其所包含的文档结构发生改变时，它会自动更新。
+
+</pre>
+</details>
