@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style type="text/css">
+			.container {
+				display: grid;
+				grid-template-rows: repeat(3, 100px);
+				grid-template-columns: repeat(3, 100px);
+				grid-gap: 10px;
+			}
+			.cell {
+				background-color: #eaeaea;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function () {
+				var container = document.getElementById("container");
+				container.onclick = function (event) {
+					console.log(event.target.innerText);
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<div id="container" class="container" onclick=".getElementById">
+			<div class="cell" id="1">1</div>
+			<div class="cell" id="2">2</div>
+			<div class="cell" id="3">3</div>
+			<div class="cell" id="4">4</div>
+			<div class="cell" id="5">5</div>
+			<div class="cell" id="6">6</div>
+			<div class="cell" id="7">7</div>
+			<div class="cell" id="8">8</div>
+			<div class="cell" id="9">9</div>
+		</div>
+	</body>
+</html>
