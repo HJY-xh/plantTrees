@@ -3009,3 +3009,17 @@ console.log(Object.getPrototypeOf(person) === Person.prototype); // true
 
 </pre>
 </details>
+
+[116.[2021-11-26] 文档对象有哪些引用方法？](https://github.com/HJY-xh/plantTrees/issues/486)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   document.forms:文档中所有的 form 元素
+-   document.links:文档中所有的 a 元素
+-   document.anchors:文档中所有的锚点
+-   document.:文档中所有的 img 元素
+
+</pre>
+</details>
