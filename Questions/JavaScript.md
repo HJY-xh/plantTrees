@@ -3023,3 +3023,14 @@ console.log(Object.getPrototypeOf(person) === Person.prototype); // true
 
 </pre>
 </details>
+
+[117.[2021-11-27] localStorage 存储的键值采用什么字符编码？](https://github.com/HJY-xh/plantTrees/issues/488)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+localStorage 存储的键和值始终采用 UTF-16 DOMString 格式，每个字符使用两个字节。与对象一样，整数键会自动转换为字符串。
+
+</pre>
+</details>

@@ -15,6 +15,8 @@
 
 ## Day 214:
 
+✅ [[2021-11-27] localStorage 存储的键值采用什么字符编码？](https://github.com/HJY-xh/plantTrees/issues/488)
+
 ✅ [[2021-11-27] Mobx 的原则是什么？](https://github.com/HJY-xh/plantTrees/issues/487)
 
 ## 目录结构 📁
