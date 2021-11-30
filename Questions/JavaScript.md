@@ -3034,3 +3034,14 @@ localStorage 存储的键和值始终采用 UTF-16 DOMString 格式，每个字�
 
 </pre>
 </details>
+
+[118.[2021-11-30] DOMString 是什么？](https://github.com/HJY-xh/plantTrees/issues/490)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+DOMString 是一个 UTF-16 字符串。由于 JavaScript 已经使用了这样的字符串，所以 DOMString 直接映射到 一个 String。
+
+</pre>
+</details>

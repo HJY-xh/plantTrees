@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 215:
+## Day 216:
 
-✅ [[2021-11-29] UTF-8 的编码规则是什么？](https://github.com/HJY-xh/plantTrees/issues/489)
+✅ [[2021-11-30] DOMString 是什么？](https://github.com/HJY-xh/plantTrees/issues/490)
 
 ## 目录结构 📁
 
