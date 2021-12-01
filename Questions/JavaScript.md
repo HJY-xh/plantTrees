@@ -3045,3 +3045,14 @@ DOMString 是一个 UTF-16 字符串。由于 JavaScript 已经使用了这样�
 
 </pre>
 </details>
+
+[119.[2021-11-30] 0.1 + 0.2 !== 0.3 是为什么？](https://github.com/HJY-xh/plantTrees/issues/491)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+本质上是二进制模拟十进制进行计算时精度丢失。
+
+</pre>
+</details>
