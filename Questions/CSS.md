@@ -1973,3 +1973,17 @@ CSS2.1 阐明了具体规则：
 
 </pre>
 </details>
+
+[64.[2021-12-02] border 和 outline 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/492)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+border 和 outline 很类似，但有如下区别：
+
+-   outline 不占据空间，绘制于元素内容周围
+-   根据规范，outline 通常是矩形的，但也可以是非矩形的
+
+</pre>
+</details>

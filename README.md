@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 217:
+## Day 218:
 
-✅ [[2021-11-30] 0.1 + 0.2 !== 0.3 是为什么？](https://github.com/HJY-xh/plantTrees/issues/491)
+✅ [[2021-12-02] border 和 outline 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/492)
 
 ## 目录结构 📁
 
