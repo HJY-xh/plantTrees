@@ -3056,3 +3056,23 @@ DOMString 是一个 UTF-16 字符串。由于 JavaScript 已经使用了这样�
 
 </pre>
 </details>
+
+[120.[2021-12-02] 如何实现一个下载文件方法？](https://github.com/HJY-xh/plantTrees/issues/493)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+可以通过 a 标签的 download 属性：
+
+```javascript
+const downloadFile = (url, filename) => {
+	const link = document.createElement("a");
+	link.href = url;
+	link.download = filename;
+	link.click();
+};
+```
+
+</pre>
+</details>

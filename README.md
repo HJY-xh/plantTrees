@@ -15,6 +15,8 @@
 
 ## Day 218:
 
+✅ [[2021-12-02] 如何实现一个下载文件方法？](https://github.com/HJY-xh/plantTrees/issues/493)
+
 ✅ [[2021-12-02] border 和 outline 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/492)
 
 ## 目录结构 📁
