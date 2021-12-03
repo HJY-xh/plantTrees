@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 218:
+## Day 219:
 
-✅ [[2021-12-02] 如何实现一个下载文件方法？](https://github.com/HJY-xh/plantTrees/issues/493)
-
-✅ [[2021-12-02] border 和 outline 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/492)
+✅ [[2021-12-03] render prop 是什么？](https://github.com/HJY-xh/plantTrees/issues/494)
 
 ## 目录结构 📁
 

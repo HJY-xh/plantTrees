@@ -693,3 +693,22 @@ React15 架构可以分为两层：
 
 </pre>
 </details>
+
+[30.[2021-12-03] render prop 是什么？](https://github.com/HJY-xh/plantTrees/issues/494)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+它是指一种在 React 组件之间使用一个值为函数的 prop 共享代码的简单技术。
+
+具有`render prop`的组件接受一个返回 React 元素的函数，并在组件内部通过调用此函数来实现自己的渲染逻辑
+
+```javascript
+<DataProvider render={(data) => <h1>Hello {data.target}</h1>} />
+```
+
+更具体地说，render prop 是一个用于告知组件需要渲染什么内容的函数 prop。
+
+</pre>
+</details>
