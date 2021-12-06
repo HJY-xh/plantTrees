@@ -3093,3 +3093,25 @@ function elementSupportAttribute(elementName, attribute) {
 
 </pre>
 </details>
+
+[122.[2021-12-06] 如何检查浏览器是否支持某种类型的输入控件？](https://github.com/HJY-xh/plantTrees/issues/496)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+```javascript
+function inputSupportType(type) {
+	if (document.createElement) return false;
+	var input = document.createElement("input");
+	input.setAttribute("type", type);
+	if (input.type == "text" && type != "text") {
+		return false;
+	} else {
+		return true;
+	}
+}
+```
+
+</pre>
+</details>
