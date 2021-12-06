@@ -3076,3 +3076,20 @@ const downloadFile = (url, filename) => {
 
 </pre>
 </details>
+
+[121.[2021-12-05] 如何检查 HTML5 中是否支持要用的属性？](https://github.com/HJY-xh/plantTrees/issues/495)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+```javascript
+function elementSupportAttribute(elementName, attribute) {
+	if (!document.createElement) return false;
+	var temp = document.createElement(elementName);
+	return attribute in temp;
+}
+```
+
+</pre>
+</details>

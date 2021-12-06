@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 219:
+## Day 220:
 
-✅ [[2021-12-03] render prop 是什么？](https://github.com/HJY-xh/plantTrees/issues/494)
+✅ [[2021-12-05] 如何检查 HTML5 中是否支持要用的属性？](https://github.com/HJY-xh/plantTrees/issues/495)
 
 ## 目录结构 📁
 
