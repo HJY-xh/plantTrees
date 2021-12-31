@@ -736,3 +736,24 @@ workInProgress fiber 树：即将调和渲染的 fiber 树。在一次新的组�
 
 </pre>
 </details>
+
+[33.[2021-12-31] fiber 节点上的 memoizedState 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/501)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+memoizedState：在 class 组件中，它存放 state 信息，在 function 中，它以链表的形式存放 hooks 信息,每个链表结点的结构就是 Hook。
+
+```javascript
+var hook = {
+	memoizedState: null, // 上次渲染时所用的state
+	baseState: null, // 已处理的update计算出的state
+	baseQueue: null, // 未处理的update队列（一般是上一轮渲染未完成的update）
+	queue: null, // 当前出发的update队列
+	next: null, // 指向下一个hook
+};
+```
+
+</pre>
+</details>
