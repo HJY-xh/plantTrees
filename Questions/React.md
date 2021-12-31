@@ -724,3 +724,15 @@ React15 架构可以分为两层：
 
 </pre>
 </details>
+
+[32.[2021-12-31] React 中 current fiber 树和 workInProgress fiber 树是什么？](https://github.com/HJY-xh/plantTrees/issues/500)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+current fiber 树：当完成一次渲染之后，会产生一个 current 树，current 会在 commit 阶段替换成真实的 DOM 树
+workInProgress fiber 树：即将调和渲染的 fiber 树。在一次新的组件更新过程中，会从 current 复制一份作为 workInProgress，更新完毕后，将当前的 workInProgress 树赋值给 current 树
+
+</pre>
+</details>

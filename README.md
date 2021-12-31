@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 223:
+## Day 224:
 
-✅ [[2021-12-23] React.PureComponent 和 React.memo 有什么区别?](https://github.com/HJY-xh/plantTrees/issues/499)
+✅ [[2021-12-31] React 中 current fiber 树和 workInProgress fiber 树是什么？](https://github.com/HJY-xh/plantTrees/issues/500)
 
 ## 目录结构 📁
 
