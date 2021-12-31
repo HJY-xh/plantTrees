@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 222:
+## Day 223:
 
-✅ [[2021-12-15] 归并排序的核心思想是什么？](https://github.com/HJY-xh/plantTrees/issues/498)
+✅ [[2021-12-23] React.PureComponent 和 React.memo 有什么区别?](https://github.com/HJY-xh/plantTrees/issues/499)
 
 ## 目录结构 📁
 

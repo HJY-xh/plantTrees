@@ -712,3 +712,15 @@ React15 架构可以分为两层：
 
 </pre>
 </details>
+
+[31.[2021-12-23] React.PureComponent 和 React.memo 有什么区别?](https://github.com/HJY-xh/plantTrees/issues/499)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   React.PureComponent 对 state 和 props 做了浅层对比，当二者均没有改变时，不更新组件。只能用在类组件中。
+-   React.memo 仅检查 props 变更，做浅层对比，没有改变时，不更新组件。可以用在类组件和函数组件中。
+
+</pre>
+</details>
