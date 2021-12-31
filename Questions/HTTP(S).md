@@ -815,3 +815,17 @@ Upgrade: websocket
 
 </pre>
 </details>
+
+[41.[2021-12-10] 什么是非简单请求？](https://github.com/HJY-xh/plantTrees/issues/497)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+非简单请求是那种对服务器有特殊要求的请求，比如请求方法是`PUT`或`DELETE`，或者`Content-Type`字段的类型是`application/json`。
+非简单请求的 CORS 请求，会在正式通信之前，增加一次 HTTP 查询请求，成为”预检“请求（preflight)。
+
+浏览器先询问服务器，当前网页所在的域名是否在服务器的许可名单之中，以及可以使用哪些 HTTP 动词和头信息字段。只有得到肯定答复，浏览器才会发出正式的`XMLHttpRequest`请求，否则就报错。
+
+</pre>
+</details>
