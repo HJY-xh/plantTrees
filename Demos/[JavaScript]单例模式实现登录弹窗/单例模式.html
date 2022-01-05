@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>单例模式实践</title>
+	</head>
+
+	<body>
+		<button id="loginBtn">登录</button>
+		<script type="text/javascript">
+			var doCreateLoginModal = function () {
+				var modal = document.createElement("div");
+				modal.style.display = "none";
+				modal.textContent = "登录弹窗";
+				document.body.appendChild(modal);
+				return modal;
+			};
+
+			var getInstance = function (fn) {
+				var result;
+				return function () {
+					return result || (result = fn.apply(this, arguments));
+				};
+			};
+
+			var createLoginModal = getInstance(doCreateLoginModal);
+
+			var loginBtn = document.getElementById("loginBtn");
+
+			loginBtn.onclick = function () {
+				var loginModal = createLoginModal();
+				loginModal.style.display = "block";
+			};
+		</script>
+	</body>
+</html>
