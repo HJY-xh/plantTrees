@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 224:
+## Day 225:
 
-✅ [[2021-12-31] fiber 节点上的 memoizedState 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/501)
-
-✅ [[2021-12-31] React 中 current fiber 树和 workInProgress fiber 树是什么？](https://github.com/HJY-xh/plantTrees/issues/500)
+✅ [[2022-1-6] webpack 的打包流程是什么样的？](https://github.com/HJY-xh/plantTrees/issues/502)
 
 ## 目录结构 📁
 
