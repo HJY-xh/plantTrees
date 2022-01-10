@@ -289,3 +289,19 @@ JavaScript 的加载、解析与执行会阻塞文档的解析，也就是说，
 
 </pre>
 </details>
+
+[19.[2022-1-8] 从浏览器地址栏输入 url 到显示页面的步骤是什么?](https://github.com/HJY-xh/plantTrees/issues/505)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+简单描述:
+
+-   浏览器根据请求的`URL`交给`DNS`域名解析,找到真是`IP`地址,向服务器发起请求
+-   服务器交给后台处理完成后返回数据,浏览器接收文件(HTML\JS\CSS\文件)
+-   浏览器对加载到的资源进行语法解析,建立相应的内部数据结构(比如`HTML`的`DOM`
+-   载入解析到的资源文件，渲染页面
+
+</pre>
+</details>

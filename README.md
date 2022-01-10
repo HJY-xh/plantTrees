@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 225:
+## Day 226:
 
-✅ [[2022-1-6] 如何理解 socket？](https://github.com/HJY-xh/plantTrees/issues/504)
-
-✅ [[2022-1-6] webpack 的打包流程是什么样的？](https://github.com/HJY-xh/plantTrees/issues/502)
+✅ [[2022-1-8] 从浏览器地址栏输入 url 到显示页面的步骤是什么?](https://github.com/HJY-xh/plantTrees/issues/505)
 
 ## 目录结构 📁
 
