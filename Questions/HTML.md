@@ -796,3 +796,19 @@ HTML DOM 中的 HTMLCollection 是即时更新的（live）；当其所包含的
 
 </pre>
 </details>
+
+[35.[2022-1-8] HTML 全局属性有哪些？](https://github.com/HJY-xh/plantTrees/issues/506)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   class：为元素设置类标识
+-   data-\*：为元素增加自定义属性
+-   draggable：设置元素是否可拖拽
+-   id：元素 id，文档内唯一
+-   style：行内 css 样式
+-   title：元素相关的建议信息
+
+</pre>
+</details>
