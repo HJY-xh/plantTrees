@@ -829,3 +829,21 @@ Upgrade: websocket
 
 </pre>
 </details>
+
+[42.[2022-1-10] 常见的 300 状态码有哪些？](https://github.com/HJY-xh/plantTrees/issues/510)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   300：Multiple Choices，多种选择，请求的资源可包括多个位置，相应可返回一个资源特征与地址的列表用户终端选择
+-   301：Moved Permanently，永久移动。请求的资源已被永久地移动到新的 URI，浏览器会自动定向到新的 URI。今后任何新的请求都应使用新的 URI 代替
+-   302：Found，临时移动。与 301 类似，但资源只是临时被移动，客户端应该继续使用原有 URI
+-   303：See Other，查看其它地址，与 301 类似。使用 GET 和 POST 请求查看
+-   304：Not Modified，未修改。所请求的资源未改变，服务器返回此状态码时，不会返回任何资源
+-   305：Use Proxy，使用代理。所请求的资源必须通过代理访问
+-   306：Unused，被废弃
+-   307：Temporary Redirect，临时重定向。与 302 类似。使用 GET 请求重定向
+
+</pre>
+</details>
