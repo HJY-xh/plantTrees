@@ -812,3 +812,15 @@ HTML DOM 中的 HTMLCollection 是即时更新的（live）；当其所包含的
 
 </pre>
 </details>
+
+[36.[2022-1-8] Canvas 和 SVG 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/507)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   svg 绘制出来的每一个图形的元素都是独立的 DOM 节点，能够方便的绑定事件或者用来修改。
+-   canvas 输出标量画布，就像一张图片一样，放大会失真或者出现锯齿；svg 输出的是矢量图形，不会失真和锯齿。
+
+</pre>
+</details>
