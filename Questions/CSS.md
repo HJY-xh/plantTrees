@@ -1987,3 +1987,28 @@ border 和 outline 很类似，但有如下区别：
 
 </pre>
 </details>
+
+[65.[2022-1-9] DIV+CSS 的布局比较 table 布局有什么有点?](https://github.com/HJY-xh/plantTrees/issues/509)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   修改样式时更方便，只需要修改 CSS 文件
+-   页面结构更清晰，表现与结构相分离
+-   易于 SEO 优化
+
+</pre>
+</details>
+[66.[2022-1-9] DIV+CSS的布局比较table布局有什么有点?](https://github.com/HJY-xh/plantTrees/issues/509)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   修改样式时更方便，只需要修改 CSS 文件
+-   页面结构更清晰，表现与结构相分离
+-   易于 SEO 优化
+
+</pre>
+</details>
