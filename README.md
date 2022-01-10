@@ -15,6 +15,8 @@
 
 ## Day 225:
 
+✅ [[2022-1-6] 如何理解 socket？](https://github.com/HJY-xh/plantTrees/issues/504)
+
 ✅ [[2022-1-6] webpack 的打包流程是什么样的？](https://github.com/HJY-xh/plantTrees/issues/502)
 
 ## 目录结构 📁
