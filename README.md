@@ -13,7 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 226:
+## Day 227:
+
+✅ [[2022-1-9] 常见的浏览器内核是什么？](https://github.com/HJY-xh/plantTrees/issues/508)
 
 ✅ [[2022-1-8] Canvas 和 SVG 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/507)
 

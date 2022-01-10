@@ -305,3 +305,17 @@ JavaScript 的加载、解析与执行会阻塞文档的解析，也就是说，
 
 </pre>
 </details>
+
+[20.[2022-1-9] 常见的浏览器内核是什么？](https://github.com/HJY-xh/plantTrees/issues/508)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+IE：trident 内核
+FireFox：gecko 内核
+Safari：webkit 内核
+Chrome：Blink（基于 webkit）
+
+</pre>
+</details>
