@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 228:
+## Day 229:
 
-✅ [[2022-1-10] 常见的 300 状态码有哪些？](https://github.com/HJY-xh/plantTrees/issues/510)
+✅ [[2022-1-11] React 为什么使用 JSX？](https://github.com/HJY-xh/plantTrees/issues/511)
 
 ## 目录结构 📁
 

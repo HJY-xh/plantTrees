@@ -757,3 +757,20 @@ var hook = {
 
 </pre>
 </details>
+
+[34.[2022-1-11] React 为什么使用 JSX？](https://github.com/HJY-xh/plantTrees/issues/511)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+React 认为渲染逻辑本质上与其它 UI 逻辑内在耦合。
+
+比如说：
+
+-   在 UI 中需要绑定处理事件
+-   在某些时刻状态发生变化时需要通知到 UI
+-   需要在 UI 中展示准备好的数据
+
+</pre>
+</details>
