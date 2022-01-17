@@ -774,3 +774,14 @@ React 认为渲染逻辑本质上与其它 UI 逻辑内在耦合。
 
 </pre>
 </details>
+
+[35.[2022-1-11] JSX 为什么能防止注入攻击？](https://github.com/HJY-xh/plantTrees/issues/512)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+React DOM 在渲染所有输入内容之前，默认会转义。它可以确保在你的应用中，永远不会注入哪些并非自己明确编写的内容。所有的内容在渲染之前都被转换成了字符串。这样可以有效地防止 CSS 攻击。
+
+</pre>
+</details>
