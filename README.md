@@ -15,6 +15,8 @@
 
 ## Day 230:
 
+✅ [[2022-1-12] 如何快速地让一个数组乱序？](https://github.com/HJY-xh/plantTrees/issues/515)
+
 ✅ [[2022-1-12] 对 web 标准、可⽤性、可访问性的理解](https://github.com/HJY-xh/plantTrees/issues/514)
 
 ## 目录结构 📁

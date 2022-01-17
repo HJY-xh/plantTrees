@@ -3115,3 +3115,19 @@ function inputSupportType(type) {
 
 </pre>
 </details>
+
+[123.[2022-1-12] 如何快速地让一个数组乱序？](https://github.com/HJY-xh/plantTrees/issues/515)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+```javascript
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+arr.sort(function () {
+	return Math.random() - 0.5;
+});
+```
+
+</pre>
+</details>
