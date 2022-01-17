@@ -3131,3 +3131,20 @@ arr.sort(function () {
 
 </pre>
 </details>
+
+[124.[2022-1-17] 如何简单理解 this？](https://github.com/HJY-xh/plantTrees/issues/516)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+this 有五种情况：
+
+-   全局范围：指向全局对象（浏览器下指 window）
+-   全局函数调用用：还是指全局对象
+-   对象函数调用：调用某个对象的函数时，指向当前对象
+-   使用`new`实例化对象时：指向新创建的对象
+-   调用某些方法时：Function.prototype 上的 call、apply 、bind 方法，指向传入的对象
+
+</pre>
+</details>
