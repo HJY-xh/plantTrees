@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 229:
+## Day 230:
 
-✅ [[2022-1-11] JSX 为什么能防止注入攻击？](https://github.com/HJY-xh/plantTrees/issues/512)
-
-✅ [[2022-1-11] React 为什么使用 JSX？](https://github.com/HJY-xh/plantTrees/issues/511)
+✅ [[2022-1-12] 对 web 标准、可⽤性、可访问性的理解](https://github.com/HJY-xh/plantTrees/issues/514)
 
 ## 目录结构 📁
 
