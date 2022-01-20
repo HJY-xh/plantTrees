@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 231:
+## Day 232:
 
-✅ [[2022-1-17] 如何简单理解 this？](https://github.com/HJY-xh/plantTrees/issues/516)
+✅ [[2022-1-20] instanceof 和 typeof 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/517)
 
 ## 目录结构 📁
 

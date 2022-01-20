@@ -3148,3 +3148,21 @@ this 有五种情况：
 
 </pre>
 </details>
+
+[125.[2022-1-20] instanceof 和 typeof 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/517)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+typeof：
+
+-   对于基本类型，除了 null ，都可以显示正确的类型
+-   对于对象，除了函数都会显示 object
+
+instanceof
+
+-   可以正确的判断对象的类型，它是通过判断对象的原型链中是不是能找到类型的 prototype
+
+</pre>
+</details>
