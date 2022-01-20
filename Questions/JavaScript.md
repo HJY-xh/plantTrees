@@ -3166,3 +3166,31 @@ instanceof
 
 </pre>
 </details>
+
+[126.[2022-1-20] instanceof 如何实现？](https://github.com/HJY-xh/plantTrees/issues/518)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+instanceof 主要的作用就是判断一个实例是否属于某种类型，根据这个特性，进行如下实现：
+
+```javascript
+function myInstanceof(obj, target) {
+	let targetPrototype = target.prototype;
+	let objPrototype = obj.__proto__;
+
+	while (true) {
+		if (objPrototype === null) {
+			return false;
+		}
+		if (objPrototype === targetPrototype) {
+			return true;
+		}
+		objPrototype = objPrototype.__proto__;
+	}
+}
+```
+
+</pre>
+</details>
