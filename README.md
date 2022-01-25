@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 232:
+## Day 233:
 
-✅ [[2022-1-20] instanceof 如何实现？](https://github.com/HJY-xh/plantTrees/issues/518)
-
-✅ [[2022-1-20] instanceof 和 typeof 的区别是什么？](https://github.com/HJY-xh/plantTrees/issues/517)
+✅ [[2022-1-21] 左边定宽，右边⾃适应的布局有哪些写法？](https://github.com/HJY-xh/plantTrees/issues/519)
 
 ## 目录结构 📁
 

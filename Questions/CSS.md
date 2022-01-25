@@ -2012,3 +2012,33 @@ border 和 outline 很类似，但有如下区别：
 
 </pre>
 </details>
+
+[67.[2022-1-21] 左边定宽，右边⾃适应的布局有哪些写法？](https://github.com/HJY-xh/plantTrees/issues/519)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+```css
+// 方案1
+.left {
+	width: 120px;
+	float: left;
+}
+.right {
+	margin-left: 120px;
+}
+
+// 方案2
+.left {
+	width: 120px;
+	float: left;
+}
+.right {
+	width: calc(100% - 120px);
+	float: left;
+}
+```
+
+</pre>
+</details>
