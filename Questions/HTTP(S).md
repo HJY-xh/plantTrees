@@ -847,3 +847,16 @@ Upgrade: websocket
 
 </pre>
 </details>
+
+[43.[2022-1-24] 如何理解 HTTP 协议的“无状态”](https://github.com/HJY-xh/plantTrees/issues/520)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   HTTP 协议对于事务处理没有记忆能力
+-   对同一个 URL 请求没有上下文关系
+-   每次的请求都是独立的，它的执行情况与前后的请求无直接关系，不受前后请求的影响
+
+</pre>
+</details>
