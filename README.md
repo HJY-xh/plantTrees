@@ -19,6 +19,8 @@
 
 ✅ [[2022-1-26] 为什么会有任务队列？](https://github.com/HJY-xh/plantTrees/issues/522)
 
+✅ [[2022-1-26] setInterval 存在什么问题？](https://github.com/HJY-xh/plantTrees/issues/523)
+
 ## 目录结构 📁
 
 ```

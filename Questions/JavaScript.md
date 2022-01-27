@@ -3205,3 +3205,24 @@ function myInstanceof(obj, target) {
 
 </pre>
 </details>
+
+[128.[2022-1-26] setInterval 存在什么问题？](https://github.com/HJY-xh/plantTrees/issues/523)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+JS 中使用`setInterval`开启轮询。
+
+定时器代码可能在代码再次被添加到队列之前还没有完成执行，结果导致定时器代码连续运行好几次，而之间没有任何停顿。
+
+JS 引擎对这个问题的解决是：当使用`setInterval`时，仅当没有该定时器的任何其它代码实例时，才将定时器代码添加到队列中。这确保了定时器代码加入到队列中的最小时间间隔为指定间隔。
+
+这么做会导致两个问题：
+
+-   某些间隔被跳过
+
+-   多个定时器的代码执行之间的间隔可能比预期的小
+
+</pre>
+</details>
