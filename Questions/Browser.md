@@ -319,3 +319,17 @@ Chrome：Blink（基于 webkit）
 
 </pre>
 </details>
+
+[21.[2022-1-26] 浏览器内核中线程之间的关系是什么样的？](https://github.com/HJY-xh/plantTrees/issues/521)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   GUI 渲染线程和 JS 引擎线程互斥
+    -   JS 是可以操作 DOM 的，如果在修改节点的同时渲染页面，那么可能会发生冲突
+-   JS 阻塞页面加载
+    -   JS 如果执行时间过长就会阻塞页面
+
+</pre>
+</details>
