@@ -3194,3 +3194,14 @@ function myInstanceof(obj, target) {
 
 </pre>
 </details>
+
+[127.[2022-1-26] 为什么会有任务队列？](https://github.com/HJY-xh/plantTrees/issues/522)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+因为 JS 是单线程的，同步执行任务会造成浏览器阻塞，所以将 JS 分成一个又一个任务，通过不停地循环来执行事件队列中的任务。
+
+</pre>
+</details>
