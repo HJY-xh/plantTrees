@@ -3277,3 +3277,16 @@ function create(obj) {
 
 </pre>
 </details>
+
+[132.[2022-2-28] JavaScript 在什么时候会创建执行上下文？](https://github.com/HJY-xh/plantTrees/issues/533)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   当 JavaScript 执行全局代码时，会编译全局代码并创建全局执行上下文，而且在整个页面的生存周期内，全局执行上下文只有一份
+-   当调用一个函数的时候，函数体内的代码会被编译，并创建函数执行上下文，一般情况下，函数执行结束之后，创建的函数执行上下文会被销毁
+-   当使用 eval 函数时，eval 中的代码也会被编译，并创建执行上下文
+
+</pre>
+</details>
