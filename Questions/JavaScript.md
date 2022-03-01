@@ -3260,3 +3260,20 @@ JS 在底层存储变量时，会在变量的机器码的低位 1-3 位存储其
 
 </pre>
 </details>
+
+[131.[2022-2-21] 如何实现一个 Object.create()方法？](https://github.com/HJY-xh/plantTrees/issues/528)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+```javascript
+function create(obj) {
+	function F() {}
+	F.prototype = obj;
+	return new F();
+}
+```
+
+</pre>
+</details>
