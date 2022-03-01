@@ -3249,3 +3249,14 @@ JS 在底层存储变量时，会在变量的机器码的低位 1-3 位存储其
 
 </pre>
 </details>
+
+[130.[2022-2-20] 箭头函数的 this 是什么时候绑定的？](https://github.com/HJY-xh/plantTrees/issues/527)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+箭头函数导致 this 总是指向函数定义生效时所在的对象。
+
+</pre>
+</details>
