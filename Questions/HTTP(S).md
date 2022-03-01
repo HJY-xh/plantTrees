@@ -892,3 +892,14 @@ HTTP 协议属于应用层协议，TCP 协议属于传输层协议，HTTP 协议
 
 </pre>
 </details>
+
+[46.[2022-2-27] HTTP 网络请求的第一步是做什么？](https://github.com/HJY-xh/plantTrees/issues/531)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+和服务器建立 TCP 连接。
+
+</pre>
+</details>

@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 241:
+## Day 242:
 
-✅ [[2022-2-26] HTTP 和 TCP 的关系是什么？](https://github.com/HJY-xh/plantTrees/issues/530)
-
-✅ [[2022-2-26] Web 页面性能指标中的 FP 是什么意思？](https://github.com/HJY-xh/plantTrees/issues/529)
+✅ [[2022-2-27] HTTP 网络请求的第一步是做什么？](https://github.com/HJY-xh/plantTrees/issues/531)
 
 ## 目录结构 📁
 
