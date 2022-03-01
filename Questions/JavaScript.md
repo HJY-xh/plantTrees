@@ -3290,3 +3290,14 @@ function create(obj) {
 
 </pre>
 </details>
+
+[133.[2022-2-28] JavaScript 引擎如何追踪函数执行？](https://github.com/HJY-xh/plantTrees/issues/534)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+调用栈。
+
+</pre>
+</details>

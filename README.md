@@ -15,7 +15,7 @@
 
 ## Day 243:
 
-✅ [[2022-2-28] JavaScript 在什么时候会创建执行上下文？](https://github.com/HJY-xh/plantTrees/issues/533)
+✅ [[2022-2-28] JavaScript 引擎如何追踪函数执行？](https://github.com/HJY-xh/plantTrees/issues/534)
 
 ## 目录结构 📁
 
