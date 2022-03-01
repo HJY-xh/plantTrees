@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 237:
+## Day 238:
 
-✅ [[2022-2-14] Sass 中混合指令@mixin 和 函数指令 @function 的区别?](https://github.com/HJY-xh/plantTrees/issues/525)
+✅ [[2022-2-16] typeof 的原理是什么？](https://github.com/HJY-xh/plantTrees/issues/526)
 
 ## 目录结构 📁
 
