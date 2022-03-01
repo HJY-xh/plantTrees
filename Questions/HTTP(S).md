@@ -903,3 +903,16 @@ HTTP 协议属于应用层协议，TCP 协议属于传输层协议，HTTP 协议
 
 </pre>
 </details>
+
+[47.[2022-2-27] HTTP 请求行包括什么？](https://github.com/HJY-xh/plantTrees/issues/532)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   请求方法
+-   请求 URI
+-   HTTP 协议版本
+
+</pre>
+</details>

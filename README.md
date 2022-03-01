@@ -15,6 +15,8 @@
 
 ## Day 242:
 
+✅ [[2022-2-27] HTTP 请求行包括什么？](https://github.com/HJY-xh/plantTrees/issues/532)
+
 ✅ [[2022-2-27] HTTP 网络请求的第一步是做什么？](https://github.com/HJY-xh/plantTrees/issues/531)
 
 ## 目录结构 📁
