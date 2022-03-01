@@ -860,3 +860,18 @@ Upgrade: websocket
 
 </pre>
 </details>
+
+[44.[2022-1-28] 为什么建立连接时三次握手，而关闭连接是四次挥手呢？](https://github.com/HJY-xh/plantTrees/issues/524)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+这是因为服务端在 LISTEN 状态下，收到建立连接请求的 SYN 报文后，把 ACK 和 SYN 放在一个报文里发送给客户端。其中 ACK 报文是用来应答的，SYN 报文是用来同步的。
+
+而关闭连接连接时，当服务端收到 FIN 报文，很可能并不会立即关闭 SOCKET，所以先回复一个 ACK 报文，告诉客户端，“你发的 FIN 报文我收到了”。只有等到我服务端所有的报文都发送完了，我才能发送 FIN 报文，因此不能一起发送。
+
+以上说明断开连接需要四次挥手。
+
+</pre>
+</details>
