@@ -875,3 +875,20 @@ Upgrade: websocket
 
 </pre>
 </details>
+
+[45.[2022-2-26] HTTP 和 TCP 的关系是什么？](https://github.com/HJY-xh/plantTrees/issues/530)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+HTTP 协议和 TCP 协议都是 TCP/IP 协议簇的子集。
+
+HTTP 协议属于应用层协议，TCP 协议属于传输层协议，HTTP 协议位于 TCP 协议上层。
+
+请求方要发送的数据包，在应用层加上 HTTP 头以后回交给传输层的 TCP 协议处理，应答方接收到的数据包，在传输层拆掉 TCP 头以后交给应用层的 HTTP 协议处理。
+
+建立 TCP 连接后会顺序发送数据，请求方和应答方都必须依据 HTTP 规范构建和解析 HTTP 报文。
+
+</pre>
+</details>
