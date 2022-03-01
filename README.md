@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 243:
+## Day 244:
 
-✅ [[2022-2-28] JavaScript 引擎如何追踪函数执行？](https://github.com/HJY-xh/plantTrees/issues/534)
+✅ [[2022-3-1] 如何实现数组的 flat 方法？](https://github.com/HJY-xh/plantTrees/issues/535)
 
 ## 目录结构 📁
 

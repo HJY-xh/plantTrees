@@ -3301,3 +3301,28 @@ function create(obj) {
 
 </pre>
 </details>
+
+[134.[2022-3-1] 如何实现数组的 flat 方法？](https://github.com/HJY-xh/plantTrees/issues/535)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+```javascript
+function flat(arr) {
+	const res = [];
+	const input = [].concat(arr);
+	while (input.length > 0) {
+		const item = input.pop();
+		if (Array.isArray(item)) {
+			input.push(...item);
+		} else {
+			res.unshift(item);
+		}
+	}
+	return res;
+}
+```
+
+</pre>
+</details>
