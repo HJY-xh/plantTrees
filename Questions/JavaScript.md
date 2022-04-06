@@ -3352,3 +3352,17 @@ function flat(arr) {
 
 </pre>
 </details>
+
+[137.[2022-3-7] async 和 defer 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/540)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+二者都用来设置脚本异步加载，但执行时机不同：
+
+-   使用 async 标记的 JS 文件，一旦下载完成就会执行
+-   defer 需要在 DOMContentLoaded 事件之前执行
+
+</pre>
+</details>
