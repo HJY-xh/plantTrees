@@ -13,9 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 246:
+## Day 247:
 
-✅ [[2022-3-5] MutationObserver 较 Mutation Event 做了哪些改进？](https://github.com/HJY-xh/plantTrees/issues/538)
+✅ [[2022-3-7] DOMContentLoaded 和 Load 两个事件有什么区别？](https://github.com/HJY-xh/plantTrees/issues/539)
 
 ## 目录结构 📁
 

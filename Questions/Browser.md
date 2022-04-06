@@ -333,3 +333,15 @@ Chrome：Blink（基于 webkit）
 
 </pre>
 </details>
+
+[22.[2022-3-7] DOMContentLoaded 和 Load 两个事件有什么区别？](https://github.com/HJY-xh/plantTrees/issues/539)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   DOMContentLoaded 事件发生后，说明页面已经构建好 DOM，这意味着 DOM 所需要的 HTML 文件、JavaScript 文件、CSS 文件都已经下载完成了
+-   Load 事件则说明浏览器已经下载好了所有资源（包括图像）
+
+</pre>
+</details>
