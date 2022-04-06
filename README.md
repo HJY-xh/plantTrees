@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 245:
+## Day 246:
 
-✅ [[2022-3-4] 使用 setTimeout 时需要注意什么？](https://github.com/HJY-xh/plantTrees/issues/537)
-
-✅ [[2022-3-4] 字节码是什么？](https://github.com/HJY-xh/plantTrees/issues/536)
+✅ [[2022-3-5] MutationObserver 较 Mutation Event 做了哪些改进？](https://github.com/HJY-xh/plantTrees/issues/538)
 
 ## 目录结构 📁
 

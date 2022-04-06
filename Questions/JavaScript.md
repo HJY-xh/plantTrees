@@ -3341,3 +3341,14 @@ function flat(arr) {
 
 </pre>
 </details>
+
+[136.[2022-3-5] MutationObserver 较 Mutation Event 做了哪些改进？](https://github.com/HJY-xh/plantTrees/issues/538)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+首先，MutationObserver 将响应函数改成异步调用，可以不用再每次 DOM 变化时都触发异步调用，而是等多次 DOM 变化后，一次触发异步调用，并且还会使用一个数据结构来记录这期间所有的 DOM 变化。这样及时频繁地操作 DOM，也不会对性能造成太大影响。
+
+</pre>
+</details>
