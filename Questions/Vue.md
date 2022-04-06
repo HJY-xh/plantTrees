@@ -801,3 +801,20 @@ export default {
 
 </pre>
 </details>
+
+[16.[2022-3-30] 如何理解 Vue 中 createElement?](https://github.com/HJY-xh/plantTrees/issues/547)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+Vue 通过建立一个`虚拟DOM`来追踪自己要如何改变真实 DOM
+
+```javascript
+return createElement("h1", this.blogTitle);
+```
+
+`createElement`可以理解成名字更为准确的`createNodeDescription `，因为它所包含的信息会告诉 Vue 页面上需要渲染什么样的节点，包括及其子节点的描述信息。我们把这样的节点描述为`虚拟节点（virtual node）`，也常简称为`VNode`。
+
+</pre>
+</details>
