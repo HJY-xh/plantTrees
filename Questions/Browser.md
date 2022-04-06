@@ -369,3 +369,14 @@ Chrome：Blink（基于 webkit）
 
 </pre>
 </details>
+
+[25.[2022-3-12] HttpOnly 标记有什么作用？](https://github.com/HJY-xh/plantTrees/issues/545)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+使用`HttpOnly`标记的`Cookie`只能使用在 HTTP 请求过程中，所以无法通过 JavaScript 来读取这段 Cookie。
+
+</pre>
+</details>

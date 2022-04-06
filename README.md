@@ -15,6 +15,8 @@
 
 ## Day 249:
 
+✅ [[2022-3-12] HttpOnly 标记有什么作用？](https://github.com/HJY-xh/plantTrees/issues/545)
+
 ✅ [[2022-3-12] CSP 是什么？](https://github.com/HJY-xh/plantTrees/issues/544)
 
 ✅ [[2022-3-12] 同源策略如何保障安全？](https://github.com/HJY-xh/plantTrees/issues/543)
