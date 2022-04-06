@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 251:
+## Day 252:
 
-✅ [[2022-3-30] Vue 当中表示无状态组件有什么特殊的字段吗？](https://github.com/HJY-xh/plantTrees/issues/549)
-
-✅ [[2022-3-30] Vue 在渲染函数中可以使用 v-model 吗？](https://github.com/HJY-xh/plantTrees/issues/548)
-
-✅ [[2022-3-30] 如何理解 Vue 中 createElement?](https://github.com/HJY-xh/plantTrees/issues/547)
+✅ [[2022-3-31] 框架引入类型的原因有哪些？](https://github.com/HJY-xh/plantTrees/issues/550)
 
 ## 目录结构 📁
 
