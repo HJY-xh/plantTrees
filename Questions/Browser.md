@@ -356,3 +356,16 @@ Chrome：Blink（基于 webkit）
 
 </pre>
 </details>
+
+[24.[2022-3-12] CSP 是什么？](https://github.com/HJY-xh/plantTrees/issues/544)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+通过 HTTP 响应头中设定 CSP 的规则，可以规定当前页面可以加载的资源的白名单，从而减少网页收到 XSS 攻击的风险。
+
+因此 CSP 可以理解成一个在现代浏览器加载资源白名单的安全机制，只有响应头中白名单里列出的资源才能被加载、执行。
+
+</pre>
+</details>
