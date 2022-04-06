@@ -3383,3 +3383,14 @@ var dupNode = node.cloneNode(deep);
 
 </pre>
 </details>
+
+[139.[2022-4-6] FormData 对象使用 append 方法设置同名属性值时是什么表现？](https://github.com/HJY-xh/plantTrees/issues/553)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+如果 FormData 对象上对应的属性存在，不会覆盖原值，而是新增一项；如果该属性不存在，则新增一项。
+
+</pre>
+</details>

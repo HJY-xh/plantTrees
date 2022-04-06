@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 253:
+## Day 254:
 
-✅ [[2022-4-3] 怎么实现响应式？](https://github.com/HJY-xh/plantTrees/issues/552)
-
-✅ [[2022-4-3] 为什么需要响应式？](https://github.com/HJY-xh/plantTrees/issues/551)
+✅ [[2022-4-6] FormData 对象使用 append 方法设置同名属性值时是什么表现？](https://github.com/HJY-xh/plantTrees/issues/553)
 
 ## 目录结构 📁
 
