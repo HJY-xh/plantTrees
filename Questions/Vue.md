@@ -818,3 +818,14 @@ return createElement("h1", this.blogTitle);
 
 </pre>
 </details>
+
+[17.[2022-3-30] Vue 在渲染函数中可以使用 v-model 吗？](https://github.com/HJY-xh/plantTrees/issues/548)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+渲染函数中没有与 v-model 的直接对应，必须自己实现相应的逻辑，但与 v-model 相比，这可以更好地控制交互细节。
+
+</pre>
+</details>
