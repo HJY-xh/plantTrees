@@ -15,6 +15,8 @@
 
 ## Day 253:
 
+✅ [[2022-4-3] 怎么实现响应式？](https://github.com/HJY-xh/plantTrees/issues/552)
+
 ✅ [[2022-4-3] 为什么需要响应式？](https://github.com/HJY-xh/plantTrees/issues/551)
 
 ## 目录结构 📁
