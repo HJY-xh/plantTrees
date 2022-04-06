@@ -380,3 +380,14 @@ Chrome：Blink（基于 webkit）
 
 </pre>
 </details>
+
+[26.[2022-3-22] Speed Index 是什么？](https://github.com/HJY-xh/plantTrees/issues/546)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+首屏时间 (Speed Index)：它表示填满首屏页面所消耗的时间，首屏时间的值越大，说明加载速度越慢。
+
+</pre>
+</details>

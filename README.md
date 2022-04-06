@@ -13,13 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 249:
+## Day 250:
 
-✅ [[2022-3-12] HttpOnly 标记有什么作用？](https://github.com/HJY-xh/plantTrees/issues/545)
-
-✅ [[2022-3-12] CSP 是什么？](https://github.com/HJY-xh/plantTrees/issues/544)
-
-✅ [[2022-3-12] 同源策略如何保障安全？](https://github.com/HJY-xh/plantTrees/issues/543)
+✅ [[2022-3-22] Speed Index 是什么？](https://github.com/HJY-xh/plantTrees/issues/546)
 
 ## 目录结构 📁
 
