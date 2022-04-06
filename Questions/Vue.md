@@ -829,3 +829,23 @@ return createElement("h1", this.blogTitle);
 
 </pre>
 </details>
+
+[18.[2022-3-30] Vue 当中表示无状态组件有什么特殊的字段吗？](https://github.com/HJY-xh/plantTrees/issues/549)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+对于一个没有管理任何状态，也没有监听任何传递给他的状态，也没有生命周期方法，只接收一些 prop 的函数，可以将组件标记为`functional`，这意味着它无状态，也没有实例 (没有 this 上下文)。
+
+```javascript
+functional: true;
+```
+
+```javascript
+// 单文件组件（2.5.0及以上版本）
+<template functional></template>
+```
+
+</pre>
+</details>
