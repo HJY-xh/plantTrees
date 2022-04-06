@@ -15,6 +15,8 @@
 
 ## Day 245:
 
+✅ [[2022-3-4] 使用 setTimeout 时需要注意什么？](https://github.com/HJY-xh/plantTrees/issues/537)
+
 ✅ [[2022-3-4] 字节码是什么？](https://github.com/HJY-xh/plantTrees/issues/536)
 
 ## 目录结构 📁

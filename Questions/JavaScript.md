@@ -3326,3 +3326,18 @@ function flat(arr) {
 
 </pre>
 </details>
+
+[135.[2022-3-4] 使用 setTimeout 时需要注意什么？](https://github.com/HJY-xh/plantTrees/issues/537)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+-   如果当前任务执行过久，会影响定时器任务的执行
+-   如果 setTimeout 存在嵌套调用，那么系统会设置最短时间间隔为 4 毫秒
+-   未激活的页面，setTimeout 执行最小间隔是 1000 毫秒
+-   延时执行时间有最大值
+-   使用 setTimeout 设置的回调函数中的 this 指向全局环境，如果是严格模式，会被设置为 undefined
+
+</pre>
+</details>
