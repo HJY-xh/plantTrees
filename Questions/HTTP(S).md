@@ -916,3 +916,18 @@ HTTP 协议属于应用层协议，TCP 协议属于传输层协议，HTTP 协议
 
 </pre>
 </details>
+
+[48.[2022-3-8] HTTP/0.9 有什么特点？](https://github.com/HJY-xh/plantTrees/issues/542)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+由于那时返回的都是 HTML 格式的文件，故而有以下特点：
+
+-   只有一个请求行，没有 HTTP 请求头和请求体
+-   服务器也没有响应头信息
+-   返回的文件内容是以 ASCII 字符流来传输的
+
+</pre>
+</details>

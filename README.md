@@ -15,6 +15,8 @@
 
 ## Day 248:
 
+✅ [[2022-3-8] HTTP/0.9 有什么特点？](https://github.com/HJY-xh/plantTrees/issues/542)
+
 ✅ [[2022-3-8] Node.cloneNode 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/541)
 
 ## 目录结构 📁
