@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 248:
+## Day 249:
 
-✅ [[2022-3-8] HTTP/0.9 有什么特点？](https://github.com/HJY-xh/plantTrees/issues/542)
-
-✅ [[2022-3-8] Node.cloneNode 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/541)
+✅ [[2022-3-12] 同源策略如何保障安全？](https://github.com/HJY-xh/plantTrees/issues/543)
 
 ## 目录结构 📁
 

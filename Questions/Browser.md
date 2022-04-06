@@ -345,3 +345,14 @@ Chrome：Blink（基于 webkit）
 
 </pre>
 </details>
+
+[23.[2022-3-12] 同源策略如何保障安全？](https://github.com/HJY-xh/plantTrees/issues/543)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+同源策略会隔离不同源的 DOM、页面数据和网络通信，进而实现 Web 页面的安全性
+
+</pre>
+</details>
