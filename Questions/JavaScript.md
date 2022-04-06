@@ -3366,3 +3366,20 @@ function flat(arr) {
 
 </pre>
 </details>
+
+[138.[2022-3-8] Node.cloneNode 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/541)
+
+<details>
+<summary>展开查看</summary>
+<pre>
+
+`Node.cloneNode`方法返回调用该方法的节点的一个副本。
+
+```javascript
+var dupNode = node.cloneNode(deep);
+```
+
+`deep`为可选参数，是否采用深度克隆,如果为 true,则该节点的所有后代节点也都会被克隆,如果为 false,则只克隆该节点本身
+
+</pre>
+</details>

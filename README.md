@@ -13,11 +13,9 @@
 
 我相信自己，也相信你们 💪 💪
 
-## Day 247:
+## Day 248:
 
-✅ [[2022-3-7] async 和 defer 有什么区别？](https://github.com/HJY-xh/plantTrees/issues/540)
-
-✅ [[2022-3-7] DOMContentLoaded 和 Load 两个事件有什么区别？](https://github.com/HJY-xh/plantTrees/issues/539)
+✅ [[2022-3-8] Node.cloneNode 有什么作用？](https://github.com/HJY-xh/plantTrees/issues/541)
 
 ## 目录结构 📁
 
